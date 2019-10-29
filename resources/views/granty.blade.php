@@ -42,15 +42,15 @@
                     <li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
                 </ul>
             </li>
-            <li><a href="{{ url('/blog')}}">Blog</a>
+            <li><a href="{{ url('/blog')}}">Informácie</a>
                 <ul>
                     <li><a href="{{ url('/blog')}}">Blog Standard</a></li>
                     <li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
                     <li><a href="#">visit templatemo</a></li>
                 </ul>
             </li>
-            <li><a href="{{ url('/archives')}}">Archives</a></li>
-            <li><a href="{{ url('/contact')}}">Contact</a></li>
+            <li><a href="{{ url('/archives')}}">Recenzie</a></li>
+            <li><a href="{{ url('/contact')}}">Kontakt</a></li>
         </ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -128,7 +128,7 @@
 			<div class="col-md-12">
 				<ul id="filters" class="mixitup-controls">
 					<li class="filter" data-filter="all">All</li>
-					<li class="filter" data-filter="branding">Branding</li>
+					<li class="filter" data-filter="branding">Študijné pobyty</li>
 					<li class="filter" data-filter="illustration">Illustration</li>
 					<li class="filter" data-filter="business">Business</li>
 					<li class="filter" data-filter="identity">Identity</li>
