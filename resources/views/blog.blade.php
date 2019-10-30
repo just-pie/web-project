@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Medigo Blue, Blog, free template</title>
+	<title>Informácie</title>
     <meta name="keywords" content="">
 	<meta name="description" content="">
     <meta name="author" content="templatemo">
@@ -50,7 +50,7 @@
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
-			<li><a href="{{ url('/contact')}}">Contact</a></li>
+			<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
 		</ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -88,7 +88,7 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
-								<li><a href="{{ url('/contact')}}">Contact</a></li>
+								<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -279,7 +279,7 @@
 							<li><a href="{{ url('/granty')}}">Granty</a></li>
 							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-							<li><a href="{{ url('/contact')}}">Contact</a></li>
+							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
 						</ul> <!-- /.footer-menu -->
 					</nav> <!-- /.footer-nav -->
 				</div> <!-- /.col-md-12 -->

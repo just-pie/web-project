@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSpravyTable extends Migration
+class CreateUniverzityHasVyzvyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateSpravyTable extends Migration
      */
     public function up()
     {
-        Schema::create('spravy', function (Blueprint $table) {
-            $table->increments('idspravy');
-            $table->text('text');
+        Schema::create('univerzity_has_vyzvy', function (Blueprint $table) {
+            $table->string('pocetmiest', 5)->nullable($value = true);
         });
 
-        Schema::table('spravy', function($table) {
-            $table->integer('pouzivatelia_idpouzivatelia')->unsigned();
-            $table->foreign('pouzivatelia_idpouzivatelia')->references('idpouzivatelia')->on('pouzivatelia');
+        Schema::table('univerzity_has_vyzvy', function($table) {
+            $table->integer('univerzity_iduniverzity')->unsigned();
+            $table->foreign('univerzity_iduniverzity')->references('iduniverzity')->on('univerzity');
             $table->integer('vyzvy_idvyzvy')->unsigned();
             $table->foreign('vyzvy_idvyzvy')->references('idvyzvy')->on('vyzvy');
         });
@@ -33,6 +32,6 @@ class CreateSpravyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spravy');
+        Schema::dropIfExists('univerzity_has_vyzvy');
     }
 }
