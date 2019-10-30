@@ -48,7 +48,7 @@
 				</ul>
             </li>
             <li><a href="{{ url('/archives')}}">Archives</a></li>
-            <li><a href="{{ url('/contact')}}">Kontakt</a></li>
+            <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
         </ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -86,7 +86,7 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
-								<li><a href="{{ url('/contact')}}">Kontakt</a></li>
+								<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -222,16 +222,16 @@
 						<div class="overlay-inner">
 							<div class="portfolio-infos">
 								<span class="meta-category">Dashboard Template</span>
-								<h3 class="portfolio-title"><a href="{{ url('/project-slideshow')}}">Visual Admin</a></h3>
+								<h3 class="portfolio-title"><a href="{{ url('/granty')}}">Nemecko</a></h3>
 							</div>
 							<div class="portfolio-expand">
-								<a class="fancybox" href="images/includes/project1.jpg" title="Visual Admin">
+								<a class="fancybox" href="images/includes/projekt1.jpg" title="University Passau">
 									<i class="fa fa-expand"></i>
 								</a>
 							</div>
 						</div>
 					</div>
-					<img src="images/includes/project1.jpg" alt="Visual Admin">
+					<img src="images/includes/projekt1.jpg" alt="University Passau">
 				</div>
 			</div> <!-- /.item -->
 			<div class="item">
@@ -434,7 +434,7 @@
 							<li><a href="{{ url('/granty')}}">Granty</a></li>
 							<li><a href="{{ url('/blog')}}">Informácie</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-							<li><a href="{{ url('/contact')}}">Kontakt</a></li>
+							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
 						</ul> <!-- /.footer-menu -->
 					</nav> <!-- /.footer-nav -->
 				</div> <!-- /.col-md-12 -->

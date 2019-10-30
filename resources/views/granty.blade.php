@@ -42,15 +42,15 @@
                     <li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
                 </ul>
             </li>
-            <li><a href="{{ url('/blog')}}">Blog</a>
+            <li><a href="{{ url('/blog')}}">Informácie</a>
                 <ul>
                     <li><a href="{{ url('/blog')}}">Blog Standard</a></li>
                     <li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
                     <li><a href="#">visit templatemo</a></li>
                 </ul>
             </li>
-            <li><a href="{{ url('/archives')}}">Archives</a></li>
-            <li><a href="{{ url('/contact')}}">Contact</a></li>
+            <li><a href="{{ url('/archives')}}">Recenzie</a></li>
+            <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
         </ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -88,7 +88,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="{{ url('/archives')}}">Archives</a></li>
-                                <li><a href="{{ url('/contact')}}">Contact</a></li>
+                                <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
                             </ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -113,10 +113,10 @@
 			<div class="container pageTitle">
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
-						<h2 class="page-title">Our Portfolio</h2>
+						<h2 class="page-title">Naše granty</h2>
 					</div> <!-- /.col-md-6 -->
 					<div class="col-md-6 col-sm-6 text-right">
-						<span class="page-location">Home / Portfolio</span>
+						<span class="page-location">Domov / Granty</span>
 					</div> <!-- /.col-md-6 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
@@ -127,11 +127,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul id="filters" class="mixitup-controls">
-					<li class="filter" data-filter="all">All</li>
-					<li class="filter" data-filter="branding">Branding</li>
-					<li class="filter" data-filter="illustration">Illustration</li>
-					<li class="filter" data-filter="business">Business</li>
-					<li class="filter" data-filter="identity">Identity</li>
+					<li class="filter" data-filter="all">Všetko</li>
+					<li class="filter" data-filter="studijne">Študijné pobyty</li>
+					<li class="filter" data-filter="staze">Stáže</li>
+					<li class="filter" data-filter="prednaskove">Prednáškové pobyty</li>
+					<li class="filter" data-filter="skolenia">Školenia</li>
 				</ul>
 			</div> <!-- /.col-md-12 -->
 		</div> <!-- /.row -->
@@ -140,26 +140,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="portfolio-holder" id="Grid">
-				<div class="portfolio-post col-sm-6 col-md-4 mix illustration">
+				<div class="portfolio-post col-sm-6 col-md-4 mix studijne">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
-                                    <span class="meta-category">Illustration</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Visual Admin</a></h3>
+                                    <span class="meta-category">Nemecko</span>
+                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">University Passau</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project1.jpg" title="Visual Admin">
+                                    <a class="fancybox" href="images/includes/projekt1.jpg" title="University Passau">
                                         <i class="fa fa-expand"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <img src="images/includes/project1.jpg" alt="Visual Admin">
+                        <img src="images/includes/projekt1.jpg" alt="Visual Admin">
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix branding">
+				<div class="portfolio-post col-sm-6 col-md-4 mix studijne">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -178,7 +178,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix illustration">
+				<div class="portfolio-post col-sm-6 col-md-4 mix staze">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -197,7 +197,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix illustration">
+				<div class="portfolio-post col-sm-6 col-md-4 mix staze">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -216,7 +216,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix business">
+				<div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -235,7 +235,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix branding">
+				<div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -254,7 +254,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix branding identity">
+				<div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -273,7 +273,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix identity illustration">
+				<div class="portfolio-post col-sm-6 col-md-4 mix staze">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -292,7 +292,7 @@
 					</div>
 				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix branding">
+				<div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
 					<div class="thumb-post">
 						<div class="overlay">
                             <div class="overlay-inner">
@@ -339,7 +339,7 @@
 							<li><a href="{{ url('/granty')}}">Granty</a></li>
 							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-							<li><a href="{{ url('/contact')}}">Contact</a></li>
+							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
 						</ul> <!-- /.footer-menu -->
 					</nav> <!-- /.footer-nav -->
 				</div> <!-- /.col-md-12 -->
