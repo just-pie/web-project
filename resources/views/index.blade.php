@@ -32,13 +32,7 @@
 	<div class="responsive_menu">
         <ul class="main_menu">
             <li class="active"><a href="{{ url('/')}}">Domov</a></li>
-			<li><a href="{{ url('/granty')}}">Granty</a>
-				<ul>
-					<li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-					<li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-					<li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-					<li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-				</ul>
+			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 			</li>
             <li><a href="{{ url('/blog')}}">Informácie</a>
 				<ul>
@@ -70,13 +64,7 @@
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
 								<li class="active"><a href="{{ url('/')}}">Domov</a></li>
-								<li><a href="{{ url('/granty')}}">Granty</a>
-									<ul>
-										<li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-										<li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-										<li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-										<li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-									</ul>
+								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 								</li>
 								<li><a href="{{ url('/blog')}}">Informácie</a>
 									<ul>
@@ -127,11 +115,11 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="service-box-wrap">
 						<div class="service-icon-wrap">
-							<i class="fa fa-umbrella fa-2x"></i>
+							<i class="fa fa-globe fa-2x"></i>
 						</div> <!-- /.service-icon-wrap -->
 						<div class="service-cnt-wrap">
-							<h3 class="service-title">Easy Theme Colors</h3>
-							<p>There are 4 color themes (blue, green, red, orange) and this one is blue.</p>
+							<h3 class="service-title">Erasmus+</h3>
+							<p>Program Európskej Únie, ktorý podporuje aktivity v oblasti vzdelávania, odbornej prípravy, mládeže a športu</p>
 						</div> <!-- /.service-cnt-wrap -->
 					</div> <!-- /.service-box-wrap -->
 				</div> <!-- /.col-md-4 -->
@@ -139,11 +127,11 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="service-box-wrap">
 						<div class="service-icon-wrap">
-							<i class="fa fa-mobile-phone fa-2x"></i>
+							<i class="fa fa-forward fa-2x"></i>
 						</div> <!-- /.service-icon-wrap -->
 						<div class="service-cnt-wrap">
-							<h3 class="service-title">Change Icons</h3>
-							<p>Check <a rel="nofollow" href="http://fontawesome.io/icons/" target="_blank">FontAwesome</a> for your suitable icons. Example: &lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;</p>
+							<h3 class="service-title">Nahrádza programy</h3>
+							<p>Erasmus, Leonardo da Vinci, Comenius a Grundtvig, Erasmus Mundus, Tempus, Alfa, Edulink a bilaterálne programy a pribudol Šport ako nová aktivita v rámci programu</p>
 						</div> <!-- /.service-cnt-wrap -->
 					</div> <!-- /.service-box-wrap -->
 				</div> <!-- /.col-md-4 -->
@@ -151,11 +139,11 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="service-box-wrap">
 						<div class="service-icon-wrap">
-							<i class="fa fa-pencil-square-o fa-2x"></i>
+							<i class="fa fa-file-o fa-2x"></i>
 						</div> <!-- /.service-icon-wrap -->
 						<div class="service-cnt-wrap">
-							<h3 class="service-title">Pixel Perfect Design</h3>
-							<p>Based on a 12 column grid system, with every pixel snapped.</p>
+							<h3 class="service-title">Poskytuje granty</h3>
+							<p>Erasmus+ poskytuje granty pre široké spektrum akcií a aktivít v oblasti v oblasti vzdelávania, odbornej prípravy, mládeže a športu.</p>
 						</div> <!-- /.service-cnt-wrap -->
 					</div> <!-- /.service-box-wrap -->
 				</div> <!-- /.col-md-4 -->
@@ -167,11 +155,11 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="service-box-wrap">
 						<div class="service-icon-wrap">
-							<i class="fa fa-code fa-2x"></i>
+							<i class="fa fa-exchange fa-2x"></i>
 						</div> <!-- /.service-icon-wrap -->
 						<div class="service-cnt-wrap">
-							<h3 class="service-title">Valid HTML5</h3>
-							<p>We offer validated html files and well commented code on our themes.</p>
+							<h3 class="service-title">Dáva príležitosť</h3>
+							<p>Program Erasmus+ dáva príležitosť študentom, žiakom odbornej prípravy, pedagogickým zamestnancom, pracovníkom s mládežou a dobrovoľníkom stráviť obdobie v zahraničí a zlepšiť tak svoje poznatky, zručnosti a zamestnateľnosť.</p>
 						</div> <!-- /.service-cnt-wrap -->
 					</div> <!-- /.service-box-wrap -->
 				</div> <!-- /.col-md-4 -->
@@ -179,11 +167,11 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="service-box-wrap">
 						<div class="service-icon-wrap">
-							<i class="fa fa-eye-slash fa-2x"></i>
+							<i class="fa fa-folder-open fa-2x"></i>
 						</div> <!-- /.service-icon-wrap -->
 						<div class="service-cnt-wrap">
-							<h3 class="service-title">Retina Ready</h3>
-							<p>Incredibly clean design provides you powerful way to grow your business.</p>
+							<h3 class="service-title">Je otvorený</h3>
+							<p>Erasmus+ je otvorený širokému spektru organizácií vo všetkých odvetviach sektoroch vzdelávania, odbornej prípravy, mládeže a športu. Akékoľvek slovenské verejné, súkromné alebo neziskové organizácie, aktívne zapojené v týchto oblastiach, môžu požiadať o finančné prostriedky z programu za podmienok zverejnených v príslušnej výzve.</p>
 						</div> <!-- /.service-cnt-wrap -->
 					</div> <!-- /.service-box-wrap -->
 				</div> <!-- /.col-md-4 -->
@@ -191,11 +179,11 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="service-box-wrap">
 						<div class="service-icon-wrap">
-							<i class="fa fa-suitcase fa-2x"></i>
+							<i class="fa fa-building-o fa-2x"></i>
 						</div> <!-- /.service-icon-wrap -->
 						<div class="service-cnt-wrap">
-							<h3 class="service-title">Special Thanks</h3>
-							<p>Credit goes to <a rel="nofollow" href="http://unsplash.com" target="_blank">Unsplash</a> for images used in this template.</p>
+							<h3 class="service-title">Akcie sú centralizované a decentralizované</h3>
+							<p>Decentralizované akcie sú riadené Národnými agentúrami v každej účastníckej krajine programu. Centralizované akcie sú riadené Výkonnou agentúrou pre vzdelávanie, audiovizuálny sektor a kultúru so sídlom v Bruseli (EACEA).</p>
 						</div> <!-- /.service-cnt-wrap -->
 					</div> <!-- /.service-box-wrap -->
 				</div> <!-- /.col-md-4 -->
@@ -222,7 +210,7 @@
 						<div class="overlay-inner">
 							<div class="portfolio-infos">
 								<span class="meta-category">Dashboard Template</span>
-								<h3 class="portfolio-title"><a href="{{ url('/granty')}}">Nemecko</a></h3>
+								<h3 class="portfolio-title"><a href="{{ url('/vyzvy')}}">Nemecko</a></h3>
 							</div>
 							<div class="portfolio-expand">
 								<a class="fancybox" href="images/includes/projekt1.jpg" title="University Passau">
@@ -431,7 +419,7 @@
 					<nav class="footer-nav clearfix">
 						<ul class="footer-menu">
 							<li><a href="{{url('/')}}">Domov</a></li>
-							<li><a href="{{ url('/granty')}}">Granty</a></li>
+							<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
 							<li><a href="{{ url('/blog')}}">Informácie</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
 							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>

@@ -34,13 +34,7 @@
 	<div class="responsive_menu">
 		<ul class="main_menu">
 			<li><a href="{{ url('/')}}">Domov</a></li>
-            <li><a href="{{ url('/granty')}}">Granty</a>
-                <ul>
-                    <li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-                    <li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-                    <li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-                    <li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-                </ul>
+            <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
             </li>
 			<li><a href="{{ url('/blog')}}">Blog</a>
 				<ul>
@@ -72,13 +66,7 @@
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
 								<li><a href="{{url('/')}}">Domov</a></li>
-                                <li><a href="{{ url('/granty')}}">Granty</a>
-                                    <ul>
-                                        <li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-                                        <li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-                                        <li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-                                        <li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-                                    </ul>
+                                <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
                                 </li>
 								<li><a href="{{ url('/blog')}}">Blog</a>
 									<ul>
@@ -165,7 +153,7 @@
 					<nav class="footer-nav clearfix">
 						<ul class="footer-menu">
 							<li><a href="{{url('/')}}">Domov</a></li>
-							<li><a href="{{ url('/granty')}}">Granty</a></li>
+							<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
 							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
 							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>

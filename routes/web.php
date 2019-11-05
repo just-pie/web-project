@@ -31,24 +31,7 @@ Route::get('/kontakt', [
     'as' => 'kontakt', 'uses' => 'KontaktyController@showAllAction'
 ]);
 
-Route::get('/granty', function () {
-    return view('granty');
+Route::get('/vyzvy', function () {
+    return view('vyzvy');
 });
 
-Route::get('/granty-prednaskovypobyt', function () {
-    return view('granty-prednaskovypobyt');
-});
-
-Route::get('/granty-studijnypobyt', function () {
-    return view('granty-studijnypobyt');
-});
-
-Route::get('/granty-skolenie', function () {
-    return view('granty-skolenie');
-});
-
-Route::get('/granty-staz', function () {
-    return view('granty-staz');
-});
-
-Route::get('/rolyshow/{id}', 'RolyController@showAction');
