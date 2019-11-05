@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="Missing files added">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/KontaktyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Kontakty.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_110049_create_kontakty_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_194306_create_univerzity_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_194418_create_univerzity_has_vyzvy_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/2019_10_30_095823_create_univerzity_has_vyzvy_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/includes/projekt1.jpg" afterDir="false" />
+    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="Kontakty now works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162623_create_roly_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_102731_create_roly_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162644_create_pouzivatelia_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_102830_create_pouzivatelia_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162722_create_subory_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162722_create_subory_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162732_create_univerzity_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/2019_10_26_162732_create_univerzity_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162753_create_spravy_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162753_create_spravy_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162812_create_podujatia_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162812_create_podujatia_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162822_create_vyzvy_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162822_create_vyzvy_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bootstrap/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blue-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blue-scheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/includes/project1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/min/plugins.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/min/plugins.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/archives.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/archives.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog-single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog-single.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kontakt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/granty-prednaskovypobyt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/granty-prednaskovypobyt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/granty-skolenie.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/granty-skolenie.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/granty-staz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/granty-staz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/granty-studijnypobyt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/granty-studijnypobyt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/granty.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/granty.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/granty-prednaskovypobyt.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/granty-skolenie.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/granty-staz.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/granty-studijnypobyt.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/granty.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kontakt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kontakt.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="m-orlicek" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -168,7 +144,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -216,7 +192,15 @@
       <workItem from="1572425434203" duration="9319000" />
       <workItem from="1572439052854" duration="217000" />
       <workItem from="1572439349184" duration="2812000" />
-      <workItem from="1572463317228" duration="3634000" />
+      <workItem from="1572463317228" duration="3999000" />
+      <workItem from="1572467649404" duration="171000" />
+      <workItem from="1572509755546" duration="2759000" />
+      <workItem from="1572792778685" duration="193000" />
+      <workItem from="1572794034617" duration="300000" />
+      <workItem from="1572799179739" duration="214000" />
+      <workItem from="1572801371543" duration="9000" />
+      <workItem from="1572867528798" duration="31000" />
+      <workItem from="1572867561956" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -246,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572369274913</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Kontakty now works">
+      <created>1572467284625</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572467284625</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +261,7 @@
     <MESSAGE value="migrations, controllers and models added" />
     <MESSAGE value="now is our web responsive :) (bootstrap added)" />
     <MESSAGE value="Missing files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Missing files added" />
+    <MESSAGE value="Kontakty now works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kontakty now works" />
   </component>
 </project>
