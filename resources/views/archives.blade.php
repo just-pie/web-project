@@ -25,7 +25,7 @@
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon" />
 
 </head>
 <body>
@@ -43,7 +43,15 @@
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
-			<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+			<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+				<ul>
+					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+					<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+					<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+					<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+					<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+				</ul>
+			</li>
 		</ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -75,7 +83,15 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
-								<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+								<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+									<ul>
+										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+										<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+										<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+										<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+										<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+									</ul>
+								</li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
