@@ -27,9 +27,9 @@ Route::get('/blog-single', function () {
     return view('blog-single');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/kontakt', [
+    'as' => 'kontakt', 'uses' => 'KontaktyController@showAllAction'
+]);
 
 Route::get('/granty', function () {
     return view('granty');

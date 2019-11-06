@@ -50,7 +50,7 @@
             </ul>
         </li>
         <li><a href="{{ url('/archives')}}">Archives</a></li>
-        <li><a href="{{ url('/contact')}}">Contact</a></li>
+        <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
     </ul> <!-- /.main_menu -->
 </div> <!-- /.responsive_menu -->
 
@@ -88,7 +88,7 @@
                                 </ul>
                             </li>
                             <li><a href="{{ url('/archives')}}">Archives</a></li>
-                            <li><a href="{{ url('/contact')}}">Contact</a></li>
+                            <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
                         </ul> <!-- /.sf-menu -->
                     </nav> <!-- /.main-nav -->
 
@@ -154,7 +154,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <p class="larger-text">Interested about hiring us ? Go ahead and talk with us on the <a href="contact.blade.php">contact page</a>. We'll be pleased to answer you within a few hours.</p>
+                <p class="larger-text">Interested about hiring us ? Go ahead and talk with us on the <a href="kontakt.blade.php">contact page</a>. We'll be pleased to answer you within a few hours.</p>
             </div> <!-- /.col-md-8 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -246,7 +246,7 @@
                         <li><a href="{{ url('/granty')}}">Granty</a></li>
                         <li><a href="{{ url('/blog')}}">Blog Posts</a></li>
                         <li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-                        <li><a href="{{ url('/contact')}}">Contact</a></li>
+                        <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
                     </ul> <!-- /.footer-menu -->
                 </nav> <!-- /.footer-nav -->
             </div> <!-- /.col-md-12 -->
