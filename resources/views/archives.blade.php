@@ -25,7 +25,7 @@
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon" />
 
 </head>
 <body>
@@ -33,13 +33,7 @@
 	<div class="responsive_menu">
 		<ul class="main_menu">
 			<li><a href="{{ url('/')}}">Domov</a></li>
-			<li><a href="{{ url('/granty')}}">Granty</a>
-				<ul>
-					<li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-					<li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-					<li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-					<li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-				</ul>
+			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 			</li>
 			<li><a href="{{ url('/blog')}}">Blog</a>
 				<ul>
@@ -49,7 +43,15 @@
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
-			<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+			<li><a href="{{ url('/kontakt')}}">Kontakt</a>
+				<ul>
+					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+					<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+					<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+					<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+					<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+				</ul>
+			</li>
 		</ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -71,13 +73,7 @@
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
 								<li class="active"><a href="{{url('/')}}">Home</a></li>
-								<li><a href="{{ url('/granty')}}">Granty</a>
-									<ul>
-										<li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-										<li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-										<li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-										<li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-									</ul>
+								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 								</li>
 								<li><a href="{{ url('/blog')}}">Blog</a>
 									<ul>
@@ -87,7 +83,15 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
-								<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+								<li><a href="{{ url('/kontakt')}}">Kontakt</a>
+									<ul>
+										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+										<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+										<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+										<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+										<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+									</ul>
+								</li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -246,7 +250,7 @@
 					<nav class="footer-nav clearfix">
 						<ul class="footer-menu">
 							<li><a href="{{url('/')}}">Domov</a></li>
-							<li><a href="{{ url('/granty')}}">Granty</a></li>
+							<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
 							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
 							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>

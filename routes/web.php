@@ -28,27 +28,30 @@ Route::get('/blog-single', function () {
 });
 
 Route::get('/kontakt', [
-    'as' => 'kontakt', 'uses' => 'KontaktyController@showAllAction'
+    'as' => 'kontakt', 'uses' => 'KontaktyController@showKontakt'
 ]);
 
-Route::get('/granty', function () {
-    return view('granty');
+Route::get('/kontaktff', [
+    'as' => 'kontaktff', 'uses' => 'KontaktyController@showKontaktff'
+]);
+
+Route::get('/kontaktfpv', [
+    'as' => 'kontaktfpv', 'uses' => 'KontaktyController@showKontaktfpv'
+]);
+
+Route::get('/kontaktfss', [
+    'as' => 'kontaktfss', 'uses' => 'KontaktyController@showKontaktfss'
+]);
+
+Route::get('/kontaktfsvaz', [
+    'as' => 'kontaktfsvaz', 'uses' => 'KontaktyController@showKontaktfsvaz'
+]);
+
+Route::get('/kontaktpf', [
+    'as' => 'kontaktpf', 'uses' => 'KontaktyController@showKontaktpf'
+]);
+
+Route::get('/vyzvy', function () {
+    return view('vyzvy');
 });
 
-Route::get('/granty-prednaskovypobyt', function () {
-    return view('granty-prednaskovypobyt');
-});
-
-Route::get('/granty-studijnypobyt', function () {
-    return view('granty-studijnypobyt');
-});
-
-Route::get('/granty-skolenie', function () {
-    return view('granty-skolenie');
-});
-
-Route::get('/granty-staz', function () {
-    return view('granty-staz');
-});
-
-Route::get('/rolyshow/{id}', 'RolyController@showAction');
