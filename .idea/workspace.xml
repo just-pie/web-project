@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/kontakt/kontaktff.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kontakt/kontaktfpv.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kontakt/kontaktfss.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kontakt/kontaktfsvaz.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kontakt/kontaktpf.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KontaktyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KontaktyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blue-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blue-scheme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/archives.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/archives.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog-single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog-single.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kontakt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kontakt/kontakt.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +201,7 @@
       <workItem from="1572867528798" duration="31000" />
       <workItem from="1572867561956" duration="802000" />
       <workItem from="1572935771983" duration="1708000" />
-      <workItem from="1573036943811" duration="2462000" />
+      <workItem from="1573036943811" duration="3327000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -254,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572935850941</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Contacts finished">
+      <created>1573039574092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573039574092</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +278,7 @@
     <MESSAGE value="Missing files added" />
     <MESSAGE value="Kontakty now works" />
     <MESSAGE value="Minor updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor updates" />
+    <MESSAGE value="Contacts finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contacts finished" />
   </component>
 </project>

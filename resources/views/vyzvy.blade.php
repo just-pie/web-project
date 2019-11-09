@@ -44,7 +44,7 @@
                 </ul>
             </li>
             <li><a href="{{ url('/archives')}}">Recenzie</a></li>
-            <li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+            <li><a href="{{ url('/kontakt')}}">Kontakt</a>
                 <ul>
                     <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
                     <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
@@ -84,7 +84,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="{{ url('/archives')}}">Archives</a></li>
-                                <li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+                                <li><a href="{{ url('/kontakt')}}">Kontakt</a>
                                     <ul>
                                         <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
                                         <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
