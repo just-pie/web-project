@@ -6,24 +6,39 @@ use App\Models\Kontakty;
 
 class KontaktyController extends Controller
 {
-    public function showAllAction()
+    public function showKontakt()
     {
         $kontakty = Kontakty::all();
-        return view("kontakt", ['kontakty' => $kontakty]);
+        return view("kontakt\kontakt", ['kontakty' => $kontakty]);
     }
 
-    public function insertAction()
+    public function showKontaktff()
     {
-
+        $kontakty = Kontakty::all();
+        return view("kontakt\kontaktff", ['kontakty' => $kontakty]);
     }
 
-    public function updateAction($id)
+    public function showKontaktfpv()
     {
-
+        $kontakty = Kontakty::all();
+        return view("kontakt\kontaktfpv", ['kontakty' => $kontakty]);
     }
 
-    public function deleteAction($id)
+    public function showKontaktpf()
     {
+        $kontakty = Kontakty::all();
+        return view("kontakt\kontaktpf", ['kontakty' => $kontakty]);
+    }
 
+    public function showKontaktfsvaz()
+    {
+        $kontakty = Kontakty::all();
+        return view("kontakt\kontaktfsvaz", ['kontakty' => $kontakty]);
+    }
+
+    public function showKontaktfss()
+    {
+        $kontakty = Kontakty::all();
+        return view("kontakt\kontaktfss", ['kontakty' => $kontakty]);
     }
 }

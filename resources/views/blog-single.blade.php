@@ -49,7 +49,15 @@
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
-			<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+			<li><a href="{{ url('/kontakt')}}">Kontakt</a>
+				<ul>
+					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+					<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+					<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+					<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+					<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+				</ul>
+			</li>
 		</ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -86,7 +94,15 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
-								<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+								<li><a href="{{ url('/kontakt')}}">Kontakt</a>
+									<ul>
+										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+										<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+										<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+										<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+										<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+									</ul>
+								</li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -332,7 +348,15 @@
 							<li><a href="{{ url('/portfolio')}}">Portfolio</a></li>
 							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+							<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+								<ul>
+									<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+									<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+									<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+									<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+									<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+								</ul>
+							</li>
 						</ul> <!-- /.footer-menu -->
 					</nav> <!-- /.footer-nav -->
 				</div> <!-- /.col-md-12 -->

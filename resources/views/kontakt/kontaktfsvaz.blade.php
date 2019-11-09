@@ -3,14 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Kontakty</title>
+	<title>Kontakty FSVaZ</title>
     <meta name="keywords" content="">
 	<meta name="description" content="">
     <meta name="author" content="templatemo">
-    <!-- 
-	Medigo Template
-	http://www.templatemo.com/preview/templatemo_460_medigo
-    -->
 
 	<!-- Google Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
@@ -44,7 +40,15 @@
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
-			<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+			<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+				<ul>
+                    <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+                    <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+                    <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+                    <li><a href="{{ url('/kontaktff')}}">FF</a></li>
+                    <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+				</ul>
+			</li>
 		</ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -75,7 +79,15 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
-								<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+								<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+									<ul>
+                                        <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+                                        <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+                                        <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+                                        <li><a href="{{ url('/kontaktff')}}">FF</a></li>
+                                        <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+									</ul>
+								</li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -100,10 +112,10 @@
 			<div class="container pageTitle">
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
-						<h2 class="page-title">Kontakt</h2>
+						<h2 class="page-title">Fakulta sociálnych vied a zdravotníctva</h2>
 					</div> <!-- /.col-md-6 -->
 					<div class="col-md-6 col-sm-6 text-right">
-						<span class="page-location">Domov / Kontakt</span>
+						<span class="page-location">Domov / Kontakt / FSVaZ</span>
 					</div> <!-- /.col-md-6 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
@@ -117,27 +129,29 @@
 				<ul class="list-group pull-down" id="contact-list">
 
 					@foreach($kontakty as $kontakt)
-					<li class="list-group-item">
-						<div class="row w-100">
-							<div class="text-center text-sm-left">
-								<label class="name lead">{{$kontakt->meno}}</label>
-								<br>
-                                <span class="text-muted">{{$kontakt->pozicia}}</span>
-                                <br>
-								<span class="fa fa-building-o fa-fw text-muted" data-toggle="tooltip"></span>
-								<span class="text-muted">{{$kontakt->fakulta}}</span>
-								<br>
-								<span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip"></span>
-								<span class="text-muted">{{$kontakt->email}}</span>
-								<br>
-								<span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip"></span>
-								<span class="text-muted small">{{$kontakt->telefon}}</span>
-								<br>
-								<span class="fa fa-crosshairs fa-fw text-muted" data-toggle="tooltip"></span>
-								<span class="text-muted small text-truncate">{{$kontakt->poznamka}}</span>
-							</div>
-						</div>
-					</li>
+						@if ($kontakt->fakulta == 'Fakulta sociálnych vied a zdravotníctva')
+							<li class="list-group-item">
+								<div class="row w-100">
+									<div class="text-center text-sm-left">
+										<label class="name lead">{{$kontakt->meno}}</label>
+										<br>
+										<span class="text-muted">{{$kontakt->pozicia}}</span>
+										<br>
+										<span class="fa fa-building-o fa-fw text-muted" data-toggle="tooltip"></span>
+										<span class="text-muted">{{$kontakt->fakulta}}</span>
+										<br>
+										<span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip"></span>
+										<span class="text-muted">{{$kontakt->email}}</span>
+										<br>
+										<span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip"></span>
+										<span class="text-muted small">{{$kontakt->telefon}}</span>
+										<br>
+										<span class="fa fa-crosshairs fa-fw text-muted" data-toggle="tooltip"></span>
+										<span class="text-muted small text-truncate">{{$kontakt->poznamka}}</span>
+									</div>
+								</div>
+							</li>
+						@endif
 					@endforeach
 
 				</ul>
