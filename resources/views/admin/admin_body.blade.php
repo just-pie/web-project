@@ -3,19 +3,10 @@
     <div class="container-fluid p-5">
         <div class="row">
             <div class="form-group col-md-12">
-                <h2>Pro Sidebar</h2>
-                <p>This is a responsive sidebar template with dropdown menu based on bootstrap framework.</p>
+                <h2>Admin rozhranie</h2>
+                <p>Toto je rozhranie pre admina.</p>
 
             </div>
-            <div class="form-group col-md-12">
-                <iframe
-                        src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=small"
-                        frameborder="0" scrolling="0" width="100px" height="30px"></iframe>
-                <iframe
-                        src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=small"
-                        frameborder="0" scrolling="0" width="100px" height="30px"></iframe>
-            </div>
-
             <div class="form-group col-md-12">
                 <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#">
                     <span>Toggle Sidebar</span>
@@ -71,10 +62,9 @@
         <hr>
         <div class="row ">
             <div class="form-group col-md-12">
-                <small>Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <span
-                            class="text-secondary font-weight-bold">Mohamed
-                                Azouaoui</span></small>
+                <small>Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i>.</small>
             </div>
+            {{--
             <div class="form-group col-md-12">
                 <a href="https://github.com/azouaoui-med" target="_blank"
                    class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
@@ -92,7 +82,8 @@
                    class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-            </div>
+            </div>--}}
+
         </div>
     </div>
 </main>

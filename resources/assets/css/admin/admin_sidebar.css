@@ -410,7 +410,9 @@ body {
         padding-left: 280px; } }
 @media screen and (max-width: 768px) {
     .page-wrapper.toggled .page-content .overlay {
-        display: block; } }
+        /*display: block; } */
+    }
+}
 @media screen and (min-width: 768px) {
     .page-wrapper.toggled.pinned .page-content {
         padding-left: 80px; } }
