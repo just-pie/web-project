@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Granty</title>
+	<title>Výzvy</title>
     <meta name="keywords" content="">
 	<meta name="description" content="">
     <meta name="author" content="templatemo">
@@ -34,13 +34,7 @@
 	<div class="responsive_menu">
         <ul class="main_menu">
             <li><a href="{{ url('/')}}">Home</a></li>
-            <li class="active"><a href="{{ url('/granty')}}">Granty</a>
-                <ul>
-                    <li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-                    <li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-                    <li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-                    <li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-                </ul>
+            <li class="active"><a href="{{ url('/vyzvy')}}">Výzvy</a>
             </li>
             <li><a href="{{ url('/blog')}}">Informácie</a>
                 <ul>
@@ -50,7 +44,15 @@
                 </ul>
             </li>
             <li><a href="{{ url('/archives')}}">Recenzie</a></li>
-            <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+            <li><a href="{{ url('/kontakt')}}">Kontakt</a>
+                <ul>
+                    <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+                    <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+                    <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+                    <li><a href="{{ url('/kontaktff')}}">FF</a></li>
+                    <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+                </ul>
+            </li>
         </ul> <!-- /.main_menu -->
     </div> <!-- /.responsive_menu -->
 
@@ -72,13 +74,7 @@
 						<nav class="main-nav visible-md visible-lg">
                             <ul class="sf-menu">
                                 <li><a href="{{url('/')}}">Domov</a></li>
-                                <li class="active"><a href="{{ url('/granty')}}">Granty</a>
-                                    <ul>
-                                        <li><a href="{{ url('/granty-studijnypobyt')}}">Študijné pobyty</a></li>
-                                        <li><a href="{{ url('/granty-staz')}}">Stáže</a></li>
-                                        <li><a href="{{ url('/granty-prednaskovypobyt')}}">Prednáškové pobyty</a></li>
-                                        <li><a href="{{ url('/granty-skolenie')}}">Školenia</a></li>
-                                    </ul>
+                                <li class="active"><a href="{{ url('/vyzvy')}}">Výzvy</a>
                                 </li>
                                 <li><a href="{{ url('/blog')}}">Blog</a>
                                     <ul>
@@ -88,7 +84,15 @@
                                     </ul>
                                 </li>
                                 <li><a href="{{ url('/archives')}}">Archives</a></li>
-                                <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
+                                <li><a href="{{ url('/kontakt')}}">Kontakt</a>
+                                    <ul>
+                                        <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+                                        <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+                                        <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+                                        <li><a href="{{ url('/kontaktff')}}">FF</a></li>
+                                        <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+                                    </ul>
+                                </li>
                             </ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
@@ -113,10 +117,10 @@
 			<div class="container pageTitle">
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
-						<h2 class="page-title">Naše granty</h2>
+						<h2 class="page-title">Naše výzvy</h2>
 					</div> <!-- /.col-md-6 -->
 					<div class="col-md-6 col-sm-6 text-right">
-						<span class="page-location">Domov / Granty</span>
+						<span class="page-location">Domov / Výzvy</span>
 					</div> <!-- /.col-md-6 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
@@ -146,7 +150,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Nemecko</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">University Passau</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">University Passau</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/projekt1.jpg" title="University Passau">
@@ -165,7 +169,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Branding</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Compass Template</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Compass Template</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project2.jpg" title="Compass Template">
@@ -184,7 +188,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Illustration</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Awesome Theme</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Awesome Theme</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project3.jpg" title="Awesome Theme">
@@ -203,7 +207,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Illustration</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Volton Personal Site</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Volton Personal Site</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project4.jpg" title="Volton Personal Site">
@@ -222,7 +226,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Business</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Rectangle Design</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Rectangle Design</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project5.jpg" title="Rectangle Design">
@@ -241,7 +245,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Branding</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Masonry Gallery</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Masonry Gallery</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project6.jpg" title="Masonry Gallery">
@@ -260,7 +264,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Branding / Identity</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Gloss Template</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Gloss Template</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project7.jpg" title="Gloss Template">
@@ -279,7 +283,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Identity / Illustration</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Ion Template</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Ion Template</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project8.jpg" title="Ion Template">
@@ -298,7 +302,7 @@
                             <div class="overlay-inner">
                                 <div class="portfolio-infos">
                                     <span class="meta-category">Branding</span>
-                                    <h3 class="portfolio-title"><a href="granty-studijnypobyt.blade.php">Freshness</a></h3>
+                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Freshness</a></h3>
                                 </div>
                                 <div class="portfolio-expand">
                                     <a class="fancybox" href="images/includes/project9.jpg" title="Freshness">
@@ -336,7 +340,7 @@
 					<nav class="footer-nav clearfix">
 						<ul class="footer-menu">
 							<li><a href="{{url('/')}}">Domov</a></li>
-							<li><a href="{{ url('/granty')}}">Granty</a></li>
+							<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
 							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
 							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
 							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
