@@ -7,7 +7,7 @@
             <!-- sidebar-header  -->
             <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                 <div class="user-pic">
-                    <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                    <img class="img-responsive img-rounded" src="../../assets/img/admin_avatar.png" alt="User picture">
                 </div>
                 <div class="user-info">
                         <span class="user-name">Jhon
@@ -246,7 +246,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="img/user.jpg" alt="">
+                                <img src="../../assets/img/admin_avatar.png" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">
@@ -261,7 +261,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="img/user.jpg" alt="">
+                                <img src="../../assets/img/admin_avatar.png" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">
@@ -276,7 +276,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="img/user.jpg" alt="">
+                                <img src="../../assets/img/admin_avatar.png" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">
