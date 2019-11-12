@@ -56,7 +56,6 @@ Route::get('/vyzvy', function () {
 });
 
 Route::get('/admin', [
-    'as' => 'admin', 'uses' => 'AdminController@showAdmin'
-]);
+    'as' => 'admin', 'uses' => 'AdminController@showAdmin']);
 
 

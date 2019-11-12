@@ -3,15 +3,16 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Http\Requests;
 
-use Illuminate\Routing\Controller as BaseController;
-
-class AdminController extends BaseController
+class AdminController extends Controller
 {
 
     public function showAdmin()
     {
-        return view("admin\admin");
+
+        return \View::make('admin.admin');;
     }
 
 }

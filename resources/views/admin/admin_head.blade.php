@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
 
-    <link rel="stylesheet" href="../../assets/css/admin_sidebar.css">
-    <link rel="stylesheet" href="../../assets/css/admin_sidebar_themes.css">
+    <link rel="stylesheet" href="../../assets/css/admin/admin_sidebar.css">
+    <link rel="stylesheet" href="../../assets/css/admin/admin_sidebar_themes.css">
 {{--    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />--}}
 </head>
