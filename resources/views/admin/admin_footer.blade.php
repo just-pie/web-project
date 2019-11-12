@@ -15,4 +15,4 @@
 <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
 
 
-<script src="../../assets/js/admin_sidebar/main.js"></script>
+<script src="../resources/assets/js/admin_sidebar/main.js"></script>

@@ -84,6 +84,5 @@ jQuery(function ($) {
             scrollInertia: 300
         });
         $(".sidebar-content").addClass("desktop");
-
     }
 });
