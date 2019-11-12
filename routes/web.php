@@ -51,7 +51,14 @@ Route::get('/kontaktpf', [
     'as' => 'kontaktpf', 'uses' => 'KontaktyController@showKontaktpf'
 ]);
 
-Route::get('/vyzvy', function () {
-    return view('vyzvy');
-});
+Route::get('/vyzvy', [
+    'as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy'
+]);
 
+Route::get('/vyzva/{id}', [
+    'as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva'
+    ]);
+
+Route::get('/vyzva', function () {
+    return view('vyzva');
+});

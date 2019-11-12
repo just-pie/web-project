@@ -144,176 +144,34 @@
 	<div class="container">
 		<div class="row">
 			<div class="portfolio-holder" id="Grid">
+                @foreach($vyzvy as $vyzva)
+					@foreach($vyzva->univerzity as $univerzita)
 				<div class="portfolio-post col-sm-6 col-md-4 mix studijne">
 					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Nemecko</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">University Passau</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/projekt1.jpg" title="University Passau">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/projekt1.jpg" alt="Visual Admin">
-					</div>
-				</div> <!-- /.col-md-4 -->
+						<div class="overlay-inner"><img src="{{ asset('images/includes/passau.jpg') }}" alt="Visual Admin">
+							<div class="portfolio-infos">
+								<h3 style="color: white">{{$univerzita->nazov}}</h3>
+							</div>
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix studijne">
-					<div class="thumb-post">
+						</div>
 						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Branding</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Compass Template</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project2.jpg" title="Compass Template">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
+							<div class="overlay-inner">
+								<div class="portfolio-infos">
+									<span class="meta-category">{{$vyzva->nazov}}</span>
+									<h3 class="portfolio-title">{{$univerzita->nazov}}</h3>
+								</div>
+								<div class="portfolio-expand">
+									<a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
+										<i class="fa fa-expand"></i>
+									</a>
+								</div>
+							</div>
                         </div>
-                        <img src="images/includes/project2.jpg" alt="Compass Template">
-					</div>
-				</div> <!-- /.col-md-4 -->
 
-				<div class="portfolio-post col-sm-6 col-md-4 mix staze">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Illustration</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Awesome Theme</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project3.jpg" title="Awesome Theme">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project3.jpg" alt="Awesome Theme">
 					</div>
 				</div> <!-- /.col-md-4 -->
-
-				<div class="portfolio-post col-sm-6 col-md-4 mix staze">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Illustration</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Volton Personal Site</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project4.jpg" title="Volton Personal Site">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project4.jpg" alt="Volton Personal Site">
-					</div>
-				</div> <!-- /.col-md-4 -->
-
-				<div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Business</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Rectangle Design</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project5.jpg" title="Rectangle Design">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project5.jpg" alt="Rectangle Design">
-					</div>
-				</div> <!-- /.col-md-4 -->
-
-				<div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Branding</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Masonry Gallery</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project6.jpg" title="Masonry Gallery">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project6.jpg" alt="Masonry Gallery">
-					</div>
-				</div> <!-- /.col-md-4 -->
-
-				<div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Branding / Identity</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Gloss Template</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project7.jpg" title="Gloss Template">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project7.jpg" alt="Gloss Template">
-					</div>
-				</div> <!-- /.col-md-4 -->
-
-				<div class="portfolio-post col-sm-6 col-md-4 mix staze">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Identity / Illustration</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Ion Template</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project8.jpg" title="Ion Template">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project8.jpg" alt="Ion Template">
-					</div>
-				</div> <!-- /.col-md-4 -->
-
-				<div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
-					<div class="thumb-post">
-						<div class="overlay">
-                            <div class="overlay-inner">
-                                <div class="portfolio-infos">
-                                    <span class="meta-category">Branding</span>
-                                    <h3 class="portfolio-title"><a href="vyzvy.blade.php">Freshness</a></h3>
-                                </div>
-                                <div class="portfolio-expand">
-                                    <a class="fancybox" href="images/includes/project9.jpg" title="Freshness">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/includes/project9.jpg" alt="Freshness">
-					</div>
-				</div> <!-- /.col-md-4 -->
+						@endforeach
+                @endforeach
 				
 			</div> <!-- /.portfolio-holder -->
 		</div> <!-- /.row -->

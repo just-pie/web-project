@@ -17,13 +17,6 @@ class CreateSpravyTable extends Migration
             $table->increments('idspravy');
             $table->text('text');
         });
-
-        Schema::table('spravy', function($table) {
-            $table->integer('pouzivatelia_idpouzivatelia')->unsigned();
-            $table->foreign('pouzivatelia_idpouzivatelia')->references('idpouzivatelia')->on('pouzivatelia');
-            $table->integer('vyzvy_idvyzvy')->unsigned();
-            $table->foreign('vyzvy_idvyzvy')->references('idvyzvy')->on('vyzvy');
-        });
     }
 
     /**

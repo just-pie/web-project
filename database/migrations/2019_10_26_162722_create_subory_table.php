@@ -18,13 +18,6 @@ class CreateSuboryTable extends Migration
             $table->string('adresa', 45);
             $table->string('nazov', 45);
         });
-
-        Schema::table('subory', function($table) {
-            $table->integer('spravy_idspravy')->unsigned();
-            $table->foreign('spravy_idspravy')->references('idspravy')->on('spravy');
-            $table->integer('typ-vyzvy_idtyp-vyzvy')->unsigned();
-            $table->foreign('typ-vyzvy_idtyp-vyzvy')->references('idtyp-vyzvy')->on('typvyzvy');
-        });
     }
 
     /**

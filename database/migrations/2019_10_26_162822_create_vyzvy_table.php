@@ -15,12 +15,7 @@ class CreateVyzvyTable extends Migration
     {
         Schema::create('vyzvy', function (Blueprint $table) {
             $table->increments('idvyzvy');
-            $table->string('nazov', 45);
-        });
-
-        Schema::table('vyzvy', function($table) {
-            $table->integer('typ-vyzvy_idtyp-vyzvy')->unsigned();
-            $table->foreign('typ-vyzvy_idtyp-vyzvy')->references('idtyp-vyzvy')->on('typvyzvy');
+            $table->string('nazov', 200);
         });
     }
 
