@@ -11,4 +11,9 @@ class Typvyzvy extends Model
     protected $primaryKey = 'idtyp-vyzvy';
 
     protected $fillable = ['typ'];
+
+    public function vyzvy()
+    {
+        return $this->hasMany('App\Models\Vyzvy', 'typ-vyzvy_idtyp-vyzvy');
+    }
 }

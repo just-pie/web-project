@@ -6,10 +6,9 @@ use App\Models\Krajiny;
 
 class KrajinyController extends Controller
 {
-    public function showAction($id)
+    public function showAction()
     {
-        $krajiny = Krajiny::find($id);
-        echo $krajiny->krajina;
+
     }
 
     public function insertAction()

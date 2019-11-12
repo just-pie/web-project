@@ -20,10 +20,6 @@ class CreatePouzivateliaTable extends Migration
             $table->string('email', 50)->unique();
         });
 
-       Schema::table('pouzivatelia', function($table) {
-        $table->integer('roly_idroly')->unsigned();
-        $table->foreign('roly_idroly')->references('idroly')->on('roly');
-    });
     }
 
     /**

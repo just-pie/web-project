@@ -11,4 +11,9 @@ class Krajiny extends Model
     protected $primaryKey = 'idkrajiny';
 
     protected $fillable = ['krajina', 'kontinent'];
+
+    public function univerzity()
+    {
+        return $this->hasMany('App\Models\Univerzity', 'krajiny_idkrajiny');
+    }
 }

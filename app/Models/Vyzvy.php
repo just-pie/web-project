@@ -11,4 +11,15 @@ class Vyzvy extends Model
     protected $primaryKey = 'idvyzvy';
 
     protected $fillable = ['nazov'];
+
+    public function univerzity()
+    {
+        return $this->belongsToMany('App\Models\Univerzity', 'univerzity_has_vyzvy', 'vyzvy_idvyzvy', 'univerzity_iduniverzity');
+    }
+
+    public function typvyzvy()
+    {
+        return $this->belongsTo('App\Models\Typvyzvy');
+    }
+
 }

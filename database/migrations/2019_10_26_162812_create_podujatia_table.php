@@ -19,13 +19,6 @@ class CreatePodujatiaTable extends Migration
             $table->date('datum');
             $table->string('miesto', 45);
         });
-
-        Schema::table('podujatia', function($table) {
-            $table->integer('pouzivatelia_idpouzivatelia')->unsigned();
-            $table->foreign('pouzivatelia_idpouzivatelia')->references('idpouzivatelia')->on('pouzivatelia');
-            $table->integer('vyzvy_idvyzvy')->unsigned();
-            $table->foreign('vyzvy_idvyzvy')->references('idvyzvy')->on('vyzvy');
-        });
     }
 
     /**
