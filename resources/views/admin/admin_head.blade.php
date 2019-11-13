@@ -20,5 +20,5 @@
 
     <link rel="stylesheet" href="../resources/assets/css/admin/admin_sidebar.css">
     <link rel="stylesheet" href="../resources/assets/css/admin/admin_sidebar_themes.css">
-{{--    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />--}}
+    <link rel="shortcut icon" type="image/png" href="../resources/assets/img/favicon.png" />
 </head>

@@ -9,7 +9,7 @@
                         <span class="user-name">John
                             <strong>Smith</strong>
                         </span>
-                    <span class="user-role">Administrator</span>
+                    <span class="user-role">Administrátor</span>
                     <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -33,13 +33,13 @@
             <div class=" sidebar-item sidebar-menu">
                 <ul>
                     <li class="header-menu">
-                        <span>General</span>
+                        <span>Všeobecné</span>
                     </li>
                     <li class="sidebar-dropdown">
                         <a href="#">
                             <i class="fa fa-tachometer-alt"></i>
-                            <span class="menu-text">Dashboard</span>
-                            <span class="badge badge-pill badge-warning">New</span>
+                            <span class="menu-text">Nástenka</span>
+{{--                            <span class="badge badge-pill badge-warning">New</span>--}}
                         </a>
                         <div class="sidebar-submenu">
                             <ul>
