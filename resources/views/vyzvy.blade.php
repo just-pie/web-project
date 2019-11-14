@@ -1,7 +1,5 @@
 @include('includes.head', ['title' => 'Výzvy'])
 <body>
-
-
 <div class="responsive_menu">
     <ul class="main_menu">
         <li><a href="{{ url('/')}}">Domov</a></li>
@@ -117,13 +115,13 @@
         <div class="portfolio-holder" id="Grid">
             @foreach($vyzvy as $vyzva)
                 @foreach($vyzva->univerzity as $univerzita)
-                    <div class="portfolio-post col-sm-6 col-md-4 mix {{$univerzita->nazov}}">
+                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
                         @endforeach
                         @foreach($vyzva->univerzity as $univerzita)
                             <div class="thumb-post">
                                 <div class="overlay-inner"><img src="{{$univerzita->foto}}" alt="Visual Admin">
                                     <div class="portfolio-infos">
-                                        <h3 style="color: white">{{$univerzita->nazov}}</h3>
+                                        <h3 style="color: white">{{$vyzva->nazov}}</h3>
                                     </div>
 
                                 </div>

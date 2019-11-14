@@ -1,7 +1,5 @@
 @include('includes.head', ['title' => 'Výzva'])
 <body>
-
-
 <div class="responsive_menu">
     <ul class="main_menu">
         <li><a href="{{ url('/')}}">Domov</a></li>
@@ -36,7 +34,7 @@
 
                 <div class="pull-left logo">
                     <a href="{{url('/')}}">
-                        <img src="{{ asset('images/logo.png') }}" alt="UKF_logo">
+                        <img src="images/logo.png" alt="UKF_logo">
                     </a>
                 </div>	<!-- /.logo -->
 

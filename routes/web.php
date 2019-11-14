@@ -67,9 +67,6 @@ Route::get('/vyzva/{id}', [
     'as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva'
     ]);
 
-Route::get('/vyzva', function () {
-    return view('vyzva');
-});
 
 Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);
 Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@showUsers']);
