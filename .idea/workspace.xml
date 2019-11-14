@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/includes/chemnitz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/includes/passau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vyzva.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/bin/jp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/bin/jp.php.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KrajinyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KrajinyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Krajiny.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Krajiny.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Typvyzvy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Typvyzvy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Univerzity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Univerzity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Vyzvy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Vyzvy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162722_create_subory_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162722_create_subory_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162753_create_spravy_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162753_create_spravy_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162812_create_podujatia_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162812_create_podujatia_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_26_162822_create_vyzvy_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_26_162822_create_vyzvy_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_30_102830_create_pouzivatelia_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_102830_create_pouzivatelia_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_30_110049_create_kontakty_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_110049_create_kontakty_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_30_194306_create_univerzity_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_194306_create_univerzity_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_30_194418_create_univerzity_has_vyzvy_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_194418_create_univerzity_has_vyzvy_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -412,6 +381,7 @@
       <workItem from="1572935771983" duration="1708000" />
       <workItem from="1573036943811" duration="3327000" />
       <workItem from="1573289077706" duration="23514000" />
+      <workItem from="1573541356994" duration="1886000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -477,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573289184420</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Minor updates">
+      <created>1573541434209</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573541434209</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
