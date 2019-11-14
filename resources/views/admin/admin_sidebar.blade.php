@@ -36,26 +36,11 @@
                         <span>Všeobecné</span>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#">
+                        <a href="{{ url('admin') }}">
                             <i class="fa fa-tachometer-alt"></i>
                             <span class="menu-text">Nástenka</span>
 {{--                            <span class="badge badge-pill badge-warning">New</span>--}}
                         </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Dashboard 1
-                                        <span class="badge badge-pill badge-success">Pro</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">Dashboard 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Dashboard 3</a>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
                     <li class="sidebar-dropdown user-icon">
                         <a href="#">
@@ -66,7 +51,7 @@
                         <div class="sidebar-submenu">
                             <ul>
                                 <li>
-                                    <a href="{{ url('admin/users') }}">
+                                    <a href="{{ url('admin-users') }}">
                                         Tabuľka používateľov
                                     </a>
                                 </li>

@@ -22,7 +22,7 @@
     <div class="container">
         <table id="myTable" class="table table-striped" >
             <thead>
-            <tr class="bg-primary">
+            <tr>
                 <th scope="col">ID</th>
                 <th scope="col" >Priezvisko a meno</th>
                 <th scope="col" >E-mail</th>

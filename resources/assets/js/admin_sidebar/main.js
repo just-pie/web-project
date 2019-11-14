@@ -19,7 +19,7 @@ jQuery(function ($) {
         $(".page-wrapper").toggleClass("toggled");
     });
     //Pin sidebar
-    $("#pin-sidebar").click(function () {
+
         if ($(".page-wrapper").hasClass("pinned")) {
             // unpin sidebar when hovered
             $(".page-wrapper").removeClass("pinned");
@@ -38,7 +38,7 @@ jQuery(function ($) {
             )
 
         }
-    });
+
 
 
     //toggle sidebar overlay
