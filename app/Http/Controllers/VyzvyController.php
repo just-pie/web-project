@@ -6,24 +6,16 @@ use App\Models\Vyzvy;
 
 class VyzvyController extends Controller
 {
-    public function showAction($id)
+    public function showVyzvy()
     {
-        $vyzvy = Vyzvy::find($id);
-        echo $vyzvy->nazov;
+        $vyzvy = Vyzvy::all();
+        return view("vyzvy", ['vyzvy' => $vyzvy]);
     }
 
-    public function insertAction()
+    public function showVyzva($id)
     {
-
+        $vyzva = Vyzvy::find($id);
+        return view("vyzva", ['vyzva' => $vyzva]);
     }
 
-    public function updateAction($id)
-    {
-
-    }
-
-    public function deleteAction($id)
-    {
-
-    }
 }

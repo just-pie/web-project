@@ -13,18 +13,26 @@
 
 Route::get('/', function () {
     return view('index');
-})->name('index');;
+});
 
 Route::get('/archives', function () {
     return view('archives');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/info', function () {
+    return view('info/info');
 });
 
-Route::get('/blog-single', function () {
-    return view('blog-single');
+Route::get('/infopred', function () {
+    return view('info/infopred');
+});
+
+Route::get('/infopocas', function () {
+    return view('info/infopocas');
+});
+
+Route::get('/infopo', function () {
+    return view('info/infopo');
 });
 
 Route::get('/kontakt', [
@@ -51,12 +59,19 @@ Route::get('/kontaktpf', [
     'as' => 'kontaktpf', 'uses' => 'KontaktyController@showKontaktpf'
 ]);
 
-Route::get('/vyzvy', function () {
-    return view('vyzvy');
-});
-
-//Admin
 Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);
 Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@showUsers']);
 Route::post('/addUser', ['as' => 'addUser','uses' => 'AdminController@addUser']);
 
+
+Route::get('/vyzvy', [
+    'as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy'
+]);
+
+Route::get('/vyzva/{id}', [
+    'as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva'
+    ]);
+
+Route::get('/vyzva', function () {
+    return view('vyzva');
+});

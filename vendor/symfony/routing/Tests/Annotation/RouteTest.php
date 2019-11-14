@@ -19,7 +19,7 @@ class RouteTest extends TestCase
     public function testInvalidRouteParameter()
     {
         $this->expectException('BadMethodCallException');
-        new Route(['foo' => 'bar']);
+        $route = new Route(['foo' => 'bar']);
     }
 
     /**
