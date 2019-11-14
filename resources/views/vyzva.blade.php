@@ -36,7 +36,7 @@
         <li><a href="{{ url('/')}}">Domov</a></li>
         <li class="active"><a href="{{ url('/vyzvy')}}">Výzvy</a>
         </li>
-        <li><a href="{{ url('/blog')}}">Blog</a>
+        <li><a href="{{ url('/blog')}}">Informácie</a>
             <ul>
                 <li><a href="{{ url('/blog')}}">Blog Standard</a></li>
                 <li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
@@ -73,10 +73,10 @@
 
                     <nav class="main-nav visible-md visible-lg">
                         <ul class="sf-menu">
-                            <li><a href="{{url('/')}}">Domov</a></li>
-                            <li class="active"><a  href="{{ url('/vyzvy')}}">Výzvy</a>
+                            <li><a href="{{ url('/')}}">Domov</a></li>
+                            <li class="active"><a href="{{ url('/vyzvy')}}">Výzvy</a>
                             </li>
-                            <li><a href="{{ url('/blog')}}">Blog</a>
+                            <li><a href="{{ url('/blog')}}">Informácie</a>
                                 <ul>
                                     <li><a href="{{ url('/blog')}}">Blog Standard</a></li>
                                     <li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
