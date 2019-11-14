@@ -57,17 +57,17 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="sidebar-dropdown">
+                    <li class="sidebar-dropdown user-icon">
                         <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
-                            <span class="menu-text">E-commerce</span>
+                            <i class="fa fa-user"></i>
+                            <span class="menu-text">Používatelia</span>
                             <span class="badge badge-pill badge-danger">3</span>
                         </a>
                         <div class="sidebar-submenu">
                             <ul>
                                 <li>
-                                    <a href="#">Products
-
+                                    <a href="{{ url('admin/users') }}">
+                                        Tabuľka používateľov
                                     </a>
                                 </li>
                                 <li>
@@ -242,7 +242,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="../../assets/img/admin_avatar.png" alt="">
+                                <img src="../resources/assets/img/admin_avatar.png" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">

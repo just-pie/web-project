@@ -477,6 +477,7 @@ body {
 
 /*---- border-radius ------*/
 .boder-radius-on .sidebar-header .user-pic {
+
     border-radius: 12px; }
 
 .boder-radius-on .badge {

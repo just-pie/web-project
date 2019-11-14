@@ -10,5 +10,5 @@ class Pouzivatelia extends Model
 
     protected $primaryKey = 'idpouzivatelia';
 
-    protected $fillable = ['priezvisko', 'meno'];
+    protected $fillable = ['meno', 'priezvisko', 'email', 'datum_narodenia', 'login', 'heslo', 'roly_idroly'];
 }

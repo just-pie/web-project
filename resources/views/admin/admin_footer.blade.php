@@ -16,3 +16,8 @@
 
 
 <script src="../resources/assets/js/admin_sidebar/main.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#myTable').dataTable();
+    });
+</script>
