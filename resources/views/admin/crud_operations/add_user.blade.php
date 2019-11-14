@@ -28,7 +28,7 @@
                         </div>
                         <input type="email" class="form-control" aria-label="email"
                                aria-describedby="basic-addon1" name="email" id="email" required>
-                    </div
+                    </div>
                     <br>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -45,7 +45,6 @@
                         </div>
                         <select class="custom-select" id="rola" name="rola" required>
                             <option selected>Vyberte...</option>
-                            <option value="1">Administrátor</option>
                             <option value="2">Študent</option>
                             <option value="3">Modetátor</option>
                         </select>

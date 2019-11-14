@@ -27,10 +27,6 @@ class CreateUsersTable extends Migration
             $table->integer('roly_idroly')->unsigned();
             $table->foreign('roly_idroly')->references('roly_idroly')->on('roly');
         });
-<<<<<<< HEAD:database/migrations/2019_11_13_235916_create_users_table.php
-=======
-
->>>>>>> master:database/migrations/2019_11_13_185223_create_pouzivatelia_table.php
     }
 
     /**

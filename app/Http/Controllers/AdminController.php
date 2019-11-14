@@ -45,14 +45,40 @@ class AdminController extends Controller
 
     public function showUsers()
     {
+        $countRecentlyAddedUsers = $this->countRecentlyAddedUsers();
+        $countAllUsers = $this->countAllUsers();
+
         $page_name = 'admin.admin_body.admin_users';
         $users = \DB::table('pouzivatelia')
             ->select(['pouzivatelia.idpouzivatelia', 'pouzivatelia.meno', 'pouzivatelia.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola'])
             ->join('roly', 'roly.idroly', '=', 'pouzivatelia.roly_idroly')
             ->get();
 
-        return view("admin.admin", ['users'=>$users])->with('page_name', $page_name);
+        $data = [
+            'page_name'  => $page_name,
+            'countRecentlyAddedUsers'   => $countRecentlyAddedUsers,
+            'countAllUsers' => $countAllUsers
+        ];
+
+        return view("admin.admin", ['users'=>$users])->with($data);
     }
+
+    public function countRecentlyAddedUsers(){
+        $count = \DB::table('pouzivatelia')
+            ->select(\DB::raw('COUNT(*) as pocet'))
+            ->where('created_at', '>', 'NOW() - INTERVAL 7 DAY')
+            ->value('pocet');
+
+        return $count;
+}
+
+public function countAllUsers(){
+    $count = \DB::table('pouzivatelia')
+        ->select(\DB::raw('COUNT(*) as pocet'))
+        ->value('pocet');
+
+    return $count;
+}
 
     public function logout(Request $request)
     {

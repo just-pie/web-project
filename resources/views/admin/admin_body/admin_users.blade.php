@@ -3,10 +3,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                Tu bude počet používateľov.
+                Počet všetkých používateľov:
+                {{$countAllUsers}}
             </div>
             <div class="col-sm">
-                Tu bude počet nových používateľov.
+                Počet nových používateľov za posledný týždeň:
+                {{$countRecentlyAddedUsers}}
             </div>
             <div class="col-sm">
                 Tu bude počet aktívnych používateľov.
