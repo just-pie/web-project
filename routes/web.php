@@ -63,11 +63,18 @@ Route::get('/vyzvy', [
     'as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy'
 ]);
 
-Route::get('/vyzva/{id}', [
-    'as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva'
-    ]);
+Route::get('/vyzva{id}', [
+    'as' => '', 'uses' => 'VyzvyController@showVyzva'
+]);
 
+Route::get('/admin', [
+    'as' => 'admin', 'uses' => 'AdminController@showDashboard'
+]);
 
-Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);
-Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@showUsers']);
-Route::post('/addUser', ['as' => 'addUser','uses' => 'AdminController@addUser']);
+Route::get('/admin-users', [
+    'as' => 'admin-users', 'uses' => 'AdminController@showUsers'
+]);
+
+Route::post('/addUser', [
+    'as' => 'addUser','uses' => 'AdminController@addUser'
+]);

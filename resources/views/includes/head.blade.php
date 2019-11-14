@@ -22,8 +22,9 @@
     <link rel="stylesheet" href="css/blue-scheme.css">
 
     <!-- JavaScripts -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="http://localhost/web_project/public/js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost/web_project/public/js/jquery-migrate-1.2.1.min.js"></script>
 
     <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon" />
 
