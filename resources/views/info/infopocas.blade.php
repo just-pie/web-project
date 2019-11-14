@@ -88,10 +88,10 @@
 			<div class="container pageTitle">
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
-						<h2 class="page-title">Blog Single</h2>
+						<h2 class="page-title">Informácie potrebné počas mobility</h2>
 					</div> <!-- /.col-md-6 -->
 					<div class="col-md-6 col-sm-6 text-right">
-						<span class="page-location">Home / Blog Single</span>
+						<span class="page-location">Domov / Info počas mobility</span>
 					</div> <!-- /.col-md-6 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
@@ -105,132 +105,12 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="post-blog">
-							<div class="blog-image">
-								<img src="images/includes/blog2.jpg" alt="">
-							</div> <!-- /.blog-image -->
-							<div class="blog-content">
-								<span class="meta-date"><a href="#">24 February 2084</a></span>
-								<span class="meta-comments"><a href="#blog-comments">3 Comments</a></span>
-								<span class="meta-author"><a href="#blog-author">Candy Sharp</a></span>
-								<h3>Standard Blog Post Formating Medigo</h3>
-								<p>Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-								<p>Nostrum, quibusdam, eaque, numquam, fuga dolores libero amet suscipit in saepe optio facilis aperiam nulla iste molestiae reprehenderit facere dolorem illum ea quam incidunt est quos odio. Aperiam, repellendus, at, eaque quas eligendi ut ipsum voluptate vero fugiat molestiae labore eius similique cumque necessitatibus sequi dolore quam enim nostrum.</p>
-								<blockquote>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quisquam, aut, eum, natus excepturi impedit ipsa rerum ratione id dolores ducimus minus eos quod veniam similique fugit illum error facilis!
-								</blockquote>
-								<p>Culpa, iure, debitis, exercitationem, vitae aperiam excepturi explicabo distinctio ea nisi illo temporibus dignissimos praesentium dolorem reiciendis iste officiis odio nemo dolor illum laboriosam? Architecto, earum accusamus sequi distinctio veniam amet ea quibusdam eos sapiente!</p>
-								<div class="tag-items">
-                                    <span class="small-text">Tags:</span>
-                                    <a href="#" rel="tag">business</a>
-                                    <a href="#" rel="tag">html</a>
-                                    <a href="#" rel="tag">education</a>
-                                </div>
+							<div class="blog-content" align="justify">
+								<p>Po príchode na prijímajúcu partnerskú inštitúciu v zahraničí sa riaď pokynmi zahraničného oddelenia, ktoré Ti poskytne informácie o postupe, ktorý musíš absolvovať počas Tvojho pobytu. Študent je pozvaný na aktivity ESN (Erasmus Student Network) organizované pre zahraničných Erasmus študentov v danej krajine. Počas pobytu ako Erasmus študent neplatíš na prijímajúcej inštitúcii školné, ani poplatky za registráciu, vstup do knižníc, za skúšky a pod. Prijímajúca inštitúcia však môže od Teba požadovať tie poplatky, ktoré požaduje aj od svojich domácich študentov. Platby národných grantov, pôžičiek a štipendií (v prípade, že nejaké na Slovensku dostávaš), s výnimkou vyššie uvedeného vládneho štipendia, zostávajú počas mobility zachované. Platby národných grantov, pôžičiek a štipendií (v prípade, že nejaké na Slovensku dostávaš), s výnimkou vyššie uvedeného vládneho štipendia, zostávajú počas mobility zachované.</p>
 							</div> <!-- /.blog-content -->
 						</div> <!-- /.post-blog -->
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->
-				<div class="row">
-					<div class="col-md-12">
-						<div id="blog-author" class="clearfix">
-                            <a href="#" class="blog-author-img pull-left">
-                                <img src="images/includes/author.png" alt="">
-                            </a>
-                            <div class="blog-author-info">
-                                <h4 class="author-name"><a href="#">Candy Sharp</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod, doloremque, quia cum maiores commodi consequatur dolore et dolores omnis officiis minus dolor ex quae incidunt veritatis.</p>
-                            </div>
-                        </div>
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-				<div class="row">
-					<div class="col-md-12">
-                        <div id="blog-comments" class="blog-post-comments">
-                            <h3>3 Comments</h3>
-                            <div class="blog-comments-content">
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img class="media-object" src="images/includes/comment1.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="media-heading">
-                                        	<h4>Linda Wilson</h4> 
-                                        	<a href="#"><span>4 weeks ago</span><span>Reply</span></a>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet lorem, elit. Sequi, nam magni repellendus! <span class="label label-primary">New</span></p>
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <img class="media-object" src="images/includes/comment2.jpg" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="media-heading">
-		                                        	<h4>Stephen</h4> 
-		                                        	<a href="#"><span>5 weeks ago</span><span>Reply</span></a>
-		                                        </div>
-                                                <p>Temporibus, ea, praesentium eaque totam vel quos laboriosam quia sit dolore at consequatur beatae aliquam debitis porro quasi cupiditate quod!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="pull-left">
-                                        <img class="media-object" src="images/includes/comment3.jpg" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="media-heading">
-                                        	<h4>Marco New</h4> 
-                                        	<a href="#"><span>6 weeks ago</span><span>Reply</span></a>
-                                        </div>
-                                        <p>Enim, iste numquam inventore reiciendis libero quidem quos voluptate? Thank you for visiting templatemo.</p>
-                                    </div>
-                                </div>
-                            </div> <!-- /.blog-comments-content -->
-                        </div> <!-- /.blog-post-comments -->
-                    </div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-				<div class="row">
-                    <div class="col-md-12">
-                        <div class="comment-form">
-                            <h3>Leave a comment</h3>
-                            <div class="widget-inner">
-                            	<form action="#" method="post">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <p>
-                                            <label for="name-id">Your Name:</label>
-                                            <input type="text" id="name-id" name="name-id">
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p>
-                                            <label for="email-id">Email Address:</label>
-                                            <input type="text" id="email-id" name="email-id">
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p>
-                                            <label for="site-id">Your Site:</label>
-                                            <input type="text" id="site-id" name="site-id">
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p>
-                                            <label for="comment">Your comment:</label>
-                                            <textarea name="comment" id="comment" rows="5"></textarea>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input class="mainBtn" type="submit" name="submit" value="Submit Comment" id="submit">
-                                    </div>
-                                </div>
-                                </form>
-                            </div> <!-- /.widget-inner -->
-                        </div> <!-- /.widget-main -->
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
 			</div> <!-- /.col-md-8 -->
 
 			<div class="col-md-4">
