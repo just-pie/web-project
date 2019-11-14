@@ -6,11 +6,11 @@
 			<li><a href="{{ url('/')}}">Domov</a></li>
 			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 			</li>
-			<li class="active"><a href="{{ url('/blog')}}">Informácie</a>
+			<li class="active"><a href="{{ url('/info')}}">Informácie</a>
 				<ul>
-					<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
-					<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
-					<li><a href="#">visit templatemo</a></li>
+					<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
+					<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
+					<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
@@ -46,11 +46,11 @@
 								<li><a href="{{ url('/')}}">Domov</a></li>
 								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 								</li>
-								<li class="active"><a href="{{ url('/blog')}}">Informácie</a>
+								<li class="active"><a href="{{ url('/info')}}">Informácie</a>
 									<ul>
-										<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
-										<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
-										<li><a href="#">visit templatemo</a></li>
+										<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
+										<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
+										<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
@@ -105,7 +105,7 @@
 					<div class="col-md-12">
 						<div class="post-blog">
 							<div class="blog-image">
-								<a href="blog-single.blade.php">
+								<a href="infopocas.blade.php">
 									<img src="images/includes/blog1.jpg" alt="">
 								</a>
 							</div> <!-- /.blog-image -->
@@ -113,14 +113,14 @@
 								<span class="meta-date"><a href="#">28 February 2084</a></span>
 								<span class="meta-comments"><a href="#">14 Comments</a></span>
 								<span class="meta-author"><a href="#">Candy Sharp</a></span>
-								<h3><a href="blog-single.blade.php">Getting Creative With the Google Maps API</a></h3>
+								<h3><a href="infopocas.blade.php">Getting Creative With the Google Maps API</a></h3>
 								<p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="blog-single.blade.php">Continue Reading...</a></p>
+								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="infopocas.blade.php">Continue Reading...</a></p>
 							</div> <!-- /.blog-content -->
 						</div> <!-- /.post-blog -->
 						<div class="post-blog">
 							<div class="blog-image">
-								<a href="blog-single.blade.php">
+								<a href="infopocas.blade.php">
 									<img src="images/includes/blog2.jpg" alt="">
 								</a>
 							</div> <!-- /.blog-image -->
@@ -128,14 +128,14 @@
 								<span class="meta-date"><a href="#">24 February 2084</a></span>
 								<span class="meta-comments"><a href="#">32 Comments</a></span>
 								<span class="meta-author"><a href="#">Candy Sharp</a></span>
-								<h3><a href="blog-single.blade.php">Bird Profile Wellington New Zealand</a></h3>
+								<h3><a href="infopocas.blade.php">Bird Profile Wellington New Zealand</a></h3>
 								<p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="blog-single.blade.php">Continue Reading...</a></p>
+								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="infopocas.blade.php">Continue Reading...</a></p>
 							</div> <!-- /.blog-content -->
 						</div> <!-- /.post-blog -->
 						<div class="post-blog">
 							<div class="blog-image">
-								<a href="blog-single.blade.php">
+								<a href="infopocas.blade.php">
 									<img src="images/includes/blog3.jpg" alt="">
 								</a>
 							</div> <!-- /.blog-image -->
@@ -143,14 +143,14 @@
 								<span class="meta-date"><a href="#">20 February 2084</a></span>
 								<span class="meta-comments"><a href="#">64 Comments</a></span>
 								<span class="meta-author"><a href="#">Candy Sharp</a></span>
-								<h3><a href="blog-single.blade.php">Standard Blog Post Formating Medigo</a></h3>
+								<h3><a href="infopocas.blade.php">Standard Blog Post Formating Medigo</a></h3>
 								<p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="blog-single.blade.php">Continue Reading...</a></p>
+								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="infopocas.blade.php">Continue Reading...</a></p>
 							</div> <!-- /.blog-content -->
 						</div> <!-- /.post-blog -->
 						<div class="post-blog">
 							<div class="blog-image">
-								<a href="blog-single.blade.php">
+								<a href="infopocas.blade.php">
 									<img src="images/includes/blog4.jpg" alt="">
 								</a>
 							</div> <!-- /.blog-image -->
@@ -158,9 +158,9 @@
 								<span class="meta-date"><a href="#">24 February 2084</a></span>
 								<span class="meta-comments"><a href="#">128 Comments</a></span>
 								<span class="meta-author"><a href="#">Candy Sharp</a></span>
-								<h3><a href="blog-single.blade.php">Hochbunker High Definition Photography</a></h3>
+								<h3><a href="infopocas.blade.php">Hochbunker High Definition Photography</a></h3>
 								<p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="blog-single.blade.php">Continue Reading...</a></p>
+								<p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="infopocas.blade.php">Continue Reading...</a></p>
 							</div> <!-- /.blog-content -->
 						</div> <!-- /.post-blog -->
 					</div> <!-- /.col-md-12 -->
@@ -239,33 +239,9 @@
 			</div> <!-- /.col-md-4 -->
 
 		</div> <!-- /.row -->
-	</div> <!-- /.container -->	
+	</div> <!-- /.container -->
 
-	
-
-	<footer class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav class="footer-nav clearfix">
-						<ul class="footer-menu">
-							<li><a href="{{url('/')}}">Domov</a></li>
-							<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
-							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
-							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
-						</ul> <!-- /.footer-menu -->
-					</nav> <!-- /.footer-nav -->
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="copyright-text">Copyright &copy; 2019 UKF
-						| Tímový projekt: TP04</p>
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</footer> <!-- /.site-footer -->
+	@include('includes.foot')
 
 	<!-- Scripts -->
 	<script src="js/min/plugins.min.js"></script>

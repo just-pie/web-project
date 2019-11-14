@@ -19,12 +19,20 @@ Route::get('/archives', function () {
     return view('archives');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/info', function () {
+    return view('info/info');
 });
 
-Route::get('/blog-single', function () {
-    return view('blog-single');
+Route::get('/infopred', function () {
+    return view('info/infopred');
+});
+
+Route::get('/infopocas', function () {
+    return view('info/infopocas');
+});
+
+Route::get('/infopo', function () {
+    return view('info/infopo');
 });
 
 Route::get('/kontakt', [
@@ -62,7 +70,3 @@ Route::get('/vyzva/{id}', [
 Route::get('/vyzva', function () {
     return view('vyzva');
 });
-
-Route::get('/idecko/{id}', [
-    'as' => 'vyzva', 'uses' => 'UniverzityController@showAction'
-]);
