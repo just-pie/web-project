@@ -8,4 +8,5 @@
 </div>
 @include('admin.admin_footer')
 </body>
+
 </html>
