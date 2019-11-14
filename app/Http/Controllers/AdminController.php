@@ -46,6 +46,7 @@ class AdminController extends Controller
     public function showUsers()
     {
         $countRecentlyAddedUsers = $this->countRecentlyAddedUsers();
+        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
         $countAllUsers = $this->countAllUsers();
 
         $page_name = 'admin.admin_body.admin_users';
@@ -57,7 +58,9 @@ class AdminController extends Controller
         $data = [
             'page_name'  => $page_name,
             'countRecentlyAddedUsers'   => $countRecentlyAddedUsers,
-            'countAllUsers' => $countAllUsers
+            'countThisHourAddedUsers'   => $countThisHourAddedUsers,
+            'countAllUsers' => $countAllUsers,
+
         ];
 
         return view("admin.admin", ['users'=>$users])->with($data);
@@ -71,6 +74,14 @@ class AdminController extends Controller
 
         return $count;
 }
+    public function countThisHourAddedUsers(){
+        $count = \DB::table('pouzivatelia')
+            ->select(\DB::raw('COUNT(*) as pocet'))
+            ->where('created_at', '>', 'NOW() - INTERVAL 1 HOUR')
+            ->value('pocet');
+
+        return $count;
+    }
 
 public function countAllUsers(){
     $count = \DB::table('pouzivatelia')

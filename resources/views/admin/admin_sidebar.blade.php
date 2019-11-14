@@ -16,19 +16,6 @@
                         </span>
                 </div>
             </div>
-            <!-- sidebar-search  -->
-            <div class="sidebar-item sidebar-search">
-                <div>
-                    <div class="input-group">
-                        <input type="text" class="form-control search-menu" placeholder="Search...">
-                        <div class="input-group-append">
-                                <span class="input-group-text">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- sidebar-menu  -->
             <div class=" sidebar-item sidebar-menu">
                 <ul>
@@ -42,32 +29,34 @@
 {{--                            <span class="badge badge-pill badge-warning">New</span>--}}
                         </a>
                     </li>
-                    <li class="sidebar-dropdown user-icon">
-                        <a href="#">
+                    <li class="sidebar user-icon">
+                        <a href="{{ url('admin-users') }}">
                             <i class="fa fa-user"></i>
                             <span class="menu-text">Používatelia</span>
+                            @if({{$countThisHourAddedUsers}}>0){
                             <span class="badge badge-pill badge-danger">3</span>
+                                }
                         </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="{{ url('admin-users') }}">
-                                        Tabuľka používateľov
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">Orders</a>
-                                </li>
-                                <li>
-                                    <a href="#">Credit cart</a>
-                                </li>
-                            </ul>
-                        </div>
+{{--                        <div class="sidebar-submenu">--}}
+{{--                            <ul>--}}
+{{--                                <li>--}}
+{{--                                    <a href="">--}}
+{{--                                        Používatelia--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="#">Výzvy</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="#">Univerzity</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
                     </li>
                     <li class="sidebar-dropdown">
                         <a href="#">
-                            <i class="far fa-gem"></i>
-                            <span class="menu-text">Components</span>
+                            <i class="fa fa-chart-line"></i>
+                            <span class="menu-text">Výzvy</span>
                         </a>
                         <div class="sidebar-submenu">
                             <ul>
@@ -91,8 +80,8 @@
                     </li>
                     <li class="sidebar-dropdown">
                         <a href="#">
-                            <i class="fa fa-chart-line"></i>
-                            <span class="menu-text">Charts</span>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span class="menu-text">Univerzity</span>
                         </a>
                         <div class="sidebar-submenu">
                             <ul>
