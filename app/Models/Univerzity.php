@@ -10,7 +10,7 @@ class Univerzity extends Model
 
     protected $primaryKey = 'iduniverzity';
 
-    protected $fillable = ['nazov', 'zmluva-od', 'zmluva-do'];
+    protected $fillable = ['nazov', 'web', 'zmluva-od', 'zmluva-do', 'detail'];
 
     public function krajiny()
     {

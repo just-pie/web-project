@@ -1,52 +1,27 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Kontakty FF</title>
-    <meta name="keywords" content="">
-	<meta name="description" content="">
-    <meta name="author" content="templatemo">
-
-	<!-- Google Fonts -->
-	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="css/misc.css">
-	<link rel="stylesheet" href="css/blue-scheme.css">
-	
-	<!-- JavaScripts -->
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-
-	<link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon" />
-
-</head>
+@include('includes.head', ['title' => 'Kontakt FF'])
 <body>
 
 
 	<div class="responsive_menu">
 		<ul class="main_menu">
 			<li><a href="{{ url('/')}}">Domov</a></li>
-            <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
-            </li>
-			<li><a href="{{ url('/blog')}}">Blog</a>
+			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
+			</li>
+			<li><a href="{{ url('/info')}}">Informácie</a>
 				<ul>
-					<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
-					<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
-					<li><a href="#">visit templatemo</a></li>
+					<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
+					<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
+					<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 				</ul>
 			</li>
 			<li><a href="{{ url('/archives')}}">Archives</a></li>
 			<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
 				<ul>
-                    <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
-                    <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
-                    <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
-                    <li><a href="{{ url('/kontaktff')}}">FF</a></li>
-                    <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+					<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+					<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+					<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+					<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
 				</ul>
 			</li>
 		</ul> <!-- /.main_menu -->
@@ -69,26 +44,27 @@
 
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
-								<li><a href="{{url('/')}}">Domov</a></li>
-                                <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
-                                </li>
-								<li><a href="{{ url('/blog')}}">Blog</a>
+								<li><a href="{{ url('/')}}">Domov</a></li>
+								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
+								</li>
+								<li><a href="{{ url('/info')}}">Informácie</a>
 									<ul>
-										<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
-										<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
+										<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
+										<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
+										<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
 								<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
 									<ul>
-                                        <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
-                                        <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
-                                        <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
-                                        <li><a href="{{ url('/kontaktff')}}">FF</a></li>
-                                        <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
+										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
+										<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
+										<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
+										<li><a href="{{ url('/kontaktff')}}">FF</a></li>
+										<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
 									</ul>
 								</li>
-							</ul> <!-- /.sf-menu -->
+							</ul>  <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
 						<!-- This one in here is responsive menu for tablet and mobiles -->
@@ -160,29 +136,7 @@
 		</div>
 	</div>
 
-	<footer class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav class="footer-nav clearfix">
-						<ul class="footer-menu">
-							<li><a href="{{url('/')}}">Domov</a></li>
-							<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
-							<li><a href="{{ url('/blog')}}">Blog Posts</a></li>
-							<li><a href="{{ url('/archives')}}">Shortcodes</a></li>
-							<li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
-						</ul> <!-- /.footer-menu -->
-					</nav> <!-- /.footer-nav -->
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="copyright-text">Copyright &copy; 2019 UKF
-						| Tímový projekt: TP04</p>
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</footer> <!-- /.site-footer -->
+    @include('includes.foot')
 
 	<!-- Scripts -->
 	<script src="js/min/plugins.min.js"></script>

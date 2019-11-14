@@ -17,4 +17,5 @@ class VyzvyController extends Controller
         $vyzva = Vyzvy::find($id);
         return view("vyzva", ['vyzva' => $vyzva]);
     }
+
 }
