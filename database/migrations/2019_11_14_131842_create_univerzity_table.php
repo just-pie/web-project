@@ -19,6 +19,7 @@ class CreateUniverzityTable extends Migration
             $table->year('zmluva-od');
             $table->year('zmluva-do')->nullable($value = true);
             $table->text('detail');
+            $table->text('foto');
             $table->integer('krajiny_idkrajiny')->unsigned();
             $table->foreign('krajiny_idkrajiny')->references('idkrajiny')->on('krajiny');
         });

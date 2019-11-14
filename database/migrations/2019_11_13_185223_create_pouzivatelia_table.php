@@ -15,11 +15,16 @@ class CreatePouzivateliaTable extends Migration
     {
         Schema::create('pouzivatelia', function (Blueprint $table) {
             $table->increments('idpouzivatelia');
-            $table->string('priezvisko', 45);
-            $table->string('meno', 45);
-            $table->string('email', 50)->unique();
+            $table->string('meno');
+            $table->string('priezvisko');
+            $table->string('email');
+            $table->date('datum_narodenia');
+            $table->string('login');
+            $table->string('heslo', 60);
+            $table->integer('roly_idroly')->unsigned();
+            $table->foreign('roly_idroly')->references('idroly')->on('roly');
+            $table->timestamps();
         });
-
     }
 
     /**
