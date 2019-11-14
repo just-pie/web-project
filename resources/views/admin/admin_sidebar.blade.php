@@ -273,16 +273,7 @@
 
                 </div>
             </div>
-            <div class="dropdown">
-                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-cog"></i>
-                    <span class="badge-sonar"></span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
-                    <a class="dropdown-item" href="#">My profile</a>
-                    <a class="dropdown-item" href="#">Help</a>
-                    <a class="dropdown-item" href="#">Setting</a>
-                </div>
+            <div>
             </div>
             <div>
                 <a href="#">

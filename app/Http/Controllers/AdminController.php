@@ -33,4 +33,10 @@ class AdminController extends Controller
         return view("admin.admin", ['users'=>$users])->with('page_name', $page_name);
     }
 
+    public function logout(Request $request)
+    {
+        $this->performLogout($request);
+        return redirect()->route('index');
+    }
+
 }
