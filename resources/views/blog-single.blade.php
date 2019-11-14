@@ -33,15 +33,10 @@
 
 	<div class="responsive_menu">
 		<ul class="main_menu">
-			<li><a href="{{ url('/')}}">Home</a></li>
-			<li><a href="{{ url('/portfolio')}}">Portfolio</a>
-				<ul>
-					<li><a href="{{ url('/portfolio')}}">Portfolio Grid</a></li>
-					<li><a href="{{ url('/project-image')}}">Project Image</a></li>
-					<li><a href="{{ url('/project-slideshow')}}">Project Slideshow</a></li>
-				</ul>
+			<li><a href="{{ url('/')}}">Domov</a></li>
+			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 			</li>
-			<li><a href="{{ url('/blog')}}">Blog</a>
+			<li class="active"><a href="{{ url('/blog')}}">Informácie</a>
 				<ul>
 					<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
 					<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
@@ -78,15 +73,10 @@
 
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
-								<li class="active"><a href="{{url('/')}}">Home</a></li>
-								<li><a href="{{ url('/portfolio')}}">Portfolio</a>
-									<ul>
-										<li><a href="{{ url('/portfolio')}}">Portfolio Grid</a></li>
-										<li><a href="{{ url('/project-image')}}">Project Image</a></li>
-										<li><a href="{{ url('/project-slideshow')}}">Project Slideshow</a></li>
-									</ul>
+								<li><a href="{{ url('/')}}">Domov</a></li>
+								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 								</li>
-								<li><a href="{{ url('/blog')}}">Blog</a>
+								<li class="active"><a href="{{ url('/blog')}}">Informácie</a>
 									<ul>
 										<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
 										<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>

@@ -62,3 +62,7 @@ Route::get('/vyzva/{id}', [
 Route::get('/vyzva', function () {
     return view('vyzva');
 });
+
+Route::get('/idecko/{id}', [
+    'as' => 'vyzva', 'uses' => 'UniverzityController@showAction'
+]);

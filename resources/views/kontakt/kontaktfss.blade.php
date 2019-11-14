@@ -30,9 +30,9 @@
 	<div class="responsive_menu">
 		<ul class="main_menu">
 			<li><a href="{{ url('/')}}">Domov</a></li>
-            <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
-            </li>
-			<li><a href="{{ url('/blog')}}">Blog</a>
+			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
+			</li>
+			<li><a href="{{ url('/blog')}}">Informácie</a>
 				<ul>
 					<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
 					<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
@@ -69,13 +69,14 @@
 
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
-								<li><a href="{{url('/')}}">Domov</a></li>
-                                <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
-                                </li>
-								<li><a href="{{ url('/blog')}}">Blog</a>
+								<li><a href="{{ url('/')}}">Domov</a></li>
+								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
+								</li>
+								<li><a href="{{ url('/blog')}}">Informácie</a>
 									<ul>
 										<li><a href="{{ url('/blog')}}">Blog Standard</a></li>
 										<li><a href="{{ url('/blog-single')}}">Blog Single</a></li>
+										<li><a href="#">visit templatemo</a></li>
 									</ul>
 								</li>
 								<li><a href="{{ url('/archives')}}">Archives</a></li>
@@ -88,7 +89,7 @@
 										<li><a href="{{ url('/kontaktpf')}}">PF</a></li>
 									</ul>
 								</li>
-							</ul> <!-- /.sf-menu -->
+							</ul>  <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
 
 						<!-- This one in here is responsive menu for tablet and mobiles -->

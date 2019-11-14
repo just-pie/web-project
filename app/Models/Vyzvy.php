@@ -22,4 +22,9 @@ class Vyzvy extends Model
         return $this->belongsTo('App\Models\Typvyzvy');
     }
 
+    public function oblasti()
+    {
+        return $this->belongsTo('App\Models\Oblasti');
+    }
+
 }
