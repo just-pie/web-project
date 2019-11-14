@@ -34,6 +34,9 @@
                     "next":       "Ďalší",
                     "previous":   "Predošlý"
                 },
+                "columnDefs": [
+                    {"targets": "[5]", "orderable": "false"}
+                ],
                 "infoFiltered": "(filtered from _MAX_ total records)"
             }
         });

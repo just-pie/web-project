@@ -58,4 +58,5 @@ Route::get('/vyzvy', function () {
 //Admin
 Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);
 Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@showUsers']);
+Route::post('/addUser', ['as' => 'addUser','uses' => 'AdminController@addUser']);
 

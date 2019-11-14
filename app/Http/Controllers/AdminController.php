@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\Pouzivatelia;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -18,8 +19,28 @@ class AdminController extends Controller
 
 
 
-    public function addUser(){
+    public function addUser(Request $request){
+        $firstname = $request->input('meno');
+        $lastname = $request->input('priezvisko');
+        $email = $request->input('email');
+        $birthday = $request->input('datum_narodenia');
+        $login = $request->input('login');
+        $password = $request->input('heslo');
+        $role = $request->input('rola');
 
+        $hashed = bcrypt($password);
+
+        $user = new Pouzivatelia();
+        $user->meno = $firstname;
+        $user->priezvisko = $lastname;
+        $user->email = $email;
+        $user->datum_narodenia = $birthday;
+        $user->login = $login;
+        $user->heslo = $hashed;
+        $user->roly_idroly = $role;
+        $user->save();
+
+        return $this->showUsers();
     }
 
     public function showUsers()
