@@ -111,7 +111,7 @@
                     <div class="post-blog">
                         <div class="blog-image">
                             <a href="info/infopocas.blade.php">
-                                <img src="{{asset('images/includes/projekt1.jpg')}}" alt="">
+                                <img src="{{url('../images/includes/projekt1.jpg')}}" alt="">
                             </a>
                         </div> <!-- /.blog-image -->
                         <div class="blog-content">
@@ -123,7 +123,7 @@
                     <div class="post-blog">
                         <div class="blog-image">
                             <a href="info/infopocas.blade.php">
-                                <img src="{{asset('images/includes/blog2.jpg')}}" alt="">
+                                <img src="{{url('../images/includes/blog2.jpg')}}" alt="">
                             </a>
                         </div> <!-- /.blog-image -->
                         <div class="blog-content">
@@ -138,7 +138,7 @@
                     <div class="post-blog">
                         <div class="blog-image">
                             <a href="info/infopocas.blade.php">
-                                <img src="{{asset('images/includes/blog3.jpg')}}" alt="">
+                                <img src="{{asset('/images/includes/blog3.jpg')}}" alt="">
                             </a>
                         </div> <!-- /.blog-image -->
                         <div class="blog-content">

@@ -13,8 +13,17 @@ class AdminController extends Controller
 
     public function showDashboard()
     {
+        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
+
         $page_name = 'admin.admin_body.admin_dashboard';
-        return view('admin.admin')->with('page_name', $page_name);
+
+        $data = [
+            'page_name'  => $page_name,
+            'countThisHourAddedUsers'   => $countThisHourAddedUsers
+
+        ];
+
+        return view('admin.admin')->with($data);
     }
 
 
@@ -77,7 +86,7 @@ class AdminController extends Controller
     public function countThisHourAddedUsers(){
         $count = \DB::table('pouzivatelia')
             ->select(\DB::raw('COUNT(*) as pocet'))
-            ->where('created_at', '>', 'NOW() - INTERVAL 1 HOUR')
+            ->where('created_at', '>', 'DATE_SUB(CURDATE(), INTERVAL 1 HOUR)')
             ->value('pocet');
 
         return $count;

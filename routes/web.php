@@ -64,14 +64,10 @@ Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@sh
 Route::post('/addUser', ['as' => 'addUser','uses' => 'AdminController@addUser']);
 
 
-Route::get('/vyzvy', [
-    'as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy'
-]);
+Route::get('/vyzvy', ['as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy']);
 
-Route::get('/vyzva/{id}', [
-    'as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva'
-    ]);
+Route::get('/vyzva/{id}', ['as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva']);
 
-Route::get('/vyzva', function () {
-    return view('vyzva');
-});
+//Route::get('/vyzva', function () {
+//    return view('vyzva');
+//});

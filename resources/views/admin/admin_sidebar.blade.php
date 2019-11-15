@@ -33,9 +33,9 @@
                         <a href="{{ url('admin-users') }}">
                             <i class="fa fa-user"></i>
                             <span class="menu-text">Používatelia</span>
-                            @if({{$countThisHourAddedUsers}}>0){
-                            <span class="badge badge-pill badge-danger">3</span>
-                                }
+                            @if($countThisHourAddedUsers>0)
+                            <span class="badge badge-pill badge-danger">{{$countThisHourAddedUsers}}</span>
+                            @endif
                         </a>
 {{--                        <div class="sidebar-submenu">--}}
 {{--                            <ul>--}}
