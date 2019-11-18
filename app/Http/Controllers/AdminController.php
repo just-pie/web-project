@@ -60,7 +60,7 @@ class AdminController extends Controller
 
         $page_name = 'admin.admin_body.admin_users';
         $users = \DB::table('pouzivatelia')
-            ->select(['pouzivatelia.idpouzivatelia', 'pouzivatelia.meno', 'pouzivatelia.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola'])
+            ->select(['pouzivatelia.idpouzivatelia', 'pouzivatelia.meno', 'pouzivatelia.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola', 'pouzivatelia.created_at', 'pouzivatelia.updated_at'])
             ->join('roly', 'roly.idroly', '=', 'pouzivatelia.roly_idroly')
             ->get();
 
@@ -73,6 +73,10 @@ class AdminController extends Controller
         ];
 
         return view("admin.admin", ['users'=>$users])->with($data);
+    }
+
+    public function editUser(Request $request, $id){
+
     }
 
     public function getUserInfo($id){
