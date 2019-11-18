@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
 
-    <link rel="stylesheet" href="../resources/assets/css/admin/admin_sidebar.css">
-    <link rel="stylesheet" href="../resources/assets/css/admin/admin_sidebar_themes.css">
-    <link rel="shortcut icon" type="image/png" href="../resources/assets/img/favicon.png" />
+    <link rel="stylesheet" href="{{ \URL::asset("css/admin/admin_sidebar.css")}}">
+    <link rel="stylesheet" href="{{ \URL::asset("css/admin/admin_sidebar_themes.css")}}">
+    <link rel="shortcut icon" type="image/png" href="{{ \URL::asset("images/favicon.png")}}" />
 
 </head>

@@ -34,7 +34,6 @@
                 <th scope="col">ID</th>
                 <th scope="col">Priezvisko a meno</th>
                 <th scope="col">E-mail</th>
-                <th scope="col">Dátum narodenia</th>
                 <th scope="col">Rola</th>
                 <th class="no-sort" scope="col">Akcia</th>
             </tr>
@@ -44,16 +43,14 @@
                 <tr>
                     <th scope="row">{{ $user->idpouzivatelia }}</th>
                     <td>{{ $user->priezvisko }} {{$user->meno}}</td>
-                    <td>{{ $user->email }}</td>
-                    <td>{{ $user->datum_narodenia }}</td>
+                    <td><a href="mailto:{{ $user->email }}?Subject=Predmet:%20Mobility%20študentov" target="_top">{{ $user->email }}</a></td>
                     <td>{{ $user->rola }}</td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="#
-{{--{{ action("AdminController@showUserInfo", ['id' => $user->id]) }}--}}
-                                        "><i
-                                            class="fa fa-eye"></i></a>
+                                <a href="{{ url('/admin-user/' . $user->idpouzivatelia) }}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;
+                                <a href="#"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;
+                                <a href="#"><i class="fa fa-trash" style="color: red;"></i></a>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">
                               {{--  <a href="{{ action("UserController@edit_page", ['id' => $user->id]) }}"

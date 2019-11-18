@@ -15,7 +15,7 @@
 <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
 
 
-<script src="../resources/assets/js/admin_sidebar/main.js"></script>
+<script src="{{\URL::asset("js/admin_sidebar/main.js")}}"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 <script>
@@ -26,7 +26,7 @@
                 "lengthMenu": "Zobrazujem _MENU_ riadkov.",
                 "zeroRecords": "Nemám čo načítať, tabuľka je prázdna.",
                 "search" : "Hľadať:",
-                "info": "Zobrazujem _PAGE_ z celkových _PAGES_ riadkov.",
+                "info": "Zobrazujem _PAGE_ z celkových _PAGES_ strán.",
                 "infoEmpty": "Žiadne dáta k dispozícií.",
                 "paginate": {
                     "first":      "Prvý",

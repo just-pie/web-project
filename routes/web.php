@@ -61,6 +61,7 @@ Route::get('/kontaktpf', [
 
 Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);
 Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@showUsers']);
+Route::get('/admin-user/{id}', ['as' => 'admin-users-show','uses' => 'AdminController@getUserInfo']);
 Route::post('/addUser', ['as' => 'addUser','uses' => 'AdminController@addUser']);
 
 

@@ -75,6 +75,24 @@ class AdminController extends Controller
         return view("admin.admin", ['users'=>$users])->with($data);
     }
 
+    public function getUserInfo($id){
+        $page_name = 'admin.crud_operations.show_user';
+        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
+
+        $pouzivatel = \DB::table('pouzivatelia')
+            ->select(['pouzivatelia.idpouzivatelia', 'pouzivatelia.meno as meno', 'pouzivatelia.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola', 'pouzivatelia.created_at', 'pouzivatelia.updated_at'])
+            ->join('roly', 'roly.idroly', '=', 'pouzivatelia.roly_idroly')
+            ->where('pouzivatelia.idpouzivatelia', '=', $id)
+            ->get();
+
+
+        $data = [
+            'page_name'  => $page_name,
+            'countThisHourAddedUsers'   => $countThisHourAddedUsers
+        ];
+        return view("admin.admin", ['pouzivatel'=>$pouzivatel])->with($data);
+    }
+
     public function countRecentlyAddedUsers(){
         $count = \DB::table('pouzivatelia')
             ->select(\DB::raw('COUNT(*) as pocet'))
@@ -86,9 +104,11 @@ class AdminController extends Controller
     public function countThisHourAddedUsers(){
         $count = \DB::table('pouzivatelia')
             ->select(\DB::raw('COUNT(*) as pocet'))
-            ->where('created_at', '>', 'DATE_SUB(CURDATE(), INTERVAL 1 HOUR)')
+            ->where(\DB::raw('DATE(created_at)', '=', 'DATE(NOW())'))
+            ->where(\DB::raw('HOUR(created_at)', '=', 'HOUR(NOW())'))
             ->value('pocet');
 
+        error_log('Some message here.');
         return $count;
     }
 

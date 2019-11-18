@@ -1,4 +1,3 @@
-<main class="page-content pt-2">
     <div id="overlay" class="overlay"></div>
     <div class="container-fluid p-5">
         <div class="row">
@@ -86,4 +85,3 @@
 
         </div>
     </div>
-</main>

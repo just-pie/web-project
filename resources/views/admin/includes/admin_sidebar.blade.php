@@ -3,7 +3,7 @@
             <!-- sidebar-header  -->
             <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                 <div class="user-pic">
-                    <img class="img-responsive img-rounded" src="../resources/assets/img/admin_avatar.png" alt="User picture">
+                    <img class="img-responsive img-rounded" src="{{\URL::asset("images/admin_avatar.png")}}" alt="User picture">
                 </div>
                 <div class="user-info">
                         <span class="user-name">John
@@ -216,7 +216,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="../resources/assets/img/admin_avatar.png" alt="">
+                                <img src="{{\URL::asset("images/admin_avatar.png")}}" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">
@@ -231,7 +231,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="../resources/assets/img/admin_avatar.png" alt="">
+                                <img src="{{\URL::asset("images/admin_avatar.png")}}" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">
@@ -246,7 +246,7 @@
                     <a class="dropdown-item" href="#">
                         <div class="message-content">
                             <div class="pic">
-                                <img src="../resources/assets/img/admin_avatar.png" alt="">
+                                <img src="{{\URL::asset("images/admin_avatar.png")}}" alt="">
                             </div>
                             <div class="content">
                                 <div class="message-title">
