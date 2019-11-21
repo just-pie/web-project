@@ -11,13 +11,21 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('index');
-});
+});*/
 
-Route::get('/archives', function () {
-    return view('archives');
-});
+Route::get('/', [
+    'as' => 'index', 'uses' => 'IndexController@showVyzvy'
+]);
+
+Route::get('/spravy', [
+    'as' => 'spravy', 'uses' => 'SpravyController@showSpravy'
+]);
+
+Route::get('/sprava{id}', [
+    'as' => 'sprava', 'uses' => 'SpravyController@showSprava'
+]);
 
 Route::get('/info', function () {
     return view('info/info');
@@ -77,4 +85,8 @@ Route::get('/admin-users', [
 
 Route::post('/addUser', [
     'as' => 'addUser','uses' => 'AdminController@addUser'
+]);
+
+Route::get('/typvyzvy/{id}', [
+    'as' => '', 'uses' => 'TypvyzvyController@showAction'
 ]);

@@ -13,7 +13,7 @@
 					<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 				</ul>
 			</li>
-			<li><a href="{{ url('/archives')}}">Archives</a></li>
+			<li><a href="{{ url('/spravy')}}">Správy</a></li>
 			<li><a href="{{ url('/kontakt')}}">Kontakt</a>
 				<ul>
 					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -53,7 +53,7 @@
 										<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 									</ul>
 								</li>
-								<li><a href="{{ url('/archives')}}">Archives</a></li>
+								<li><a href="{{ url('/spravy')}}">Správy</a></li>
 								<li><a href="{{ url('/kontakt')}}">Kontakt</a>
 									<ul>
 										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -82,7 +82,7 @@
 		</div> <!-- /.container -->
 	</header> <!-- /.site-header -->
 
-	<div class="first-widget parallax" id="blog">
+	<div class="first-widget parallax" id="blogId">
 		<div class="parallax-overlay">
 			<div class="container pageTitle">
 				<div class="row">

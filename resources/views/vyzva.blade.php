@@ -12,7 +12,7 @@
                 <li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
             </ul>
         </li>
-        <li><a href="{{ url('/archives')}}">Archives</a></li>
+        <li><a href="{{ url('/spravy')}}">Správy</a></li>
         <li><a href="{{ url('/kontakt')}}">Kontakt</a>
             <ul>
                 <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -52,7 +52,7 @@
                                     <li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{ url('/archives')}}">Archives</a></li>
+                            <li><a href="{{ url('/spravy')}}">Správy</a></li>
                             <li><a href="{{ url('/kontakt')}}">Kontakt</a>
                                 <ul>
                                     <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -110,9 +110,9 @@
                             </a>
                         </div> <!-- /.blog-image -->
                         <div class="blog-content">
-                            <h3>Ponuka</h3>
+                            <h2>Ponuka</h2>
                             <p>{{$vyzva->popis}}</p>
-                            <h3>Základné informácie</h3>
+                            <h2>Základné informácie</h2>
                             <p>{{$vyzva->ostatneinfo}}</p>
                         </div> <!-- /.blog-content -->
                     </div> <!-- /.post-blog -->

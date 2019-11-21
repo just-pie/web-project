@@ -11,4 +11,9 @@ class Pouzivatelia extends Model
     protected $primaryKey = 'idpouzivatelia';
 
     protected $fillable = ['meno', 'priezvisko', 'email', 'datum_narodenia', 'login', 'heslo', 'roly_idroly'];
+
+    public function spravy()
+    {
+        return $this->hasMany('App\Models\Spravy', 'pouzivatelia_idpouzivatelia');
+    }
 }

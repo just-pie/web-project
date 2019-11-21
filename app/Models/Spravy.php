@@ -10,5 +10,15 @@ class Spravy extends Model
 
     protected $primaryKey = 'idspravy';
 
-    protected $fillable = ['text'];
+    protected $fillable = ['text', 'datum'];
+
+    public function vyzvy()
+    {
+        return $this->belongsTo('App\Models\Vyzvy');
+    }
+
+    public function pouzivatelia()
+    {
+        return $this->belongsTo('App\Models\Pouzivatelia');
+    }
 }
