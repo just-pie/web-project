@@ -6,24 +6,15 @@ use App\Models\Spravy;
 
 class SpravyController extends Controller
 {
-    public function showAction($id)
+    public function showSpravy()
     {
-        $spravy = Spravy::find($id);
-        echo $spravy->text;
+        $spravy = Spravy::all();
+        return view("spravy", ['spravy' => $spravy]);
     }
 
-    public function insertAction()
+    public function showSprava($id)
     {
-
-    }
-
-    public function updateAction($id)
-    {
-
-    }
-
-    public function deleteAction($id)
-    {
-
+        $sprava = Spravy::find($id);
+        return view("sprava", ['sprava' => $sprava]);
     }
 }

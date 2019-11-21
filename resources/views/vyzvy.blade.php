@@ -12,7 +12,7 @@
                 <li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
             </ul>
         </li>
-        <li><a href="{{ url('/archives')}}">Archives</a></li>
+        <li><a href="{{ url('/spravy')}}">Správy</a></li>
         <li><a href="{{ url('/kontakt')}}">Kontakt</a>
             <ul>
                 <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -52,7 +52,7 @@
                                     <li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{ url('/archives')}}">Archives</a></li>
+                            <li><a href="{{ url('/spravy')}}">Správy</a></li>
                             <li><a href="{{ url('/kontakt')}}">Kontakt</a>
                                 <ul>
                                     <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -116,17 +116,16 @@
             @foreach($vyzvy as $vyzva)
                     <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
                             <div class="thumb-post">
-                                <div class="overlay-inner"><img src="{{$vyzva->univerzity->first()->foto}}" alt="Visual Admin">
+                                <div class="overlay-inner"><img src="{{$vyzva->univerzity->first()['foto']}}" alt="{{$vyzva->univerzity->first()['nazov']}}">
                                     <div class="portfolio-infos">
                                         <h3 style="color: white">{{$vyzva->nazov}}</h3>
                                     </div>
-
                                 </div>
                                 <div class="overlay">
                                     <div class="overlay-inner">
                                         <div class="portfolio-infos">
-                                            <span class="meta-category">{{$vyzva->nazov}}</span>
-                                            <h3 class="portfolio-title">{{$vyzva->univerzity->first()->nazov}}</h3>
+                                            <span class="meta-category">{{$vyzva->oblasti->nazov}}</span>
+                                            <h3 class="portfolio-title">{{$vyzva->univerzity->first()['nazov']}}</h3>
                                         </div>
                                         <div class="portfolio-expand">
                                             <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
@@ -135,26 +134,12 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                     </div> <!-- /.col-md-4 -->
                 @endforeach
         </div> <!-- /.portfolio-holder -->
     </div> <!-- /.row -->
-</div> <!-- /.container -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="pages">
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">13</a></li>
-            </ul>
-        </div> <!-- /.col-md-12 -->
-    </div> <!-- /.row -->
+    {{ $vyzvy->links() }}
 </div> <!-- /.container -->
 
 @include('includes.foot')

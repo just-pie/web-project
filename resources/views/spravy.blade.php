@@ -1,4 +1,4 @@
-@include('includes.head', ['title' => 'Archives'])
+@include('includes.head', ['title' => 'Účastnícke správy'])
 <body>
 
 	<div class="responsive_menu">
@@ -13,7 +13,7 @@
 					<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 				</ul>
 			</li>
-			<li class="active"><a href="{{ url('/archives')}}">Archives</a></li>
+			<li class="active"><a href="{{ url('/spravy')}}">Správy</a></li>
 			<li><a href="{{ url('/kontakt')}}">Kontakt</a>
 				<ul>
 					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -44,8 +44,7 @@
 						<nav class="main-nav visible-md visible-lg">
 							<ul class="sf-menu">
 								<li><a href="{{ url('/')}}">Domov</a></li>
-								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
-								</li>
+								<li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
 								<li><a href="{{ url('/info')}}">Informácie</a>
 									<ul>
 										<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
@@ -53,7 +52,7 @@
 										<li><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
 									</ul>
 								</li>
-								<li><a href="{{ url('/archives')}}">Archives</a></li>
+								<li class="active"><a href="{{ url('/spravy')}}">Správy</a></li>
 								<li><a href="{{ url('/kontakt')}}">Kontakt</a>
 									<ul>
 										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -87,10 +86,10 @@
 			<div class="container pageTitle">
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
-						<h2 class="page-title">Archives</h2>
+						<h2 class="page-title">Účastnícke správy</h2>
 					</div> <!-- /.col-md-6 -->
 					<div class="col-md-6 col-sm-6 text-right">
-						<span class="page-location">Home / Archives</span>
+						<span class="page-location">Domov / Správy</span>
 					</div> <!-- /.col-md-6 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
@@ -104,41 +103,62 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="archive-wrapper">
-							<p>Feel free to download templates from templatemo.com website. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, excepturi ullam officia debitis blanditiis eos omnis asperiores eaque mollitia consequatur in aspernatur delectus ab accusantium itaque dolores alias provident veritatis repellendus culpa nemo vel accusamus!</p>
-							<h3 class="archive-title">Latest 10 Posts</h3>
+							<p>Na tomto mieste sa budú zobrazovať účastnícke správy jednotlivých študentov</p>
+							<h3 class="archive-title">Posledných 10 správ</h3>
 							<ul class="archive-list">
-                                <li><a href="info/infopocas.blade.php">Aenean eleifend est a ligula dictum, a dapibus est mollis.</a></li>
-                                <li><a href="info/infopocas.blade.php">Proin ut sem ut lectus fringilla varius.</a></li>
-                                <li><a href="info/infopocas.blade.php">Nulla sit amet mi ac neque lobortis consectetur.</a></li>
-                                <li><a href="info/infopocas.blade.php">Sed hendrerit erat eget volutpat feugiat.</a></li>
-                                <li><a href="info/infopocas.blade.php">Aenean eu mauris quis magna pretium dictum a a metus.</a></li>
-                                <li><a href="info/infopocas.blade.php">Nunc posuere felis sit amet lectus cursus feugiat.</a></li>
-                                <li><a href="info/infopocas.blade.php">Maecenas ultricies augue pellentesque justo lacinia pulvinar.</a></li>
-                                <li><a href="info/infopocas.blade.php">Phasellus ac odio fermentum, feugiat nunc et, porttitor sapien.</a></li>
-                                <li><a href="info/infopocas.blade.php">Suspendisse a nisl nec nisl sagittis dictum.</a></li>
-                                <li><a href="info/infopocas.blade.php">Morbi aliquet purus vitae dolor commodo dictum.</a></li>
+								@foreach($spravy as $sprava)
+									<li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->vyzvy->nazov}}</a></li>
+								@endforeach
                             </ul>
-                            <h3 class="archive-title">Archives by Month:</h3>
+                            <h3 class="archive-title">Správy podľa mesiaca:</h3>
                             <ul class="archive-list">
-                                <li><a href="#">January 2084</a></li>
-                                <li><a href="#">December 2083</a></li>
-                                <li><a href="#">November 2083</a></li>
-                                <li><a href="#">October 2083</a></li>
-                                <li><a href="#">September 2083</a></li>
-                                <li><a href="#">August 2083</a></li>
-                                <li><a href="#">July 2083</a></li>
-                            </ul>
-                            <h3 class="archive-title">Archives by Categories:</h3>
-                            <ul class="archive-list">
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">Famliy</a></li>
-                                <li><a href="#">Government</a></li>
-                                <li><a href="#">Health</a></li>
-                                <li><a href="#">Science</a></li>
-                                <li><a href="#">Student Achievements</a></li>
-                                <li><a href="#">Tech &amp; Engineering</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
+                                <li><a href="#">Mesiac - rok</a></li>
                             </ul>
 						</div>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="comment-form">
+							<h3>Odošlite svoju správu</h3>
+							<div class="widget-inner">
+								<form action="#" method="post">
+									<div class="row">
+										<div class="col-md-4">
+											<p>
+												<label for="name-id">Výzva:</label>
+												<input type="text" id="name-id" name="name-id">
+											</p>
+										</div>
+										<div class="col-md-8">
+											<p>
+												<label for="email-id">Krátky popis:</label>
+												<input type="text" id="email-id" name="email-id">
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<p>
+												<label for="comment">Tvoja správa:</label>
+												<textarea name="comment" id="comment" rows="5"></textarea>
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<input class="mainBtn" type="submit" name="submit" value="Odoslať správu" id="submit">
+										</div>
+									</div>
+								</form>
+							</div> <!-- /.widget-inner -->
+						</div> <!-- /.widget-main -->
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.col-md-8 -->
@@ -206,13 +226,10 @@
 			</div> <!-- /.col-md-4 -->
 
 		</div> <!-- /.row -->
-	</div> <!-- /.container -->	
 
-	
-
-	<div class="container">
-		
 	</div> <!-- /.container -->
+
+
 
     @include('includes.foot')
 

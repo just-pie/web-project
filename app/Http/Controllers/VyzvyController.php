@@ -8,7 +8,7 @@ class VyzvyController extends Controller
 {
     public function showVyzvy()
     {
-        $vyzvy = Vyzvy::all();
+        $vyzvy = Vyzvy::paginate(9);
         return view("vyzvy", ['vyzvy' => $vyzvy]);
     }
 
