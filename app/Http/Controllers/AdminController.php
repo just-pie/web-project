@@ -48,8 +48,8 @@ class AdminController extends Controller
         $user->heslo = $hashed;
         $user->roly_idroly = $role;
         $user->save();
-
-        return $this->showUsers();
+        $msg = 'Nový používateľ bol <strong>úspešne</strong> pridaný!';
+        return back()->with('message', $msg);
     }
 
     public function showUsers()
@@ -75,26 +75,28 @@ class AdminController extends Controller
         return view("admin.admin", ['users'=>$users])->with($data);
     }
 
-    public function editUser(Request $request, $id){
+    public function editUser(Request $request){
 
+        $user = Pouzivatelia::findOrFail($request->input('idpouzivatelia'));
+        $user->update($request->all());
+
+        /*$user = Pouzivatelia::where("idpouzivatelia", "=", $request->input('idpouzivatelia'))->first();
+        $user->update(['meno' => $request->input('meno'),
+            'priezvisko' => $request->input('priezvisko'),
+            'email' => $request->input('email'),
+            'datum_narodenia' => $request->input('datum_narodenia'),
+            'roly_idroly' => $request->input('rola')]);*/
+
+        $msg = 'Dáta o používateľovi <em>'.$request->input('meno').' '.$request->input('priezvisko').'</em> boli <strong>úspešne</strong> aktualizované!';
+        echo "som tu!";
+        return back()->with('message', $msg);
     }
 
-    public function getUserInfo($id){
-        $page_name = 'admin.crud_operations.show_user';
-        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
-
-        $pouzivatel = \DB::table('pouzivatelia')
-            ->select(['pouzivatelia.idpouzivatelia', 'pouzivatelia.meno as meno', 'pouzivatelia.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola', 'pouzivatelia.created_at', 'pouzivatelia.updated_at'])
-            ->join('roly', 'roly.idroly', '=', 'pouzivatelia.roly_idroly')
-            ->where('pouzivatelia.idpouzivatelia', '=', $id)
-            ->get();
-
-
-        $data = [
-            'page_name'  => $page_name,
-            'countThisHourAddedUsers'   => $countThisHourAddedUsers
-        ];
-        return view("admin.admin", ['pouzivatel'=>$pouzivatel])->with($data);
+    public function deleteUser(Request $request){
+        $user = Pouzivatelia::findOrFail($request->input('idpouzivatelia'));
+        $user->delete();
+        $msg = 'Používateľ bol <strong>úspešne</strong> vymazaný z databázy!';
+        return back()->with('message', $msg);
     }
 
     public function countRecentlyAddedUsers(){

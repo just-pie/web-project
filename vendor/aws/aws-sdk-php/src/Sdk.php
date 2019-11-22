@@ -94,6 +94,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionConfigService(array $args = [])
  * @method \Aws\Connect\ConnectClient createConnect(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionConnect(array $args = [])
+ * @method \Aws\ConnectParticipant\ConnectParticipantClient createConnectParticipant(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionConnectParticipant(array $args = [])
  * @method \Aws\CostExplorer\CostExplorerClient createCostExplorer(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCostExplorer(array $args = [])
  * @method \Aws\CostandUsageReportService\CostandUsageReportServiceClient createCostandUsageReportService(array $args = [])
@@ -102,6 +104,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionDAX(array $args = [])
  * @method \Aws\DLM\DLMClient createDLM(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionDLM(array $args = [])
+ * @method \Aws\DataExchange\DataExchangeClient createDataExchange(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionDataExchange(array $args = [])
  * @method \Aws\DataPipeline\DataPipelineClient createDataPipeline(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionDataPipeline(array $args = [])
  * @method \Aws\DataSync\DataSyncClient createDataSync(array $args = [])
@@ -236,6 +240,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionMacie(array $args = [])
  * @method \Aws\ManagedBlockchain\ManagedBlockchainClient createManagedBlockchain(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionManagedBlockchain(array $args = [])
+ * @method \Aws\MarketplaceCatalog\MarketplaceCatalogClient createMarketplaceCatalog(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionMarketplaceCatalog(array $args = [])
  * @method \Aws\MarketplaceCommerceAnalytics\MarketplaceCommerceAnalyticsClient createMarketplaceCommerceAnalytics(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMarketplaceCommerceAnalytics(array $args = [])
  * @method \Aws\MarketplaceEntitlementService\MarketplaceEntitlementServiceClient createMarketplaceEntitlementService(array $args = [])
@@ -260,6 +266,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionMediaTailor(array $args = [])
  * @method \Aws\MigrationHub\MigrationHubClient createMigrationHub(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMigrationHub(array $args = [])
+ * @method \Aws\MigrationHubConfig\MigrationHubConfigClient createMigrationHubConfig(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionMigrationHubConfig(array $args = [])
  * @method \Aws\Mobile\MobileClient createMobile(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMobile(array $args = [])
  * @method \Aws\Neptune\NeptuneClient createNeptune(array $args = [])
@@ -344,6 +352,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionServiceQuotas(array $args = [])
  * @method \Aws\Ses\SesClient createSes(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionSes(array $args = [])
+ * @method \Aws\SesV2\SesV2Client createSesV2(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionSesV2(array $args = [])
  * @method \Aws\Sfn\SfnClient createSfn(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionSfn(array $args = [])
  * @method \Aws\Shield\ShieldClient createShield(array $args = [])
@@ -395,7 +405,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.115.1';
+    const VERSION = '3.121.0';
 
     /** @var array Arguments for creating clients */
     private $args;

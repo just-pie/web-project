@@ -19,6 +19,15 @@
     <div class="container">
         <h3>Tabuľka používateľov</h3>
         <br>
+        @if(session()->has('message'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {!! session()->get('message') !!}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <br>
+        @endif
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewUser">
             <i class="fa fa-plus"></i>
             Pridať nového používateľa
@@ -49,9 +58,11 @@
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="{{ url('/admin-user/' . $user->idpouzivatelia) }}" ><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
-                                <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->meno}}" data-mypriezvisko="{{$user->priezvisko}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->datum_narodenia}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->idpouzivatelia}} value="{{$user->idpouzivatelia}}""><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                <a href="#" id="{{$user->idpouzivatelia}}"><i class="fa fa-trash" style="color: red;"></i></a>
+                                <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->meno}}" data-mypriezvisko="{{$user->priezvisko}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->datum_narodenia}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->idpouzivatelia}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
+                                @if($user->rola !== "Admin")
+                                    <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->meno}}" data-mypriezvisko="{{$user->priezvisko}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->datum_narodenia}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->idpouzivatelia}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" data-toggle="modal" data-target="#delete" data-mymeno="{{$user->meno}}" data-mypriezvisko="{{$user->priezvisko}}" data-myid="{{$user->idpouzivatelia}}"><i class="fa fa-trash" style="color: red;"></i></a>
+                                @endif
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">
                               {{--  <a href="{{ action("UserController@edit_page", ['id' => $user->id]) }}"
@@ -68,24 +79,37 @@
     </div>
 </main>
 
+@include('admin.crud_operations.show_user')
 @include('admin.crud_operations.edit_user')
+@include('admin.crud_operations.delete_user')
 
 <script src="{{asset("js/app.js")}}"></script>
 <script>
     $('#show').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);
-        var idpouzivatelia = document.getElementById('idpouzivatelia').value;
-        var meno = document.getElementById('meno').value;
-        var priezvisko = document.getElementById('priezvisko').value;
-        var datum_narodenia = document.getElementById('datum_narodenia').value;
-        var rola = document.getElementById('rola').value;
-        var created_at = document.getElementById('created_at').value;
-        var updated_at = document.getElementById('updated_at').value;
+        var idpouzivatelia = button.data('myid');
+        var meno = button.data('mymeno');
+        var priezvisko = button.data('mypriezvisko');
+        var email = button.data('myemail');
+        var datum_narodenia = button.data('mydatum_narodenia');
+        var rola = button.data('myrola');
+        var created_at = button.data('mycreated_at');
+        var updated_at = button.data('myupdated_at');
         var modal = $(this);
+        if(rola === "Študent"){
+            rola = 2;
+        }
+        else if(rola === "Moderátor"){
+            rola = 3;
+        }
+        else{
+            rola = 0;
+        }
         modal.find('.modal-body #meno').val(meno);
         modal.find('.modal-body #priezvisko').val(priezvisko);
+        modal.find('.modal-body #email').val(email);
         modal.find('.modal-body #datum_narodenia').val(datum_narodenia);
-        modal.find('.modal-body #rola').val("2");
+        modal.find('.modal-body #rola').val(rola);
         modal.find('.modal-body #created_at').val(created_at);
         modal.find('.modal-body #updated_at').val(updated_at);
         modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
@@ -121,9 +145,15 @@
         modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
     });
     $('#delete').on('show.bs.modal', function (event) {
+
         var button = $(event.relatedTarget);
-        var cat_id = button.data('catid');
+        var idpouzivatelia = button.data('myid');
+        var meno = button.data('mymeno');
+        var priezvisko = button.data('mypriezvisko');
         var modal = $(this);
-        modal.find('.modal-body #cat_id').val(cat_id);
+
+        modal.find('.modal-body #meno').val(meno);
+        modal.find('.modal-body #priezvisko').val(priezvisko);
+        modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
     });
 </script>

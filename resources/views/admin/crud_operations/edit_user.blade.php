@@ -8,11 +8,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form method="post" action="{{ action('AdminController@editUser') }}">
-                <div class="modal-body">
+
+            <div class="modal-body">
+                <form method="post" action="{{ action('AdminController@editUser') }}">
                     <br>
-                    {{method_field('patch')}}
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    {{csrf_field()}}
+                    <input type="hidden" id="idpouzivatelia" name="idpouzivatelia">
 
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -46,7 +47,7 @@
                         <select class="custom-select" id="rola" name="rola" required>
                             <option selected>Vyberte...</option>
                             <option value="2">Študent</option>
-                            <option value="3">Modetátor</option>
+                            <option value="3">Moderátor</option>
                         </select>
                     </div>
                     <br>
@@ -86,8 +87,9 @@
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvoriť</button>
                         <input type="submit" value="Uložiť zmeny" class="btn btn-primary">
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+
         </div>
     </div>
 </div>
