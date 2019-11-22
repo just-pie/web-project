@@ -1,4 +1,4 @@
-@include('includes.head', ['title' => 'Informácie'])
+@include('includes.head', ['title' => 'Správa'])
 <body>
 
 <div class="responsive_menu">
@@ -6,7 +6,7 @@
         <li><a href="{{ url('/')}}">Domov</a></li>
         <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
         </li>
-        <li><a href="{{ url('/info')}}">Informácie</a>
+        <li><a href="#">Informácie</a>
             <ul>
                 <li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
                 <li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -46,7 +46,7 @@
                             <li><a href="{{ url('/')}}">Domov</a></li>
                             <li><a href="{{ url('/vyzvy')}}">Výzvy</a>
                             </li>
-                            <li><a href="{{ url('/info')}}">Informácie</a>
+                            <li><a href="#">Informácie</a>
                                 <ul>
                                     <li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
                                     <li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -87,10 +87,10 @@
         <div class="container pageTitle">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <h2 class="page-title">Blog</h2>
+                    <h2 class="page-title">Správa k výzve: </br>{{$sprava->vyzvy->nazov}}</h2>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6 text-right">
-                    <span class="page-location">Home / Blog</span>
+                    <span class="page-location">Home / Správy</span>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->

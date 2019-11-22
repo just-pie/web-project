@@ -5,7 +5,7 @@
         <li><a href="{{ url('/')}}">Domov</a></li>
         <li class="active"><a href="{{ url('/vyzvy')}}">Výzvy</a>
         </li>
-        <li><a href="{{ url('/info')}}">Informácie</a>
+        <li><a href="#">Informácie</a>
             <ul>
                 <li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
                 <li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -45,7 +45,7 @@
                             <li><a href="{{ url('/')}}">Domov</a></li>
                             <li class="active"><a href="{{ url('/vyzvy')}}">Výzvy</a>
                             </li>
-                            <li><a href="{{ url('/info')}}">Informácie</a>
+                            <li><a href="#">Informácie</a>
                                 <ul>
                                     <li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
                                     <li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -114,28 +114,53 @@
     <div class="row">
         <div class="portfolio-holder" id="Grid">
             @foreach($vyzvy as $vyzva)
+                @if(count($vyzva->univerzity) < 2)
                     <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
-                            <div class="thumb-post">
-                                <div class="overlay-inner"><img src="{{$vyzva->univerzity->first()['foto']}}" alt="{{$vyzva->univerzity->first()['nazov']}}">
-                                    <div class="portfolio-infos">
-                                        <h3 style="color: white">{{$vyzva->nazov}}</h3>
-                                    </div>
+                        <div class="thumb-post">
+                            <div class="overlay-inner"><img src="{{$vyzva->univerzity->first()['foto']}}" alt="{{$vyzva->nazov}}">
+                                <div class="portfolio-infos">
+                                    <h3 style="color: white">{{$vyzva->nazov}}</h3>
                                 </div>
-                                <div class="overlay">
-                                    <div class="overlay-inner">
-                                        <div class="portfolio-infos">
-                                            <span class="meta-category">{{$vyzva->oblasti->nazov}}</span>
-                                            <h3 class="portfolio-title">{{$vyzva->univerzity->first()['nazov']}}</h3>
-                                        </div>
-                                        <div class="portfolio-expand">
-                                            <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
-                                                <i class="fa fa-expand"></i>
-                                            </a>
-                                        </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <div class="portfolio-infos">
+                                        <span class="meta-category">{{$vyzva->oblasti->nazov}}</span>
+                                        <h3 class="portfolio-title">{{$vyzva->univerzity->first()['nazov']}}</h3>
+                                    </div>
+                                    <div class="portfolio-expand">
+                                        <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div> <!-- /.col-md-4 -->
+                @else
+                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                        <div class="thumb-post">
+                            <div class="overlay-inner"><img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}">
+                                <div class="portfolio-infos">
+                                    <h3 style="color: white">{{$vyzva->nazov}}</h3>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <div class="portfolio-infos">
+                                        <span class="meta-category">{{$vyzva->oblasti->nazov}}</span>
+                                        <h3 class="portfolio-title">Viaceré univerzity</h3>
+                                    </div>
+                                    <div class="portfolio-expand">
+                                        <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                @endif
                 @endforeach
         </div> <!-- /.portfolio-holder -->
     </div> <!-- /.row -->

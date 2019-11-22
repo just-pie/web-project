@@ -5,7 +5,7 @@
             <li class="active"><a href="{{ url('/')}}">Domov</a></li>
 			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 			</li>
-			<li><a href="{{ url('/info')}}">Informácie</a>
+			<li><a href="#">Informácie</a>
 				<ul>
 					<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
 					<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -45,7 +45,7 @@
 								<li class="active"><a href="{{ url('/')}}">Domov</a></li>
 								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 								</li>
-								<li><a href="{{ url('/info')}}">Informácie</a>
+								<li><a href="#">Informácie</a>
 									<ul>
 										<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
 										<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
