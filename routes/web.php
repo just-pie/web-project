@@ -72,3 +72,5 @@ Route::get('/vyzva/{id}', ['as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva
 //Route::get('/vyzva', function () {
 //    return view('vyzva');
 //});
+
+Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@showLogin']);

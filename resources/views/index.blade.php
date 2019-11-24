@@ -88,7 +88,7 @@
 		        	<div class="col-md-12">
 		        		<h2>VITAJTE NA STRÁNKE MOBILITY UKF</h2>
 		        		<p>Na tejto stránke sa dozviete všetko o možnostiach mobilít<br> na Univerzite Konštantína Filozofa v Nitre </p>
-		        		<a href="#" class="large-button white-color">Prihlásenie <i class="icon-button fa fa-bars"></i></a>
+		        		<a href="{{ route("login") }}" class="large-button white-color">Prihlásenie <i class="icon-button fa fa-bars"></i></a>
 		        	</div> <!-- /.col-md-12 -->
 		        </div> <!-- /.row -->
 		    </div> <!-- /.container -->
