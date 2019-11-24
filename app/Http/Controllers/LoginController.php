@@ -11,4 +11,9 @@ class LoginController extends Controller
     {
         return view('login_page.login');
     }
+
+    public function showRegister()
+    {
+        return view('login_page.register');
+    }
 }

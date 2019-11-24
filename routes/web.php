@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 Route::get('/archives', function () {
     return view('archives');
@@ -74,3 +74,5 @@ Route::get('/vyzva/{id}', ['as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva
 //});
 
 Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@showLogin']);
+Route::get('/register', ['as' => 'register', 'uses' => 'LoginController@showRegister']);
+
