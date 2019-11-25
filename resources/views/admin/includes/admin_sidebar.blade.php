@@ -22,15 +22,15 @@
                     <li class="header-menu">
                         <span>Všeobecné</span>
                     </li>
-                    <li class="sidebar-dropdown">
-                        <a href="{{ url('admin') }}">
+                    <li>
+                        <a class="dashboard" href="{{ url('admin') }}">
                             <i class="fa fa-tachometer-alt"></i>
                             <span class="menu-text">Nástenka</span>
 {{--                            <span class="badge badge-pill badge-warning">New</span>--}}
                         </a>
                     </li>
                     <li class="sidebar user-icon">
-                        <a href="{{ url('admin-users') }}">
+                        <a class="users" href="{{ url('admin-users') }}">
                             <i class="fa fa-user"></i>
                             <span class="menu-text">Používatelia</span>
                             @if($countThisHourAddedUsers>0)
@@ -54,7 +54,7 @@
 {{--                        </div>--}}
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#">
+                        <a href="#" class="challenge">
                             <i class="fa fa-chart-line"></i>
                             <span class="menu-text">Výzvy</span>
                         </a>
@@ -79,7 +79,7 @@
                         </div>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#">
+                        <a href="#" class="university">
                             <i class="fa fa-graduation-cap"></i>
                             <span class="menu-text">Univerzity</span>
                         </a>
@@ -100,42 +100,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="fa fa-map-marker"></i>
-                            <span class="menu-text">Maps</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Google maps</a>
-                                </li>
-                                <li>
-                                    <a href="#">Open street map</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+
                     <li class="header-menu">
                         <span>Extra</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{ url('admin-docs') }}" class="documentation">
                             <i class="fa fa-book"></i>
                             <span class="menu-text">Documentation</span>
                             <span class="badge badge-pill badge-primary">Beta</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-calendar"></i>
-                            <span class="menu-text">Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-folder"></i>
-                            <span class="menu-text">Examples</span>
                         </a>
                     </li>
                 </ul>

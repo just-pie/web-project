@@ -85,3 +85,11 @@
 
         </div>
     </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(" li").removeClass("active");
+            $('.dashboard').addClass('active');
+        });
+    </script>

@@ -19,10 +19,27 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-left: 1px; }
-.default-theme .sidebar-wrapper .sidebar-menu a:hover i,
+
+.dashboard:hover, a.dashboard.active{
+    color: red !important;
+}
+.users:hover, a.users.active {
+    color: orange !important;
+}
+.challenge:hover, a.challenge.active{
+    color: yellow !important;
+}
+.university:hover, a.university.active{
+    color: green !important;
+}
+.documentation:hover, a.documentation.active{
+    color: dodgerblue !important;
+}
+
+    /*.default-theme .sidebar-wrapper .sidebar-menu a:hover i,
 .default-theme .sidebar-wrapper .sidebar-menu a:hover:before,
-.default-theme .sidebar-wrapper .sidebar-menu li.active a i {
-    color: #22ff16; }
+.default-theme .sidebar-wrapper .dashboard .sidebar-menu li.active a i {
+    color: #22ff16; }*/
 .default-theme .sidebar-wrapper .sidebar-menu .user-icon li.active a i {
     color: #ff0dfb; }
 .default-theme .sidebar-wrapper .sidebar-menu ul li a i {

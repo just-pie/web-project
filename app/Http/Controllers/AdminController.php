@@ -126,6 +126,20 @@ public function countAllUsers(){
     return $count;
 }
 
+    public function showDocumentation(){
+        $page_name = 'admin.admin_body.admin_documentation';
+
+        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
+
+        $data = [
+            'page_name'  => $page_name,
+            'countThisHourAddedUsers'   => $countThisHourAddedUsers
+
+        ];
+
+        return view('admin.admin')->with($data);
+    }
+
     public function logout(Request $request)
     {
         $this->performLogout($request);

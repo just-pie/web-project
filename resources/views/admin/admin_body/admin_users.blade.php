@@ -1,4 +1,4 @@
-<main class="page-content pt-2">
+
     <div id="overlay" class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -77,7 +77,6 @@
             </tbody>
         </table>
     </div>
-</main>
 
 @include('admin.crud_operations.show_user')
 @include('admin.crud_operations.edit_user')
@@ -156,4 +155,10 @@
         modal.find('.modal-body #priezvisko').val(priezvisko);
         modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
     });
+
+    $(document).ready(function () {
+        $(" li").removeClass("active");
+        $('.users').addClass('active');
+    });
+
 </script>
