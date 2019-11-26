@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpravyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpravyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/spravy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/spravy.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +233,7 @@
       <workItem from="1574455478140" duration="2483000" />
       <workItem from="1574718488008" duration="264000" />
       <workItem from="1574745301472" duration="2259000" />
-      <workItem from="1574759256483" duration="235000" />
+      <workItem from="1574759256483" duration="945000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -344,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574747503490</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Pred prezentaciou">
+      <created>1574759500912</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574759500912</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
