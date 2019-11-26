@@ -8,7 +8,7 @@ class SpravyController extends Controller
 {
     public function showSpravy()
     {
-        $spravy = Spravy::all();
+        $spravy = Spravy::all()->sortByDesc('datum');
         return view("spravy", ['spravy' => $spravy]);
     }
 
