@@ -115,12 +115,7 @@
                             <h3 class="archive-title">Správy podľa mesiaca:</h3>
                             <ul class="archive-list">
                                 <li><a href="#">Mesiac - rok</a></li>
-                                <li><a href="#">Mesiac - rok</a></li>
-                                <li><a href="#">Mesiac - rok</a></li>
-                                <li><a href="#">Mesiac - rok</a></li>
-                                <li><a href="#">Mesiac - rok</a></li>
-                                <li><a href="#">Mesiac - rok</a></li>
-                                <li><a href="#">Mesiac - rok</a></li>
+                                <li>...</li>
                             </ul>
 						</div>
 					</div> <!-- /.col-md-12 -->
