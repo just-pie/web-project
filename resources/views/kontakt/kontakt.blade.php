@@ -7,7 +7,7 @@
 			<li><a href="{{ url('/')}}">Domov</a></li>
 			<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 			</li>
-			<li><a href="{{ url('/info')}}">Informácie</a>
+			<li><a href="#">Informácie</a>
 				<ul>
 					<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
 					<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -15,8 +15,9 @@
 				</ul>
 			</li>
 			<li><a href="{{ url('/spravy')}}">Správy</a></li>
-			<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+			<li class="active"><a href="#">Kontakt</a>
 				<ul>
+					<li><a href="{{ url('/kontakt')}}">OMV</a>
 					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
 					<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
 					<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
@@ -47,7 +48,7 @@
 								<li><a href="{{ url('/')}}">Domov</a></li>
 								<li><a href="{{ url('/vyzvy')}}">Výzvy</a>
 								</li>
-								<li><a href="{{ url('/info')}}">Informácie</a>
+								<li><a href="#">Informácie</a>
 									<ul>
 										<li><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
 										<li><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
@@ -55,8 +56,9 @@
 									</ul>
 								</li>
 								<li><a href="{{ url('/spravy')}}">Správy</a></li>
-								<li class="active"><a href="{{ url('/kontakt')}}">Kontakt</a>
+								<li class="active"><a href="#">Kontakt</a>
 									<ul>
+										<li><a href="{{ url('/kontakt')}}">OMV</a>
 										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
 										<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
 										<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
