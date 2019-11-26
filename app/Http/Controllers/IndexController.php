@@ -11,7 +11,7 @@ class IndexController extends Controller
     {
         $vyzvy = Vyzvy::inRandomOrder()->limit(7)->get();
         $poslvyzvy = Vyzvy::orderBy('pridane', 'desc')->take(3)->get();
-        $spravy = Spravy::inRandomOrder()->limit(2)->get();
+        $spravy = Spravy::inRandomOrder()->limit(4)->get();
         return view("index", ['vyzvy' => $vyzvy,
             'spravy' => $spravy,
             'poslvyzvy' => $poslvyzvy]);

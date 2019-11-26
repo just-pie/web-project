@@ -14,8 +14,9 @@
 				</ul>
 			</li>
 			<li class="active"><a href="{{ url('/spravy')}}">Správy</a></li>
-			<li><a href="{{ url('/kontakt')}}">Kontakt</a>
+			<li><a href="#">Kontakt</a>
 				<ul>
+					<li><a href="{{ url('/kontakt')}}">OMV</a>
 					<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
 					<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
 					<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
@@ -53,8 +54,9 @@
 									</ul>
 								</li>
 								<li class="active"><a href="{{ url('/spravy')}}">Správy</a></li>
-								<li><a href="{{ url('/kontakt')}}">Kontakt</a>
+								<li><a href="#">Kontakt</a>
 									<ul>
+										<li><a href="{{ url('/kontakt')}}">OMV</a>
 										<li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
 										<li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
 										<li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
@@ -81,7 +83,7 @@
 		</div> <!-- /.container -->
 	</header> <!-- /.site-header -->
 
-	<div class="first-widget parallax" id="blog">
+	<div class="first-widget parallax" id="messageId">
 		<div class="parallax-overlay">
 			<div class="container pageTitle">
 				<div class="row">
@@ -107,7 +109,7 @@
 							<h3 class="archive-title">Posledných 10 správ</h3>
 							<ul class="archive-list">
 								@foreach($spravy as $sprava)
-									<li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->vyzvy->nazov}}</a></li>
+									<li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->pouzivatelia->meno}} {{$sprava->pouzivatelia->priezvisko}} / {{$sprava->vyzvy->nazov}}</a></li>
 								@endforeach
                             </ul>
                             <h3 class="archive-title">Správy podľa mesiaca:</h3>
@@ -166,13 +168,13 @@
 			<div class="col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-widget">
-						<h5 class="widget-title">Šablóna PDF</h5>
-						<div class="col-md-6">
+						<h5 class="widget-title">Dokumenty na stiahnutie</h5>
+						<div class="col-md-12">
 							<ul>
-								<li><a href="#">Standard</a></li>
-								<li><a href="#">Audio</a></li>
-								<li><a href="#">Video</a></li>
-								<li><a href="#">Branding</a></li>
+								<li><a href="#">Účastnícka správa šablóna</a></li>
+								<li><a href="#">Vzor účastníckej správy</a></li>
+								<li><a href="#">Dokument 1</a></li>
+								<li><a href="#">Dokument 2</a></li>
 							</ul>
 						</div>
 					</div> <!-- /.sidebar-widget -->

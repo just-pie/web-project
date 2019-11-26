@@ -530,6 +530,11 @@ input.mainBtn {
 	background-attachment: inherit;
 }
 
+#messageId {
+	background-image: url("../images/includes/messageId.jpg");
+	background-attachment: inherit;
+}
+
 #contact {
 	background-image: url("../images/includes/contact.jpg");
 }

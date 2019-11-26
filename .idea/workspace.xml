@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/uni_foto/erasmus2020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/univerzita.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/uni_foto/taiwan.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UniverzityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UniverzityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/includes/passau.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/includes/portfolio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/includes/portfolio.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/blue-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blue-scheme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/info/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/info/info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/info/info.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/info/infopo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/info/infopo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/info/infopocas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/info/infopocas.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/info/infopred.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/info/infopred.blade.php" afterDir="false" />
@@ -21,9 +19,9 @@
       <change beforePath="$PROJECT_DIR$/resources/views/kontakt/kontaktpf.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kontakt/kontaktpf.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sprava.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sprava.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/spravy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/spravy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/univerzita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/univerzita.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzva.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +251,9 @@
       <workItem from="1574329180541" duration="3099000" />
       <workItem from="1574344551296" duration="6380000" />
       <workItem from="1574434620257" duration="3273000" />
-      <workItem from="1574455478140" duration="2350000" />
+      <workItem from="1574455478140" duration="2483000" />
+      <workItem from="1574718488008" duration="264000" />
+      <workItem from="1574745301472" duration="2050000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574350551040</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Pokracovanie uprav na spravy.blade + upravena homepage">
+      <created>1574457957944</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574457957944</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +397,7 @@
     <MESSAGE value="Merge pull request #8 from just-pie/m-orlicek&#10;&#10;Vyzvy working" />
     <MESSAGE value="Pridane informácie" />
     <MESSAGE value="Zaciatok uprav na spravy.blade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zaciatok uprav na spravy.blade" />
+    <MESSAGE value="Pokracovanie uprav na spravy.blade + upravena homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pokracovanie uprav na spravy.blade + upravena homepage" />
   </component>
 </project>
