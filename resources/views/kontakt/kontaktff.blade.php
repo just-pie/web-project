@@ -1,6 +1,7 @@
 @include('includes.head', ['title' => 'Kontakt FF'])
 <body>
 
+@include('includes.nav')
 
 	<div class="responsive_menu">
 		<ul class="main_menu">
@@ -162,6 +163,12 @@
 
         window.onload = loadScript;
     </script>
+	<script>
+		$(document).ready(function () {
+			$(".nav li").removeClass("active");
+			$('.kontakt').addClass('active');
+		});
+	</script>
 
 
 </body>

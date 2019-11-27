@@ -160,7 +160,12 @@
 
         window.onload = loadScript;
     </script>
-
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".nav li").removeClass("active");
+			$(".kontakt").addClass("active");
+		});
+	</script>
 
 </body>
 </html>

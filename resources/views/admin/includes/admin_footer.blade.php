@@ -34,11 +34,16 @@
                     "next":       "Ďalší",
                     "previous":   "Predošlý"
                 },
-                "columnDefs": [
-                    {"targets": "[5]", "orderable": "false"}
-                ],
-                "infoFiltered": "(filtered from _MAX_ total records)"
-            }
+                "infoFiltered": "(filtered from _MAX_ total records)",
+            },
+            "order": [[1, 'asc']],
+            "columns": [
+                { "orderable": false },
+                null,
+                null,
+                null,
+                { "orderable": false }
+            ]
         });
     });
 </script>

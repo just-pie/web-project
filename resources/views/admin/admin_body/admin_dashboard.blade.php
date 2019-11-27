@@ -6,7 +6,7 @@
                 <p>Toto je rozhranie pre admina.</p>
 
             </div>
-            
+
             {{--
             <div class="form-group col-md-12">
                 <a href="https://github.com/azouaoui-med" target="_blank"

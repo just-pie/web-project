@@ -303,7 +303,13 @@
 	<!-- Scripts -->
 	<script src="js/min/plugins.min.js"></script>
 	<script src="js/min/medigo-custom.min.js"></script>
-
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".nav li").removeClass("active");
+			$(".info").addClass("active");
+			$(".infopred").addClass("active");
+		});
+	</script>
 
 </body>
 </html>

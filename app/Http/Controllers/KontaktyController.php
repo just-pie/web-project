@@ -40,5 +40,11 @@ class KontaktyController extends Controller
     {
         $kontakty = Kontakty::all();
         return view("kontakt\kontaktfss", ['kontakty' => $kontakty]);
+
+    }
+    public function showKontaktSkuska()
+    {
+        $kontakty = Kontakty::all();
+        return view("kontakt\kontaktSkuska", ['kontakty' => $kontakty]);
     }
 }

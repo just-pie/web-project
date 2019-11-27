@@ -1,6 +1,6 @@
 @include('includes.head', ['title' => 'Informácie'])
 <body>
-
+@include('includes.nav')
 	<div class="responsive_menu">
 		<ul class="main_menu">
 			<li><a href="{{ url('/')}}">Domov</a></li>
@@ -247,6 +247,11 @@
 	<script src="js/min/plugins.min.js"></script>
 	<script src="js/min/medigo-custom.min.js"></script>
 
-
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".nav li").removeClass("active");
+		$(".info").addClass("active");
+	});
+</script>
 </body>
 </html>
