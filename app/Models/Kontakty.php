@@ -10,5 +10,5 @@ class Kontakty extends Model
 
     protected $primaryKey = 'id';
 
-    protected $fillable = ['meno', 'email', 'telefon', 'pozicia', 'fakulta', 'poznamka'];
+    protected $fillable = ['meno', 'email', 'telefon', 'pozicia', 'fakulta', 'poznamka', 'web', 'photo'];
 }

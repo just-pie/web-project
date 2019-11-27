@@ -104,9 +104,8 @@ section .section-title {
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
-    min-height: 312px;
+.card {
+    min-height: 400px;
 }
 
 .backside .card a {
@@ -119,7 +118,7 @@ section .section-title {
     color: #007b5e !important;
 }
 
-.frontside .card .card-body img {
+.img-profile {
     width: 120px;
     height: 120px;
     border-radius: 50%;

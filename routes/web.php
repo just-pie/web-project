@@ -57,8 +57,6 @@ Route::get('/kontaktfsvaz', [
 
 Route::get('/kontaktpf', [
     'as' => 'kontaktpf', 'uses' => 'KontaktyController@showKontaktpf'
-]);Route::get('/kontaktSkuska', [
-    'as' => 'kontaktSkuska', 'uses' => 'KontaktyController@showKontaktSkuska'
 ]);
 
 Route::get('/admin-docs', ['as' => 'adminDocs', 'uses' => 'AdminController@showDocumentation']);

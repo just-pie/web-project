@@ -58,7 +58,6 @@
                                     <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
                                     <li><a href="{{ url('/kontaktff')}}">FF</a></li>
                                     <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
-                                    <li><a href="{{ url('/kontaktSkuska')}}">Skuska</a></li>
                                 </ul>
                             </li>
                         </ul> <!-- /.sf-menu -->
