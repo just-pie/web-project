@@ -471,6 +471,22 @@ input.mainBtn {
   background-image: url("../images/includes/contact.jpg");
 }
 
+#fpv {
+  background-image: url("../images/includes/fpv.jpg");
+}
+#pf {
+  background-image: url("../images/includes/pf.jpg");
+}
+#ff {
+  background-image: url("../images/includes/ff.jpg");
+}
+#fss {
+  background-image: url("../images/includes/fss.jpg");
+}
+#fsvaz {
+  background-image: url("../images/includes/fsvaz.jpg");
+}
+
 .parallax {
   background-attachment: fixed;
   background-repeat: no-repeat;

@@ -3,7 +3,7 @@
 
 @include('includes.nav')
 
-<div class="first-widget parallax" id="contact">
+<div class="first-widget parallax" id="fsvaz">
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
