@@ -43,7 +43,7 @@
                             <li class="domov"><a href="{{ url('/')}}" id="domov">Domov</a></li>
                             <li class="vyzvy"><a href="{{ url('/vyzvy')}}" id="vyzvy">Výzvy</a>
                             </li>
-                            <li class="info"><a href="{{ url('/info')}}" id="info">Informácie</a>
+                            <li class="info"><a id="info">Informácie</a>
                                 <ul>
                                     <li class="infopred"><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
                                     <li class="infopocas"><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
