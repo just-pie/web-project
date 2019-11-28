@@ -21,29 +21,22 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-md-8 blog-posts">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post-blog">
-                        <div class="blog-content" align="justify">
-                            <p>Po príchode na prijímajúcu partnerskú inštitúciu v zahraničí sa riaď pokynmi zahraničného
-                                oddelenia, ktoré Ti poskytne informácie o postupe, ktorý musíš absolvovať počas Tvojho
-                                pobytu. Študent je pozvaný na aktivity ESN (Erasmus Student Network) organizované pre
-                                zahraničných Erasmus študentov v danej krajine. Počas pobytu ako Erasmus študent
-                                neplatíš na prijímajúcej inštitúcii školné, ani poplatky za registráciu, vstup do
-                                knižníc, za skúšky a pod.</p><p>Prijímajúca inštitúcia však môže od Teba požadovať tie
-                                poplatky, ktoré požaduje aj od svojich domácich študentov. Platby národných grantov,
-                                pôžičiek a štipendií (v prípade, že nejaké na Slovensku dostávaš), s výnimkou vyššie
-                                uvedeného vládneho štipendia, zostávajú počas mobility zachované. Platby národných
-                                grantov, pôžičiek a štipendií (v prípade, že nejaké na Slovensku dostávaš), s výnimkou
-                                vyššie uvedeného vládneho štipendia, zostávajú počas mobility zachované.</p>
-                        </div>
-                    </div> <!-- /.post-blog -->
-                </div> <!-- /.col-md-12 -->
-            </div> <!-- /.row -->
-
-        </div> <!-- /.col-md-8 -->
+        <div align="justify" style="margin: 30px;">
+            <p>Po príchode na prijímajúcu partnerskú inštitúciu v zahraničí sa riaď pokynmi zahraničného
+                oddelenia, ktoré Ti poskytne informácie o postupe, ktorý musíš absolvovať počas Tvojho
+                pobytu. Študent je pozvaný na aktivity ESN (Erasmus Student Network) organizované pre
+                zahraničných Erasmus študentov v danej krajine. Počas pobytu ako Erasmus študent
+                neplatíš na prijímajúcej inštitúcii školné, ani poplatky za registráciu, vstup do
+                knižníc, za skúšky a pod.</p>
+            <p>Prijímajúca inštitúcia však môže od Teba požadovať tie
+                poplatky, ktoré požaduje aj od svojich domácich študentov. Platby národných grantov,
+                pôžičiek a štipendií (v prípade, že nejaké na Slovensku dostávaš), s výnimkou vyššie
+                uvedeného vládneho štipendia, zostávajú počas mobility zachované. Platby národných
+                grantov, pôžičiek a štipendií (v prípade, že nejaké na Slovensku dostávaš), s výnimkou
+                vyššie uvedeného vládneho štipendia, zostávajú počas mobility zachované.</p>
+        </div>
     </div> <!-- /.row -->
+
 </div> <!-- /.container -->
 
 @include('includes.foot')
