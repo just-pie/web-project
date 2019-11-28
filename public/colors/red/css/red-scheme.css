@@ -467,6 +467,19 @@ input.mainBtn {
   background-attachment: inherit;
 }
 
+#pred{
+  background-image: url("../images/includes/pred.jpg");
+  background-attachment: inherit;
+}
+#pocas{
+  background-image: url("../images/includes/pocas.jpeg");
+  background-attachment: inherit;
+}
+#po{
+  background-image: url("../images/includes/po.jpg");
+  background-attachment: inherit;
+}
+
 #contact {
   background-image: url("../images/includes/contact.jpg");
 }
