@@ -16,6 +16,7 @@ class CreateRolyTable extends Migration
         Schema::create('roly', function (Blueprint $table) {
             $table->increments('idroly');
             $table->string("rola", 45);
+            $table->timestamps();
         });
     }
 

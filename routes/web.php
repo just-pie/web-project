@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 Route::get('/archives', function () {
     return view('archives');
@@ -59,14 +59,22 @@ Route::get('/kontaktpf', [
     'as' => 'kontaktpf', 'uses' => 'KontaktyController@showKontaktpf'
 ]);
 
-Route::get('/vyzvy', [
-    'as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy'
-]);
+Route::get('/admin-docs', ['as' => 'adminDocs', 'uses' => 'AdminController@showDocumentation']);
 
-Route::get('/vyzva/{id}', [
-    'as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva'
-    ]);
+Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);
+Route::get('/admin-users', ['as' => 'admin-users', 'uses' => 'AdminController@showUsers']);
+Route::post('/addUser', ['as' => 'addUser', 'uses' => 'AdminController@addUser']);
+Route::post('/editUser', ['as' => 'editUser', 'uses' => 'AdminController@editUser']);
+Route::post('/deleteUser', ['as' => 'deleteUser', 'uses' => 'AdminController@deleteUser']);
 
-Route::get('/vyzva', function () {
-    return view('vyzva');
-});
+Route::get('/vyzvy', ['as' => 'vyzvy', 'uses' => 'VyzvyController@showVyzvy']);
+
+Route::get('/vyzva/{id}', ['as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva']);
+
+//Route::get('/vyzva', function () {
+//    return view('vyzva');
+//});
+
+Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@showLogin']);
+Route::get('/register', ['as' => 'register', 'uses' => 'LoginController@showRegister']);
+
