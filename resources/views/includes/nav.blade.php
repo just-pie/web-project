@@ -40,10 +40,10 @@
 
                     <nav class="main-nav visible-md visible-lg">
                         <ul class="sf-menu">
-                            <li class="domov"><a href="{{ url('/')}}" id="domov">Domov</a></li>
-                            <li class="vyzvy"><a href="{{ url('/vyzvy')}}" id="vyzvy">Výzvy</a>
+                            <li class="domov"><a href="{{ url('/')}}">Domov</a></li>
+                            <li class="vyzvy"><a href="{{ url('/vyzvy')}}">Výzvy</a>
                             </li>
-                            <li class="info"><a id="info">Informácie</a>
+                            <li class="info"><a>Informácie</a>
                                 <ul>
                                     <li class="infopred"><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
                                     <li class="infopocas"><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
