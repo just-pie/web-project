@@ -94,3 +94,7 @@ Route::post('/addUser', [
 Route::get('/typvyzvy/{id}', [
     'as' => '', 'uses' => 'TypvyzvyController@showAction'
 ]);
+
+Route::get('image-upload',['as'=>'image.upload','uses'=>'ImageUploadController@imageUpload']);
+
+Route::post('image-upload',['as'=>'image.upload.post','uses'=>'ImageUploadController@imageUploadPost']);
