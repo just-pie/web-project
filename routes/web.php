@@ -19,10 +19,6 @@ Route::get('/archives', function () {
     return view('archives');
 });
 
-Route::get('/info', function () {
-    return view('info/info');
-});
-
 Route::get('/infopred', function () {
     return view('info/infopred');
 });
