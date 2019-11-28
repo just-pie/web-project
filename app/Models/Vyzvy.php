@@ -27,4 +27,9 @@ class Vyzvy extends Model
         return $this->belongsTo('App\Models\Oblasti');
     }
 
+    public function spravy()
+    {
+        return $this->hasMany('App\Models\Spravy', 'vyzvy_idvyzvy');
+    }
+
 }

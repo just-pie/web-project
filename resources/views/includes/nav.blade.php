@@ -10,7 +10,7 @@
                 <li class="infopo"><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
             </ul>
         </li>
-        <li class="archives"><a href="{{ url('/archives')}}">Archives</a></li>
+        <li><a href="{{ url('/spravy')}}">Správy</a></li>
         <li class="kontakt"><a href="{{ url('/kontakt')}}">Kontakt</a>
             <ul>
                 <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
@@ -50,9 +50,10 @@
                                     <li class="infopo"><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
                                 </ul>
                             </li>
-                            <li class="archives"><a href="{{ url('/archives')}}">Archives</a></li>
-                            <li class="kontakt"><a href="{{ url('/kontakt')}}">Kontakt</a>
+                            <li class="spravy"><a href="{{ url('/spravy')}}">Správy</a></li>
+                            <li class="kontakt"><a>Kontakt</a>
                                 <ul>
+                                    <li><a href="{{ url('/kontakt')}}">OMV</a>
                                     <li><a href="{{ url('/kontaktfpv')}}" >FPV</a></li>
                                     <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
                                     <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>

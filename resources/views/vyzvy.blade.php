@@ -36,52 +36,57 @@
     <div class="row">
         <div class="portfolio-holder" id="Grid">
             @foreach($vyzvy as $vyzva)
-                @foreach($vyzva->univerzity as $univerzita)
-                    <div class="portfolio-post col-sm-6 col-md-4 mix {{$univerzita->nazov}}">
-                        @endforeach
-                        @foreach($vyzva->univerzity as $univerzita)
-                            <div class="thumb-post">
-                                <div class="overlay-inner"><img src="{{$univerzita->foto}}" alt="Visual Admin">
-                                    <div class="portfolio-infos">
-                                        <h3 style="color: white">{{$univerzita->nazov}}</h3>
-                                    </div>
-
+                @if(count($vyzva->univerzity) < 2)
+                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                        <div class="thumb-post">
+                            <div class="overlay-inner"><img src="{{$vyzva->univerzity->first()['foto']}}" alt="{{$vyzva->nazov}}">
+                                <div class="portfolio-infos">
+                                    <h3 style="color: white">{{$vyzva->nazov}}</h3>
                                 </div>
-                                <div class="overlay">
-                                    <div class="overlay-inner">
-                                        <div class="portfolio-infos">
-                                            <span class="meta-category">{{$vyzva->nazov}}</span>
-                                            <h3 class="portfolio-title">{{$univerzita->nazov}}</h3>
-                                        </div>
-                                        <div class="portfolio-expand">
-                                            <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
-                                                <i class="fa fa-expand"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <div class="portfolio-infos">
+                                        <span class="meta-category">{{$vyzva->oblasti->nazov}}</span>
+                                        <h3 class="portfolio-title">{{$vyzva->univerzity->first()['nazov']}}</h3>
+                                    </div>
+                                    <div class="portfolio-expand">
+                                        <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div> <!-- /.col-md-4 -->
-                @endforeach
+                @else
+                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                        <div class="thumb-post">
+                            <div class="overlay-inner"><img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}">
+                                <div class="portfolio-infos">
+                                    <h3 style="color: white">{{$vyzva->nazov}}</h3>
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-inner">
+                                    <div class="portfolio-infos">
+                                        <span class="meta-category">{{$vyzva->oblasti->nazov}}</span>
+                                        <h3 class="portfolio-title">Viaceré univerzity</h3>
+                                    </div>
+                                    <div class="portfolio-expand">
+                                        <a class="fancybox" href="{{action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])}}" title="Bližšie informácie">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                @endif
             @endforeach
-
         </div> <!-- /.portfolio-holder -->
     </div> <!-- /.row -->
-</div> <!-- /.container -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="pages">
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">...</a></li>
-                <li><a href="#">13</a></li>
-            </ul>
-        </div> <!-- /.col-md-12 -->
-    </div> <!-- /.row -->
+    {{ $vyzvy->links() }}
 </div> <!-- /.container -->
 
 @include('includes.foot')

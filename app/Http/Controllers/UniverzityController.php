@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Univerzity;
 use App\Models\Vyzvy;
 
 class UniverzityController extends Controller
@@ -12,18 +13,9 @@ class UniverzityController extends Controller
         echo $vyzvy->typvyzvy;
     }
 
-    public function insertAction()
+    public function showUniverzita($id)
     {
-
-    }
-
-    public function updateAction($id)
-    {
-
-    }
-
-    public function deleteAction($id)
-    {
-
+        $univerzita = Univerzity::find($id);
+        return view("univerzita", ['univerzita' => $univerzita]);
     }
 }

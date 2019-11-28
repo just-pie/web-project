@@ -8,14 +8,14 @@ class VyzvyController extends Controller
 {
     public function showVyzvy()
     {
-        $vyzvy = Vyzvy::all();
-        return view("/vyzvy", ['vyzvy' => $vyzvy]);
+        $vyzvy = Vyzvy::paginate(9);
+        return view("vyzvy", ['vyzvy' => $vyzvy]);
     }
 
     public function showVyzva($id)
     {
         $vyzva = Vyzvy::find($id);
-        return view("/vyzva", ['vyzva' => $vyzva]);
+        return view("vyzva", ['vyzva' => $vyzva]);
     }
 
 }

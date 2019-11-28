@@ -8,10 +8,6 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <h2 class="page-title">{{$vyzva->nazov}}</h2>
-                    <h3 style="color: white">@foreach($vyzva->univerzity as $univerzity)
-                            {{$univerzity->nazov}}
-                            {{$univerzity->pivot->text}}
-                        @endforeach</h3>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6 text-right">
                     <span class="page-location">Home / Výzvy / Výzva </span>
@@ -21,83 +17,64 @@
     </div> <!-- /.parallax-overlay -->
 </div> <!-- /.pageTitle -->
 
-<div class="container">
-    <div class="row">
 
-        <div class=" blog-posts">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post-blog">
-                        <div class="blog-image">
-                            <a href="info/infopocas.blade.php">
-                                <img src="{{url('../images/includes/projekt1.jpg')}}" alt="">
-                            </a>
-                        </div> <!-- /.blog-image -->
-                        <div class="blog-content">
-                            <h3></h3>
-                            <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-                            <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="info/infopocas.blade.php">Continue Reading...</a></p>
-                        </div> <!-- /.blog-content -->
-                    </div> <!-- /.post-blog -->
-                    <div class="post-blog">
-                        <div class="blog-image">
-                            <a href="info/infopocas.blade.php">
-                                <img src="{{url('../images/includes/blog2.jpg')}}" alt="">
-                            </a>
-                        </div> <!-- /.blog-image -->
-                        <div class="blog-content">
-                            <span class="meta-date"><a href="#">24 February 2084</a></span>
-                            <span class="meta-comments"><a href="#">32 Comments</a></span>
-                            <span class="meta-author"><a href="#">Candy Sharp</a></span>
-                            <h3><a href="info/infopocas.blade.php">Bird Profile Wellington New Zealand</a></h3>
-                            <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-                            <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="info/infopocas.blade.php">Continue Reading...</a></p>
-                        </div> <!-- /.blog-content -->
-                    </div> <!-- /.post-blog -->
-                    <div class="post-blog">
-                        <div class="blog-image">
-                            <a href="info/infopocas.blade.php">
-                                <img src="{{asset('/images/includes/blog3.jpg')}}" alt="">
-                            </a>
-                        </div> <!-- /.blog-image -->
-                        <div class="blog-content">
-                            <span class="meta-date"><a href="#">20 February 2084</a></span>
-                            <span class="meta-comments"><a href="#">64 Comments</a></span>
-                            <span class="meta-author"><a href="#">Candy Sharp</a></span>
-                            <h3><a href="info/infopocas.blade.php">Standard Blog Post Formating Medigo</a></h3>
-                            <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-                            <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="info/infopocas.blade.php">Continue Reading...</a></p>
-                        </div> <!-- /.blog-content -->
-                    </div> <!-- /.post-blog -->
-                    <div class="post-blog">
-                        <div class="blog-image">
-                            <a href="info/infopocas.blade.php">
-                                <img src="{{asset('images/includes/blog4.jpg')}}" alt="">
-                            </a>
-                        </div> <!-- /.blog-image -->
-                        <div class="blog-content">
-                            <span class="meta-date"><a href="#">24 February 2084</a></span>
-                            <span class="meta-comments"><a href="#">128 Comments</a></span>
-                            <span class="meta-author"><a href="#">Candy Sharp</a></span>
-                            <h3><a href="info/infopocas.blade.php">Hochbunker High Definition Photography</a></h3>
-                            <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-                            <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor <a href="info/infopocas.blade.php">Continue Reading...</a></p>
-                        </div> <!-- /.blog-content -->
-                    </div> <!-- /.post-blog -->
-                </div> <!-- /.col-md-12 -->
-                <div class="col-md-12">
-                    <ul class="pages">
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">...</a></li>
-                        <li><a href="#">13</a></li>
-                    </ul>
-                </div> <!-- /.col-md-12 -->
-            </div> <!-- /.row -->
-        </div> <!-- /.col-md-8 -->
-    </div> <!-- /.row -->
-</div> <!-- /.container -->
+@if(count($vyzva->univerzity) < 2)
+    <div class="container">
+        <div class="row">
+            <div class=" blog-posts">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="post-blog">
+                            <div class="blog-image">
+                                <img src="{{$vyzva->univerzity->first()->foto}}" alt="">
+                            </div> <!-- /.blog-image -->
+                            <div class="blog-content">
+                                <h2>Ponuka</h2>
+                                <p>{{$vyzva->popis}}</p>
+                                <h2>Základné informácie</h2>
+                                <p>{{$vyzva->ostatneinfo}}</p>
+                            </div> <!-- /.blog-content -->
+                        </div> <!-- /.post-blog -->
+                        <div>
+                            <h2>Bližšie o univerzite:</h2>
+                            @foreach($vyzva->univerzity as $univerzita)
+                                <li><a href="{{action("UniverzityController@showUniverzita", ['id' => $univerzita->iduniverzity])}}">{{$univerzita->nazov}}</a></li>
+                            @endforeach
+                        </div>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.col-md-8 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+@else
+    <div class="container">
+        <div class="row">
+            <div class=" blog-posts">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="post-blog">
+                            <div class="blog-image">
+                                <img src="{{$vyzva->foto}}" alt="">
+                            </div> <!-- /.blog-image -->
+                            <div class="blog-content">
+                                <h2>Ponuka</h2>
+                                <p>{{$vyzva->popis}}</p>
+                                <h2>Základné informácie</h2>
+                                <p>{{$vyzva->ostatneinfo}}</p>
+                            </div> <!-- /.blog-content -->
+                        </div> <!-- /.post-blog -->
+                        <div>
+                            <h2>Zapojené univerzity:</h2>
+                            @foreach($vyzva->univerzity as $univerzita)
+                                <li><a href="#">{{$univerzita->nazov}}</a></li>
+                            @endforeach
+                        </div>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.col-md-8 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+@endif
 
 @include('includes.foot')
 
