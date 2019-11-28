@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Models\Pouzivatelia;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -49,7 +49,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
+            'email' => 'required|string|email|max:255|unique:pouzivatelia',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -58,14 +58,25 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return \App\Models\Pouzivatelia
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+//        $user = new Pouzivatelia();
+//        $user->meno = $data['name'];
+//        $user->email = $data['email'];
+//
+//        $user->heslo = bcrypt($data['password']);
+//        $user->save();
+
+        return Pouzivatelia::create([
+            'meno' => $data['name'],
+            'priezvisko' => 'priezvisko',
+            'datum_narodenia' => '1999-05-22',
+            'login' => '111111',
+            'roly_idroly' => '2',
             'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'heslo' => bcrypt($data['password']),
         ]);
     }
 }

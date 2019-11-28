@@ -11,8 +11,16 @@
                     <h2>VITAJTE NA STRÁNKE MOBILITY UKF</h2>
                     <p>Na tejto stránke sa dozviete všetko o možnostiach mobilít<br> na Univerzite Konštantína Filozofa
                         v Nitre </p>
-                    <a href="{{ route("login") }}" class="large-button white-color">Prihlásenie <i
-                                class="icon-button fa fa-bars"></i></a>
+                    @if(isset(Auth::user()->email))
+                        <div class="alert alert-danger success-block">
+                            <strong>Welcome {{ Auth::user()->email }}</strong>
+                            <br />
+                            <a href="{{ url('/main/logout') }}">Logout</a>
+                        </div>
+                    @else
+                        <a href="{{ route("login") }}" class="large-button white-color">Prihlásenie <i
+                                    class="icon-button fa fa-bars"></i></a>
+                    @endif
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->

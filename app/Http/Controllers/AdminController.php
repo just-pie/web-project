@@ -140,10 +140,4 @@ public function countAllUsers(){
         return view('admin.admin')->with($data);
     }
 
-    public function logout(Request $request)
-    {
-        $this->performLogout($request);
-        return redirect()->route('index');
-    }
-
 }

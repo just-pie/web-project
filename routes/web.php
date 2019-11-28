@@ -74,3 +74,11 @@ Route::get('/vyzva/{id}', ['as' => 'vyzva', 'uses' => 'VyzvyController@showVyzva
 Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@showLogin']);
 Route::get('/register', ['as' => 'register', 'uses' => 'LoginController@showRegister']);
 
+
+Route::post('/login/checklogin', ['as' => 'checkLogin', 'uses' => 'LoginController@checklogin']);
+Route::get('login/successlogin', 'LoginController@successlogin');
+Route::get('/logout', 'LoginController@logout');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

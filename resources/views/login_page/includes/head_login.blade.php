@@ -8,6 +8,8 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" href="{{ \URL::asset('css/login/main.css') }}">
     <link rel="stylesheet" href="{{ \URL::asset('css/login/util.css') }}">
+
+    <link rel="shortcut icon" href="{{ \URL::asset('/images/favicon2.ico') }}" type="image/x-icon" />
     <!--===============================================================================================-->
 </head>
 
