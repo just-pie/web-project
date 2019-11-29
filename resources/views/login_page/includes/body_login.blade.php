@@ -3,6 +3,7 @@
     <div class="container-login100" style="background-image: url('{{ \URL::asset('images/login/bg-01.jpg') }}');">
         <div class="wrap-login100">
 
+
             @if(isset(Auth::user()->email))
                 <script>window.location = "/";</script>
             @endif
@@ -15,6 +16,9 @@
                 </div>
             @endif
             <form class="login100-form validate-form" method="POST" action="{{ url('login/checklogin') }}">
+
+                <form class="login100-form validate-form" method="POST">
+
                 {{ csrf_field() }}
                 {{--<span class="login100-form-logo">
                     <img src="{{ \URL::asset('images/login/icons/lietadlo.svg')}}";>

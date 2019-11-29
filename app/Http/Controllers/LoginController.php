@@ -21,6 +21,7 @@ class LoginController extends Controller
     {
         return view('login_page.register');
     }
+
     public function checkLogin(Request $request)
     {
         $this->validate($request,
