@@ -12,6 +12,7 @@
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6 text-right">
                     <span class="page-location">Domov / Výzvy</span>
+                    <a class="mainBtn" href="{{ url('/addvyzva')}}" role="button" style="color: white">Pridať výzvu</a>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->

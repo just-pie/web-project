@@ -25,15 +25,13 @@
                 <div class="col-md-12">
                     <div class="post-blog">
                         <div class="blog-image">
-                            <a href="infopocas.blade.php">
                                 <img src="images/includes/blog1.jpg" alt="">
-                            </a>
                         </div> <!-- /.blog-image -->
                         <div class="blog-content">
-                            <span class="meta-date">28 February 2084</span>
-                            <span class="meta-comments">14 Comments</span>
-                            <span class="meta-author">Candy Sharp</span>
-                            <h3>Getting Creative With the Google Maps API</h3>
+                            <span class="meta-date">{{date('d.m.Y', strtotime($sprava->datum))}}</span>
+                            <span class="meta-comments">{{$sprava->pouzivatelia->meno}} {{$sprava->pouzivatelia->priezvisko}}</span>
+                            <span class="meta-author">{{$sprava->vyzvy->nazov}}</span>
+                            <h3 align="justify">{{$sprava->nadpis}}</h3>
                             <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
                             <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor</p>
                         </div> <!-- /.blog-content -->
@@ -76,8 +74,33 @@
         <div class="col-md-4">
             <div class="sidebar">
                 <div class="sidebar-widget">
-                    <h5 class="widget-title">Kompletná správa pdf</h5>
+                    <h5 class="widget-title">Údaje o správe</h5>
                     <div class="col-md-12">
+                        <h5>Meno a priezvisko účastníka:</h5>
+                        <ul>
+                            <li>{{$sprava->pouzivatelia->meno}} {{$sprava->pouzivatelia->priezvisko}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>Miesto mobility:</h5>
+                        <ul>
+                            <li>{{$sprava->vyzvy->univerzity->first()->krajiny->krajina}} - {{$sprava->vyzvy->univerzity->first()->mesto}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>Univerzita:</h5>
+                        <ul>
+                            <li>{{$sprava->vyzvy->univerzity->first()->nazov}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>Dátum pridania správy:</h5>
+                        <ul>
+                            <li>{{date('d.m.Y', strtotime($sprava->datum))}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>Kompletná správa v pdf:</h5>
                         <ul>
                             <li><a href="#">Účastnícka správa pdf</a></li>
                         </ul>

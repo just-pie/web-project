@@ -83,13 +83,12 @@ Route::get('/typvyzvy/{id}', [
     'as' => '', 'uses' => 'TypvyzvyController@showAction'
 ]);
 
-Route::get('image-upload',[
-    'as'=>'image.upload','uses'=>'ImageUploadController@imageUpload'
-]);
+Route::get('/addvyzva','VyzvyController@addVyzva');
 
-Route::post('image-upload',[
-    'as'=>'image.upload.post','uses'=>'ImageUploadController@imageUploadPost'
-]);
+Route::post('/addvyzva','VyzvyController@storeVyzva');
+
+Route::get('create','ImageController@create');
+Route::post('create','ImageController@store');
 
 Route::get('/admin-docs', ['as' => 'adminDocs', 'uses' => 'AdminController@showDocumentation']);
 Route::get('/admin', ['as' => 'admin', 'uses' => 'AdminController@showDashboard']);

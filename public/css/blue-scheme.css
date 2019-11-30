@@ -517,6 +517,11 @@ input.mainBtn {
 	background-image: url("../images/includes/portfolioId.jpg");
 }
 
+
+#messageId {
+	background-image: url("../images/includes/messageId.jpg");
+}
+
 #blogPosts {
 	background-image: url("../images/includes/blogPosts.jpg");
 }

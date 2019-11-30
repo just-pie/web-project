@@ -8,12 +8,12 @@ class Typvyzvy extends Model
 {
     protected $table = 'typvyzvy';
 
-    protected $primaryKey = 'idtyp-vyzvy';
+    protected $primaryKey = 'idtyp_vyzvy';
 
     protected $fillable = ['typ'];
 
     public function vyzvy()
     {
-        return $this->hasMany('App\Models\Vyzvy', 'typ-vyzvy_idtyp-vyzvy');
+        return $this->hasMany('App\Models\Vyzvy', 'typ_vyzvy_idtyp_vyzvy');
     }
 }
