@@ -10,7 +10,17 @@ class Vyzvy extends Model
 
     protected $primaryKey = 'idvyzvy';
 
-    protected $fillable = ['nazov'];
+    protected $fillable = [
+        'nazov',
+        'popis',
+        'ostatneinfo',
+        'dlzka',
+        'pridane',
+        'platnedo',
+        'foto',
+        'oblasti_idoblasti',
+        'typ_vyzvy_idtyp_vyzvy'
+    ];
 
     public function univerzity()
     {
