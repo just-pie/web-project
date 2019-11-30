@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRolyTable extends Migration
+class CreatePasswordResetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateRolyTable extends Migration
      */
     public function up()
     {
-        Schema::create('roly', function (Blueprint $table) {
-            $table->increments('idroly');
-            $table->string("rola", 45);
-            $table->timestamps();
+        Schema::create('password_resets', function (Blueprint $table) {
+            $table->string('email')->index();
+            $table->string('token');
+            $table->timestamp('created_at')->nullable();
         });
     }
 
@@ -27,6 +27,6 @@ class CreateRolyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('roly');
+        Schema::dropIfExists('password_resets');
     }
 }

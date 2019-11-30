@@ -16,7 +16,7 @@ class CreateKontaktyTable extends Migration
         Schema::create('kontakty', function (Blueprint $table) {
             $table->increments('id');
             $table->string('meno', 45);
-            $table->string('email', 50)->unique();
+            $table->string('email', 255)->unique();
             $table->string('telefon', 20);
             $table->string('pozicia', 45);
             $table->string('fakulta', 45);

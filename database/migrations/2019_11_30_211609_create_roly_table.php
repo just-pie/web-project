@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypSuboruTable extends Migration
+class CreateRolyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateTypSuboruTable extends Migration
      */
     public function up()
     {
-        Schema::create('typsuboru', function (Blueprint $table) {
-            $table->increments('idtyp-suboru');
-            $table->string('typ', 45);
+        Schema::create('roly', function (Blueprint $table) {
+            $table->increments('idroly');
+            $table->string("rola", 45);
         });
     }
 
@@ -26,6 +26,6 @@ class CreateTypSuboruTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('roly');
     }
 }

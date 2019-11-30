@@ -11,10 +11,6 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('index');
-});*/
-
 Route::get('/', [
     'as' => 'index', 'uses' => 'IndexController@showVyzvy'
 ]);
@@ -99,3 +95,8 @@ Route::post('/deleteUser', ['as' => 'deleteUser', 'uses' => 'AdminController@del
 Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@showLogin']);
 Route::get('/register', ['as' => 'register', 'uses' => 'LoginController@showRegister']);
 
+
+//Toto mas ten auth
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('admin/routes', 'HomeController@admin')->middleware('admin');

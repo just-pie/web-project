@@ -17,13 +17,15 @@ class CreateVyzvyTable extends Migration
             $table->increments('idvyzvy');
             $table->string('nazov', 100);
             $table->text('popis');
+            $table->string('dlzka', 45);
             $table->text('ostatneinfo');
-            $table->integer('pocetmiest');
+            $table->date('pridane');
+            $table->date('platnedo');
             $table->text('foto');
             $table->integer('oblasti_idoblasti')->unsigned();
             $table->foreign('oblasti_idoblasti')->references('idoblasti')->on('oblasti');
-            $table->integer('typ-vyzvy_idtyp-vyzvy')->unsigned();
-            $table->foreign('typ-vyzvy_idtyp-vyzvy')->references('idtyp-vyzvy')->on('typvyzvy');
+            $table->integer('typvyzvy_idtypvyzvy')->unsigned();
+            $table->foreign('typvyzvy_idtypvyzvy')->references('idtypvyzvy')->on('typvyzvy');
         });
     }
 

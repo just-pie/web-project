@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSpravyTable extends Migration
+class CreatePodujatiaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateSpravyTable extends Migration
      */
     public function up()
     {
-        Schema::create('spravy', function (Blueprint $table) {
-            $table->increments('idspravy');
-            $table->text('text');
-            $table->integer('pouzivatelia_idpouzivatelia')->unsigned();
-            $table->foreign('pouzivatelia_idpouzivatelia')->references('idpouzivatelia')->on('pouzivatelia');
+        Schema::create('podujatia', function (Blueprint $table) {
+            $table->increments('idpodujatia');
+            $table->string('nazov', 45);
+            $table->date('datum');
+            $table->string('miesto', 45);
+            $table->integer('users_idusers')->unsigned();
+            $table->foreign('users_idusers')->references('idusers')->on('users');
             $table->integer('vyzvy_idvyzvy')->unsigned();
             $table->foreign('vyzvy_idvyzvy')->references('idvyzvy')->on('vyzvy');
         });
@@ -30,6 +32,6 @@ class CreateSpravyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spravy');
+        Schema::dropIfExists('podujatia');
     }
 }
