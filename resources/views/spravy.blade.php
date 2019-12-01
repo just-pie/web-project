@@ -29,7 +29,7 @@
 							<h3 class="archive-title">Posledných 10 správ</h3>
 							<ul class="archive-list">
 								@foreach($spravy as $sprava)
-									<li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->pouzivatelia->meno}} {{$sprava->pouzivatelia->priezvisko}} / {{$sprava->vyzvy->nazov}}</a></li>
+									<li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->user->name}} / {{$sprava->vyzvy->nazov}}</a></li>
 								@endforeach
                             </ul>
                             <h3 class="archive-title">Správy podľa mesiaca:</h3>

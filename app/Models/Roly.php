@@ -11,4 +11,9 @@ class Roly extends Model
     protected $primaryKey = 'idroly';
 
     protected $fillable = ['rola'];
+
+    public function user()
+    {
+     return $this->hasMany('App\User', 'roly_idroly');
+    }
 }

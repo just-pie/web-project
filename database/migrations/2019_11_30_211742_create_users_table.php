@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->boolean('isAdmin')->nullable();
             $table->rememberToken();
             $table->integer('roly_idroly')->unsigned();
-            $table->foreign('roly_idroly')->references('roly_idroly')->on('roly');
+            $table->foreign('roly_idroly')->references('idroly')->on('roly');
         });
     }
 
