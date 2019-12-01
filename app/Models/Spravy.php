@@ -17,8 +17,8 @@ class Spravy extends Model
         return $this->belongsTo('App\Models\Vyzvy');
     }
 
-    public function pouzivatelia()
+    public function user()
     {
-        return $this->belongsTo('App\Models\Pouzivatelia');
+        return $this->belongsTo('App\User', 'users_idusers', 'id');
     }
 }

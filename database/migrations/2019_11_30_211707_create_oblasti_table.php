@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypVyzvyTable extends Migration
+class CreateOblastiTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateTypVyzvyTable extends Migration
      */
     public function up()
     {
-        Schema::create('typvyzvy', function (Blueprint $table) {
-            $table->increments('idtyp-vyzvy');
-            $table->string('typ', 45);
+        Schema::create('oblasti', function (Blueprint $table) {
+            $table->increments('idoblasti');
+            $table->string('nazov', 100);
         });
     }
 
@@ -26,6 +26,6 @@ class CreateTypVyzvyTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('oblasti');
     }
 }

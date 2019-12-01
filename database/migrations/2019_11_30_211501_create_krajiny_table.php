@@ -15,8 +15,8 @@ class CreateKrajinyTable extends Migration
     {
         Schema::create('krajiny', function (Blueprint $table) {
             $table->increments('idkrajiny');
-            $table->string('krajina', 45);
-            $table->string('kontinent', 45);
+            $table->string('krajina', 100);
+            $table->string('kontinent', 100);
             $table->string('gps_cord_lat', 45);
             $table->string('gps_cord_long', 45);
         });

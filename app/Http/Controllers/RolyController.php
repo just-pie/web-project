@@ -11,19 +11,4 @@ class RolyController extends Controller
         $roly = Roly::find($id);
         echo $roly->rola;
     }
-
-    public function insertAction()
-    {
-
-    }
-
-    public function updateAction($id)
-    {
-
-    }
-
-    public function deleteAction($id)
-    {
-
-    }
 }

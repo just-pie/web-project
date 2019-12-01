@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOblastiTable extends Migration
+class CreateTypsuboruTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateOblastiTable extends Migration
      */
     public function up()
     {
-        Schema::create('oblasti', function (Blueprint $table) {
-            $table->increments('idoblasti');
-            $table->string('nazov', 45);
+        Schema::create('typsuboru', function (Blueprint $table) {
+            $table->increments('idtyp-suboru');
+            $table->string('typ', 45);
         });
     }
 
@@ -26,6 +26,6 @@ class CreateOblastiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('oblasti');
+        //
     }
 }

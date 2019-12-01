@@ -146,7 +146,7 @@
                     @foreach($spravy as $sprava)
                         <div class="testimonial">
                             <div class="testimonial-content">
-                                <span class="testimonial-author">{{$sprava->pouzivatelia->meno}} {{$sprava->pouzivatelia->priezvisko}}</span>
+                                <span class="testimonial-author">{{$sprava->user->name}}</span>
                                 <p class="testimonial-description"><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->nadpis}}</a></p>
                             </div>
                         </div>
