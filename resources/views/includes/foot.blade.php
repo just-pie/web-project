@@ -9,7 +9,6 @@
                         <li><a href="{{url('/')}}">Domov</a></li>
                         <li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
                         <li><a href="{{ url('/info')}}">Informácie</a></li>
-                        <li><a href="{{ url('/archives')}}">Shortcodes</a></li>
                         <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
                     </ul> <!-- /.footer-menu -->
                 </nav> <!-- /.footer-nav -->
@@ -28,6 +27,14 @@
                 <a href="https://www.facebook.com/Medzin%C3%A1rodn%C3%A9-vz%C5%A5ahy-a-mobility-%C5%A1tudentov-UKF-111131456995587/" target="_blank" class="cwda" title="ChatBot">ChatBot</a>
             </p>
         </div>
+        <ul class="header-social-buttons social-buttons">
+            <li class="social-button-item"><a class="btn btn-social-icon btn-facebook" target="_blank" href="https://facebook.com/UKFvNitre/?locale2=sk_SK">
+                    <i class="fa fa-facebook"></i> </a></li>
+            <li class="social-button-item"><a class="btn btn-social-icon btn-twitter"  target="_blank" href="https://www.instagram.com/ukfvnitre/">
+                    <i class="fa fa-twitter"></i> </a></li>
+            <li class="social-button-item"><a class="btn btn-social-icon btn-linkedin" target="_blank" href="https://www.facebook.com/Medzin%C3%A1rodn%C3%A9-vz%C5%A5ahy-a-mobility-%C5%A1tudentov-UKF-111131456995587/">
+                    <i class="fa fa-linkedin"></i> </a></li>
+        </ul>
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright-text">Copyright &copy; 2019 UKF

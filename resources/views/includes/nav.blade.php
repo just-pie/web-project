@@ -1,6 +1,6 @@
 <div class="responsive_menu">
     <ul class="main_menu">
-        <li class="domov"><a href="{{ url('/')}}" >Domov</a></li>
+        <li class="domov"><a href="{{ url('/')}}">Domov</a></li>
         <li class="vyzvy"><a href="{{ url('/vyzvy')}}">Výzvy</a>
         </li>
         <li class="info"><a>Informácie</a>
@@ -11,8 +11,9 @@
             </ul>
         </li>
         <li><a href="{{ url('/spravy')}}">Správy</a></li>
-        <li class="kontakt"><a href="{{ url('/kontakt')}}">Kontakt</a>
+        <li class="kontakt"><a>Kontakt</a>
             <ul>
+                <li><a href="{{ url('/kontakt')}}">OMV</a>
                 <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
                 <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
                 <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
@@ -20,7 +21,37 @@
                 <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
             </ul>
         </li>
-    </ul> <!-- /.main_menu -->
+        @guest
+        @else
+            <li>
+                <a>
+                    {{ Auth::user()->name }}
+                </a>
+
+                <ul>
+
+                        @if(auth()->user()->isAdmin == 1)
+                        <li>
+                            <a href="{{url('admin')}}">Admin</a>
+                        </li>
+                        @else
+                        <li>
+                            <div class="panel-heading">Normal User</div>
+                        </li>
+                    @endif
+                    <li>
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                              style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        @endguest
+
+</ul> <!-- /.main_menu -->
 </div> <!-- /.responsive_menu -->
 
 <header class="site-header clearfix">
@@ -34,7 +65,7 @@
                     <a href="{{url('/')}}">
                         <img src="images/logo.png" alt="UKF_logo">
                     </a>
-                </div>	<!-- /.logo -->
+                </div>    <!-- /.logo -->
 
                 <div class="main-navigation pull-right">
 
@@ -45,8 +76,10 @@
                             </li>
                             <li class="info"><a>Informácie</a>
                                 <ul>
-                                    <li class="infopred"><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a></li>
-                                    <li class="infopocas"><a href="{{ url('/infopocas')}}">Informácie počas mobility</a></li>
+                                    <li class="infopred"><a href="{{ url('/infopred')}}">Informácie pred mobilitou</a>
+                                    </li>
+                                    <li class="infopocas"><a href="{{ url('/infopocas')}}">Informácie počas mobility</a>
+                                    </li>
                                     <li class="infopo"><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
                                 </ul>
                             </li>
@@ -54,13 +87,39 @@
                             <li class="kontakt"><a>Kontakt</a>
                                 <ul>
                                     <li><a href="{{ url('/kontakt')}}">OMV</a>
-                                    <li><a href="{{ url('/kontaktfpv')}}" >FPV</a></li>
+                                    <li><a href="{{ url('/kontaktfpv')}}">FPV</a></li>
                                     <li><a href="{{ url('/kontaktfsvaz')}}">FSVaZ</a></li>
                                     <li><a href="{{ url('/kontaktfss')}}">FSS</a></li>
                                     <li><a href="{{ url('/kontaktff')}}">FF</a></li>
                                     <li><a href="{{ url('/kontaktpf')}}">PF</a></li>
                                 </ul>
                             </li>
+                            @guest
+                            @else
+                                <li>
+                                    <a>
+                                        {{ Auth::user()->name }}
+                                    </a>
+
+                                    <ul>
+                                        <li>
+                                            @if(auth()->user()->isAdmin == 1)
+
+                                                <a href="{{url('admin')}}">Admin</a>
+
+                                            @else
+                                                <div class="panel-heading">Normal User</div>
+                                            @endif
+                                                <a href="{{ route('logout') }}"
+                                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                      style="display: none;">
+                                                    {{ csrf_field() }}
+                                                </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                            @endguest
                         </ul> <!-- /.sf-menu -->
                     </nav> <!-- /.main-nav -->
 

@@ -7,10 +7,10 @@
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-7 col-sm-7">
                     <h2 class="page-title">Informácie potrebné počas mobility</h2>
                 </div> <!-- /.col-md-6 -->
-                <div class="col-md-6 col-sm-6 text-right">
+                <div class="col-md-5 col-sm-5 text-right">
                     <span class="page-location">Domov / Info počas mobility</span>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->

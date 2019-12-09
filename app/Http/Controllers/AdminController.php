@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pouzivatelia;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Hash;
@@ -39,7 +40,7 @@ class AdminController extends Controller
 
         $hashed = bcrypt($password);
 
-        $user = new Pouzivatelia();
+        $user = new User();
         $user->meno = $firstname;
         $user->priezvisko = $lastname;
         $user->email = $email;
@@ -59,8 +60,8 @@ class AdminController extends Controller
         $countAllUsers = $this->countAllUsers();
 
         $page_name = 'admin.admin_body.admin_users';
-        $users = \DB::table('pouzivatelia')
-            ->select(['pouzivatelia.idpouzivatelia', 'pouzivatelia.meno', 'pouzivatelia.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola', 'pouzivatelia.created_at', 'pouzivatelia.updated_at'])
+        $users = \DB::table('users')
+            ->select(['users.id', 'users.name', 'users.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola', 'pouzivatelia.created_at', 'pouzivatelia.updated_at'])
             ->join('roly', 'roly.idroly', '=', 'pouzivatelia.roly_idroly')
             ->get();
 
@@ -93,14 +94,14 @@ class AdminController extends Controller
     }
 
     public function deleteUser(Request $request){
-        $user = Pouzivatelia::findOrFail($request->input('idpouzivatelia'));
+        $user = User::findOrFail($request->input('id'));
         $user->delete();
         $msg = 'Používateľ bol <strong>úspešne</strong> vymazaný z databázy!';
         return back()->with('message', $msg);
     }
 
     public function countRecentlyAddedUsers(){
-        $count = \DB::table('pouzivatelia')
+        $count = \DB::table('users')
             ->select(\DB::raw('COUNT(*) as pocet'))
             ->where('created_at', '>', 'NOW() - INTERVAL 7 DAY')
             ->value('pocet');
@@ -108,7 +109,7 @@ class AdminController extends Controller
         return $count;
 }
     public function countThisHourAddedUsers(){
-        $count = \DB::table('pouzivatelia')
+        $count = \DB::table('users')
             ->select(\DB::raw('COUNT(*) as pocet'))
             ->where(\DB::raw('DATE(created_at)', '=', 'DATE(NOW())'))
             ->where(\DB::raw('HOUR(created_at)', '=', 'HOUR(NOW())'))
@@ -119,7 +120,7 @@ class AdminController extends Controller
     }
 
 public function countAllUsers(){
-    $count = \DB::table('pouzivatelia')
+    $count = \DB::table('users')
         ->select(\DB::raw('COUNT(*) as pocet'))
         ->value('pocet');
 
