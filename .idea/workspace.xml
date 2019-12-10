@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TypvyzvyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TypvyzvyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Typvyzvy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Typvyzvy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Vyzvy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Vyzvy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addvyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addvyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sprava.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sprava.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzva.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,12 +142,6 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="429" />
-    <option name="y" value="-24" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectId" id="1ShFkdy1cVEmt18e2z286NPEAdq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -256,7 +247,7 @@
       <workItem from="1574745301472" duration="2259000" />
       <workItem from="1574759256483" duration="235000" />
       <workItem from="1575141803109" duration="8094000" />
-      <workItem from="1575993335763" duration="2173000" />
+      <workItem from="1575993335763" duration="4752000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -363,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574747503490</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Pridavanie vyziev aj s obrazkom - funkcne">
+      <created>1575995712253</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1575995712253</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,13 +407,18 @@
     <MESSAGE value="Zaciatok uprav na spravy.blade" />
     <MESSAGE value="Pokracovanie uprav na spravy.blade + upravena homepage" />
     <MESSAGE value="Pred prezentaciou" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pred prezentaciou" />
+    <MESSAGE value="Pridavanie vyziev aj s obrazkom - funkcne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridavanie vyziev aj s obrazkom - funkcne" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1575899156457">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1575995710377">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1575899156457" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1575995710377" />
+    <state x="477" y="268" key="NewPhpFileDialog" timestamp="1575995783749">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="477" y="268" key="NewPhpFileDialog/0.0.1280.689@0.0.1280.689" timestamp="1575995783749" />
     <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1575992319583">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

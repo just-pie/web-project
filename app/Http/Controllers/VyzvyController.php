@@ -11,7 +11,7 @@ class VyzvyController extends Controller
 {
     public function showVyzvy()
     {
-        $vyzvy = Vyzvy::orderBy('pridane', 'desc')->paginate(7);
+        $vyzvy = Vyzvy::orderBy('pridane', 'desc')->paginate(9);
         return view("vyzvy", ['vyzvy' => $vyzvy]);
     }
 
@@ -28,6 +28,14 @@ class VyzvyController extends Controller
         return view("addvyzva", ['oblasti' => $oblasti, 'typvyzvy' => $typvyzvy]);
     }
 
+    public function editVyzva($id)
+    {
+        $vyzva = Vyzvy::find($id);
+        $oblasti = Oblasti::orderBy('nazov', 'asc')->get();
+        $typvyzvy = Typvyzvy::orderBy('typ', 'asc')->get();
+        return view("editvyzva", ['vyzva' => $vyzva, 'oblasti' => $oblasti, 'typvyzvy' => $typvyzvy]);
+    }
+
     public function storeVyzva(Request $request){
 
         $this->validate($request, [
@@ -42,8 +50,7 @@ class VyzvyController extends Controller
         ]);
 
         $imageName = $request->file('filename')->getClientOriginalName();
-
-        $request->file('filename')->move(public_path('images/vyzvy'), $imageName);
+        $request->file('filename')->move(public_path('images'), $imageName);
 
         $vyzvy = new Vyzvy();
         $vyzvy->timestamps = false;
@@ -53,10 +60,58 @@ class VyzvyController extends Controller
         $vyzvy->dlzka = $request->input('dlzka');
         $vyzvy->pridane = date('Y-m-d');
         $vyzvy->platnedo = $request->input('platnedo');
-        $vyzvy->foto = "images/vyzvy/" . $imageName;
+        $vyzvy->foto = $imageName;
         $vyzvy->oblasti_idoblasti = $request->input('oblast');
-        $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
+        $vyzvy->typ_vyzvy_idtyp_vyzvy = $request->input('typvyzvy');
         $vyzvy->save();
+
+        return redirect('/vyzvy');
+
+    }
+
+    public function updateVyzva(Request $request){
+
+        $this->validate($request, [
+            'nazov' => 'required',
+            'popis' => 'required',
+            'ostatneinfo' => 'required',
+            'dlzka' => 'required',
+            'platnedo' => 'required|date|date_format:Y-m-d',
+            'oblast' => 'required',
+            'typvyzvy' => 'required',
+        ]);
+
+        $vyzvy = Vyzvy::find($request->input('id'));
+        if (!is_null($request->file('filename'))){
+            $imageName = $request->file('filename')->getClientOriginalName();
+            $request->file('filename')->move(public_path('images/vyzvy'), $imageName);
+            if(!is_null($vyzvy)) {
+                $vyzvy->timestamps = false;
+                $vyzvy->nazov = $request->input('nazov');
+                $vyzvy->popis = $request->input('popis');
+                $vyzvy->ostatneinfo = $request->input('ostatneinfo');
+                $vyzvy->dlzka = $request->input('dlzka');
+                $vyzvy->pridane = date('Y-m-d');
+                $vyzvy->platnedo = $request->input('platnedo');
+                $vyzvy->foto = "images/vyzvy/" . $imageName;
+                $vyzvy->oblasti_idoblasti = $request->input('oblast');
+                $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
+                $vyzvy->save();
+            }
+        } else {
+            if(!is_null($vyzvy)) {
+                $vyzvy->timestamps = false;
+                $vyzvy->nazov = $request->input('nazov');
+                $vyzvy->popis = $request->input('popis');
+                $vyzvy->ostatneinfo = $request->input('ostatneinfo');
+                $vyzvy->dlzka = $request->input('dlzka');
+                $vyzvy->pridane = date('Y-m-d');
+                $vyzvy->platnedo = $request->input('platnedo');
+                $vyzvy->oblasti_idoblasti = $request->input('oblast');
+                $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
+                $vyzvy->save();
+            }
+        }
 
         return redirect('/vyzvy');
 
