@@ -11,19 +11,4 @@ class TypvyzvyController extends Controller
         $typvyzvy = Typvyzvy::find($id);
         echo $typvyzvy->typ;
     }
-
-    public function insertAction()
-    {
-
-    }
-
-    public function updateAction($id)
-    {
-
-    }
-
-    public function deleteAction($id)
-    {
-
-    }
 }
