@@ -30,11 +30,11 @@
 
                 <ul>
 
-                        @if(auth()->user()->isAdmin == 1)
+                    @if(auth()->user()->isAdmin == 1)
                         <li>
                             <a href="{{url('admin')}}">Admin</a>
                         </li>
-                        @else
+                    @else
                         <li>
                             <div class="panel-heading">Normal User</div>
                         </li>
@@ -51,7 +51,7 @@
             </li>
         @endguest
 
-</ul> <!-- /.main_menu -->
+    </ul> <!-- /.main_menu -->
 </div> <!-- /.responsive_menu -->
 
 <header class="site-header clearfix">
@@ -98,24 +98,40 @@
                             @else
                                 <li>
                                     <a>
-                                        {{ Auth::user()->name }}
+                                        @if (!is_null(Auth::user()->foto))
+                                            <img src="{{ \URL::asset(''.Auth::user()->foto.'') }}" height="30"
+                                                 width="30" style="border-radius: 50%;">
+                                        @else
+                                        <img src="{{ \URL::asset('images/avatars/user.png') }}" height="30" width="30" style="border-radius: 50%;">
+                                        @endif
                                     </a>
-
                                     <ul>
+                                        <li><a style="cursor: default; color: #00a8d6;"><strong><u>{{ Auth::user()->name }}</u></strong></a></li>
+
+                                        @if(auth()->user()->isAdmin == 1)
+
+                                            <li><a href="{{url('admin')}}">Admin</a></li>
+
+                                        @elseif(auth()->user()->roly_idroly == 3)
+                                            <li>
+                                                <a>Som teta zo študijného</a>
+                                            </li>
+                                        @else
+                                            <li>
+                                                <a>Som študent</a>
+                                            </li>
+                                            <li>
+                                                <a>Môj profil</a>
+                                            </li>
+                                        @endif
+
                                         <li>
-                                            @if(auth()->user()->isAdmin == 1)
-
-                                                <a href="{{url('admin')}}">Admin</a>
-
-                                            @else
-                                                <div class="panel-heading">Normal User</div>
-                                            @endif
-                                                <a href="{{ route('logout') }}"
-                                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                                      style="display: none;">
-                                                    {{ csrf_field() }}
-                                                </form>
+                                            <a href="{{ route('logout') }}"
+                                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                  style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form>
                                         </li>
                                     </ul>
                                 </li>

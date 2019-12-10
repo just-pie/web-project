@@ -31,11 +31,11 @@
 
                 <ul>
 
-                        <?php if(auth()->user()->isAdmin == 1): ?>
+                    <?php if(auth()->user()->isAdmin == 1): ?>
                         <li>
                             <a href="<?php echo e(url('admin')); ?>">Admin</a>
                         </li>
-                        <?php else: ?>
+                    <?php else: ?>
                         <li>
                             <div class="panel-heading">Normal User</div>
                         </li>
@@ -53,7 +53,7 @@
             </li>
         <?php endif; ?>
 
-</ul> <!-- /.main_menu -->
+    </ul> <!-- /.main_menu -->
 </div> <!-- /.responsive_menu -->
 
 <header class="site-header clearfix">
@@ -100,26 +100,41 @@
                             <?php else: ?>
                                 <li>
                                     <a>
-                                        <?php echo e(Auth::user()->name); ?>
-
+                                        <?php if(!is_null(Auth::user()->foto)): ?>
+                                            <img src="<?php echo e(\URL::asset(''.Auth::user()->foto.'')); ?>" height="30"
+                                                 width="30" style="border-radius: 50%;">
+                                        <?php else: ?>
+                                        <img src="<?php echo e(\URL::asset('images/avatars/user.png')); ?>" height="30" width="30" style="border-radius: 50%;">
+                                        <?php endif; ?>
                                     </a>
-
                                     <ul>
+                                        <li><a style="cursor: default; color: #00a8d6;"><strong><u><?php echo e(Auth::user()->name); ?></u></strong></a></li>
+
+                                        <?php if(auth()->user()->isAdmin == 1): ?>
+
+                                            <li><a href="<?php echo e(url('admin')); ?>">Admin</a></li>
+
+                                        <?php elseif(auth()->user()->roly_idroly == 3): ?>
+                                            <li>
+                                                <a>Som teta zo študijného</a>
+                                            </li>
+                                        <?php else: ?>
+                                            <li>
+                                                <a>Som študent</a>
+                                            </li>
+                                            <li>
+                                                <a>Môj profil</a>
+                                            </li>
+                                        <?php endif; ?>
+
                                         <li>
-                                            <?php if(auth()->user()->isAdmin == 1): ?>
+                                            <a href="<?php echo e(route('logout')); ?>"
+                                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                            <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST"
+                                                  style="display: none;">
+                                                <?php echo e(csrf_field()); ?>
 
-                                                <a href="<?php echo e(url('admin')); ?>">Admin</a>
-
-                                            <?php else: ?>
-                                                <div class="panel-heading">Normal User</div>
-                                            <?php endif; ?>
-                                                <a href="<?php echo e(route('logout')); ?>"
-                                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                                                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST"
-                                                      style="display: none;">
-                                                    <?php echo e(csrf_field()); ?>
-
-                                                </form>
+                                            </form>
                                         </li>
                                     </ul>
                                 </li>

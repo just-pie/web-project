@@ -1,6 +1,5 @@
 @include('includes.head', ['title' => 'Mobility UKF'])
 <body>
-
 @include('includes.nav')
 
 <section id="homeIntro" class="parallax first-widget">
@@ -10,13 +9,14 @@
                 <div class="col-md-12">
                     <h2>VITAJTE NA STRÁNKE MOBILITY UKF</h2>
                     <p>Na tejto stránke sa dozviete všetko o možnostiach mobilít<br> na Univerzite Konštantína Filozofa v Nitre </p>
-                    <a href="#" class="large-button white-color">Prihlásenie <i class="icon-button fa fa-bars"></i></a>
+                    @guest
+                    <a href="{{route("login")}}" type="button" class="large-button white-color">Prihlásenie <i class="icon-button fa fa-bars"></i></a>
+                    @endguest
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /.parallax-overlay -->
 </section> <!-- /#homeIntro -->
-
 <section class="light-content services">
     <div class="container">
         <div class="row">
@@ -193,6 +193,7 @@
     });
 </script>
 <!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="js/min/plugins.min.js"></script>
 <script src="js/min/medigo-custom.min.js"></script>
 @include('includes.foot')

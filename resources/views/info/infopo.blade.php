@@ -52,7 +52,7 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="{{ \URL::asset('docs/ Annex_to_Learning_Agreement_for_Studies_SK.pdf') }}" download>Súbor 1 - Príloha k ZMLUVE O ŠTÚDIU</a></li>
+                                <li><a href="{{ \URL::asset('docs/Annex_to_Learning_Agreement_for_Studies_SK.pdf') }}" download>Súbor 1 - Príloha k ZMLUVE O ŠTÚDIU</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.row -->

@@ -2,23 +2,33 @@
 <div class="limiter">
     <div class="container-login100" style="background-image: url('{{ \URL::asset('images/login/bg-01.jpg') }}');">
         <div class="wrap-login100">
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
 					{{--<span class="login100-form-logo">
                         <img src="{{ \URL::asset('images/login/icons/lietadlo.svg')}}";>
 						<i class="zmdi zmdi-landscape"></i>
 					</span>--}}
-
+                {{ csrf_field() }}
+                @if ($errors->has('email'))
+                    <span class="help-block">
+                      <strong style="color: red;">{{ $errors->first('email') }}</strong>
+                    </span>
+                @endif
+                @if ($errors->has('password'))
+                    <span class="help-block">
+                      <strong style="color: red;">{{ $errors->first('password') }}</strong>
+                    </span>
+                @endif
                 <span class="login100-form-title p-b-40 p-t-20">
 						Prihlásenie
 					</span>
 
                 <div class="wrap-input100 validate-input" data-validate = "Enter username">
-                    <input class="input100" type="text" name="username" placeholder="Používateľské meno" required>
-                    <span class="focus-input100" data-placeholder="👤"></span>
+                    <input class="input100" type="text" name="email" placeholder="Prihlasovací e-mail" autofocus required>
+                    <span class="focus-input100" data-placeholder="📧"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Enter password">
-                    <input class="input100" type="password" name="pass" placeholder="Heslo" required>
+                    <input class="input100" type="password" name="password" placeholder="Heslo" required>
                     <span class="focus-input100" data-placeholder="🔒"></span>
                 </div>
 
