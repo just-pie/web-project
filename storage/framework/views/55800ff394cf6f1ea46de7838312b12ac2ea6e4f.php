@@ -116,7 +116,7 @@
             <div class="item">
                 <div class="thumb-post">
                     <div class="portfolio-infos">
-                        <h3 style="color: white"><?php echo e($vyzva->nazov); ?></h3>
+                        <h3 style="color: white; text-shadow: 2px 2px 1px #000000;"><?php echo e($vyzva->nazov); ?></h3>
                     </div>
                     <div class="overlay">
                         <div class="overlay-inner">
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="<?php echo e($vyzva->univerzity->first()['foto']); ?>" alt="<?php echo e($vyzva->univerzity->first()['nazov']); ?>">
+                    <img src="<?php echo e(\URL::asset($vyzva->foto)); ?>" alt="<?php echo e($vyzva->univerzity->first()['nazov']); ?>" style="width: 100%; height: 233px; display: block; margin: auto;">
                 </div>
             </div> <!-- /.item -->
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

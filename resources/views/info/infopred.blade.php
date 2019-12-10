@@ -58,8 +58,8 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="#">Súbor 1</a></li>
-                                <li><a href="#">Súbor 2</a></li>
+                                <li><a href="{{ \URL::asset('docs/ka103.pdf') }}" download>Súbor 1 - Sadzby Európska únia</a></li>
+                                <li><a href="{{ \URL::asset('docs/ka107.pdf') }}" download>Súbor 2 - Sadzby Mimo EÚ</a></li>
                                 <li><a href="#">Súbor 3</a></li>
                                 <li><a href="#">Súbor 4</a></li>
                             </ul>

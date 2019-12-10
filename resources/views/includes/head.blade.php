@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ \URL::asset('bootstrap/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ \URL::asset('css/misc.css') }}">
     <link rel="stylesheet" href="{{ \URL::asset('css/blue-scheme.css') }}">
+    <script src="https://kit.fontawesome.com/48e6621b57.js" crossorigin="anonymous"></script>
 
     <!-- JavaScripts -->
     <script src="{{ \URL::asset('js/jquery-1.10.2.min.js') }}"></script>

@@ -43,7 +43,7 @@
 									<span class="fa fa-building-o fa-fw text-muted" data-toggle="tooltip"></span>
 									<span class="text-muted">{{$kontakt->fakulta}}</span>
 									<br>
-									<span class="fa fa-crosshairs fa-fw text-muted" data-toggle="tooltip"></span>
+									<span class="fa fa-crosshairs fa-fw text-muted"  data-toggle="tooltip"></span>
 									<span class="text-muted small text-truncate">{{$kontakt->poznamka}}</span>
 								</p>
 								<ul class="list-inline">
@@ -51,7 +51,7 @@
 										<li class="list-inline-item">
 											<a class="social-icon text-xs-center" target="_blank"
 											   href="{{$kontakt->web}}">
-												<i class="fa fa-globe"></i>
+												<i class="fa fa-globe" style="color: #d40075;"></i>
 											</a>
 										</li>
 									@endif
@@ -59,7 +59,7 @@
 										<li class="list-inline-item">
 											<a class="social-icon text-xs-center" target="_top"
 											   href="mailto:{{$kontakt->email}}?Subject=Mobility%20študentov">
-												<i class="fa fa-envelope"></i>
+												<i class="fa fa-envelope" style="color: #d40075;"></i>
 											</a>
 										</li>
 									@endif
@@ -68,7 +68,7 @@
 											<a class="social-icon text-xs-center" target="_blank"
 											   href="tel:{{$kontakt->telefon}}" data-toggle="tooltip"
 											   data-placement="down" title="{{$kontakt->telefon}}">
-												<i class="fa fa-phone"></i>
+												<i class="fa fa-phone" style="color: #d40075;"></i>
 												{{--                                        --}}
 												{{--tel:--}}
 											</a>

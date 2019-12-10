@@ -40,9 +40,9 @@
                 @if(count($vyzva->univerzity) < 2)
                     <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
                         <div class="thumb-post">
-                            <div class="overlay-inner"><img src="{{$vyzva->univerzity->first()['foto']}}" alt="{{$vyzva->nazov}}">
+                            <div class="overlay-inner"><div style=" height: 233px;max-height: 233px;"><img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}" style=" width: 100%; height: 100%;object-fit:cover;"></div>
                                 <div class="portfolio-infos">
-                                    <h3 style="color: white">{{$vyzva->nazov}}</h3>
+                                    <h3 style="color: white; text-shadow: 2px 2px 3px black;">{{$vyzva->nazov}}</h3>
                                 </div>
                             </div>
                             <div class="overlay">

@@ -1496,6 +1496,25 @@ blockquote {
 	font-family: "Raleway", sans-serif;
 }
 
+.fa-facebook {
+	transition: 0.7s;
+}
+.fa-facebook:hover {
+	color: #3b5998;
+}
+.fa-instagram{
+	transition: 0.7s;
+}
+.fa-instagram:hover {
+	color: #9B36B7;
+}
+.fa-facebook-messenger {
+	transition: 0.7s;
+}
+.fa-facebook-messenger:hover {
+	color: #0078FF;;
+}
+
 .footer-menu li {
 	display: inline-block;
 	margin: 0 20px;

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="<?php echo e(\URL::asset('bootstrap/bootstrap.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(\URL::asset('css/misc.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(\URL::asset('css/blue-scheme.css')); ?>">
+    <script src="https://kit.fontawesome.com/48e6621b57.js" crossorigin="anonymous"></script>
 
     <!-- JavaScripts -->
     <script src="<?php echo e(\URL::asset('js/jquery-1.10.2.min.js')); ?>"></script>

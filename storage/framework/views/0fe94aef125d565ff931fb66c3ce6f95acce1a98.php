@@ -51,7 +51,7 @@
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank"
                                                href="<?php echo e($kontakt->web); ?>">
-                                                <i class="fa fa-globe"></i>
+                                                <i class="fa fa-globe" style="color: #00994a;"></i>
                                             </a>
                                         </li>
                                     <?php endif; ?>
@@ -59,7 +59,7 @@
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_top"
                                                href="mailto:<?php echo e($kontakt->email); ?>?Subject=Mobility%20študentov">
-                                                <i class="fa fa-envelope"></i>
+                                                <i class="fa fa-envelope" style="color: #00994a;"></i>
                                             </a>
                                         </li>
                                     <?php endif; ?>
@@ -68,7 +68,7 @@
                                             <a class="social-icon text-xs-center" target="_blank"
                                                href="tel:<?php echo e($kontakt->telefon); ?>" data-toggle="tooltip"
                                                data-placement="down" title="<?php echo e($kontakt->telefon); ?>">
-                                                <i class="fa fa-phone"></i>
+                                                <i class="fa fa-phone" style="color: #00994a;"></i>
                                                 
                                                 
                                             </a>
