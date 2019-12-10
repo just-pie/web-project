@@ -26,7 +26,7 @@
                     </span>
                 <?php endif; ?>
                 <div class="wrap-input100 validate-input" data-validate="Enter username">
-                    <input class="input100" type="text" name="name" placeholder="Používateľské meno" required>
+                    <input class="input100" type="text" name="name" placeholder="Používateľské meno" autofocus required>
                     <span class="focus-input100" data-placeholder="👤"></span>
                 </div>
 

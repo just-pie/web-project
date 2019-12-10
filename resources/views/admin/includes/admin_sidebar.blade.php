@@ -3,11 +3,15 @@
             <!-- sidebar-header  -->
             <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                 <div class="user-pic">
-                    <img class="img-responsive img-rounded" src="{{\URL::asset("images/admin_avatar.png")}}" alt="User picture">
+                    @if (!is_null(Auth::user()->foto))
+                        <img class="img-responsive img-rounded" src="{{ \URL::asset(''.Auth::user()->foto.'') }}" alt="User picture">
+                    @else
+                        <img class="img-responsive img-rounded" src="{{ \URL::asset('images/avatars/user.png') }}" alt="User picture">
+                    @endif
                 </div>
                 <div class="user-info">
-                        <span class="user-name">John
-                            <strong>Smith</strong>
+                        <span class="user-name">
+                            <strong>{{ Auth::user()->name }}</strong>
                         </span>
                     <span class="user-role">Administrátor</span>
                     <span class="user-status">
@@ -180,9 +184,12 @@
             <div>
             </div>
             <div>
-                <a href="#">
-                    <i class="fa fa-power-off"></i>
-                </a>
+                <a href="{{ route('logout') }}"
+                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i></a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                      style="display: none;">
+                    {{ csrf_field() }}
+                </form>
             </div>
             <div class="pinned-footer">
                 <a href="#">

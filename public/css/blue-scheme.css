@@ -496,6 +496,27 @@ textarea:focus {
 	background-color: #00b8ea;
 }
 
+.mainAdminBtn {
+	background-color: #1b49d6;
+	padding: 7px 17px;
+	color: white;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background 250ms ease-in;
+	-moz-transition: background 250ms ease-in;
+	-ms-transition: background 250ms ease-in;
+	-o-transition: background 250ms ease-in;
+	transition: background 250ms ease-in;
+}
+
+.mainAdminBtn:hover {
+	background-color: #2000c5;
+}
+
 button {
 	outline: 0;
 	border: 0;

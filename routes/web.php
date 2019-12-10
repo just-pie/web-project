@@ -99,4 +99,4 @@ Route::get('/register', ['as' => 'register', 'uses' => 'LoginController@showRegi
 //Toto mas ten auth
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('admin/routes', 'HomeController@admin')->middleware('admin');
+Route::get('admin', 'HomeController@admin')->middleware('admin');
