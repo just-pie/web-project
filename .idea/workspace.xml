@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -247,7 +241,8 @@
       <workItem from="1574745301472" duration="2259000" />
       <workItem from="1574759256483" duration="235000" />
       <workItem from="1575141803109" duration="8094000" />
-      <workItem from="1575993335763" duration="4752000" />
+      <workItem from="1575993335763" duration="5716000" />
+      <workItem from="1576000380588" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1572008622228</created>
@@ -361,7 +356,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575995712253</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Upravovanie vyziev - funkcne">
+      <created>1575998330850</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1575998330850</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Upravovanie vyziev - funkcne">
+      <created>1576001353506</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1576001353506</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,25 +417,30 @@
     <MESSAGE value="Pokracovanie uprav na spravy.blade + upravena homepage" />
     <MESSAGE value="Pred prezentaciou" />
     <MESSAGE value="Pridavanie vyziev aj s obrazkom - funkcne" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pridavanie vyziev aj s obrazkom - funkcne" />
+    <MESSAGE value="Upravovanie vyziev - funkcne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upravovanie vyziev - funkcne" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1575995710377">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1576001351808">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1575995710377" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576001351808" />
+    <state x="354" y="61" key="MultipleFileMergeDialog" timestamp="1576001387155">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="354" y="61" key="MultipleFileMergeDialog/0.0.1280.689@0.0.1280.689" timestamp="1576001387155" />
     <state x="477" y="268" key="NewPhpFileDialog" timestamp="1575995783749">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="477" y="268" key="NewPhpFileDialog/0.0.1280.689@0.0.1280.689" timestamp="1575995783749" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1575992319583">
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1576001406310">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1575992319583" />
-    <state x="93" y="93" width="1095" height="504" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1575992338102">
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576001406310" />
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1576001427273">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="93" y="93" width="1095" height="504" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1280.689@0.0.1280.689" timestamp="1575992338102" />
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576001427273" />
     <state x="376" y="136" key="git4idea.merge.GitPullDialog" timestamp="1575992175132">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
