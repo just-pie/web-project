@@ -74,7 +74,7 @@
                                 <select class="form-control" id="typvyzvy" name="typvyzvy">
                                     <option value=""></option>
                                     @foreach ($typvyzvy as $typ)
-                                        <option value="{{ $typ->idtyp_vyzvy }}">{{ $typ->typ }}</option>
+                                        <option value="{{ $typ->idtypvyzvy }}">{{ $typ->typ }}</option>
                                     @endforeach
                                 </select>
                             </div></br>

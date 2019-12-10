@@ -14,10 +14,10 @@
                     <span class="page-location">Domov / Výzvy</span>
                     @if (Auth::check())
                         @if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3)
-                            <a class="mainBtn" href="{{ url('/addvyzva')}}" role="button" style="color: white">Pridať
-                                výzvu</a>
+                            <a class="mainBtn" href="{{ url('/addvyzva')}}" role="button" style="color: white">Pridať výzvu</a>
                         @endif
                     @endif
+                    <a class="mainBtn" href="{{ url('/addvyzva')}}" role="button" style="color: white">Pridať výzvu</a>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -43,12 +43,10 @@
         <div class="portfolio-holder" id="Grid">
             @foreach($vyzvy as $vyzva)
                 @if(count($vyzva->univerzity) < 2)
-                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                    <div class="portfolio-post col-sm-6 col-md-4 mix {{$vyzva->typvyzvy->typ}}">
                         <div class="thumb-post">
                             <div class="overlay-inner">
-                                <div style=" height: 233px;max-height: 233px;"><img src="{{$vyzva->foto}}"
-                                                                                    alt="{{$vyzva->nazov}}"
-                                                                                    style=" width: 100%; height: 100%;object-fit:cover;">
+                                <div style=" height: 233px;max-height: 233px;"><img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
                                     <h3 style="color: white; text-shadow: 2px 2px 3px black;">{{$vyzva->nazov}}</h3>
@@ -75,9 +73,8 @@
                     <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
                         <div class="thumb-post">
                             <div class="overlay-inner">
-                                <div style=" height: 233px;max-height: 233px;"><img src="{{$vyzva->foto}}"
-                                                                                    alt="{{$vyzva->nazov}}"
-                                                                                    style=" width: 100%; height: 100%;object-fit:cover;">
+                                <div style=" height: 233px;max-height: 233px;">
+                                    <img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
                                     <h3 style="color: white; text-shadow: 2px 2px 3px black;">{{$vyzva->nazov}}</h3>

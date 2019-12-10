@@ -11,7 +11,7 @@ class VyzvyController extends Controller
 {
     public function showVyzvy()
     {
-        $vyzvy = Vyzvy::paginate(9);
+        $vyzvy = Vyzvy::orderBy('pridane', 'desc')->paginate(7);
         return view("vyzvy", ['vyzvy' => $vyzvy]);
     }
 
@@ -43,7 +43,7 @@ class VyzvyController extends Controller
 
         $imageName = $request->file('filename')->getClientOriginalName();
 
-        $request->file('filename')->move(public_path('images'), $imageName);
+        $request->file('filename')->move(public_path('images/vyzvy'), $imageName);
 
         $vyzvy = new Vyzvy();
         $vyzvy->timestamps = false;
@@ -53,9 +53,9 @@ class VyzvyController extends Controller
         $vyzvy->dlzka = $request->input('dlzka');
         $vyzvy->pridane = date('Y-m-d');
         $vyzvy->platnedo = $request->input('platnedo');
-        $vyzvy->foto = $imageName;
+        $vyzvy->foto = "images/vyzvy/" . $imageName;
         $vyzvy->oblasti_idoblasti = $request->input('oblast');
-        $vyzvy->typ_vyzvy_idtyp_vyzvy = $request->input('typvyzvy');
+        $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
         $vyzvy->save();
 
         return redirect('/vyzvy');
