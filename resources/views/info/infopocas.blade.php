@@ -40,10 +40,7 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="#">Súbor 1</a></li>
-                                <li><a href="#">Súbor 2</a></li>
-                                <li><a href="#">Súbor 3</a></li>
-                                <li><a href="#">Súbor 4</a></li>
+                                <li><a href="{{ \URL::asset('docs/Ziadost_o_doplatok_ku_grantu_Erasmus.pdf') }}" download>Súbor 1 - Žiadosť o doplatok ku grantu</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.row -->

@@ -58,10 +58,11 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="<?php echo e(\URL::asset('docs/ka103.pdf')); ?>" download>Súbor 1 - Sadzby Európska únia</a></li>
-                                <li><a href="<?php echo e(\URL::asset('docs/ka107.pdf')); ?>" download>Súbor 2 - Sadzby Mimo EÚ</a></li>
-                                <li><a href="#">Súbor 3</a></li>
-                                <li><a href="#">Súbor 4</a></li>
+                                <li><a href="<?php echo e(\URL::asset('docs/ka103.pdf')); ?>" download="sadzby_eu">Súbor 1 - Sadzby Európska únia</a></li>
+                                <li><a href="<?php echo e(\URL::asset('docs/ka107.pdf')); ?>" download="sadzby_mimo_eu">Súbor 2 - Sadzby Mimo EÚ</a></li>
+                                <li><a href="<?php echo e(\URL::asset('docs/Confirmation_of_Erasmus_study.pdf')); ?>" download="confirmation_of_erasmus_study">Súbor 3 - Potvrdenie Erasmus štúdia EN</a></li>
+                                <li><a href="<?php echo e(\URL::asset('docs/Informacie_do_zmluvy_student.pdf')); ?>" download>Súbor 4 - Informácie do finančnej zmluvy</a></li>
+                                <li><a href="<?php echo e(\URL::asset('docs/Ziadost_o_zrusenie_stud-mobilitu_Erasmus.pdf')); ?>" download>Súbor 5 - Žiadosť o zrušenie mobility</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.row -->

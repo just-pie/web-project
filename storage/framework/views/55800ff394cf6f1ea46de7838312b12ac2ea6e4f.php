@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="<?php echo e(\URL::asset($vyzva->foto)); ?>" alt="<?php echo e($vyzva->univerzity->first()['nazov']); ?>" style="width: 100%; height: 233px; display: block; margin: auto;">
+                    <img src="<?php echo e(\URL::asset($vyzva->foto)); ?>" alt="<?php echo e($vyzva->univerzity->first()['nazov']); ?>" style="width: 100%; height: 233px;object-fit:cover; display: block; margin: auto;">
                 </div>
             </div> <!-- /.item -->
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

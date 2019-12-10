@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="{{ \URL::asset($vyzva->foto)}}" alt="{{$vyzva->univerzity->first()['nazov']}}" style="width: 100%; height: 233px; display: block; margin: auto;">
+                    <img src="{{ \URL::asset($vyzva->foto)}}" alt="{{$vyzva->univerzity->first()['nazov']}}" style="width: 100%; height: 233px;object-fit:cover; display: block; margin: auto;">
                 </div>
             </div> <!-- /.item -->
         @endforeach

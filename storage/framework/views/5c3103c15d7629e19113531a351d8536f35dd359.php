@@ -52,10 +52,7 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="#">Súbor 1</a></li>
-                                <li><a href="#">Súbor 2</a></li>
-                                <li><a href="#">Súbor 3</a></li>
-                                <li><a href="#">Súbor 4</a></li>
+                                <li><a href="<?php echo e(\URL::asset('docs/ Annex_to_Learning_Agreement_for_Studies_SK.pdf')); ?>" download>Súbor 1 - Príloha k ZMLUVE O ŠTÚDIU</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.row -->
