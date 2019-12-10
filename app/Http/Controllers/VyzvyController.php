@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Oblasti;
 use App\Models\Typvyzvy;
 use App\Models\Vyzvy;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 
 class VyzvyController extends Controller
@@ -80,9 +81,11 @@ class VyzvyController extends Controller
             'oblast' => 'required',
             'typvyzvy' => 'required',
         ]);
-
         $vyzvy = Vyzvy::find($request->input('id'));
         if (!is_null($request->file('filename'))){
+            if (File::exists($vyzvy->foto)) {
+                File::delete($vyzvy->foto);
+            }
             $imageName = $request->file('filename')->getClientOriginalName();
             $request->file('filename')->move(public_path('images/vyzvy'), $imageName);
             if(!is_null($vyzvy)) {

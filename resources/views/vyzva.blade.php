@@ -11,11 +11,8 @@
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-4 col-sm-4 text-right">
                     <span class="page-location">Home / Výzvy / Výzva </span>
-                    @if (Auth::check())
-                        @if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3)
                             <a class="mainBtn" href="{{action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])}}" role="button" style="color: white">Upraviť výzvu</a>
-                        @endif
-                    @endif
+
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
