@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="Pred prezentaciou">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blue-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blue-scheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/admin_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/admin_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzvy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/eGhM3GJzOPbhbET5jRHSh6rvCT1csQ1OGmmUumCb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/55800ff394cf6f1ea46de7838312b12ac2ea6e4f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/55800ff394cf6f1ea46de7838312b12ac2ea6e4f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/9672330d622320cd44d8e880539b80255e93d6ea.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9672330d622320cd44d8e880539b80255e93d6ea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/983b5f4951440a9bcf451c021996f57198ea9d4b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/983b5f4951440a9bcf451c021996f57198ea9d4b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f542fb2cba5815bc1d20e0d456da10c091703d87.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f542fb2cba5815bc1d20e0d456da10c091703d87.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/BmTzmldGI68aBka1mGuH7PGVERmH54dC1aC9XsEg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +52,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/admin_sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="325">
               <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
@@ -564,11 +554,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31188000" />
+    <option name="totallyTimeSpent" value="31787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -1004,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/admin_sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="325">
           <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
