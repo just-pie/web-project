@@ -52,7 +52,7 @@
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank"
                                                href="{{$kontakt->web}}">
-                                                <i class="fa fa-globe"></i>
+                                                <i class="fa fa-globe" style="color: #f39200;"></i>
                                             </a>
                                         </li>
                                     @endif
@@ -60,7 +60,7 @@
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_top"
                                                href="mailto:{{$kontakt->email}}?Subject=Mobility%20študentov">
-                                                <i class="fa fa-envelope"></i>
+                                                <i class="fa fa-envelope" style="color: #f39200;"></i>
                                             </a>
                                         </li>
                                     @endif
@@ -69,7 +69,7 @@
                                             <a class="social-icon text-xs-center" target="_blank"
                                                href="tel:{{$kontakt->telefon}}" data-toggle="tooltip"
                                                data-placement="down" title="{{$kontakt->telefon}}">
-                                                <i class="fa fa-phone"></i>
+                                                <i class="fa fa-phone" style="color: #f39200;"></i>
                                                 {{--                                        --}}
                                                 {{--tel:--}}
                                             </a>

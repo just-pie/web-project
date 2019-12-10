@@ -6,10 +6,10 @@
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-8 col-sm-8">
                     <h2 class="page-title">{{$vyzva->nazov}}</h2>
                 </div> <!-- /.col-md-6 -->
-                <div class="col-md-6 col-sm-6 text-right">
+                <div class="col-md-4 col-sm-4 text-right">
                     <span class="page-location">Home / Výzvy / Výzva </span>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
@@ -25,9 +25,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="post-blog">
-                            <div class="blog-image">
-                                <img src="{{$vyzva->univerzity->first()->foto}}" alt="">
-                            </div> <!-- /.blog-image -->
+                                <script>document.getElementById("blog").style.backgroundImage = "url('{{$vyzva->foto}}')";</script>
                             <div class="blog-content">
                                 <h2>Ponuka</h2>
                                 <p>{{$vyzva->popis}}</p>
@@ -40,6 +38,7 @@
                             @foreach($vyzva->univerzity as $univerzita)
                                 <li><a href="{{action("UniverzityController@showUniverzita", ['id' => $univerzita->iduniverzity])}}">{{$univerzita->nazov}}</a></li>
                             @endforeach
+                            <br>
                         </div>
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->

@@ -6,10 +6,10 @@
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-8 col-sm-8">
                     <h2 class="page-title">Informácie potrebné pred odchodom na mobilitu</h2>
                 </div> <!-- /.col-md-6 -->
-                <div class="col-md-6 col-sm-6 text-right">
+                <div class="col-md-4 col-sm-4 text-right">
                     <span class="page-location">Domov / Info pred odchodom</span>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
@@ -58,10 +58,11 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="#">Súbor 1</a></li>
-                                <li><a href="#">Súbor 2</a></li>
-                                <li><a href="#">Súbor 3</a></li>
-                                <li><a href="#">Súbor 4</a></li>
+                                <li><a href="{{ \URL::asset('docs/ka103.pdf') }}" download="sadzby_eu">Súbor 1 - Sadzby Európska únia</a></li>
+                                <li><a href="{{ \URL::asset('docs/ka107.pdf') }}" download="sadzby_mimo_eu">Súbor 2 - Sadzby Mimo EÚ</a></li>
+                                <li><a href="{{ \URL::asset('docs/Confirmation_of_Erasmus_study.pdf')}}" download="confirmation_of_erasmus_study">Súbor 3 - Potvrdenie Erasmus štúdia EN</a></li>
+                                <li><a href="{{ \URL::asset('docs/Informacie_do_zmluvy_student.pdf')}}" download>Súbor 4 - Informácie do finančnej zmluvy</a></li>
+                                <li><a href="{{ \URL::asset('docs/Ziadost_o_zrusenie_stud-mobilitu_Erasmus.pdf')}}" download>Súbor 5 - Žiadosť o zrušenie mobility</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.row -->

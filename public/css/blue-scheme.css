@@ -358,6 +358,8 @@ a.menu-toggle-btn i {
 }
 
 
+
+
 /*------------------------------------------------------
 	General Styling 
 --------------------------------------------------------*/
@@ -492,6 +494,27 @@ textarea:focus {
 
 .mainBtn:hover {
 	background-color: #00b8ea;
+}
+
+.mainAdminBtn {
+	background-color: #1b49d6;
+	padding: 7px 17px;
+	color: white;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background 250ms ease-in;
+	-moz-transition: background 250ms ease-in;
+	-ms-transition: background 250ms ease-in;
+	-o-transition: background 250ms ease-in;
+	transition: background 250ms ease-in;
+}
+
+.mainAdminBtn:hover {
+	background-color: #2000c5;
 }
 
 button {
@@ -886,7 +909,7 @@ blockquote {
 	top: 50%;
 	right: 0;
 	width: 40px;
-	height: 48;
+	height: 48px;
 	content: 'ddd';
 	margin-right: 2px;
 	margin-top: -25px;
@@ -1492,6 +1515,25 @@ blockquote {
 	padding: 100px 0;
 	color: #aaaaaa;
 	font-family: "Raleway", sans-serif;
+}
+
+.fa-facebook {
+	transition: 0.7s;
+}
+.fa-facebook:hover {
+	color: #3b5998;
+}
+.fa-instagram{
+	transition: 0.7s;
+}
+.fa-instagram:hover {
+	color: #9B36B7;
+}
+.fa-facebook-messenger {
+	transition: 0.7s;
+}
+.fa-facebook-messenger:hover {
+	color: #0078FF;;
 }
 
 .footer-menu li {

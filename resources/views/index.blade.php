@@ -1,6 +1,5 @@
 @include('includes.head', ['title' => 'Mobility UKF'])
 <body>
-
 @include('includes.nav')
 
 <section id="homeIntro" class="parallax first-widget">
@@ -10,13 +9,22 @@
                 <div class="col-md-12">
                     <h2>VITAJTE NA STRÁNKE MOBILITY UKF</h2>
                     <p>Na tejto stránke sa dozviete všetko o možnostiach mobilít<br> na Univerzite Konštantína Filozofa v Nitre </p>
-                    <a href="#" class="large-button white-color">Prihlásenie <i class="icon-button fa fa-bars"></i></a>
+                    @guest
+                    <a href="{{route("login")}}" type="button" class="large-button white-color">Prihlásenie <i class="icon-button fa fa-bars"></i></a>
+                    @endguest
+                    @if (Auth::check())
+                        @if(auth()->user()->roly_idroly == 3)
+                            <a class="mainBtn" href="{{ url('/addvyzva')}}" role="button" style="color: white">Pridať výzvu</a>
+                        @endif
+                            @if(auth()->user()->isAdmin == 1)
+                                <a class="mainAdminBtn" href="{{ url('/admin')}}" role="button" style="color: white">Ísť do admin rozhrania</a>
+                            @endif
+                    @endif
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /.parallax-overlay -->
 </section> <!-- /#homeIntro -->
-
 <section class="light-content services">
     <div class="container">
         <div class="row">
@@ -116,7 +124,7 @@
             <div class="item">
                 <div class="thumb-post">
                     <div class="portfolio-infos">
-                        <h3 style="color: white">{{$vyzva->nazov}}</h3>
+                        <h3 style="color: white; text-shadow: 2px 2px 1px #000000;">{{$vyzva->nazov}}</h3>
                     </div>
                     <div class="overlay">
                         <div class="overlay-inner">
@@ -131,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="{{$vyzva->univerzity->first()['foto']}}" alt="{{$vyzva->univerzity->first()['nazov']}}">
+                    <img src="{{ \URL::asset($vyzva->foto)}}" alt="{{$vyzva->univerzity->first()['nazov']}}" style="width: 100%; height: 233px;object-fit:cover; display: block; margin: auto;">
                 </div>
             </div> <!-- /.item -->
         @endforeach
@@ -193,6 +201,7 @@
     });
 </script>
 <!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="js/min/plugins.min.js"></script>
 <script src="js/min/medigo-custom.min.js"></script>
 @include('includes.foot')

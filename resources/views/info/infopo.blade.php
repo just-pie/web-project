@@ -8,10 +8,10 @@
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-8 col-sm-8">
                     <h2 class="page-title">Informácie potrebné po návrate z mobility</h2>
                 </div> <!-- /.col-md-6 -->
-                <div class="col-md-6 col-sm-6 text-right">
+                <div class="col-md-4 col-sm-4 text-right">
                     <span class="page-location">Domov / Informácie po mobilite</span>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
@@ -52,10 +52,7 @@
                     <div class="row categories">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="#">Súbor 1</a></li>
-                                <li><a href="#">Súbor 2</a></li>
-                                <li><a href="#">Súbor 3</a></li>
-                                <li><a href="#">Súbor 4</a></li>
+                                <li><a href="{{ \URL::asset('docs/Annex_to_Learning_Agreement_for_Studies_SK.pdf') }}" download>Súbor 1 - Príloha k ZMLUVE O ŠTÚDIU</a></li>
                             </ul>
                         </div>
                     </div> <!-- /.row -->
