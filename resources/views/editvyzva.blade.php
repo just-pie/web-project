@@ -9,7 +9,7 @@
         <div class="container pageTitle">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <h2 class="page-title">Pridanie výzvy</h2>
+                    <h2 class="page-title">Upravovanie výzvy</h2>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6 text-right">
                     <span class="page-location">Domov / Výzvy</span>
@@ -25,7 +25,7 @@
             <div class="col-md-12">
                 <div class="comment-form">
                     <div class="widget-inner">
-                        <form action="{{url('addvyzva')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{url('editvyzva')}}" method="post" enctype="multipart/form-data">
                             @if(count($errors))
                                 <div class="alert alert-danger">
                                     <ul>
@@ -35,26 +35,29 @@
                                     </ul>
                                 </div>
                             @endif
+                                <div>
+                                    <input type="hidden" id="id" name="id" class="form-control" value="{{$vyzva->idvyzvy}}">
+                                </div>
                             <div>
                                 <label for="nazov">Názov výzvy:</label></br>
-                                <input type="text" id="nazov" name="nazov" class="form-control">
+                                <input type="text" id="nazov" name="nazov" class="form-control" value="{{$vyzva->nazov}}">
                             </div>
                             <div>
                                 <label for="popis">Krátky popis:</label>
-                                <textarea name="popis" id="popis" rows="5" class="form-control"></textarea>
+                                <textarea name="popis" id="popis" rows="2" class="form-control">{{$vyzva->popis}}</textarea>
                             </div>
                             <div>
                                 <label for="ostatneinfo">Deatily k výzve:</label>
-                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control"></textarea>
+                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control">{{$vyzva->ostatneinfo}}</textarea>
                             </div>
                             <div>
                                 <label for="dlzka">Dĺžka výzvy:</label></br>
-                                <input type="text" id="dlzka" name="dlzka" class="form-control">
+                                <input type="text" id="dlzka" name="dlzka" class="form-control" value="{{$vyzva->dlzka}}">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             </div>
                             <div>
                                 <label for="platnedo">Platnosť výzvy do:</label></br>
-                                <input type="date" id="platnedo" name="platnedo" class="form-control">
+                                <input type="date" id="platnedo" name="platnedo" class="form-control" value="{{$vyzva->platnedo}}">
                             </div>
                             <div>
                                 <label for="filename">Foto:</label></br>
@@ -63,7 +66,7 @@
                             <div>
                                 <label for="oblast">Oblasť:</label></br>
                                 <select class="form-control" id="oblast" name="oblast">
-                                    <option value=""></option>
+                                    <option value="{{$vyzva->oblasti->idoblasti}}" selected="{{$vyzva->oblasti->nazov}}">{{$vyzva->oblasti->nazov}}</option>
                                     @foreach ($oblasti as $oblast)
                                         <option value="{{ $oblast->idoblasti }}">{{ $oblast->nazov }}</option>
                                     @endforeach
@@ -72,14 +75,14 @@
                             <div>
                                 <label for="typvyzvy">Typ výzvy:</label></br>
                                 <select class="form-control" id="typvyzvy" name="typvyzvy">
-                                    <option value=""></option>
+                                    <option value="{{$vyzva->typvyzvy->idtypvyzvy}}">{{$vyzva->typvyzvy->typ}}</option>
                                     @foreach ($typvyzvy as $typ)
                                         <option value="{{ $typ->idtypvyzvy }}">{{ $typ->typ }}</option>
                                     @endforeach
                                 </select>
                             </div></br>
                             <div>
-                                <input class="mainBtn" type="submit" name="submit" value="Pridať výzvu" id="submit">
+                                <input class="mainBtn" type="submit" name="submit" value="Upraviť výzvu" id="submit">
                             </div>
                         </form>
                     </div> <!-- /.widget-inner -->

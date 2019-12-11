@@ -19,7 +19,7 @@ class Vyzvy extends Model
         'platnedo',
         'foto',
         'oblasti_idoblasti',
-        'typ_vyzvy_idtyp_vyzvy'
+        'typvyzvy_idtypvyzvy'
     ];
 
     public function univerzity()

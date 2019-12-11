@@ -29,7 +29,7 @@
                         </div> <!-- /.blog-image -->
                         <div class="blog-content">
                             <span class="meta-date">{{date('d.m.Y', strtotime($sprava->datum))}}</span>
-                            <span class="meta-comments">{{$sprava->user->nazov}}</span>
+                            <span class="meta-comments">{{$sprava->user->name}}</span>
                             <span class="meta-author">{{$sprava->vyzvy->nazov}}</span>
                             <h3 align="justify">{{$sprava->nadpis}}</h3>
                             <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
@@ -78,7 +78,7 @@
                     <div class="col-md-12">
                         <h5>Meno a priezvisko účastníka:</h5>
                         <ul>
-                            <li>{{$sprava->user->nazov}}</li>
+                            <li>{{$sprava->user->name}}</li>
                         </ul>
                     </div>
                     <div class="col-md-12">
