@@ -39,17 +39,6 @@ class VyzvyController extends Controller
 
     public function storeVyzva(Request $request){
 
-        $this->validate($request, [
-            'nazov' => 'required',
-            'popis' => 'required',
-            'ostatneinfo' => 'required',
-            'dlzka' => 'required',
-            'platnedo' => 'required|date|date_format:Y-m-d',
-            'filename' => 'required',
-            'oblast' => 'required',
-            'typvyzvy' => 'required',
-        ]);
-
         $imageName = $request->file('filename')->getClientOriginalName();
         $request->file('filename')->move(public_path('images'), $imageName);
 
@@ -63,7 +52,7 @@ class VyzvyController extends Controller
         $vyzvy->platnedo = $request->input('platnedo');
         $vyzvy->foto = $imageName;
         $vyzvy->oblasti_idoblasti = $request->input('oblast');
-        $vyzvy->typ_vyzvy_idtyp_vyzvy = $request->input('typvyzvy');
+        $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
         $vyzvy->save();
 
         return redirect('/vyzvy');
@@ -72,15 +61,6 @@ class VyzvyController extends Controller
 
     public function updateVyzva(Request $request){
 
-        $this->validate($request, [
-            'nazov' => 'required',
-            'popis' => 'required',
-            'ostatneinfo' => 'required',
-            'dlzka' => 'required',
-            'platnedo' => 'required|date|date_format:Y-m-d',
-            'oblast' => 'required',
-            'typvyzvy' => 'required',
-        ]);
         $vyzvy = Vyzvy::find($request->input('id'));
         if (!is_null($request->file('filename'))){
             if (File::exists($vyzvy->foto)) {

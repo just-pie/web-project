@@ -500,6 +500,13 @@ textarea:focus {
 	background-color: #00b8ea;
 }
 
+.mainBtn:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .mainAdminBtn {
 	background-color: #1b49d6;
 	padding: 7px 17px;
