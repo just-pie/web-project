@@ -23,13 +23,6 @@ class SpravyController extends Controller
 
     public function storeSprava(Request $request){
 
-        $this->validate($request, [
-            'vyzva' => 'required',
-            'nadpis' => 'required',
-            'sprava' => 'required',
-            'id' => 'required',
-        ]);
-
         $spravy = new Spravy();
         $spravy->timestamps = false;
         $spravy->nadpis = $request->input('nadpis');
