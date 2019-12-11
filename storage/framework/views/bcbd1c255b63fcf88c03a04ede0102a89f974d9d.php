@@ -1,4 +1,4 @@
-<?php echo $__env->make('includes.head', ['title' => 'Pridanie výzvy'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('includes.head', ['title' => 'Úprava výzvy'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <body>
 
@@ -27,7 +27,7 @@
                             <h2>Úprava výzvy</h2>
                                 <br>
                                 <div>
-                                    <input type="hidden" id="id" name="id" class="form-control" value="<?php echo e($vyzva->idvyzvy); ?>">
+                                    <input type="hidden" id="id" name="id" class="form-control" required value="<?php echo e($vyzva->idvyzvy); ?>">
                                 </div>
                             <div>
                                 <label for="nazov">Názov výzvy:</label></br>
@@ -41,7 +41,7 @@
                                 <br>
                             <div>
                                 <label for="ostatneinfo">Detaily k výzve:</label>
-                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control"><?php echo e($vyzva->ostatneinfo); ?></textarea>
+                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control summernote"><?php echo e($vyzva->ostatneinfo); ?></textarea
                             </div>
                                 <br>
                             <div>
@@ -93,6 +93,9 @@
     $(document).ready(function () {
         $(".nav li").removeClass("active");
         $(".vyzvy").addClass("active");
+        $(".summernote").summernote({
+            height: 1000,
+        });
     });
 </script>
 

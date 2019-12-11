@@ -14,7 +14,7 @@
                     <?php if(Auth::check()): ?>
                         <?php if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3): ?>
                             <a class="mainBtn" href="<?php echo e(action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])); ?>" role="button" style="color: white">Upraviť výzvu</a>
-                    <?php endif; ?>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->

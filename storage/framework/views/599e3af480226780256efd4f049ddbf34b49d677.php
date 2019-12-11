@@ -27,7 +27,7 @@
                     <div class="widget-inner">
                         <form action="<?php echo e(url('addvyzva')); ?>" method="post" enctype="multipart/form-data">
                             <?php if(count($errors)): ?>
-                                <div class="alert alert-danger">
+                                <div class="alert alert-warning">
                                     <ul>
                                         <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <li><?php echo e($error); ?></li>
@@ -74,7 +74,7 @@
                                 <select class="form-control" id="typvyzvy" name="typvyzvy">
                                     <option value=""></option>
                                     <?php $__currentLoopData = $typvyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $typ): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <option value="<?php echo e($typ->idtyp_vyzvy); ?>"><?php echo e($typ->typ); ?></option>
+                                        <option value="<?php echo e($typ->idtypvyzvy); ?>"><?php echo e($typ->typ); ?></option>
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 </select>
                             </div></br>

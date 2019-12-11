@@ -1,4 +1,4 @@
-@include('includes.head', ['title' => 'Pridanie výzvy'])
+@include('includes.head', ['title' => 'Úprava výzvy'])
 
 <body>
 
@@ -27,7 +27,7 @@
                             <h2>Úprava výzvy</h2>
                                 <br>
                                 <div>
-                                    <input type="hidden" id="id" name="id" class="form-control" value="{{$vyzva->idvyzvy}}">
+                                    <input type="hidden" id="id" name="id" class="form-control" required value="{{$vyzva->idvyzvy}}">
                                 </div>
                             <div>
                                 <label for="nazov">Názov výzvy:</label></br>
@@ -41,7 +41,7 @@
                                 <br>
                             <div>
                                 <label for="ostatneinfo">Detaily k výzve:</label>
-                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control">{{$vyzva->ostatneinfo}}</textarea>
+                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control">{{$vyzva->ostatneinfo}}</textarea
                             </div>
                                 <br>
                             <div>
