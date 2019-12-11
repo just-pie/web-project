@@ -27,7 +27,7 @@
                     <div class="widget-inner">
                         <form action="{{url('addvyzva')}}" method="post" enctype="multipart/form-data">
                             @if(count($errors))
-                                <div class="alert alert-danger">
+                                <div class="alert alert-warning">
                                     <ul>
                                         @foreach($errors->all() as $error)
                                             <li>{{$error}}</li>
