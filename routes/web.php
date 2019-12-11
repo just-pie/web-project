@@ -79,6 +79,8 @@ Route::get('/typvyzvy/{id}', [
     'as' => '', 'uses' => 'TypvyzvyController@showAction'
 ]);
 
+Route::post('/spravy','SpravyController@storeSprava');
+
 Route::get('/addvyzva','VyzvyController@addVyzva');
 
 Route::post('/addvyzva','VyzvyController@storeVyzva');
@@ -88,6 +90,7 @@ Route::get('/editvyzva{id}','VyzvyController@editVyzva');
 Route::post('/editvyzva','VyzvyController@updateVyzva');
 
 Route::get('create','ImageController@create');
+
 Route::post('create','ImageController@store');
 
 Route::get('/admin-docs', ['as' => 'adminDocs', 'uses' => 'AdminController@showDocumentation']);

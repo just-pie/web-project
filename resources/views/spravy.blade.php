@@ -45,26 +45,43 @@
 						<div class="comment-form">
 							<h3>Odošlite svoju správu</h3>
 							<div class="widget-inner">
-								<form action="#" method="post">
-									<div class="row">
-										<div class="col-md-4">
-											<p>
-												<label for="name-id">Výzva:</label>
-												<input type="text" id="name-id" name="name-id">
-											</p>
+								<form action="{{url('spravy')}}" method="post" enctype="multipart/form-data">
+									@if(count($errors))
+										<div class="alert alert-warning">
+											<ul>
+												@foreach($errors->all() as $error)
+													<li>{{$error}}</li>
+												@endforeach
+											</ul>
 										</div>
-										<div class="col-md-8">
-											<p>
-												<label for="email-id">Krátky popis:</label>
-												<input type="text" id="email-id" name="email-id">
-											</p>
+									@endif
+									<div>
+										<input type="hidden" id="id" name="id" class="form-control" value="{{auth()->user()->getAuthIdentifier()}}">
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<label for="vyzva">Výzva:</label></br>
+											<select id="vyzva" name="vyzva" class="form-control">
+												<option value=""></option>
+												@foreach ($vyzvy as $vyzva)
+													<option value="{{ $vyzva->idvyzvy }}">{{ $vyzva->nazov }}</option>
+												@endforeach
+											</select>
+											</br>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+												<label for="nadpis">Hlavička správy:</label></br>
+												<input type="text" id="nadpis" name="nadpis" size="78">
+											<input type="hidden" name="_token" value="{{ csrf_token() }}">
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-md-12">
 											<p>
-												<label for="comment">Tvoja správa:</label>
-												<textarea name="comment" id="comment" rows="5"></textarea>
+												<label for="sprava">Tvoja správa:</label>
+												<textarea name="sprava" id="sprava" rows="5"></textarea>
 											</p>
 										</div>
 									</div>
