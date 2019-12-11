@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="Pred prezentaciou">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/0c7e3f3956cd6881b88485b7bf6bd8ba74d5b445.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/0c7e3f3956cd6881b88485b7bf6bd8ba74d5b445.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/b62d4028f2f2591adbe8ad8f7e59729b3eba69fb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b62d4028f2f2591adbe8ad8f7e59729b3eba69fb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c861cf83bf5903e91c5daab69e21d0d76c308a33.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c861cf83bf5903e91c5daab69e21d0d76c308a33.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f55a89fbabc7ffdef6e16dc1f91e00baaa95e1a2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f55a89fbabc7ffdef6e16dc1f91e00baaa95e1a2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/6VPYiD2dfrUAHqukZiUdxKSpbwwOXaJym1XgEQRv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+            <state relative-caret-position="561">
+              <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -405,7 +398,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14373000" />
+    <option name="totallyTimeSpent" value="15583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -629,8 +622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+        <state relative-caret-position="561">
+          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
         </state>
       </provider>
     </entry>
