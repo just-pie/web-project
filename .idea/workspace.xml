@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="Pred prezentaciou">
-      <change afterPath="$PROJECT_DIR$/public/images/includes/ukf-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/includes/ukf-logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Missing_files_added.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Missing_files_added.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blue-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blue-scheme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/foot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/foot.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kontakt/kontakt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kontakt/kontakt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/BmTzmldGI68aBka1mGuH7PGVERmH54dC1aC9XsEg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/IJceSOto8K8m0SuZhwTioKBhFToRF3XtUBsEB1Ja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/4cf651acd37fe537e258bfc19f5c5103ceec7413.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4cf651acd37fe537e258bfc19f5c5103ceec7413.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/5022be039e8e9815983763c93591dfac9a340d33.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5022be039e8e9815983763c93591dfac9a340d33.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/5dc8c18a498e114859a5f1814ca98e0bf5c043a6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5dc8c18a498e114859a5f1814ca98e0bf5c043a6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a574e404298bfdd6300d6a287d14e1ea49d08fa1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a574e404298bfdd6300d6a287d14e1ea49d08fa1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c9e414b01549a4d7590980c02eb6747719c79a91.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c9e414b01549a4d7590980c02eb6747719c79a91.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f542fb2cba5815bc1d20e0d456da10c091703d87.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f542fb2cba5815bc1d20e0d456da10c091703d87.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0c7e3f3956cd6881b88485b7bf6bd8ba74d5b445.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/0c7e3f3956cd6881b88485b7bf6bd8ba74d5b445.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b62d4028f2f2591adbe8ad8f7e59729b3eba69fb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b62d4028f2f2591adbe8ad8f7e59729b3eba69fb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c861cf83bf5903e91c5daab69e21d0d76c308a33.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c861cf83bf5903e91c5daab69e21d0d76c308a33.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f55a89fbabc7ffdef6e16dc1f91e00baaa95e1a2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f55a89fbabc7ffdef6e16dc1f91e00baaa95e1a2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,24 +79,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="63" column="97" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
+            <state relative-caret-position="150">
+              <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-864">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+            <state relative-caret-position="286">
+              <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -127,26 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/kontakt/kontakt.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
+            <state relative-caret-position="225">
+              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -174,11 +162,12 @@
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/public/js/plugins/jquery.bxslider.js" />
         <option value="$PROJECT_DIR$/resources/views/includes/foot.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
       </list>
     </option>
   </component>
@@ -416,7 +405,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10433000" />
+    <option name="totallyTimeSpent" value="14373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -589,25 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -615,17 +585,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+        <state relative-caret-position="150">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="63" column="97" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
+        <state relative-caret-position="-864">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="62" column="90" selection-start-line="62" selection-start-column="90" selection-end-line="62" selection-end-column="90" />
         </state>
       </provider>
     </entry>

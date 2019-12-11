@@ -41,7 +41,7 @@
             <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Priezvisko a meno</th>
+                <th scope="col">Meno</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Rola</th>
                 <th class="no-sort" scope="col">Akcia</th>
@@ -58,10 +58,10 @@
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->name}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#" data-toggle="modal" data-target="#show" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
                                 @if($user->isAdmin !== 1)
-                                    <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->name}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="#" data-toggle="modal" data-target="#delete" data-mymeno="{{$user->name}}" data-myid="{{$user->id}}"><i class="fa fa-trash" style="color: red;"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#editUser" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" data-toggle="modal" data-target="#delete" data-name="{{$user->name}}" data-id="{{$user->id}}"><i class="fa fa-trash" style="color: red;"></i></a>
                                 @endif
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">
@@ -87,10 +87,9 @@
     $('#show').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);
         var idpouzivatelia = button.data('myid');
-        var meno = button.data('mymeno');
-        var priezvisko = button.data('mypriezvisko');
+        var name = button.data('myname');
         var email = button.data('myemail');
-        var datum_narodenia = button.data('mydatum_narodenia');
+        var birth_date = button.data('mybirth_date');
         var rola = button.data('myrola');
         var created_at = button.data('mycreated_at');
         var updated_at = button.data('myupdated_at');
@@ -104,23 +103,21 @@
         else{
             rola = 0;
         }
-        modal.find('.modal-body #meno').val(meno);
-        modal.find('.modal-body #priezvisko').val(priezvisko);
+        modal.find('.modal-body #name').val(name);
         modal.find('.modal-body #email').val(email);
-        modal.find('.modal-body #datum_narodenia').val(datum_narodenia);
+        modal.find('.modal-body #birth_date').val(birth_date);
         modal.find('.modal-body #rola').val(rola);
         modal.find('.modal-body #created_at').val(created_at);
         modal.find('.modal-body #updated_at').val(updated_at);
-        modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
+        modal.find('.modal-body #id').val(idpouzivatelia);
     });
     $('#edit').on('show.bs.modal', function (event) {
 
         var button = $(event.relatedTarget);
-        var idpouzivatelia = button.data('myid');
-        var meno = button.data('mymeno');
-        var priezvisko = button.data('mypriezvisko');
+        var id = button.data('myid');
+        var name = button.data('mymeno');
         var email = button.data('myemail');
-        var datum_narodenia = button.data('mydatum_narodenia');
+        var birth_day = button.data('mybirth_date');
         var rola = button.data('myrola');
         var created_at = button.data('mycreated_at');
         var updated_at = button.data('myupdated_at');
@@ -134,26 +131,23 @@
         else{
             rola = 0;
         }
-        modal.find('.modal-body #meno').val(meno);
-        modal.find('.modal-body #priezvisko').val(priezvisko);
+        modal.find('.modal-body #meno').val(name);
         modal.find('.modal-body #email').val(email);
-        modal.find('.modal-body #datum_narodenia').val(datum_narodenia);
+        modal.find('.modal-body #birth_date').val(birth_day);
         modal.find('.modal-body #rola').val(rola);
         modal.find('.modal-body #created_at').val(created_at);
         modal.find('.modal-body #updated_at').val(updated_at);
-        modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
+        modal.find('.modal-body #idpouzivatelia').val(id);
     });
     $('#delete').on('show.bs.modal', function (event) {
 
         var button = $(event.relatedTarget);
-        var idpouzivatelia = button.data('myid');
-        var meno = button.data('mymeno');
-        var priezvisko = button.data('mypriezvisko');
+        var id = button.data('id');
+        var name = button.data('name');
         var modal = $(this);
 
-        modal.find('.modal-body #meno').val(meno);
-        modal.find('.modal-body #priezvisko').val(priezvisko);
-        modal.find('.modal-body #idpouzivatelia').val(idpouzivatelia);
+        modal.find('.modal-body #user_name').val(name);
+        modal.find('.modal-body #id').val(id);
     });
 
     $(document).ready(function () {

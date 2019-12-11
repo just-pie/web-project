@@ -33,7 +33,7 @@ class AdminController extends Controller
         $firstname = $request->input('meno');
         $lastname = $request->input('priezvisko');
         $email = $request->input('email');
-        $birthday = $request->input('datum_narodenia');
+        $birthday = $request->input('birth_date');
         $login = $request->input('login');
         $password = $request->input('heslo');
         $role = $request->input('rola');

@@ -1,9 +1,9 @@
-<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Odstránenie používateľa</h4>
+                <h4 class="modal-title" id="deleteModalLabel">Odstránenie používateľa</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -13,10 +13,11 @@
                 <form method="post" action="{{ action('AdminController@deleteUser') }}">
                     <br>
                     {{csrf_field()}}
-                    <input type="hidden" id="idpouzivatelia" name="idpouzivatelia">
+                    <input type="hidden" id="id" name="id">
                     <div class="container">
                         <p>Skutočne si prajete vymazať tohto používateľa z databázy?</p>
-                        <p><strong>{{$user->name}}</strong></p>
+                        <input type="hidden" id="user_name">
+                        <p><strong><script type="text/javascript">document.write(write_name());</script></strong></p>
                         <br>
                         <p><em>Táto akcia je nevratná!</em></p>
                     </div>
@@ -31,4 +32,10 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    console.log(document.getElementById('user_name').value);
+    function write_name() {
+       return document.getElementById('user_name').value;
+    }
+</script>
 

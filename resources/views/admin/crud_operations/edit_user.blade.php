@@ -1,9 +1,9 @@
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Úprava dát používateľa</h5>
+                <h5 class="modal-title" id="editModalLabel">Úprava dát používateľa</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -13,13 +13,13 @@
                 <form method="post" action="{{ action('AdminController@editUser') }}">
                     <br>
                     {{csrf_field()}}
-                    <input type="hidden" id="idpouzivatelia" name="idpouzivatelia">
+                    <input type="hidden" id="id" name="id">
 
-                    <div class="input-group">
+                    <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="">Meno a priezvisko</span>
+                            <span class="input-group-text" id="">Meno</span>
                         </div>
-                        <input type="text" name="name" id="meno" class="form-control" required>
+                        <input type="text" name="name" id="name" class="form-control" required>
                     </div>
                     <br>
                     <div class="input-group mb-3">

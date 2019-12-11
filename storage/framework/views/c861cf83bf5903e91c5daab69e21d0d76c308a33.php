@@ -1,9 +1,9 @@
-<div class="modal fade" id="addNewUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="addNewUser" tabindex="-1" role="dialog" aria-labelledby="addModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Pridanie nového používateľa</h5>
+                <h5 class="modal-title" id="addModalLabel">Pridanie nového používateľa</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -18,8 +18,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="">Meno a priezvisko</span>
                         </div>
-                        <input type="text" name="meno" id="meno" class="form-control" required>
-                        <input type="text" name="priezvisko" id="priezvisko" class="form-control" required>
+                        <input type="text" name="name" id="name" class="form-control" required>
                     </div>
                     <br>
                     <div class="input-group mb-3">
@@ -51,13 +50,7 @@
                     </div>
                     <br><hr><br>
                     <h4>Prihlasovacie údaje</h4>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Login: </span>
-                        </div>
-                        <input type="text" class="form-control"
-                               aria-describedby="basic-addon1" name="login" id="login" required>
-                    </div>
+                    <br>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Heslo: </span>
