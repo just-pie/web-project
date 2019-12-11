@@ -3,18 +3,43 @@
 namespace App\Http\Controllers;
 
 use App\Models\Spravy;
+use App\Models\Vyzvy;
+use Illuminate\Http\Request;
 
 class SpravyController extends Controller
 {
     public function showSpravy()
     {
         $spravy = Spravy::all()->sortByDesc('datum');
-        return view("spravy", ['spravy' => $spravy]);
+        $vyzvy = Vyzvy::all()->sortByDesc('pridane');
+        return view("spravy", ['spravy' => $spravy, 'vyzvy' => $vyzvy]);
     }
 
     public function showSprava($id)
     {
         $sprava = Spravy::find($id);
         return view("sprava", ['sprava' => $sprava]);
+    }
+
+    public function storeSprava(Request $request){
+
+        $this->validate($request, [
+            'vyzva' => 'required',
+            'nadpis' => 'required',
+            'sprava' => 'required',
+            'id' => 'required',
+        ]);
+
+        $spravy = new Spravy();
+        $spravy->timestamps = false;
+        $spravy->nadpis = $request->input('nadpis');
+        $spravy->text = $request->input('sprava');
+        $spravy->datum = date('Y-m-d');
+        $spravy->users_idusers = $request->input('id');
+        $spravy->vyzvy_idvyzvy = $request->input('vyzva');
+        $spravy->save();
+
+        return redirect('/spravy');
+
     }
 }
