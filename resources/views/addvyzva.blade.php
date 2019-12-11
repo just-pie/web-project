@@ -26,43 +26,34 @@
                 <div class="comment-form">
                     <div class="widget-inner">
                         <form action="{{url('addvyzva')}}" method="post" enctype="multipart/form-data">
-                            @if(count($errors))
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach($errors->all() as $error)
-                                            <li>{{$error}}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
                             <div>
                                 <label for="nazov">Názov výzvy:</label></br>
-                                <input type="text" id="nazov" name="nazov" class="form-control">
+                                <input type="text" id="nazov" name="nazov" class="form-control" required>
                             </div>
                             <div>
                                 <label for="popis">Krátky popis:</label>
-                                <textarea name="popis" id="popis" rows="5" class="form-control"></textarea>
+                                <textarea name="popis" id="popis" rows="5" class="form-control" required></textarea>
                             </div>
                             <div>
                                 <label for="ostatneinfo">Deatily k výzve:</label>
-                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control"></textarea>
+                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control" required></textarea>
                             </div>
                             <div>
                                 <label for="dlzka">Dĺžka výzvy:</label></br>
-                                <input type="text" id="dlzka" name="dlzka" class="form-control">
+                                <input type="text" id="dlzka" name="dlzka" class="form-control" required>
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             </div>
                             <div>
                                 <label for="platnedo">Platnosť výzvy do:</label></br>
-                                <input type="date" id="platnedo" name="platnedo" class="form-control">
+                                <input type="date" id="platnedo" name="platnedo" class="form-control" required>
                             </div>
                             <div>
                                 <label for="filename">Foto:</label></br>
-                                <input type="file" name="filename" id="filename" class="form-control">
+                                <input type="file" name="filename" id="filename" class="form-control" required>
                             </div>
                             <div>
                                 <label for="oblast">Oblasť:</label></br>
-                                <select class="form-control" id="oblast" name="oblast">
+                                <select class="form-control" id="oblast" name="oblast" required>
                                     <option value=""></option>
                                     @foreach ($oblasti as $oblast)
                                         <option value="{{ $oblast->idoblasti }}">{{ $oblast->nazov }}</option>
@@ -71,7 +62,7 @@
                             </div>
                             <div>
                                 <label for="typvyzvy">Typ výzvy:</label></br>
-                                <select class="form-control" id="typvyzvy" name="typvyzvy">
+                                <select class="form-control" id="typvyzvy" name="typvyzvy" required>
                                     <option value=""></option>
                                     @foreach ($typvyzvy as $typ)
                                         <option value="{{ $typ->idtypvyzvy }}">{{ $typ->typ }}</option>

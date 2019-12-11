@@ -110,7 +110,7 @@
                                         <?php endif; ?>
                                     </a>
                                     <ul>
-                                        <li><a style="cursor: default; color: #00a8d6;"><strong><u><?php echo e(Auth::user()->name); ?></u></strong></a></li>
+                                        <li><a style="cursor: default; color: #28b8ce;"><strong><u><?php echo e(Auth::user()->name); ?></u></strong></a></li>
 
                                         <?php if(auth()->user()->isAdmin == 1): ?>
 

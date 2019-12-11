@@ -97,7 +97,7 @@ b {
 
 a,
 a:visited {
-	color: #00a8d6;
+	color: #28b8ce;
 	text-decoration: none !important;
 	outline: 0;
 }
@@ -252,7 +252,7 @@ a:visited {
 }
 
 .main-nav ul li a:hover {
-	color: #00a8d6;
+	color: 	#28b8ce;
 }
 
 .main-nav ul li a i {
@@ -260,7 +260,7 @@ a:visited {
 }
 
 .main-nav ul li.active a {
-	color: #00a8d6;
+	color: #28b8ce;
 	background-color: #f1f4f5;
 }
 
@@ -293,7 +293,7 @@ a:visited {
 }
 
 .main-nav ul li ul li a:hover {
-	color: #00a8d6 !important;
+	color: #28b8ce !important;
 }
 
 .main-nav ul li ul li:last-child a {
@@ -438,7 +438,7 @@ a.large-button.white-color {
 }
 
 a.main-button.accent-color {
-	background-color: #00a8d6;
+	background-color: #28b8ce;
 	color: white;
 }
 
@@ -480,7 +480,7 @@ textarea:focus {
 }
 
 .mainBtn {
-	background-color: #00a8d6;
+	background-color: #28b8ce;
 	padding: 7px 17px;
 	color: white;
 	display: inline-block;
@@ -498,6 +498,13 @@ textarea:focus {
 
 .mainBtn:hover {
 	background-color: #00b8ea;
+}
+
+.mainBtn:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .mainAdminBtn {
@@ -541,7 +548,7 @@ button {
 
 input.mainBtn:focus,
 input.mainBtn {
-	background-color: #00a8d6;
+	background-color: #28b8ce;
 	border: 0;
 }
 
@@ -701,7 +708,7 @@ blockquote {
 }
 
 .service-icon-wrap i {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .service-title {
@@ -746,7 +753,7 @@ blockquote {
 }
 
 #filters li.active {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .pages {
@@ -765,7 +772,7 @@ blockquote {
 }
 
 .pages li a.active {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 
@@ -863,7 +870,7 @@ blockquote {
 }
 
 .thumb-post .overlay .overlay-inner {
-	background: #00a8d6;
+	background: #28b8ce;
 	height: 100%;
 	position: relative;
 }
@@ -994,7 +1001,7 @@ blockquote {
 }
 
 .project-single .meta-post li a:hover {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .project-img {
@@ -1093,8 +1100,8 @@ blockquote {
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #00a8d6;
-	border-color: #00a8d6;
+	background: #28b8ce;
+	border-color: #28b8ce;
 }
 
 
@@ -1208,7 +1215,7 @@ blockquote {
 }
 
 .post-blog .blog-content span a:hover {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .post-blog .blog-content h3 {
@@ -1223,7 +1230,7 @@ blockquote {
 }
 
 .post-blog .blog-content h3 a:hover {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .meta-date:after,
@@ -1428,7 +1435,7 @@ blockquote {
 }
 
 .last-post .content h4 a:hover {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .categories ul li:before {
@@ -1566,7 +1573,7 @@ blockquote {
 }
 
 .footer-menu li a:hover {
-	color: #00a8d6;
+	color: #28b8ce;
 }
 
 .copyright-text {
