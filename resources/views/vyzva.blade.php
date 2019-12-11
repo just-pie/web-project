@@ -35,7 +35,7 @@
                                 <h2>Ponuka</h2>
                                 <p>{{$vyzva->popis}}</p>
                                 <h2>Základné informácie</h2>
-                                <p>{{$vyzva->ostatneinfo}}</p>
+                                {!! $vyzva->ostatneinfo !!}
                             </div> <!-- /.blog-content -->
                         </div> <!-- /.post-blog -->
                         <div>

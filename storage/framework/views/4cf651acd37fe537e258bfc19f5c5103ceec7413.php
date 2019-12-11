@@ -30,11 +30,8 @@
         </div> <!-- /.row -->
         
 <br>
-
             <div class="col-md-12">
-                <p class="copyright-text">Copyright &copy; 2019 UKF
-                    | Tímový projekt: TP04  <a href="https://github.com/just-pie/web-project" target="_blank"><i class="fab fa-github" style="font-size: 20px;"></i></a></p>
+                <p class="copyright-text">Copyright &copy; 2019 UKF | Tímový projekt: TP04</p>
             </div> <!-- /.col-md-12 -->
-
     </div> <!-- /.container -->
 </footer> <!-- /.site-footer -->

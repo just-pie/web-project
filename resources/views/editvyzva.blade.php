@@ -1,4 +1,4 @@
-@include('includes.head', ['title' => 'Pridanie výzvy'])
+@include('includes.head', ['title' => 'Úprava výzvy'])
 
 <body>
 
@@ -32,7 +32,7 @@
                         <br>
                         <div>
                             <label for="ostatneinfo">Detaily k výzve:</label>
-                            <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control" required>{{$vyzva->ostatneinfo}}</textarea>
+                            <textarea name="ostatneinfo" id="ostatneinfo" rows="5" style="z-index: 2047483647;" class="form-control ostatneinfo" required>{{$vyzva->ostatneinfo}}</textarea>
                         </div>
                         <br>
                         <div>
@@ -86,7 +86,16 @@
         $(".vyzvy").addClass("active");
     });
 </script>
-
+{{--<script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
+<script>
+    tinymce.init({
+        selector:'textarea.ostatneinfo',
+        height: 300
+    });
+</script>--}}
+<script>
+    CKEDITOR.replace( 'ostatneinfo' );
+</script>
 @include('includes.foot')
 
 <!-- Scripts -->

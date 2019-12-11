@@ -35,7 +35,8 @@
                                 <h2>Ponuka</h2>
                                 <p><?php echo e($vyzva->popis); ?></p>
                                 <h2>Základné informácie</h2>
-                                <p><?php echo e($vyzva->ostatneinfo); ?></p>
+                                <?php echo $vyzva->ostatneinfo; ?>
+
                             </div> <!-- /.blog-content -->
                         </div> <!-- /.post-blog -->
                         <div>

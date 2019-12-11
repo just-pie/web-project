@@ -57,7 +57,7 @@
     </ul> <!-- /.main_menu -->
 </div> <!-- /.responsive_menu -->
 
-<header class="site-header clearfix">
+<header class="site-header clearfix" style="z-index: 1000;">
     <div class="container">
 
         <div class="row">
