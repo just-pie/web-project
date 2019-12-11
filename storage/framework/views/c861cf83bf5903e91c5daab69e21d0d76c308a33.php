@@ -8,11 +8,11 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form method="post" action="{{ action('AdminController@addUser') }}">
+            <form method="post" action="<?php echo e(action('AdminController@addUser')); ?>">
                 <div class="modal-body">
                     <br>
 
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
 
                     <div class="input-group">
                         <div class="input-group-prepend">

@@ -23,23 +23,25 @@
         </li>
         <?php if(auth()->guard()->guest()): ?>
         <?php else: ?>
-            <li>
-                <a>
-                    <?php echo e(Auth::user()->name); ?>
-
-                </a>
-
-                <ul>
-
+            <li style="color: white;"><a><?php echo e(Auth::user()->name); ?></a>
+            <ul>
                     <?php if(auth()->user()->isAdmin == 1): ?>
+
+                        <li><a href="<?php echo e(url('admin')); ?>">Admin</a></li>
+
+                    <?php elseif(auth()->user()->roly_idroly == 3): ?>
                         <li>
-                            <a href="<?php echo e(url('admin')); ?>">Admin</a>
+                            <a>Som teta zo študijného</a>
                         </li>
                     <?php else: ?>
                         <li>
-                            <div class="panel-heading">Normal User</div>
+                            <a>Som študent</a>
+                        </li>
+                        <li>
+                            <a>Môj profil</a>
                         </li>
                     <?php endif; ?>
+
                     <li>
                         <a href="<?php echo e(route('logout')); ?>"
                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
@@ -61,7 +63,7 @@
 
         <div class="row">
 
-            <div class="col-md-12">
+            <div class="col-lg">
 
                 <div class="pull-left logo">
                     <a href="<?php echo e(url('/')); ?>">
@@ -145,7 +147,7 @@
                     <!-- This one in here is responsive menu for tablet and mobiles -->
                     <div class="responsive-navigation visible-sm visible-xs">
                         <a href="#nogo" class="menu-toggle-btn">
-                            <i class="fa fa-bars"></i>
+                            <i class="fas fa-bars"></i>
                         </a>
                     </div> <!-- /responsive_navigation -->
 

@@ -40,11 +40,13 @@
 								   style=" margin: 20px;text-align: center;" >
 									<span class="text-muted" >{{$kontakt->pozicia}}</span>
 									<br>
-									<span class="fa fa-building-o fa-fw text-muted" data-toggle="tooltip"></span>
+									<i class="fas fa-building fa-fw text-muted" data-toggle="tooltip"></i>
 									<span class="text-muted">{{$kontakt->fakulta}}</span>
 									<br>
-									<span class="fa fa-crosshairs fa-fw text-muted" data-toggle="tooltip"></span>
+									@if(strlen($kontakt->poznamka)>1)
+									<i class="fas fa-crosshairs fa-fw text-muted" data-toggle="tooltip"></i>
 									<span class="text-muted small text-truncate">{{$kontakt->poznamka}}</span>
+									@endif
 								</p>
 								<ul class="list-inline">
 									@if(isset($kontakt->web) || trim($kontakt->web) !== '')

@@ -10,9 +10,10 @@
             </div>
 
             <div class="modal-body">
-                <form method="post" action="{{ action('AdminController@editUser') }}">
+                <form method="post" action="<?php echo e(action('AdminController@editUser')); ?>">
                     <br>
-                    {{csrf_field()}}
+                    <?php echo e(csrf_field()); ?>
+
                     <input type="hidden" id="id" name="id">
 
                     <div class="input-group mb-3">
@@ -64,23 +65,7 @@
                         <input type="text" name="updated_at" class="form-control" id="updated_at" disabled="">
                     </div>
                     <br>
-                    {{-- <br><hr><br>
-                     <h4>Prihlasovacie údaje</h4>
-                     <div class="input-group mb-3">
-                         <div class="input-group-prepend">
-                             <span class="input-group-text" id="basic-addon1">Login: </span>
-                         </div>
-                         <input type="text" class="form-control"
-                                aria-describedby="basic-addon1" name="login" id="login" required>
-                     </div>
-                     <div class="input-group mb-3">
-                         <div class="input-group-prepend">
-                             <span class="input-group-text" id="basic-addon1">Heslo: </span>
-                         </div>
-                         <input type="password" class="form-control"
-                                aria-describedby="basic-addon1" name="heslo" id="heslo" required>
-                     </div>
-                 </div>--}}
+                    
                     <br>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvoriť</button>
