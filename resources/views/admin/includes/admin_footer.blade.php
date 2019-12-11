@@ -36,7 +36,7 @@
                 },
                 "infoFiltered": "(filtered from _MAX_ total records)",
             },
-            "order": [[1, 'asc']],
+            "order": [[0, 'asc']],
             "columns": [
                 { "orderable": false },
                 null,

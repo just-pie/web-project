@@ -4,11 +4,13 @@
         <div class="row">
             <div class="col-sm">
                 Počet všetkých používateľov:
-                {{$countAllUsers}}
+                <?php echo e($countAllUsers); ?>
+
             </div>
             <div class="col-sm">
                 Počet nových používateľov za posledný týždeň:
-                {{$countRecentlyAddedUsers}}
+                <?php echo e($countRecentlyAddedUsers); ?>
+
             </div>
             <div class="col-sm">
                 Tu bude počet aktívnych používateľov.
@@ -19,20 +21,21 @@
     <div class="container">
         <h3>Tabuľka používateľov</h3>
         <br>
-        @if(session()->has('message'))
+        <?php if(session()->has('message')): ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                {!! session()->get('message') !!}
+                <?php echo session()->get('message'); ?>
+
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <br>
-        @endif
+        <?php endif; ?>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewUser">
             <i class="fa fa-plus"></i>
             Pridať nového používateľa
         </button>
-        @include('admin.crud_operations.add_user')
+        <?php echo $__env->make('admin.crud_operations.add_user', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <br>
         <br>
     </div>
@@ -48,41 +51,39 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($users as $user)
+            <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <tr>
-                    <th scope="row">{{ $user->id }}</th>
-                    <td>{{ $user->name }}</td>
-                    <td><a href="mailto:{{ $user->email }}?Subject=Predmet:%20Mobility%20študentov" target="_top">{{ $user->email }}</a></td>
-                    <td>{{ $user->rola }}</td>
+                    <th scope="row"><?php echo e($user->id); ?></th>
+                    <td><?php echo e($user->name); ?></td>
+                    <td><a href="mailto:<?php echo e($user->email); ?>?Subject=Predmet:%20Mobility%20študentov" target="_top"><?php echo e($user->email); ?></a></td>
+                    <td><?php echo e($user->rola); ?></td>
 
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->name}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
-                                @if($user->isAdmin !== 1)
-                                    <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="{{$user->name}}" data-myemail="{{$user->email}}" data-mydatum_narodenia="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="#" data-toggle="modal" data-target="#delete" data-mymeno="{{$user->name}}" data-myid="{{$user->id}}"><i class="fa fa-trash" style="color: red;"></i></a>
-                                @endif
+                                <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="<?php echo e($user->name); ?>" data-myemail="<?php echo e($user->email); ?>" data-mydatum_narodenia="<?php echo e($user->birth_date); ?>" data-myrola="<?php echo e($user->rola); ?>" data-mycreated_at="<?php echo e($user->created_at); ?>" data-myupdated_at="<?php echo e($user->updated_at); ?>"  data-myid="<?php echo e($user->id); ?>"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
+                                <?php if($user->isAdmin !== 1): ?>
+                                    <a href="#" data-toggle="modal" data-target="#edit" data-mymeno="<?php echo e($user->name); ?>" data-myemail="<?php echo e($user->email); ?>" data-mydatum_narodenia="<?php echo e($user->birth_date); ?>" data-myrola="<?php echo e($user->rola); ?>" data-mycreated_at="<?php echo e($user->created_at); ?>" data-myupdated_at="<?php echo e($user->updated_at); ?>"  data-myid="<?php echo e($user->id); ?>"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#" data-toggle="modal" data-target="#delete" data-mymeno="<?php echo e($user->name); ?>" data-myid="<?php echo e($user->id); ?>"><i class="fa fa-trash" style="color: red;"></i></a>
+                                <?php endif; ?>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">
-                              {{--  <a href="{{ action("UserController@edit_page", ['id' => $user->id]) }}"
-                                   class="btn btn-outline-warning" role="button">Upraviť</a>--}}
-                              {{--  <a href="{{ action("UserController@delete_page", ['id' => $user->id]) }}"
-                                   class="btn btn-outline-danger" role="button">Vymazať</a>--}}
+                              
+                              
                             </div>
                         </div>
                     </td>
                 </tr>
-            @endforeach
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </tbody>
         </table>
     </div>
 
-@include('admin.crud_operations.show_user')
-@include('admin.crud_operations.edit_user')
-@include('admin.crud_operations.delete_user')
+<?php echo $__env->make('admin.crud_operations.show_user', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('admin.crud_operations.edit_user', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('admin.crud_operations.delete_user', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-<script src="{{asset("js/app.js")}}"></script>
+<script src="<?php echo e(asset("js/app.js")); ?>"></script>
 <script>
     $('#show').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget);

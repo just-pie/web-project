@@ -14,8 +14,7 @@
                     <span class="page-location">Domov / Výzvy</span>
                     <?php if(Auth::check()): ?>
                         <?php if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3): ?>
-                            <a class="mainBtn" href="<?php echo e(url('/addvyzva')); ?>" role="button" style="color: white">Pridať
-                                výzvu</a>
+                            <a class="mainBtn" href="<?php echo e(url('/addvyzva')); ?>" role="button" style="color: white">Pridať výzvu</a>
                         <?php endif; ?>
                     <?php endif; ?>
                 </div> <!-- /.col-md-6 -->
@@ -43,12 +42,10 @@
         <div class="portfolio-holder" id="Grid">
             <?php $__currentLoopData = $vyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vyzva): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php if(count($vyzva->univerzity) < 2): ?>
-                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                    <div class="portfolio-post col-sm-6 col-md-4 mix <?php echo e($vyzva->typvyzvy->typ); ?>">
                         <div class="thumb-post">
                             <div class="overlay-inner">
-                                <div style=" height: 233px;max-height: 233px;"><img src="<?php echo e($vyzva->foto); ?>"
-                                                                                    alt="<?php echo e($vyzva->nazov); ?>"
-                                                                                    style=" width: 100%; height: 100%;object-fit:cover;">
+                                <div style=" height: 233px;max-height: 233px;"><img src="<?php echo e($vyzva->foto); ?>" alt="<?php echo e($vyzva->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
                                     <h3 style="color: white; text-shadow: 2px 2px 3px black;"><?php echo e($vyzva->nazov); ?></h3>
@@ -75,9 +72,8 @@
                     <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
                         <div class="thumb-post">
                             <div class="overlay-inner">
-                                <div style=" height: 233px;max-height: 233px;"><img src="<?php echo e($vyzva->foto); ?>"
-                                                                                    alt="<?php echo e($vyzva->nazov); ?>"
-                                                                                    style=" width: 100%; height: 100%;object-fit:cover;">
+                                <div style=" height: 233px;max-height: 233px;">
+                                    <img src="<?php echo e($vyzva->foto); ?>" alt="<?php echo e($vyzva->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
                                     <h3 style="color: white; text-shadow: 2px 2px 3px black;"><?php echo e($vyzva->nazov); ?></h3>

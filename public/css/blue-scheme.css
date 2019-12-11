@@ -306,10 +306,14 @@ a.menu-toggle-btn {
 	color: #31373a;
 	font-size: 14px;
 	display: block;
+	margin-top: 5px;
+	vertical-align: middle;
+	top: 50%;
 }
 
 a.menu-toggle-btn i {
 	font-size: 18px;
+	vertical-align: middle;
 }
 
 .main_menu li {
@@ -511,6 +515,19 @@ textarea:focus {
 	-ms-transition: background 250ms ease-in;
 	-o-transition: background 250ms ease-in;
 	transition: background 250ms ease-in;
+}
+
+#footer-logo {
+	/* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+	filter: #6d6d6d; /* IE5+ */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-webkit-transition: all .7s;
+}
+
+#footer-logo:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+
 }
 
 .mainAdminBtn:hover {

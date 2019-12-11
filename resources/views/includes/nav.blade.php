@@ -23,22 +23,25 @@
         </li>
         @guest
         @else
-            <li>
-                <a>
-                    {{ Auth::user()->name }}
-                </a>
-
-                <ul>
-
+            <li style="color: white;"><a>{{ Auth::user()->name }}</a>
+            <ul>
                     @if(auth()->user()->isAdmin == 1)
+
+                        <li><a href="{{url('admin')}}">Admin</a></li>
+
+                    @elseif(auth()->user()->roly_idroly == 3)
                         <li>
-                            <a href="{{url('admin')}}">Admin</a>
+                            <a>Som teta zo študijného</a>
                         </li>
                     @else
                         <li>
-                            <div class="panel-heading">Normal User</div>
+                            <a>Som študent</a>
+                        </li>
+                        <li>
+                            <a>Môj profil</a>
                         </li>
                     @endif
+
                     <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
@@ -59,7 +62,7 @@
 
         <div class="row">
 
-            <div class="col-md-12">
+            <div class="col-lg">
 
                 <div class="pull-left logo">
                     <a href="{{url('/')}}">
@@ -142,7 +145,7 @@
                     <!-- This one in here is responsive menu for tablet and mobiles -->
                     <div class="responsive-navigation visible-sm visible-xs">
                         <a href="#nogo" class="menu-toggle-btn">
-                            <i class="fa fa-bars"></i>
+                            <i class="fas fa-bars"></i>
                         </a>
                     </div> <!-- /responsive_navigation -->
 

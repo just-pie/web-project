@@ -61,8 +61,8 @@ class AdminController extends Controller
 
         $page_name = 'admin.admin_body.admin_users';
         $users = \DB::table('users')
-            ->select(['users.id', 'users.name', 'users.priezvisko', 'pouzivatelia.email', 'pouzivatelia.datum_narodenia', 'roly.rola', 'pouzivatelia.created_at', 'pouzivatelia.updated_at'])
-            ->join('roly', 'roly.idroly', '=', 'pouzivatelia.roly_idroly')
+            ->select(['users.id', 'users.name', 'users.email', 'users.birth_date', 'users.isAdmin', 'users.foto', 'roly.rola', 'users.created_at', 'users.updated_at'])
+            ->join('roly', 'roly.idroly', '=', 'users.roly_idroly')
             ->get();
 
         $data = [
@@ -78,7 +78,7 @@ class AdminController extends Controller
 
     public function editUser(Request $request){
 
-        $user = Pouzivatelia::findOrFail($request->input('idpouzivatelia'));
+        $user = User::findOrFail($request->input('id'));
         $user->update($request->all());
 
         /*$user = Pouzivatelia::where("idpouzivatelia", "=", $request->input('idpouzivatelia'))->first();
@@ -88,7 +88,7 @@ class AdminController extends Controller
             'datum_narodenia' => $request->input('datum_narodenia'),
             'roly_idroly' => $request->input('rola')]);*/
 
-        $msg = 'Dáta o používateľovi <em>'.$request->input('meno').' '.$request->input('priezvisko').'</em> boli <strong>úspešne</strong> aktualizované!';
+        $msg = 'Dáta o používateľovi <em>'.$request->input('name').' '.$request->input('priezvisko').'</em> boli <strong>úspešne</strong> aktualizované!';
         echo "som tu!";
         return back()->with('message', $msg);
     }
