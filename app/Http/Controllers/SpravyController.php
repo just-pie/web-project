@@ -10,7 +10,7 @@ class SpravyController extends Controller
 {
     public function showSpravy()
     {
-        $spravy = Spravy::all()->sortByDesc('datum');
+        $spravy = Spravy::orderBy('datum', 'desc')->take(10)->get();
         $vyzvy = Vyzvy::all()->sortByDesc('pridane');
         return view("spravy", ['spravy' => $spravy, 'vyzvy' => $vyzvy]);
     }
