@@ -23,11 +23,11 @@
 </div> <!-- /.pageTitle -->
 
 
+
 <?php if(count($vyzva->univerzity) < 2): ?>
     <div class="container">
         <div class="row">
             <div class=" blog-posts">
-                <div class="row">
                     <div class="col-md-12">
                         <div class="post-blog">
                                 <script>document.getElementById("blog").style.backgroundImage = "url('<?php echo e($vyzva->foto); ?>')";</script>
@@ -47,7 +47,6 @@
                             <br>
                         </div>
                     </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
             </div> <!-- /.col-md-8 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->

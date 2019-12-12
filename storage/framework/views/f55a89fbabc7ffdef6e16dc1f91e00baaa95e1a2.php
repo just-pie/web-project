@@ -40,7 +40,7 @@
         <br>
     </div>
     <div class="container">
-        <table id="myTable" class="table table-striped">
+        <table id="pouzivatelia" class="table table-striped">
             <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -61,10 +61,10 @@
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="#" data-toggle="modal" data-target="#show" data-myname="<?php echo e($user->name); ?>" data-myemail="<?php echo e($user->email); ?>" data-mybirth_day="<?php echo e($user->birth_date); ?>" data-myrola="<?php echo e($user->rola); ?>" data-mycreated_at="<?php echo e($user->created_at); ?>" data-myupdated_at="<?php echo e($user->updated_at); ?>"  data-myid="<?php echo e($user->id); ?>"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="" data-toggle="modal" data-target="#show" data-myname="<?php echo e($user->name); ?>" data-myemail="<?php echo e($user->email); ?>" data-mybirth_day="<?php echo e($user->birth_date); ?>" data-myrola="<?php echo e($user->rola); ?>" data-mycreated_at="<?php echo e($user->created_at); ?>" data-myupdated_at="<?php echo e($user->updated_at); ?>"  data-myid="<?php echo e($user->id); ?>"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
                                 <?php if($user->isAdmin !== 1): ?>
-                                    <a href="#" data-toggle="modal" data-target="#editUser" data-myname="<?php echo e($user->name); ?>" data-myemail="<?php echo e($user->email); ?>" data-mybirth_day="<?php echo e($user->birth_date); ?>" data-myrola="<?php echo e($user->rola); ?>" data-mycreated_at="<?php echo e($user->created_at); ?>" data-myupdated_at="<?php echo e($user->updated_at); ?>"  data-myid="<?php echo e($user->id); ?>"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="#" data-toggle="modal" data-target="#delete" data-name="<?php echo e($user->name); ?>" data-id="<?php echo e($user->id); ?>"><i class="fa fa-trash" style="color: red;"></i></a>
+                                    <a href="" data-toggle="modal" data-target="#editUser" data-myname="<?php echo e($user->name); ?>" data-myemail="<?php echo e($user->email); ?>" data-mybirth_day="<?php echo e($user->birth_date); ?>" data-myrola="<?php echo e($user->rola); ?>" data-mycreated_at="<?php echo e($user->created_at); ?>" data-myupdated_at="<?php echo e($user->updated_at); ?>"  data-myid="<?php echo e($user->id); ?>"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="" data-toggle="modal" data-target="#delete" data-name="<?php echo e($user->name); ?>" data-id="<?php echo e($user->id); ?>"><i class="fa fa-trash" style="color: red;"></i></a>
                                 <?php endif; ?>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">

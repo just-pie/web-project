@@ -18,32 +18,4 @@
 <script src="<?php echo e(\URL::asset("js/admin_sidebar/main.js")); ?>"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('#myTable').dataTable({
-            "lengthMenu": [[5, 10, 25, 50], [5, 10, 25, 50]],
-            "language": {
-                "lengthMenu": "Zobrazujem _MENU_ riadkov.",
-                "zeroRecords": "Nemám čo načítať, tabuľka je prázdna.",
-                "search" : "Hľadať:",
-                "info": "Zobrazujem _PAGE_ z celkových _PAGES_ strán.",
-                "infoEmpty": "Žiadne dáta k dispozícií.",
-                "paginate": {
-                    "first":      "Prvý",
-                    "last":       "Posledný",
-                    "next":       "Ďalší",
-                    "previous":   "Predošlý"
-                },
-                "infoFiltered": "(filtered from _MAX_ total records)",
-            },
-            "order": [[0, 'asc']],
-            "columns": [
-                { "orderable": false },
-                null,
-                null,
-                null,
-                { "orderable": false }
-            ]
-        });
-    });
-</script>
+<?php echo $__env->make('admin.admin_tables.users_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
