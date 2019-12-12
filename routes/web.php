@@ -12,6 +12,10 @@ Route::get('/sprava{id}', [
     'as' => 'sprava', 'uses' => 'SpravyController@showSprava'
 ]);
 
+Route::get('/univerzity', [
+    'as' => 'univerzity', 'uses' => 'UniverzityController@showUniverzity'
+]);
+
 Route::get('/univerzita{id}', [
     'as' => 'univerzita', 'uses' => 'UniverzityController@showUniverzita'
 ]);
