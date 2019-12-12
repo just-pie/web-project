@@ -69,7 +69,7 @@
                         </div>
                     </div> <!-- /.col-md-4 -->
                 @else
-                    <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                    <div class="portfolio-post col-sm-6 col-md-4 mix {{$vyzva->typvyzvy->typ}}">
                         <div class="thumb-post">
                             <div class="overlay-inner">
                                 <div style=" height: 233px;max-height: 233px;">

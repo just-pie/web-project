@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="Pred prezentaciou">
-      <change beforePath="$PROJECT_DIR$/public/images/vyzvy/eye_tracking.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MWBLWPgMluvUuNFqccXdtLP4RTR57OI2EXYFgoSS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/599e3af480226780256efd4f049ddbf34b49d677.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/599e3af480226780256efd4f049ddbf34b49d677.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/60c26e006dcb44acccd4f4ddb75b5cf829a9bbb2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/60c26e006dcb44acccd4f4ddb75b5cf829a9bbb2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a574e404298bfdd6300d6a287d14e1ea49d08fa1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a574e404298bfdd6300d6a287d14e1ea49d08fa1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/bcbd1c255b63fcf88c03a04ede0102a89f974d9d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/bcbd1c255b63fcf88c03a04ede0102a89f974d9d.php" afterDir="false" />
-=======
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpravyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpravyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VyzvyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blue-scheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blue-scheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addvyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addvyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/editvyzva.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/spravy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/spravy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/6VPYiD2dfrUAHqukZiUdxKSpbwwOXaJym1XgEQRv" beforeDir="false" />
->>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -48,134 +29,8 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/nav.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#li#5;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/head.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/editvyzva.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="43" column="106" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/foot.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-864">
-              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>respon</find>
-      <find>pull</find>
-      <find>height</find>
-      <find>getViewportHei</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/resources/views/includes/nav.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/blue-scheme.css" />
-        <option value="$PROJECT_DIR$/resources/views/kontakt/kontakt.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/plugins/jquery.bxslider.js" />
-        <option value="$PROJECT_DIR$/resources/views/includes/foot.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/editvyzva.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/includes/head.blade.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -269,90 +124,6 @@
       <path value="$PROJECT_DIR$/vendor/snapappointments/bootstrap-select" />
     </include_path>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="899" />
-    <option name="y" value="56" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-=======
   <component name="ProjectId" id="1UqgAaSKkttsKmJEVQlKX4Yfjil" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -361,13 +132,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
->>>>>>> master
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-<<<<<<< HEAD
-=======
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -375,7 +143,6 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
->>>>>>> master
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -384,15 +151,15 @@
       <recent name="C:\xampp\htdocs\web-project\public\images\uni_foto" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -413,44 +180,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576089400028</updated>
-      <workItem from="1576089406420" duration="2067000" />
+      <workItem from="1576089406420" duration="2282000" />
+      <workItem from="1576142187597" duration="3012000" />
+      <workItem from="1576167613576" duration="8963000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="PRidavanie sprav - funkcne">
+      <created>1576091540669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576091540669</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PRidavanie sprav - funkcne">
+      <created>1576172091002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576172091002</updated>
+    </task>
+    <task id="LOCAL-00004" summary="univerzity.blade">
+      <created>1576175787391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576175787391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-<<<<<<< HEAD
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19925000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-=======
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
->>>>>>> master
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
@@ -468,204 +227,51 @@
       </map>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/admin_sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/colors/red/css/red-scheme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="448" column="1" selection-start-line="448" selection-start-column="1" selection-end-line="448" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/colors/orange/bootstrap/_media.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/bootstrap/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="738" column="1" selection-start-line="738" selection-start-column="1" selection-end-line="738" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="7724" column="1" selection-start-line="7724" selection-start-column="1" selection-end-line="7724" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3526">
-          <caret line="1066" column="3" selection-start-line="1066" selection-start-column="3" selection-end-line="1066" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/uni_foto/logo-UKF-transparent-raster-turquoise.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/includes/ukf-logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/includes/ukf-logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/kontakt/kontakt.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="68" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/misc.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="538" column="16" lean-forward="true" selection-start-line="538" selection-start-column="16" selection-end-line="538" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/plugins/jquery.bxslider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="310" column="78" lean-forward="true" selection-start-line="310" selection-start-column="78" selection-end-line="310" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="151" column="35" selection-start-line="151" selection-start-column="35" selection-end-line="151" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/blue-scheme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="1060" column="1" selection-start-line="1060" selection-start-column="1" selection-end-line="1060" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/delete_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/edit_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/crud_operations/add_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#li#5;n#ul#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/foot.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/editvyzva.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="43" column="106" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-=======
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PRidavanie sprav - funkcne" />
-    <option name="LAST_COMMIT_MESSAGE" value="PRidavanie sprav - funkcne" />
+    <MESSAGE value="univerzity.blade" />
+    <option name="LAST_COMMIT_MESSAGE" value="univerzity.blade" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="100" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576077932568">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="100" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576077932568" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1576091499144">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1576175786174">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576091499144" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576175786174" />
+    <state x="93" y="93" width="1095" height="504" maximized="true" key="DiffContextDialog" timestamp="1576176204192">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" maximized="true" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1576176204192" />
+    <state x="121" y="52" key="MergeDialog" timestamp="1576091571803">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="52" key="MergeDialog/0.0.1280.689@0.0.1280.689" timestamp="1576091571803" />
+    <state x="354" y="61" key="MultipleFileMergeDialog" timestamp="1576091575668">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="354" y="61" key="MultipleFileMergeDialog/0.0.1280.689@0.0.1280.689" timestamp="1576091575668" />
+    <state x="477" y="268" key="NewPhpFileDialog" timestamp="1576172944403">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="477" y="268" key="NewPhpFileDialog/0.0.1280.689@0.0.1280.689" timestamp="1576172944403" />
     <state x="482" y="56" key="RollbackChangesDialog" timestamp="1576077247461">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="482" y="56" key="RollbackChangesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576077247461" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1576080579775">
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1576175902133">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576080579775" />
->>>>>>> master
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576175902133" />
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1576176814827">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576176814827" />
+    <state x="376" y="136" key="git4idea.merge.GitPullDialog" timestamp="1576176737059">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="376" y="136" key="git4idea.merge.GitPullDialog/0.0.1280.689@0.0.1280.689" timestamp="1576176737059" />
   </component>
 </project>

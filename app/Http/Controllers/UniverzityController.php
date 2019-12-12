@@ -7,10 +7,10 @@ use App\Models\Vyzvy;
 
 class UniverzityController extends Controller
 {
-    public function showAction($id)
+    public function showUniverzity()
     {
-        $vyzvy = Vyzvy::find($id);
-        echo $vyzvy->typvyzvy;
+        $univerzity = Univerzity::orderBy('nazov', 'asc')->paginate(9);
+        return view("univerzity", ['univerzity' => $univerzity]);
     }
 
     public function showUniverzita($id)
