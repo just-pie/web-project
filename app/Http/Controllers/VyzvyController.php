@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Oblasti;
+use App\Models\Spravy;
 use App\Models\Typvyzvy;
 use App\Models\Univerzity;
 use App\Models\Vyzvy;
@@ -20,7 +21,8 @@ class VyzvyController extends Controller
     public function showVyzva($id)
     {
         $vyzva = Vyzvy::find($id);
-        return view("vyzva", ['vyzva' => $vyzva]);
+        $spravy = Spravy::where('vyzvy_idvyzvy',$id)->get();
+        return view("vyzva", ['vyzva' => $vyzva, 'spravy' => $spravy]);
     }
 
     public function addVyzva()
