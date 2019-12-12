@@ -71,6 +71,14 @@
                                 </select>
                             </div></br>
                             <div>
+                                <label for="univerzity">Univerzity:</label></br>
+                                <select class="form-control" id="univerzity" name="univerzity[]" multiple required>
+                                    @foreach ($univerzity as $uni)
+                                        <option value="{{ $uni->iduniverzity }}">{{ $uni->nazov }}</option>
+                                    @endforeach
+                                </select>
+                            </div></br>
+                            <div>
                                 <input class="mainBtn" type="submit" name="submit" value="Upraviť výzvu" id="submit">
                             </div>
                         </form>
