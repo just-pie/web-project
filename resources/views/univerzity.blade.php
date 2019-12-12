@@ -96,7 +96,7 @@
 <script>
     $(document).ready(function () {
         $(".nav li").removeClass("active");
-        $('.univerzity').addClass('active');
+        $('.info').addClass('active');
     });
 </script>
 

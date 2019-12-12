@@ -46,7 +46,7 @@
 <script>
     $(document).ready(function () {
         $(".nav li").removeClass("active");
-        $('.vyzvy').addClass('active');
+        $('.info').addClass('active');
     });
 </script>
 
