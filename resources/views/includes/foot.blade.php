@@ -9,7 +9,7 @@
                         <li><a href="{{url('/')}}">Domov</a></li>
                         <li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
                         <li><a href="{{ url('/info')}}">Informácie</a></li>
-                        <li><a href="Tu bude link na univerzity">Univerzity</a></li>
+                        <li><a href="{{ url('/univerzity')}}">Univerzity</a></li>
                         <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
                         <p></p><br>
                         <li><a href="https://www.ukf.sk"><img id="footer-logo" src="{{ \URL::asset('images/includes/ukf-logo.png') }}" style="display: inline-block;" width="42px"
