@@ -1,5 +1,3 @@
-
-
 <footer class="site-footer">
     <div class="container">
         <div class="row">
@@ -9,14 +7,15 @@
                         <li><a href="{{url('/')}}">Domov</a></li>
                         <li><a href="{{ url('/vyzvy')}}">Výzvy</a></li>
                         <li><a href="{{ url('/info')}}">Informácie</a></li>
+                        <li><a href="{{ url('/univerzity')}}">Univerzity</a></li>
                         <li><a href="{{ url('/kontakt')}}">Kontakt</a></li>
                         <p></p><br>
                         <li><a href="https://www.ukf.sk"><img id="footer-logo" src="{{ \URL::asset('images/includes/ukf-logo.png') }}" style="display: inline-block;" width="42px"
-                                                                     height="42px" ></a></li>
+                                                              height="42px" ></a></li>
                         <li><a href="http://edu.ukf.sk/"><img id="footer-logo" src="{{ \URL::asset('images/includes/edu-logo.png') }}" style="display: inline-block;" width="37px"
-                                                                     height="37px" ></a></li>
+                                                              height="37px" ></a></li>
                         <li><a href="https://ais2.ukf.sk/"><img id="footer-logo" src="{{ \URL::asset('images/includes/ais_logo.png') }}" style="display: inline-block;" width="40px"
-                                                                     height="40px" ></a></li>
+                                                                height="40px" ></a></li>
                         <p></p>
                         <li><a target="_blank" href="https://facebook.com/UKFvNitre/?locale2=sk_SK" style="font-size: 32px;">
                                 <i class="fab fa-facebook"></i></a></li>
