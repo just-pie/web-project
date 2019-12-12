@@ -30,11 +30,8 @@
         </div> <!-- /.row -->
         
 <br>
-
             <div class="col-md-12">
-                <p class="copyright-text">Copyright &copy; 2019 UKF
-                    | Tímový projekt: TP04</p>
+                <p class="copyright-text">Copyright &copy; 2019 UKF | Tímový projekt: TP04</p>
             </div> <!-- /.col-md-12 -->
-
     </div> <!-- /.container -->
 </footer> <!-- /.site-footer -->

@@ -37,7 +37,7 @@
         <br>
     </div>
     <div class="container">
-        <table id="myTable" class="table table-striped">
+        <table id="pouzivatelia" class="table table-striped">
             <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -58,10 +58,10 @@
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="#" data-toggle="modal" data-target="#show" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="" data-toggle="modal" data-target="#show" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
                                 @if($user->isAdmin !== 1)
-                                    <a href="#" data-toggle="modal" data-target="#editUser" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="#" data-toggle="modal" data-target="#delete" data-name="{{$user->name}}" data-id="{{$user->id}}"><i class="fa fa-trash" style="color: red;"></i></a>
+                                    <a href="" data-toggle="modal" data-target="#editUser" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="" data-toggle="modal" data-target="#delete" data-name="{{$user->name}}" data-id="{{$user->id}}"><i class="fa fa-trash" style="color: red;"></i></a>
                                 @endif
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">

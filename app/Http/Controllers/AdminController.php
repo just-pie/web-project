@@ -3,10 +3,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Krajiny;
 use App\Models\Pouzivatelia;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use DB;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -14,13 +16,11 @@ class AdminController extends Controller
 
     public function showDashboard()
     {
-        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
 
         $page_name = 'admin.admin_body.admin_dashboard';
 
         $data = [
             'page_name'  => $page_name,
-            'countThisHourAddedUsers'   => $countThisHourAddedUsers
 
         ];
 
@@ -30,25 +30,23 @@ class AdminController extends Controller
 
 
     public function addUser(Request $request){
-        $firstname = $request->input('meno');
-        $lastname = $request->input('priezvisko');
+        $name = $request->input('name');
         $email = $request->input('email');
         $birthday = $request->input('birth_date');
-        $login = $request->input('login');
         $password = $request->input('heslo');
         $role = $request->input('rola');
 
         $hashed = bcrypt($password);
 
+
         $user = new User();
-        $user->meno = $firstname;
-        $user->priezvisko = $lastname;
+        $user->name = $name;
         $user->email = $email;
-        $user->datum_narodenia = $birthday;
-        $user->login = $login;
-        $user->heslo = $hashed;
+        $user->birth_date = $birthday;
+        $user->password = $hashed;
         $user->roly_idroly = $role;
         $user->save();
+
         $msg = 'Nový používateľ bol <strong>úspešne</strong> pridaný!';
         return back()->with('message', $msg);
     }
@@ -56,11 +54,10 @@ class AdminController extends Controller
     public function showUsers()
     {
         $countRecentlyAddedUsers = $this->countRecentlyAddedUsers();
-        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
         $countAllUsers = $this->countAllUsers();
 
         $page_name = 'admin.admin_body.admin_users';
-        $users = \DB::table('users')
+        $users = DB::table('users')
             ->select(['users.id', 'users.name', 'users.email', 'users.birth_date', 'users.isAdmin', 'users.foto', 'roly.rola', 'users.created_at', 'users.updated_at'])
             ->join('roly', 'roly.idroly', '=', 'users.roly_idroly')
             ->get();
@@ -68,7 +65,6 @@ class AdminController extends Controller
         $data = [
             'page_name'  => $page_name,
             'countRecentlyAddedUsers'   => $countRecentlyAddedUsers,
-            'countThisHourAddedUsers'   => $countThisHourAddedUsers,
             'countAllUsers' => $countAllUsers,
 
         ];
@@ -101,27 +97,17 @@ class AdminController extends Controller
     }
 
     public function countRecentlyAddedUsers(){
-        $count = \DB::table('users')
-            ->select(\DB::raw('COUNT(*) as pocet'))
+        $count = DB::table('users')
+            ->select(DB::raw('COUNT(*) as pocet'))
             ->where('created_at', '>', 'NOW() - INTERVAL 7 DAY')
             ->value('pocet');
 
         return $count;
 }
-    public function countThisHourAddedUsers(){
-        $count = \DB::table('users')
-            ->select(\DB::raw('COUNT(*) as pocet'))
-            ->where(\DB::raw('DATE(created_at)', '=', 'DATE(NOW())'))
-            ->where(\DB::raw('HOUR(created_at)', '=', 'HOUR(NOW())'))
-            ->value('pocet');
-
-        error_log('Some message here.');
-        return $count;
-    }
 
 public function countAllUsers(){
-    $count = \DB::table('users')
-        ->select(\DB::raw('COUNT(*) as pocet'))
+    $count = DB::table('users')
+        ->select(DB::raw('COUNT(*) as pocet'))
         ->value('pocet');
 
     return $count;
@@ -130,15 +116,51 @@ public function countAllUsers(){
     public function showDocumentation(){
         $page_name = 'admin.admin_body.admin_documentation';
 
-        $countThisHourAddedUsers = $this->countThisHourAddedUsers();
-
         $data = [
             'page_name'  => $page_name,
-            'countThisHourAddedUsers'   => $countThisHourAddedUsers
 
         ];
 
         return view('admin.admin')->with($data);
+
+    }
+    public function showMessages(){
+        $page_name = 'admin.admin_body.admin_mess';
+
+        $data = [
+            'page_name'  => $page_name,
+        ];
+
+        return view('admin.admin')->with($data);
+    }
+    public function showChallenges(){
+        $page_name = 'admin.admin_body.admin_challenges';
+
+        $data = [
+            'page_name'  => $page_name,
+        ];
+
+        return view('admin.admin')->with($data);
+    }
+    public function showUniversities(){
+        $page_name = 'admin.admin_body.admin_university';
+        $countries = Krajiny::all(); // pre mapku
+
+        // SELECT krajiny.idkrajiny as id, krajiny.krajina as krajina, COUNT(univerzity.krajiny_idkrajiny) as pocet FROM `krajiny` INNER JOIN univerzity ON idkrajiny = univerzity.krajiny_idkrajiny GROUP BY krajina ORDER BY id
+
+        $univerzity_v_krajinach = DB::table('krajiny')
+            ->select('krajiny.idkrajiny as id', 'krajiny.krajina as krajina', DB::raw("COUNT(univerzity.krajiny_idkrajiny) as pocet"))
+            ->join('univerzity','krajiny.idkrajiny', '=', 'univerzity.krajiny_idkrajiny')
+            ->groupBy('krajina')
+            ->orderBy('id')
+            ->get();
+
+        $data = [
+            'page_name'  => $page_name,
+            'univerzity_v_krajinach' => $univerzity_v_krajinach
+        ];
+
+        return view('admin.admin', compact('countries'))->with($data);
     }
 
     public function logout(Request $request)

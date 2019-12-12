@@ -15,7 +15,7 @@
                         </span>
                     <span class="user-role">Administrátor</span>
                     <span class="user-status">
-                            <i class="fa fa-circle"></i>
+                            <i class="fas fa-circle"></i>
                             <span>Online</span>
                         </span>
                 </div>
@@ -28,18 +28,15 @@
                     </li>
                     <li>
                         <a class="dashboard" href="<?php echo e(url('admin')); ?>">
-                            <i class="fa fa-tachometer-alt"></i>
+                            <i class="fas fa-tachometer-alt "></i>
                             <span class="menu-text">Nástenka</span>
 
                         </a>
                     </li>
                     <li class="sidebar user-icon">
                         <a class="users" href="<?php echo e(url('admin-users')); ?>">
-                            <i class="fa fa-user"></i>
+                            <i class="fas fa-user"></i>
                             <span class="menu-text">Používatelia</span>
-                            <?php if($countThisHourAddedUsers>0): ?>
-                            <span class="badge badge-pill badge-danger"><?php echo e($countThisHourAddedUsers); ?></span>
-                            <?php endif; ?>
                         </a>
 
 
@@ -58,8 +55,8 @@
 
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#" class="challenge">
-                            <i class="fa fa-chart-line"></i>
+                        <a href="<?php echo e(url('admin-challenges')); ?>" class="challenge">
+                            <i class="fas fa-chart-line"></i>
                             <span class="menu-text">Výzvy</span>
                         </a>
                         <div class="sidebar-submenu">
@@ -82,37 +79,32 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#" class="university">
-                            <i class="fa fa-graduation-cap"></i>
+                    <li class="sidebar">
+                        <a href="<?php echo e(url('admin-universities')); ?>" class="university">
+                            <i class="fas fa-graduation-cap"></i>
                             <span class="menu-text">Univerzity</span>
                         </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Pie chart</a>
-                                </li>
-                                <li>
-                                    <a href="#">Line chart</a>
-                                </li>
-                                <li>
-                                    <a href="#">Bar chart</a>
-                                </li>
-                                <li>
-                                    <a href="#">Histogram</a>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
+                    <li class="sidebar mess-icon">
+                        <a class="mess" href="<?php echo e(url('admin-messages')); ?>">
+                            <i class="fas fa-comment-alt"></i>
+                            <span class="menu-text">Správy študentov</span>
+                        </a>
 
                     <li class="header-menu">
                         <span>Extra</span>
                     </li>
                     <li>
                         <a href="<?php echo e(url('admin-docs')); ?>" class="documentation">
-                            <i class="fa fa-book"></i>
-                            <span class="menu-text">Documentation</span>
-                            <span class="badge badge-pill badge-primary">Beta</span>
+                            <i class="fas fa-book"></i>
+                            <span class="menu-text">Dokumentácia</span>
+                            <span class="badge badge-pill badge-primary">Nové</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/just-pie/web-project" target="_blank" class="github">
+                            <i class="fab fa-github"></i>
+                            <span class="menu-text">Github</span>
                         </a>
                     </li>
                 </ul>

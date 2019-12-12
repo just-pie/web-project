@@ -14,7 +14,7 @@
                     <?php if(Auth::check()): ?>
                         <?php if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3): ?>
                             <a class="mainBtn" href="<?php echo e(action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])); ?>" role="button" style="color: white">Upraviť výzvu</a>
-                    <?php endif; ?>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
@@ -23,11 +23,11 @@
 </div> <!-- /.pageTitle -->
 
 
+
 <?php if(count($vyzva->univerzity) < 2): ?>
     <div class="container">
         <div class="row">
             <div class=" blog-posts">
-                <div class="row">
                     <div class="col-md-12">
                         <div class="post-blog">
                                 <script>document.getElementById("blog").style.backgroundImage = "url('<?php echo e($vyzva->foto); ?>')";</script>
@@ -35,7 +35,8 @@
                                 <h2>Ponuka</h2>
                                 <p><?php echo e($vyzva->popis); ?></p>
                                 <h2>Základné informácie</h2>
-                                <p><?php echo e($vyzva->ostatneinfo); ?></p>
+                                <?php echo $vyzva->ostatneinfo; ?>
+
                             </div> <!-- /.blog-content -->
                         </div> <!-- /.post-blog -->
                         <div>
@@ -46,7 +47,6 @@
                             <br>
                         </div>
                     </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
             </div> <!-- /.col-md-8 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->

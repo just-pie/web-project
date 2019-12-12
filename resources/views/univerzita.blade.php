@@ -32,7 +32,7 @@
                             <div class="blog-content">
                                 <h2>O univerzite</h2>
                                 <p>{{$univerzita->detail}}</p>
-                                <h3>Zmluva z univerzitou:</h3>
+                                <h3>Zmluva s univerzitou:</h3>
                                 <p>S touto univerzitou má naša univerzita zmluvu od roku {{$univerzita->zmluvaod}} do roku {{$univerzita->zmluvado}}.</p>
                                 <h3>Web stránka univerzity:</h3>
                                 <p><a href="{{$univerzita->web}}" target="_blank">{{$univerzita->web}}</a></p>

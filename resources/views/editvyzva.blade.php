@@ -1,4 +1,4 @@
-@include('includes.head', ['title' => 'Pridanie výzvy'])
+@include('includes.head', ['title' => 'Úprava výzvy'])
 
 <body>
 
@@ -94,7 +94,16 @@
         $(".vyzvy").addClass("active");
     });
 </script>
-
+{{--<script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
+<script>
+    tinymce.init({
+        selector:'textarea.ostatneinfo',
+        height: 300
+    });
+</script>--}}
+<script>
+    CKEDITOR.replace( 'ostatneinfo' );
+</script>
 @include('includes.foot')
 
 <!-- Scripts -->

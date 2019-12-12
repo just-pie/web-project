@@ -28,9 +28,22 @@
                 </nav> <!-- /.footer-nav -->
             </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
-        <br>
-        <div class="col-md-12">
-            <p class="copyright-text">Copyright &copy; 2019 UKF | Tímový projekt: TP04</p>
-        </div> <!-- /.col-md-12 -->
+        {{--<style>
+            .cwd{text-align:center;}
+            .cwda{cursor: pointer; font-size:16px;  text-decoration: none; padding:6px 16px; color:#fcfcfc; background-color:#101b91; border-radius:60px; border: 0px solid #7accee;}
+            .cwda:hover{background-color:#a8a3c2;color:#ffffff;}
+        </style>
+        <div>
+            <p class="cwd">
+                <br>
+                <a href="https://facebook.com/UKFvNitre/?locale2=sk_SK" target="_blank" class="cwda" title="Facebook">Facebook</a>
+                <a href="https://www.instagram.com/ukfvnitre/" target="_blank" class="cwda" title="Instagram">Instagram</a>
+                <a href="https://www.facebook.com/Medzin%C3%A1rodn%C3%A9-vz%C5%A5ahy-a-mobility-%C5%A1tudentov-UKF-111131456995587/" target="_blank" class="cwda" title="ChatBot">ChatBot</a>
+            </p>
+        </div>--}}
+<br>
+            <div class="col-md-12">
+                <p class="copyright-text">Copyright &copy; 2019 UKF | Tímový projekt: TP04</p>
+            </div> <!-- /.col-md-12 -->
     </div> <!-- /.container -->
 </footer> <!-- /.site-footer -->

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 
 
+
     <!-- using local links -->
     <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -25,5 +26,8 @@
     <link rel="stylesheet" href="{{ \URL::asset("css/admin/admin_sidebar.css")}}">
     <link rel="stylesheet" href="{{ \URL::asset("css/admin/admin_sidebar_themes.css")}}">
     <link rel="shortcut icon" type="image/png" href="{{ \URL::asset("images/favicon.png")}}" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="{{ \URL::asset("js/admin_sidebar/datamaps.world.hires.min.js")}}"></script>
 
 </head>

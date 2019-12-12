@@ -23,11 +23,11 @@
 </div> <!-- /.pageTitle -->
 
 
+
 @if(count($vyzva->univerzity) < 2)
     <div class="container">
         <div class="row">
             <div class=" blog-posts">
-                <div class="row">
                     <div class="col-md-12">
                         <div class="post-blog">
                                 <script>document.getElementById("blog").style.backgroundImage = "url('{{$vyzva->foto}}')";</script>
@@ -35,7 +35,7 @@
                                 <h2>Ponuka</h2>
                                 <p>{{$vyzva->popis}}</p>
                                 <h2>Základné informácie</h2>
-                                <p>{{$vyzva->ostatneinfo}}</p>
+                                {!! $vyzva->ostatneinfo !!}
                             </div> <!-- /.blog-content -->
                         </div> <!-- /.post-blog -->
                         <div>
@@ -46,7 +46,6 @@
                             <br>
                         </div>
                     </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
             </div> <!-- /.col-md-8 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->

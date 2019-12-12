@@ -30,11 +30,18 @@
     color: yellow !important;
 }
 .university:hover, a.university.active{
-    color: green !important;
+    color: limegreen !important;
 }
-.documentation:hover, a.documentation.active{
+.mess:hover, a.mess.active{
     color: dodgerblue !important;
 }
+.documentation:hover, a.documentation.active{
+    color: deeppink !important;
+}
+.github:hover, a.github.active{
+    color: #ffffff !important;
+}
+
 
     /*.default-theme .sidebar-wrapper .sidebar-menu a:hover i,
 .default-theme .sidebar-wrapper .sidebar-menu a:hover:before,
