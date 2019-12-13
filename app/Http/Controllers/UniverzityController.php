@@ -9,7 +9,7 @@ class UniverzityController extends Controller
 {
     public function showUniverzity()
     {
-        $univerzity = Univerzity::orderBy('nazov', 'asc')->paginate(9);
+        $univerzity = Univerzity::orderBy('nazov', 'asc')->get();
         return view("univerzity", ['univerzity' => $univerzity]);
     }
 

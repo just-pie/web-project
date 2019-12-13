@@ -85,7 +85,6 @@
         @endforeach
     </div> <!-- /.portfolio-holder -->
 </div> <!-- /.row -->
-{{ $univerzity->links() }}
 </div> <!-- /.container -->
 
 @include('includes.foot')

@@ -14,7 +14,7 @@ class VyzvyController extends Controller
 {
     public function showVyzvy()
     {
-        $vyzvy = Vyzvy::orderBy('pridane', 'desc')->paginate(9);
+        $vyzvy = Vyzvy::orderBy('pridane', 'desc')->get();
         return view("vyzvy", ['vyzvy' => $vyzvy]);
     }
 
