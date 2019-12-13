@@ -54,12 +54,16 @@
             <div class="sidebar">
                 <div class="sidebar-widget">
                     <h5 class="widget-title">Správy účastníkov</h5>
-                    <div class="col-md-12">
+                    <div>
+                        @if($spravy->count() > 0)
                         <ul>
                             @foreach($spravy as $sprava)
                                 <li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->user->name}}</a></li>
                             @endforeach
                         </ul>
+                        @else
+                            Zatiaľ neboli pridané žiadne správy.
+                        @endif
                     </div>
                 </div> <!-- /.sidebar-widget -->
             </div> <!-- /.sidebar -->

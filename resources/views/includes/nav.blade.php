@@ -83,7 +83,9 @@
                                     </li>
                                     <li class="infopocas"><a href="{{ url('/infopocas')}}">Informácie počas mobility</a>
                                     </li>
-                                    <li class="infopo"><a href="{{ url('/infopo')}}">Informácie po mobilite</a></li>
+                                    <li class="infopo"><a href="{{ url('/infopo')}}">Informácie po mobilite</a>
+                                    </li>
+                                    <li class="univerzity"><a href="{{ url('/univerzity')}}">Partnerské univerzity</a></li>
                                 </ul>
                             </li>
                             <li class="spravy"><a href="{{ url('/spravy')}}">Správy</a></li>
