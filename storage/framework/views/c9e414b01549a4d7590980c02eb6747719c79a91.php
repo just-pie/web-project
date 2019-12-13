@@ -18,5 +18,10 @@
 <script src="<?php echo e(\URL::asset("js/admin_sidebar/main.js")); ?>"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-<?php echo $__env->make('admin.admin_tables.users_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-<?php echo $__env->make('admin.admin_tables.university_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php if(\Request::is('admin-users')): ?>
+    <?php echo $__env->make('admin.admin_tables.users_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php endif; ?>
+<?php if(\Request::is('admin-universities')): ?>
+    <?php echo $__env->make('admin.admin_tables.university_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php endif; ?>
+

@@ -1985,3 +1985,4 @@ public/node_modules/tinymce/themes/silver/theme.min.js
 public/node_modules/tinymce/tinymce.js
 public/node_modules/tinymce/tinymce.min.js
 resources/views/includes/foot.blade.php
+resources/views/includes/foot.blade.php
