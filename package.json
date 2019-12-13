@@ -24,7 +24,6 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "@amcharts/amcharts4-geodata": "^4.1.9",
         "tinymce": "^5.1.4"
     }
 }

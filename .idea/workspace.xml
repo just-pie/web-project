@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/includes/map_chart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/admin_sidebar/datamaps.world.hires.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_university.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_university.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_tables/university_table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_tables/university_table.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/admin_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/admin_head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/admin_head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/loginovac.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/registerovac.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/foot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/foot.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/VoKEmfQHKPmtqAFBowKUXvjc3FejSvz9CiclJmRW" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/4cf651acd37fe537e258bfc19f5c5103ceec7413.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/4cf651acd37fe537e258bfc19f5c5103ceec7413.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6f03156b70a79c240e46f92aa8ac28d96010b112.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6f03156b70a79c240e46f92aa8ac28d96010b112.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/bcbd1c255b63fcf88c03a04ede0102a89f974d9d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/bcbd1c255b63fcf88c03a04ede0102a89f974d9d.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/bdd5be248d9d02db800727531ebc03f380e5d074.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/bdd5be248d9d02db800727531ebc03f380e5d074.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c0555e144896c658cc9cb6ee484e09415295ea23.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c0555e144896c658cc9cb6ee484e09415295ea23.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c9e414b01549a4d7590980c02eb6747719c79a91.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c9e414b01549a4d7590980c02eb6747719c79a91.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f542fb2cba5815bc1d20e0d456da10c091703d87.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f542fb2cba5815bc1d20e0d456da10c091703d87.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f55a89fbabc7ffdef6e16dc1f91e00baaa95e1a2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f55a89fbabc7ffdef6e16dc1f91e00baaa95e1a2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/nav.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="107" column="147" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="147" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_university.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+            <state relative-caret-position="800">
+              <caret line="74" column="7" lean-forward="true" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
               <folding>
                 <element signature="e#1161#1188#0#HTML" expanded="true" />
                 <element signature="e#1866#1888#0#HTML" expanded="true" />
@@ -83,6 +50,15 @@
                 <element signature="e#3403#3438#0#HTML" expanded="true" />
                 <element signature="e#3548#3582#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -142,18 +118,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="625">
               <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="166" column="40" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
-              <folding>
-                <element signature="e#41#64#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -219,6 +183,7 @@
         <option value="$PROJECT_DIR$/resources/views/admin/admin_body/admin_users.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/admin_tables/university_table.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/admin_body/admin_university.blade.php" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -577,13 +542,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37630000" />
+    <option name="totallyTimeSpent" value="37803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15511727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -674,16 +639,6 @@
     <state x="376" y="136" key="git4idea.merge.GitPullDialog/0.0.1280.689@0.0.1280.689" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/errors/500.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -962,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/admin_body/admin_university.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        <state relative-caret-position="800">
+          <caret line="74" column="7" lean-forward="true" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
           <folding>
             <element signature="e#1161#1188#0#HTML" expanded="true" />
             <element signature="e#1866#1888#0#HTML" expanded="true" />
@@ -978,6 +933,20 @@
             <element signature="e#3403#3438#0#HTML" expanded="true" />
             <element signature="e#3548#3582#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tinymce/jquery.tinymce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2225">
+          <caret line="89" column="130" selection-start-line="89" selection-start-column="130" selection-end-line="89" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
