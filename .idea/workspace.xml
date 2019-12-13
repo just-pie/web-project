@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="univerzity.blade">
+    <list default="true" id="ac8da6f7-dd6c-4cf4-90f8-4fd3a0a8d8f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/uni_foto/leuven.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/uni_foto/leuven.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vyzva.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vyzva.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PodujatiaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuboryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TypsuboruController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Podujatia.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Subory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Typsuboru.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_30_211409_create_typsuboru_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_30_211428_create_subory_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_30_211519_create_podujatia_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sprava.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sprava.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,12 +150,6 @@
       <path value="$PROJECT_DIR$/vendor/snapappointments/bootstrap-select" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="570" />
-    <option name="y" value="18" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectId" id="1UqgAaSKkttsKmJEVQlKX4Yfjil" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -232,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576175787391</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pridane spravy k detailu vyzvy">
+      <created>1576238298043</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576238298043</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,13 +265,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PRidavanie sprav - funkcne" />
     <MESSAGE value="univerzity.blade" />
-    <option name="LAST_COMMIT_MESSAGE" value="univerzity.blade" />
+    <MESSAGE value="pridane spravy k detailu vyzvy" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridane spravy k detailu vyzvy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="100" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576237334815" />
     <state x="371" y="100" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.689@0.0.1280.689" timestamp="1576237334815" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1576237334815" />
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576237334815" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1576238296811">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576238296811" />
     <state x="93" y="93" width="1095" height="504" maximized="true" key="DiffContextDialog" timestamp="1576237334815" />
     <state x="93" y="93" width="1095" height="504" maximized="true" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1576237334815" />
     <state x="121" y="52" key="MergeDialog" timestamp="1576237334815" />
