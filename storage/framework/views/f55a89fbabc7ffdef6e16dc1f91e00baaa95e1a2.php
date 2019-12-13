@@ -53,7 +53,7 @@
             <tbody>
             <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <tr>
-                    <th scope="row"><?php echo e($user->id); ?></th>
+                    <td scope="row"><?php echo e($user->id); ?></td>
                     <td><?php echo e($user->name); ?></td>
                     <td><a href="mailto:<?php echo e($user->email); ?>?Subject=Predmet:%20Mobility%20študentov" target="_top"><?php echo e($user->email); ?></a></td>
                     <td><?php echo e($user->rola); ?></td>
@@ -155,5 +155,4 @@
         $(" li").removeClass("active");
         $('.users').addClass('active');
     });
-
 </script>

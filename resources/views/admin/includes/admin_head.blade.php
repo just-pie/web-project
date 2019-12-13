@@ -28,6 +28,11 @@
     <link rel="shortcut icon" type="image/png" href="{{ \URL::asset("images/favicon.png")}}" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-    <script src="{{ \URL::asset("js/admin_sidebar/datamaps.world.hires.min.js")}}"></script>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldUltra.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/lang/de_DE.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/germanyLow.js"></script>
 
 </head>

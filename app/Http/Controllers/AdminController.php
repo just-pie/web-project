@@ -91,6 +91,7 @@ class AdminController extends Controller
 
     public function deleteUser(Request $request){
         $user = User::findOrFail($request->input('id'));
+        $user->detach();
         $user->delete();
         $msg = 'Používateľ bol <strong>úspešne</strong> vymazaný z databázy!';
         return back()->with('message', $msg);
@@ -146,10 +147,16 @@ public function countAllUsers(){
         $page_name = 'admin.admin_body.admin_university';
         $countries = Krajiny::all(); // pre mapku
 
+        // SELECT univerzity.iduniverzity, univerzity.nazov, univerzity.foto, univerzity.zmluvaod, univerzity.zmluvado, univerzity.mesto, krajiny.krajina FROM `univerzity` Inner join krajiny on univerzity.krajiny_idkrajiny = krajiny.idkrajiny
+        $univerzity = DB::table('univerzity')
+            ->select('univerzity.iduniverzity as id', 'univerzity.nazov as nazov','univerzity.foto', 'univerzity.zmluvaod', 'univerzity.zmluvado', 'univerzity.mesto', 'krajiny.krajina')
+            ->join('krajiny','krajiny.idkrajiny', '=', 'univerzity.krajiny_idkrajiny')
+            ->orderBy('id')
+            ->get();
         // SELECT krajiny.idkrajiny as id, krajiny.krajina as krajina, COUNT(univerzity.krajiny_idkrajiny) as pocet FROM `krajiny` INNER JOIN univerzity ON idkrajiny = univerzity.krajiny_idkrajiny GROUP BY krajina ORDER BY id
 
         $univerzity_v_krajinach = DB::table('krajiny')
-            ->select('krajiny.idkrajiny as id', 'krajiny.krajina as krajina', DB::raw("COUNT(univerzity.krajiny_idkrajiny) as pocet"))
+            ->select('krajiny.idkrajiny as id', 'krajiny.krajina as krajina','krajiny.iso2 as iso2', DB::raw("COUNT(univerzity.krajiny_idkrajiny) as pocet"))
             ->join('univerzity','krajiny.idkrajiny', '=', 'univerzity.krajiny_idkrajiny')
             ->groupBy('krajina')
             ->orderBy('id')
@@ -157,6 +164,7 @@ public function countAllUsers(){
 
         $data = [
             'page_name'  => $page_name,
+            'univerzity' => $univerzity,
             'univerzity_v_krajinach' => $univerzity_v_krajinach
         ];
 

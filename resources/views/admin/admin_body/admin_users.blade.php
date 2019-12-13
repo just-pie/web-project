@@ -50,7 +50,7 @@
             <tbody>
             @foreach($users as $user)
                 <tr>
-                    <th scope="row">{{ $user->id }}</th>
+                    <td scope="row">{{ $user->id }}</td>
                     <td>{{ $user->name }}</td>
                     <td><a href="mailto:{{ $user->email }}?Subject=Predmet:%20Mobility%20študentov" target="_top">{{ $user->email }}</a></td>
                     <td>{{ $user->rola }}</td>
@@ -154,5 +154,4 @@
         $(" li").removeClass("active");
         $('.users').addClass('active');
     });
-
 </script>

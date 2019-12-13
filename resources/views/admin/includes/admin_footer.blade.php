@@ -18,5 +18,10 @@
 <script src="{{\URL::asset("js/admin_sidebar/main.js")}}"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-@include('admin.admin_tables.users_table')
-@include('admin.admin_tables.university_table')
+@if (\Request::is('admin-users'))
+    @include('admin.admin_tables.users_table')
+@endif
+@if (\Request::is('admin-universities'))
+    @include('admin.admin_tables.university_table')
+@endif
+
