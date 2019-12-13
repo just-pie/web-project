@@ -42,7 +42,22 @@
         <div class="portfolio-holder" id="Grid">
             @foreach($vyzvy as $vyzva)
                 @if(count($vyzva->univerzity) < 2)
-                    <div class="portfolio-post col-sm-6 col-md-4 mix {{$vyzva->typvyzvy->typ}}">
+                    @switch($vyzva->typvyzvy->typ)
+                        @case("Študijný pobyt")
+                        <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                            @break
+                            @case("Prednáškový pobyt")
+                            <div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
+                                @break
+                                @case("Stáž")
+                                <div class="portfolio-post col-sm-6 col-md-4 mix staze">
+                                    @break
+                                    @case("Školenia")
+                                    <div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
+                                        @break
+                                        @default
+                                        <div class="portfolio-post col-sm-6 col-md-4 mix all">
+                                        @endswitch
                         <div class="thumb-post">
                             <div class="overlay-inner">
                                 <div style=" height: 233px;max-height: 233px;"><img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}" style=" width: 100%; height: 100%;object-fit:cover;">
@@ -69,7 +84,22 @@
                         </div>
                     </div> <!-- /.col-md-4 -->
                 @else
-                    <div class="portfolio-post col-sm-6 col-md-4 mix {{$vyzva->typvyzvy->typ}}">
+                                            @switch($vyzva->typvyzvy->typ)
+                                                @case("Študijný pobyt")
+                                                <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                                                    @break
+                                                    @case("Prednáškový pobyt")
+                                                    <div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
+                                                        @break
+                                                        @case("Stáž")
+                                                        <div class="portfolio-post col-sm-6 col-md-4 mix staze">
+                                                            @break
+                                                            @case("Školenia")
+                                                            <div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
+                                                                @break
+                                                                @default
+                                                                <div class="portfolio-post col-sm-6 col-md-4 mix all">
+                                                                    @endswitch
                         <div class="thumb-post">
                             <div class="overlay-inner">
                                 <div style=" height: 233px;max-height: 233px;">
