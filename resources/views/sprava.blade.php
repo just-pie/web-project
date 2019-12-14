@@ -28,15 +28,7 @@
                             <span class="meta-comments">{{$sprava->user->name}}</span>
                             <span class="meta-author">{{$sprava->vyzvy->nazov}}</span>
                             <h3>{{$sprava->nadpis}}</h3>
-                            <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-                            <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor</p>
-                        </div> <!-- /.blog-content -->
-                    </div> <!-- /.post-blog -->
-                    <div class="post-blog">
-                        <div class="blog-content">
-                            <h3>Bird Profile Wellington New Zealand</h3>
-                            <p class="light-text">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.  Etiam a turpis sed sapien malesuada pellentesque quis id tortor.  Phasellus mattis quam enim, non accumsan nibh tincidunt sed.</p>
-                            <p>Nunc ullamcorper nisi sit amet eros dictum, eget vulputate quam rhoncus. Nulla diam eros, ultrices id lacinia ut, aliquet sit amet erat. Duis ut nulla molestie, ullamcorper ligula eu, ultricies tortor. Suspendisse quis consequat a turpis sed sapien quis id tortor</p>
+                            <p>{{$sprava->text}}</p>
                         </div> <!-- /.blog-content -->
                     </div> <!-- /.post-blog -->
             </div> <!-- /.row -->
