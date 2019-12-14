@@ -13,9 +13,11 @@
                     <span class="page-location">Home / Výzvy / Výzva </span>
                     @if (Auth::check())
                         @if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3)
-                            <a class="mainBtn" href="{{action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])}}" role="button" style="color: white">Upraviť výzvu</a>
+                            <a class="mainBtn" href="{{action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])}}"
+                               role="button" style="color: white">Upraviť výzvu</a>
                         @else
-                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button" style="color: white">Prihlásiť sa na výzvu</a>
+                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button"
+                               style="color: white">Prihlásiť sa na výzvu</a>
                         @endif
                     @endif
                 </div> <!-- /.col-md-6 -->
@@ -26,50 +28,58 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8 blog-posts">
-            <div class="col-md-12">
-                <div class="post-blog">
-                    <script>document.getElementById("blog").style.backgroundImage = "url('{{$vyzva->foto}}')";</script>
-                    <div class="blog-content" align="justify">
-                        <h2>Ponuka</h2>
-                        <p>{{$vyzva->popis}}</p>
-                        <h2>Základné informácie</h2>
-                        <p>{{$vyzva->ostatneinfo}}</p>
-                    </div> <!-- /.blog-content -->
-                </div> <!-- /.post-blog -->
-                <div>
-                    @if(count($vyzva->univerzity) < 2)
-                        <h2>Bližšie o univerzite:</h2>
-                        <li><a href="{{action("UniverzityController@showUniverzita", ['id' => $vyzva->univerzity->first()->iduniverzity])}}">{{$vyzva->univerzity->first()->nazov}}</a></li>
-                        <br>
-                    @else
-                        <h2>Zapojené univerzity:</h2>
-                        @foreach($vyzva->univerzity as $univerzita)
-                            <li><a href="{{action("UniverzityController@showUniverzita", ['id' => $univerzita->iduniverzity])}}">{{$univerzita->nazov}}</a></li>
-                        @endforeach
-                        <br>
-                    @endif
-                </div>
-            </div> <!-- /.col-md-12 -->
-        </div> <!-- /.col-md-8 -->
-        <div class="col-md-4">
-            <div class="sidebar">
-                <div class="sidebar-widget">
-                    <h5 class="widget-title">Správy účastníkov</h5>
+        <div class="container">
+            <div class="col-md-8 blog-posts">
+                <div class="col-md-12">
+                    <div class="post-blog">
+                        <script>document.getElementById("blog").style.backgroundImage = "url('{{$vyzva->foto}}')";</script>
+                        <div class="blog-content" align="justify">
+                            <h2>Ponuka</h2>
+                            <p>{{$vyzva->popis}}</p>
+                            <h2>Základné informácie</h2>
+                            <p>{!!  $vyzva->ostatneinfo !!}</p>
+                        </div> <!-- /.blog-content -->
+                    </div> <!-- /.post-blog -->
                     <div>
-                        @if($spravy->count() > 0)
-                        <ul>
-                            @foreach($spravy as $sprava)
-                                <li><a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}} / {{$sprava->user->name}}</a></li>
-                            @endforeach
-                        </ul>
+                        @if(count($vyzva->univerzity) < 2)
+                            <h2>Bližšie o univerzite:</h2>
+                            <li>
+                                <a href="{{action("UniverzityController@showUniverzita", ['id' => $vyzva->univerzity->first()->iduniverzity])}}">{{$vyzva->univerzity->first()->nazov}}</a>
+                            </li>
+                            <br>
                         @else
-                            Zatiaľ neboli pridané žiadne správy.
+                            <h2>Zapojené univerzity do výzvy:</h2>
+                            @foreach($vyzva->univerzity as $univerzita)
+                                <li>
+                                    <a href="{{action("UniverzityController@showUniverzita", ['id' => $univerzita->iduniverzity])}}">{{$univerzita->nazov}}</a>
+                                </li>
+                            @endforeach
+                            <br>
                         @endif
                     </div>
-                </div> <!-- /.sidebar-widget -->
-            </div> <!-- /.sidebar -->
-        </div> <!-- /.col-md-4 -->
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.col-md-8 -->
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h5 class="widget-title">Správy účastníkov</h5>
+                        <div>
+                            @if($spravy->count() > 0)
+                                <ul>
+                                    @foreach($spravy as $sprava)
+                                        <li>
+                                            <a href="{{action("SpravyController@showSprava", ['id' => $sprava->idspravy])}}">{{$sprava->datum}}
+                                                / {{$sprava->user->name}}</a></li>
+                                    @endforeach
+                                </ul>
+                            @else
+                                Zatiaľ neboli pridané žiadne správy.
+                            @endif
+                        </div>
+                    </div> <!-- /.sidebar-widget -->
+                </div> <!-- /.sidebar -->
+            </div> <!-- /.col-md-4 -->
+        </div>
     </div> <!-- /.row --></br>
 </div> <!-- /.container -->
 

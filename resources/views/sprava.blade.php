@@ -11,7 +11,7 @@
                     <h2 class="page-title">Správa k výzve: </br>{{$sprava->vyzvy->nazov}}</h2>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6 text-right">
-                    <span class="page-location">Home / Správy</span>
+                    <span class="page-location">Domov / Účastnícke správy</span>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -35,15 +35,11 @@
         </div> <!-- /.col-md-8 -->
 
         <div class="col-md-4" style="padding-top: 30px; padding-left: 30px">
-            <h3 class="widget-title">Údaje o správe</h3>
-            <h5>Meno a priezvisko účastníka:</h5>
-            <p>{{$sprava->user->name}}</p>
-            <h5>Miesto mobility:</h5>
-            <p>{{$sprava->vyzvy->univerzity->first()->krajiny->krajina}} - {{$sprava->vyzvy->univerzity->first()->mesto}}</p>
-            <h5>Univerzita:</h5>
-            <p>{{$sprava->vyzvy->univerzity->first()->nazov}}</p>
-            <h5>Dátum pridania správy:</h5>
-            <p>{{date('d.m.Y', strtotime($sprava->datum))}}</p>
+            <h3><u>Údaje o správe</u></h3>
+            <p><strong>Meno a priezvisko účastníka:</strong><br>{{$sprava->user->name}}</p>
+            <p><strong>Miesto mobility:</strong><br>{{$sprava->vyzvy->univerzity->first()->krajiny->krajina}} - {{$sprava->vyzvy->univerzity->first()->mesto}}</p>
+            <p><strong>Univerzita:</strong><br>{{$sprava->vyzvy->univerzity->first()->nazov}}</p>
+            <p><strong>Dátum pridania správy:</strong> <br> {{date('d.m.Y', strtotime($sprava->datum))}}</p>
         </div> <!-- /.col-md-4 -->
     </div> <!-- /.row -->
 </div> <!-- /.container -->

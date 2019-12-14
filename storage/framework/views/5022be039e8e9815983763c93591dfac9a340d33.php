@@ -84,7 +84,9 @@
                                     </li>
                                     <li class="infopocas"><a href="<?php echo e(url('/infopocas')); ?>">Informácie počas mobility</a>
                                     </li>
-                                    <li class="infopo"><a href="<?php echo e(url('/infopo')); ?>">Informácie po mobilite</a></li>
+                                    <li class="infopo"><a href="<?php echo e(url('/infopo')); ?>">Informácie po mobilite</a>
+                                    </li>
+                                    <li class="univerzity"><a href="<?php echo e(url('/univerzity')); ?>">Partnerské univerzity</a></li>
                                 </ul>
                             </li>
                             <li class="spravy"><a href="<?php echo e(url('/spravy')); ?>">Správy</a></li>
