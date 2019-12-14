@@ -14,6 +14,8 @@
                     @if (Auth::check())
                         @if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3)
                             <a class="mainBtn" href="{{action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])}}" role="button" style="color: white">Upraviť výzvu</a>
+                        @else
+                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button" style="color: white">Prihlásiť sa na výzvu</a>
                         @endif
                     @endif
                 </div> <!-- /.col-md-6 -->
