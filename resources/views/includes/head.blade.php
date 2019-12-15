@@ -29,7 +29,6 @@
     <script src="{{ \URL::asset('js/bootstrap.js') }}"></script>
     <script src="{{ \URL::asset('node_modules/ckeditor/ckeditor.js') }}"></script>
     <script src="https://kit.fontawesome.com/48e6621b57.js" crossorigin="anonymous"></script>
-    <script type="module" src="{{ \URL::asset('js/react/countdown.js') }}" async=true></script>
 
 
     <link rel="shortcut icon" href="{{ \URL::asset('/images/favicon2.ico') }}" type="image/x-icon" />

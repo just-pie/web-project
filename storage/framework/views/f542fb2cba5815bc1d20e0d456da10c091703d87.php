@@ -60,11 +60,36 @@
                                         <?php endswitch; ?>
                         <div class="thumb-post">
                             <div class="overlay-inner">
-                                <div style=" height: 233px;max-height: 233px;"><img src="<?php echo e($vyzva->foto); ?>" alt="<?php echo e($vyzva->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
-                                </div>
-                                <div class="portfolio-infos">
-                                    <h3 style="color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);"><?php echo e($vyzva->nazov); ?></h3>
-                                </div>
+                                
+                                <input type="hidden" id="end<?php echo e($vyzva->idvyzvy); ?>" name="<?php echo e($vyzva->platnedo); ?>">
+                                <script>
+                                    var end = document.getElementById("end<?php echo e($vyzva->idvyzvy); ?>").name;
+                                    var datum = new Date(end+' 00:00 AM');
+                                    var now = new Date();
+                                    var distance = datum - now;
+                                    var expired = distance >= 0;
+
+                                    if(!expired){
+                                        document.write("<div style=\" height: 233px;max-height: 233px;\"><img src=\"<?php echo e($vyzva->foto); ?>\" alt=\"<?php echo e($vyzva->nazov); ?>\" style=\" -webkit-filter: grayscale(100%); filter: grayscale(100%); width: 100%; height: 100%;object-fit:cover;\">")
+                                        document.write("</div>");
+                                        document.write("<div class=\"portfolio-infos\">");
+                                        document.write("<h3 style=\"color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);\"><?php echo e($vyzva->nazov); ?></h3>");
+                                        document.write("</div>");
+                                        document.write("<input type=\"hidden\" id=\"end<?php echo e($vyzva->idvyzvy); ?>\" name=\"<?php echo e($vyzva->platnedo); ?>\">");
+                                        document.write("<div class=\"portfolio-expand\">");
+                                        document.write("<i style=\"color: red;\" class=\"fas fa-calendar-times\"></i>");
+                                        document.write("</div>");
+                                    }
+                                    else{
+                                        document.write("<div style=\" height: 233px;max-height: 233px;\"><img src=\"<?php echo e($vyzva->foto); ?>\" alt=\"<?php echo e($vyzva->nazov); ?>\" style=\" width: 100%; height: 100%;object-fit:cover;\">")
+                                        document.write("</div>");
+                                        document.write("<div class=\"portfolio-infos\">");
+                                        document.write("<h3 style=\"color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);\"><?php echo e($vyzva->nazov); ?></h3>");
+                                        document.write("</div>");
+                                        document.write("<input type=\"hidden\" id=\"end<?php echo e($vyzva->idvyzvy); ?>\" name=\"<?php echo e($vyzva->platnedo); ?>\">");
+                                    }
+                                </script>
+
                             </div>
                             <div class="overlay">
                                 <div class="overlay-inner">
@@ -76,7 +101,7 @@
                                         <a class="fancybox"
                                            href="<?php echo e(action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])); ?>"
                                            title="Bližšie informácie">
-                                            <i class="fa fa-expand"></i>
+                                            <i class="fas fa-expand"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -102,12 +127,34 @@
                                                                     <?php endswitch; ?>
                         <div class="thumb-post">
                             <div class="overlay-inner">
-                                <div style=" height: 233px;max-height: 233px;">
-                                    <img src="<?php echo e($vyzva->foto); ?>" alt="<?php echo e($vyzva->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
-                                </div>
-                                <div class="portfolio-infos">
-                                    <h3 style="color: white; display:inline; background-color: rgba(0, 0, 0, 0.7);"><?php echo e($vyzva->nazov); ?></h3>
-                                </div>
+                                <input type="hidden" id="end<?php echo e($vyzva->idvyzvy); ?>" name="<?php echo e($vyzva->platnedo); ?>">
+                                <script>
+                                    var end = document.getElementById("end<?php echo e($vyzva->idvyzvy); ?>").name;
+                                    var datum = new Date(end+' 00:00 AM');
+                                    var now = new Date();
+                                    var distance = datum - now;
+                                    var expired = distance >= 0;
+
+                                    if(!expired){
+                                        document.write("<div style=\" height: 233px;max-height: 233px;\"><img src=\"<?php echo e($vyzva->foto); ?>\" alt=\"<?php echo e($vyzva->nazov); ?>\" style=\" -webkit-filter: grayscale(100%); filter: grayscale(100%); width: 100%; height: 100%;object-fit:cover;\">")
+                                        document.write("</div>");
+                                        document.write("<div class=\"portfolio-infos\">");
+                                        document.write("<h3 style=\"color: white; display:inline; background-color: rgba(0, 0, 0, 0.7);\"><?php echo e($vyzva->nazov); ?></h3>");
+                                        document.write("</div>");
+                                        document.write("<div class=\"portfolio-expand\">");
+                                        document.write("<i style=\"color: red;\" class=\"fas fa-calendar-times\"></i>");
+                                        document.write("</div>");
+                                    }
+                                    else{
+                                        document.write("<div style=\" height: 233px;max-height: 233px;\"><img src=\"<?php echo e($vyzva->foto); ?>\" alt=\"<?php echo e($vyzva->nazov); ?>\" style=\" width: 100%; height: 100%;object-fit:cover;\">")
+                                        document.write("</div>");
+                                        document.write("<div class=\"portfolio-infos\">");
+                                        document.write("<h3 style=\"color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);\"><?php echo e($vyzva->nazov); ?></h3>");
+                                        document.write("</div>");
+                                    }
+                                </script>
+
+                                
                             </div>
                             <div class="overlay">
                                 <div class="overlay-inner">
@@ -119,7 +166,7 @@
                                         <a class="fancybox"
                                            href="<?php echo e(action("VyzvyController@showVyzva", ['id' => $vyzva->idvyzvy])); ?>"
                                            title="Bližšie informácie">
-                                            <i class="fa fa-expand"></i>
+                                            <i class="fas fa-expand"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -143,6 +190,13 @@
         $('.vyzvy').addClass('active');
     });
 </script>
-
+<script type="text/javascript">
+   /*window.expired = function(){
+        var end = document.getElementById("end").name;
+        var now = new Date();
+        var distance = end - now;
+        return distance >= 0;
+    }*/
+</script>
 </body>
 </html>

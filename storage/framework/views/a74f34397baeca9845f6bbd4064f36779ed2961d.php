@@ -18,7 +18,7 @@
                     <?php endif; ?>
                     <?php if(Auth::check()): ?>
                         <?php if(auth()->user()->roly_idroly == 2): ?>
-                            <a class="mainBtn" href="<?php echo e(url("/")); ?>" role="button"
+                            <a class="mainBtn" href="<?php echo e(url("/addsprava")); ?>" role="button"
                                style="color: white;">Pridať správu</a>
                         <?php endif; ?>
                     <?php endif; ?>
@@ -44,66 +44,12 @@
                                         / <?php echo e($sprava->user->name); ?> / <?php echo e($sprava->vyzvy->nazov); ?></a></li>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
+                        </br>
                     </div>
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
 
-            <div class="row">
-                <div class="col-md-12">
-                    <?php if(Auth::check()): ?>
-                        <?php if(auth()->user()->roly_idroly == 2): ?>
-                            <div class="comment-form">
-                                <h3>Odošlite svoju správu</h3>
-                                <div class="widget-inner">
-                                    <form action="<?php echo e(url('spravy')); ?>" method="post" enctype="multipart/form-data">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="vyzva">Výzva:</label>
-                                                <select id="vyzva" name="vyzva" class="form-control" required>
-                                                    <option value=""></option>
-                                                    <?php $__currentLoopData = $vyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vyzva): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                        <option value="<?php echo e($vyzva->idvyzvy); ?>"><?php echo e($vyzva->nazov); ?></option>
-                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                </select>
-                                                </br>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="nadpis">Hlavička správy:</label></br>
-                                                <input type="text" id="nadpis" name="nadpis" size="78" required>
-                                                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p>
-                                                    <label for="sprava">Tvoja správa:</label>
-                                                    <textarea name="sprava" id="sprava" rows="5" required></textarea>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <input type="hidden" id="id" name="id" class="form-control"
-                                                   value="<?php echo e(auth()->user()->getAuthIdentifier()); ?>">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <input class="mainBtn" type="submit" name="submit"
-                                                       value="Odoslať správu" id="submit">
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div> <!-- /.widget-inner -->
-                            </div> <!-- /.widget-main -->
-                        <?php endif; ?>
-                    <?php endif; ?>
-                </div> <!-- /.col-md-12 -->
-                <hr>
-            </div> <!-- /.row -->
-        </div> <!-- /.col-md-8 -->
+            </div> <!-- /.col-md-8 -->
         <div class="col-md-4">
             <div class="sidebar">
                 <div class="sidebar-widget">

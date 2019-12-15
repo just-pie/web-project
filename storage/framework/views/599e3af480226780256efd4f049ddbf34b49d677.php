@@ -27,11 +27,11 @@
                     <form action="<?php echo e(url('addvyzva')); ?>" method="post" enctype="multipart/form-data">
                         <div>
                             <label for="nazov">Názov výzvy:</label></br>
-                            <input type="text" id="nazov" name="nazov" class="form-control" required placeholder="Krátky a výstižný názov výzvy">
+                            <input type="text" id="nazov" name="nazov" class="form-control" placeholder="Názov výzvy" required >
                         </div>
                         <div>
                             <label for="popis">Krátky popis:</label>
-                            <textarea name="popis" id="popis" rows="5" class="form-control" required></textarea>
+                            <textarea name="popis" id="popis" rows="5" class="form-control" placeholder="Krátky a výstižný popis výzvy" required></textarea>
                         </div>
                         <div>
                             <div>
@@ -41,12 +41,12 @@
                         </div>
                         <div>
                             <label for="dlzka">Dĺžka výzvy:</label></br>
-                            <input type="text" id="dlzka" name="dlzka" class="form-control" required>
+                            <input type="text" id="dlzka" name="dlzka" class="form-control" placeholder="Uviesť v týždňoch alebo v mesiacoch" required>
                             <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
                         </div>
                         <div>
                             <label for="platnedo">Platnosť výzvy do:</label></br>
-                            <input type="date" id="platnedo" name="platnedo" class="form-control" required>
+                            <input type="date" id="platnedo" name="platnedo" class="form-control" placeholder="Do dátumu" required>
                         </div>
                         <div>
                             <label for="filename">Foto:</label></br>

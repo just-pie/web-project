@@ -1,7 +1,7 @@
-@include('includes.head', ['title' => 'Účastnícke správy'])
+<?php echo $__env->make('includes.head', ['title' => 'Účastnícke správy'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <body>
 
-@include('includes.nav')
+<?php echo $__env->make('includes.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <div class="first-widget parallax" id="messageId">
     <div class="parallax-overlay">
@@ -23,20 +23,20 @@
         <div class="col-md-8 blog-posts">
             <div class="row">
                 <div class="col-md-12">
-                    @if (Auth::check())
-                        @if(auth()->user()->roly_idroly == 2)
+                    <?php if(Auth::check()): ?>
+                        <?php if(auth()->user()->roly_idroly == 2): ?>
                             <div class="comment-form">
                                 <h3>Odošlite svoju správu</h3>
                                 <div class="widget-inner">
-                                    <form action="{{url('spravy')}}" method="post" enctype="multipart/form-data">
+                                    <form action="<?php echo e(url('spravy')); ?>" method="post" enctype="multipart/form-data">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="vyzva">Výzva:</label>
                                                 <select id="vyzva" name="vyzva" class="form-control" required>
                                                     <option value=""></option>
-                                                    @foreach ($vyzvy as $vyzva)
-                                                        <option value="{{ $vyzva->idvyzvy }}">{{ $vyzva->nazov }}</option>
-                                                    @endforeach
+                                                    <?php $__currentLoopData = $vyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vyzva): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                        <option value="<?php echo e($vyzva->idvyzvy); ?>"><?php echo e($vyzva->nazov); ?></option>
+                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                                 </select>
                                                 </br>
                                             </div>
@@ -45,21 +45,21 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="nadpis">Hlavička správy:</label></br>
-                                                <input type="text" id="nadpis" name="nadpis" size="78" placeholder="Krátky popis absolvovanej výzvy" required>
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <input type="text" id="nadpis" name="nadpis" size="78" required>
+                                                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <p>
                                                     <label for="sprava">Tvoja správa:</label>
-                                                    <textarea placeholder="Ostatné informácie" name="sprava" id="sprava" rows="5" required></textarea>
+                                                    <textarea name="sprava" id="sprava" rows="5" required></textarea>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <input type="hidden" id="id" name="id" class="form-control"
-                                                   value="{{auth()->user()->getAuthIdentifier()}}">
+                                                   value="<?php echo e(auth()->user()->getAuthIdentifier()); ?>">
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
@@ -71,8 +71,8 @@
                                     </form>
                                 </div> <!-- /.widget-inner -->
                             </div> <!-- /.widget-main -->
-                        @endif
-                    @endif
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div> <!-- /.col-md-12 -->
                 <hr>
             </div> <!-- /.row -->
@@ -83,7 +83,7 @@
                     <h5 class="widget-title">Dokumenty na stiahnutie</h5>
                     <div class="col-md-12">
                         <ul>
-                            <li><a href="{{ \URL::asset('docs/sablona_spravy.pdf') }}" download>Vzor účastníckej
+                            <li><a href="<?php echo e(\URL::asset('docs/sablona_spravy.pdf')); ?>" download>Vzor účastníckej
                                     správy</a></li>
                         </ul>
                     </div>
@@ -100,7 +100,7 @@
     });
 </script>
 
-@include('includes.foot')
+<?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <!-- Scripts -->
 <script src="js/min/plugins.min.js"></script>
