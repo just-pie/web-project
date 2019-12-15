@@ -17,6 +17,7 @@ class CreateSpravyTable extends Migration
             $table->increments('idspravy');
             $table->string('nadpis', 255);
             $table->text('text');
+            $table->date('datum');
             $table->integer('users_idusers')->unsigned();
             $table->foreign('users_idusers')->references('idusers')->on('users');
             $table->integer('vyzvy_idvyzvy')->unsigned();
