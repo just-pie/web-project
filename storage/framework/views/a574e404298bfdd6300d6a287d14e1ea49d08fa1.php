@@ -96,7 +96,7 @@
 <!-- Scripts -->
 <script src="js/min/plugins.min.js"></script>
 <script src="js/min/medigo-custom.min.js"></script>
-
+<script type="module" src="<?php echo e(\URL::asset('js/react/countdown.js')); ?>" async=true></script>
 <script>
     $(document).ready(function () {
         $(".nav li").removeClass("active");
