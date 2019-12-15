@@ -36,6 +36,7 @@
                         <div class="blog-content" align="justify">
                             <h2>Ponuka</h2>
                             <p>{{$vyzva->popis}}</p>
+                            <hr>
                             <h2>Základné informácie</h2>
                             <p>{!!  $vyzva->ostatneinfo !!}</p>
                         </div> <!-- /.blog-content -->
@@ -62,6 +63,9 @@
             <div class="col-md-4">
                 <div class="sidebar">
                     <div class="sidebar-widget">
+                        <h5 class="widget-title">Výzva končí za</h5>
+                        <div id="countdown" name="{{$vyzva->platnedo}}"></div>
+                        <br>
                         <h5 class="widget-title">Správy účastníkov</h5>
                         <div>
                             @if($spravy->count() > 0)
