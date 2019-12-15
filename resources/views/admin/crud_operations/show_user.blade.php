@@ -31,6 +31,15 @@
                         <span class="input-group-text" id="basic-addon3">Dátum narodenia: </span>
                     </div>
                     <input type="date" name="datum_narodenia" class="form-control" id="datum_narodenia"
+                                                            min="1950-01-01"
+                                                            required max="2019-12-31">
+                </div>
+                <br>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Študijný program: </span>
+                    </div>
+                    <input type="date" name="study_program" class="form-control" id="study_program"
                            min="1950-01-01"
                            required max="2019-12-31">
                 </div>

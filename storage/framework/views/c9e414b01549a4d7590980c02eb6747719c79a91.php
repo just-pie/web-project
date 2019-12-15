@@ -24,4 +24,6 @@
 <?php if(\Request::is('admin-universities')): ?>
     <?php echo $__env->make('admin.admin_tables.university_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php endif; ?>
-
+<?php if(\Request::is('admin-challenges')): ?>
+    <?php echo $__env->make('admin.admin_tables.challenges_table', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php endif; ?>

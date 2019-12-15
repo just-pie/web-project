@@ -1,7 +1,7 @@
 <script>
     $(document).ready(function(){
         $('#pouzivatelia').dataTable({
-            "lengthMenu": [[10, 5, 25, 50], [10, 5, 25, 50]],
+            "lengthMenu": [[7, 10, 25, 50], [7, 10, 25, 50]],
             "language": {
                 "lengthMenu": "Zobrazujem _MENU_ riadkov.",
                 "zeroRecords": "Nemám čo načítať, tabuľka je prázdna.",

@@ -1,23 +1,19 @@
 
     <div id="overlay" class="overlay"></div>
     <div class="container">
-        <div class="row">
+        <div class="row" style="text-align: center">
             <div class="col-sm">
                 Počet všetkých používateľov:
-                <?php echo e($countAllUsers); ?>
-
+                <strong><?php echo e($countAllUsers); ?></strong>
             </div>
             <div class="col-sm">
                 Počet nových používateľov za posledný týždeň:
-                <?php echo e($countRecentlyAddedUsers); ?>
-
-            </div>
-            <div class="col-sm">
-                Tu bude počet aktívnych používateľov.
+                <strong><?php echo e($countRecentlyAddedUsers); ?></strong>
             </div>
         </div>
     </div>
     <hr style="margin: 10px;">
+    <br>
     <div class="container">
         <h3>Tabuľka používateľov</h3>
         <br>

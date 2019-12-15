@@ -37,7 +37,6 @@
                                required max="2019-12-31">
                     </div>
                     <br>
-                    <br>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="inputGroupSelect01">Rola: </label>
@@ -47,6 +46,14 @@
                             <option value="2">Študent</option>
                             <option value="3">Modetátor</option>
                         </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Študijný program: </span>
+                        </div>
+                        <input type="date" name="study_program" placeholder="Vyplniť len pre študenta" class="form-control" id="study_program"
+                               min="1950-01-01"
+                               required max="2019-12-31">
                     </div>
                     <br><hr><br>
                     <h4>Prihlasovacie údaje</h4>
