@@ -26,6 +26,6 @@ class CreateTypvyzvyTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('typvyzvy');
     }
 }
