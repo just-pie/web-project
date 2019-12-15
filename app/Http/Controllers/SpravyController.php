@@ -21,6 +21,12 @@ class SpravyController extends Controller
         return view("sprava", ['sprava' => $sprava]);
     }
 
+    public function addSprava()
+    {
+        $vyzvy = Vyzvy::all()->sortByDesc('pridane');
+        return view("addsprava", ['vyzvy' => $vyzvy]);
+    }
+
     public function storeSprava(Request $request){
 
         $spravy = new Spravy();
