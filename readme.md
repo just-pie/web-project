@@ -1,8 +1,5 @@
 ---
 
-
----
-
 <p><strong>Mobility UKF</strong></p>
 <p>Vitajte! Toto je repozitár vytvorený pre potreby predmetov Tímový projekt, Pokročilé webové technológie a Princípy softvérového inžinierstva.</p>
 <p><strong>Skupina TP04</strong><br>
