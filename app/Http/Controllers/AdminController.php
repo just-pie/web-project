@@ -4,7 +4,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Krajiny;
+use App\Models\Oblasti;
 use App\Models\Pouzivatelia;
+use App\Models\Spravy;
+use App\Models\Typvyzvy;
+use App\Models\Univerzity;
+use App\Models\Vyzvy;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -19,9 +24,33 @@ class AdminController extends Controller
 
         $page_name = 'admin.admin_body.admin_dashboard';
 
+       // SELECT DISTINCT country_iso2, COUNT(id) pocet FROM `visitors` GROUP BY country_iso2 ORDER BY pocet DESC
+        $navstevnici_v_krajinach = DB::table('visitors')
+            ->select('country_iso2', DB::raw("COUNT(id) as pocet"))
+            ->groupBy('country_iso2')
+            ->orderBy('pocet', 'DESC')
+            ->get();
+
+        // SELECT browsers, COUNT(id) as pocet FROM `visitors` group by browsers order by pocet desc
+        $browsers_bar = DB::table('visitors')
+            ->select('browsers', DB::raw("COUNT(id) as pocet"))
+            ->groupBy('browsers')
+            ->orderBy('pocet', 'DESC')
+            ->get();
+
+        // SELECT hour(date_time) as hodina, COUNT(id) as pocet FROM `visitors` GROUP by hodina ORDER by hodina asc
+
+        $hodiny_navstev = DB::table('visitors')
+            ->select( DB::raw("hour(date_time) as hodina"), DB::raw("COUNT(id) as pocet"))
+            ->groupBy('hodina')
+            ->orderBy('hodina', 'asc')
+            ->get();
+
         $data = [
             'page_name'  => $page_name,
-
+            'navstevnici_v_krajinach' => $navstevnici_v_krajinach,
+            'browsers_bar' => $browsers_bar,
+            'hodiny_navstev' =>$hodiny_navstev
         ];
 
         return view('admin.admin')->with($data);
@@ -128,17 +157,31 @@ public function countAllUsers(){
     public function showMessages(){
         $page_name = 'admin.admin_body.admin_mess';
 
+        $spravy = Spravy::orderBy('datum', 'desc')->get();
+        $vyzvy = Vyzvy::all()->sortByDesc('pridane');
+
         $data = [
             'page_name'  => $page_name,
+            'spravy' => $spravy,
+            'vyzvy' => $vyzvy
         ];
 
         return view('admin.admin')->with($data);
     }
     public function showChallenges(){
+        $vyzvy = Vyzvy::all();
+        $oblasti = Oblasti::orderBy('nazov', 'asc')->get();
+        $typvyzvy = Typvyzvy::orderBy('typ', 'asc')->get();
+        $univerzity = Univerzity::orderBy('nazov', 'asc')->get();
+
         $page_name = 'admin.admin_body.admin_challenges';
 
         $data = [
             'page_name'  => $page_name,
+            'oblasti' => $oblasti,
+            'typvyzvy' => $typvyzvy,
+            'univerzity' => $univerzity,
+            'vyzvy' => $vyzvy
         ];
 
         return view('admin.admin')->with($data);
@@ -169,6 +212,31 @@ public function countAllUsers(){
         ];
 
         return view('admin.admin', compact('countries'))->with($data);
+    }
+
+    public function addVyzva(Request $request){
+
+        $imageName = $request->file('filename')->getClientOriginalName();
+        $request->file('filename')->move(public_path('images/vyzvy'), $imageName);
+
+        $vyzvy = new Vyzvy();
+        $vyzvy->timestamps = false;
+        $vyzvy->nazov = $request->input('nazov');
+        $vyzvy->popis = $request->input('popis');
+        $vyzvy->ostatneinfo = $request->input('ostatneinfo');
+        $vyzvy->dlzka = $request->input('dlzka');
+        $vyzvy->pridane = date('Y-m-d');
+        $vyzvy->platnedo = $request->input('platnedo');
+        $vyzvy->foto = $imageName;
+        $vyzvy->oblasti_idoblasti = $request->input('oblast');
+        $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
+        $vyzvy->save();
+        $univerzity = $request->get('univerzity');;
+        foreach ($univerzity as $item){
+            $vyzvy->univerzity()->attach($item);
+        }
+
+        return back();
     }
 
     public function logout(Request $request)

@@ -53,7 +53,8 @@
                                             <div class="col-md-12">
                                                 <p>
                                                     <label for="sprava">Tvoja správa:</label>
-                                                    <textarea placeholder="Ostatné informácie" name="sprava" id="sprava" rows="5" required></textarea>
+                                                    <textarea placeholder="Ostatné informácie" name="sprava" id="sprava" rows="8" required class="form-control"
+                                                              required></textarea>
                                                 </p>
                                             </div>
                                         </div>
@@ -98,6 +99,8 @@
         $(".nav li").removeClass("active");
         $(".spravy").addClass("active");
     });
+
+        CKEDITOR.replace('sprava');
 </script>
 
 @include('includes.foot')

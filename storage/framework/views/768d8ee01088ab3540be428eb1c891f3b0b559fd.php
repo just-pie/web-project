@@ -45,7 +45,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="nadpis">Hlavička správy:</label></br>
-                                                <input type="text" id="nadpis" name="nadpis" size="78" required>
+                                                <input type="text" id="nadpis" name="nadpis" size="78" placeholder="Krátky popis absolvovanej výzvy" required>
                                                 <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
                                             </div>
                                         </div>
@@ -53,7 +53,8 @@
                                             <div class="col-md-12">
                                                 <p>
                                                     <label for="sprava">Tvoja správa:</label>
-                                                    <textarea name="sprava" id="sprava" rows="5" required></textarea>
+                                                    <textarea placeholder="Ostatné informácie" name="sprava" id="sprava" rows="8" required class="form-control"
+                                                              required></textarea>
                                                 </p>
                                             </div>
                                         </div>
@@ -98,6 +99,8 @@
         $(".nav li").removeClass("active");
         $(".spravy").addClass("active");
     });
+
+        CKEDITOR.replace('sprava');
 </script>
 
 <?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

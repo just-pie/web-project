@@ -1,7 +1,7 @@
 <script>
     $(document).ready(function(){
-        $('#pouzivatelia').dataTable({
-            "lengthMenu": [[7, 10, 25, 50], [7, 10, 25, 50]],
+        $('#spravy').DataTable({
+            "lengthMenu": [[5, 10, 50], [5, 10, 50]],
             "language": {
                 "lengthMenu": "Zobrazujem _MENU_ riadkov.",
                 "zeroRecords": "Nemám čo načítať, tabuľka je prázdna.",
@@ -19,9 +19,11 @@
             "order": [[0, 'asc']],
             "columns": [
                 { "orderable": false },
+                { "orderable": false },
                 null,
                 null,
-                null,
+                { "orderable": false },
+                { "orderable": false },
                 { "orderable": false }
             ]
         });

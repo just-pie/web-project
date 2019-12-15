@@ -4,7 +4,7 @@
 
 <?php echo $__env->make('includes.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-<div class="first-widget parallax" id="blogId">
+<div class="first-widget parallax" id="po">
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">

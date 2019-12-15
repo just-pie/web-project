@@ -47,11 +47,13 @@
     <br>
     <hr>
     <br>
-    <div class="row">
+
+    <div class="container" style="margin: auto">
+        <div class="row" style="margin: auto">
         <div class="col-5">
             <div id="chartdiv" style="width:100%; height: 500px;"></div>
         </div> 
-        <div class="col-3">
+        <div class="col-5">
             <div style="z-index: 999; margin: 5px;">
                 <table class="table table-striped">
                     <thead class="thead-dark">
@@ -69,12 +71,10 @@
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </tbody>
                 </table>
-
+            </div>
             </div>
         </div> 
-
     </div>
-
     <br>
 </div>
 <script src="<?php echo e(asset("js/app.js")); ?>"></script>
@@ -84,4 +84,4 @@
         $('.university').addClass('active');
     });
 </script>
-<?php echo $__env->make('admin.includes.map_chart', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('admin.includes.university_map_chart', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -24,4 +24,6 @@
 @if (\Request::is('admin-universities'))
     @include('admin.admin_tables.university_table')
 @endif
-
+@if (\Request::is('admin-challenges'))
+    @include('admin.admin_tables.challenges_table')
+@endif
