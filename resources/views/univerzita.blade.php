@@ -21,7 +21,7 @@
     <div class="container">
             <div class=" blog-posts">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <div class="post-blog">
                             <script>document.getElementById("blog").style.backgroundImage = "url('{{$univerzita->foto}}')";</script>
                             <div class="blog-content">
@@ -32,13 +32,16 @@
                             <div class="blog-content">
                                 <h2>O univerzite</h2>
                                 <p>{{$univerzita->detail}}</p>
-                                <h3>Zmluva s univerzitou:</h3>
-                                <p>S touto univerzitou má naša univerzita zmluvu od roku {{$univerzita->zmluvaod}} do roku {{$univerzita->zmluvado}}.</p>
-                                <h3>Web stránka univerzity:</h3>
-                                <p><a href="{{$univerzita->web}}" target="_blank">{{$univerzita->web}}</a></p>
-                            </div> <!-- /.blog-content -->
+                                </div> <!-- /.blog-content -->
                         </div> <!-- /.post-blog -->
-                    </div> <!-- /.col-md-12 -->
+                    </div> <!-- /.col-md-8 -->
+                    <div class="col-md-4" style="padding-top: 30px; padding-left: 30px">
+                        <h3><u>Údaje o univerzite</u></h3>
+                        <p><strong>Krajina:</strong><br>{{$univerzita->krajiny->krajina}}</p>
+                        <p><strong>Mesto:</strong><br>{{$univerzita->mesto}}</p>
+                        <p><strong>Zmluva:</strong><br>Od roku {{$univerzita->zmluvaod}} do roku {{$univerzita->zmluvado}}</p>
+                        <p><strong>Web:</strong> <br> {{$univerzita->web}}</p>
+                    </div> <!-- /.col-md-4 -->
                 </div> <!-- /.row -->
             </div> <!-- /.col-md-8 -->
     </div> <!-- /.container -->
