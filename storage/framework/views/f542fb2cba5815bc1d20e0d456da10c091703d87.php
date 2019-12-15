@@ -42,13 +42,28 @@
         <div class="portfolio-holder" id="Grid">
             <?php $__currentLoopData = $vyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $vyzva): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php if(count($vyzva->univerzity) < 2): ?>
-                    <div class="portfolio-post col-sm-6 col-md-4 mix <?php echo e($vyzva->typvyzvy->typ); ?>">
+                    <?php switch($vyzva->typvyzvy->typ):
+                        case ("Študijný pobyt"): ?>
+                        <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                            <?php break; ?>
+                            <?php case ("Prednáškový pobyt"): ?>
+                            <div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
+                                <?php break; ?>
+                                <?php case ("Stáž"): ?>
+                                <div class="portfolio-post col-sm-6 col-md-4 mix staze">
+                                    <?php break; ?>
+                                    <?php case ("Školenia"): ?>
+                                    <div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
+                                        <?php break; ?>
+                                        <?php default: ?>
+                                        <div class="portfolio-post col-sm-6 col-md-4 mix all">
+                                        <?php endswitch; ?>
                         <div class="thumb-post">
                             <div class="overlay-inner">
                                 <div style=" height: 233px;max-height: 233px;"><img src="<?php echo e($vyzva->foto); ?>" alt="<?php echo e($vyzva->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
-                                    <h3 style="color: white; text-shadow: 2px 2px 3px black;"><?php echo e($vyzva->nazov); ?></h3>
+                                    <h3 style="color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);"><?php echo e($vyzva->nazov); ?></h3>
                                 </div>
                             </div>
                             <div class="overlay">
@@ -69,14 +84,29 @@
                         </div>
                     </div> <!-- /.col-md-4 -->
                 <?php else: ?>
-                    <div class="portfolio-post col-sm-6 col-md-4 mix <?php echo e($vyzva->typvyzvy->typ); ?>">
+                                            <?php switch($vyzva->typvyzvy->typ):
+                                                case ("Študijný pobyt"): ?>
+                                                <div class="portfolio-post col-sm-6 col-md-4 mix studijne">
+                                                    <?php break; ?>
+                                                    <?php case ("Prednáškový pobyt"): ?>
+                                                    <div class="portfolio-post col-sm-6 col-md-4 mix prednaskove">
+                                                        <?php break; ?>
+                                                        <?php case ("Stáž"): ?>
+                                                        <div class="portfolio-post col-sm-6 col-md-4 mix staze">
+                                                            <?php break; ?>
+                                                            <?php case ("Školenia"): ?>
+                                                            <div class="portfolio-post col-sm-6 col-md-4 mix skolenia">
+                                                                <?php break; ?>
+                                                                <?php default: ?>
+                                                                <div class="portfolio-post col-sm-6 col-md-4 mix all">
+                                                                    <?php endswitch; ?>
                         <div class="thumb-post">
                             <div class="overlay-inner">
                                 <div style=" height: 233px;max-height: 233px;">
                                     <img src="<?php echo e($vyzva->foto); ?>" alt="<?php echo e($vyzva->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
-                                    <h3 style="color: white; text-shadow: 2px 2px 3px black;"><?php echo e($vyzva->nazov); ?></h3>
+                                    <h3 style="color: white; display:inline; background-color: rgba(0, 0, 0, 0.7);"><?php echo e($vyzva->nazov); ?></h3>
                                 </div>
                             </div>
                             <div class="overlay">
@@ -100,8 +130,6 @@
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div> <!-- /.portfolio-holder -->
     </div> <!-- /.row -->
-    <?php echo e($vyzvy->links()); ?>
-
 </div> <!-- /.container -->
 
 <?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

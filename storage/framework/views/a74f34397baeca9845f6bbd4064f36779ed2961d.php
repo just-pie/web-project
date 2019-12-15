@@ -20,22 +20,16 @@
 
 <div class="container">
 	<div class="row">
-
 		<div class="col-md-8 blog-posts">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="archive-wrapper">
+					<div>
 						<p>Na tomto mieste sa budú zobrazovať účastnícke správy jednotlivých študentov</p>
 						<h3 class="archive-title">Posledných 10 správ</h3>
 						<ul class="archive-list">
 							<?php $__currentLoopData = $spravy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sprava): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 								<li><a href="<?php echo e(action("SpravyController@showSprava", ['id' => $sprava->idspravy])); ?>"><?php echo e($sprava->datum); ?> / <?php echo e($sprava->user->name); ?> / <?php echo e($sprava->vyzvy->nazov); ?></a></li>
 							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-						</ul>
-						<h3 class="archive-title">Správy podľa mesiaca:</h3>
-						<ul class="archive-list">
-							<li><a href="#">Mesiac - rok</a></li>
-							<li>...</li>
 						</ul>
 					</div>
 				</div> <!-- /.col-md-12 -->
@@ -95,7 +89,6 @@
 				</div> <!-- /.col-md-12 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.col-md-8 -->
-
 		<div class="col-md-4">
 			<div class="sidebar">
 				<div class="sidebar-widget">
@@ -111,9 +104,7 @@
 				</div> <!-- /.sidebar-widget -->
 			</div> <!-- /.sidebar -->
 		</div> <!-- /.col-md-4 -->
-
 	</div> <!-- /.row -->
-
 </div> <!-- /.container -->
 
 <script type="text/javascript">

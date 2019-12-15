@@ -21,71 +21,72 @@
 
 <div class="container">
     <div class="row">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="comment-form">
-                    <div class="widget-inner">
-                        <form action="<?php echo e(url('addvyzva')); ?>" method="post" enctype="multipart/form-data">
-                            <?php if(count($errors)): ?>
-                                <div class="alert alert-warning">
-                                    <ul>
-                                        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                            <li><?php echo e($error); ?></li>
-                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                    </ul>
-                                </div>
-                            <?php endif; ?>
-                            <div>
-                                <label for="nazov">Názov výzvy:</label></br>
-                                <input type="text" id="nazov" name="nazov" class="form-control">
-                            </div>
-                            <div>
-                                <label for="popis">Krátky popis:</label>
-                                <textarea name="popis" id="popis" rows="5" class="form-control"></textarea>
-                            </div>
-                            <div>
-                                <label for="ostatneinfo">Deatily k výzve:</label>
-                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control"></textarea>
-                            </div>
-                            <div>
-                                <label for="dlzka">Dĺžka výzvy:</label></br>
-                                <input type="text" id="dlzka" name="dlzka" class="form-control">
-                                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
-                            </div>
-                            <div>
-                                <label for="platnedo">Platnosť výzvy do:</label></br>
-                                <input type="date" id="platnedo" name="platnedo" class="form-control">
-                            </div>
-                            <div>
-                                <label for="filename">Foto:</label></br>
-                                <input type="file" name="filename" id="filename" class="form-control">
-                            </div>
-                            <div>
-                                <label for="oblast">Oblasť:</label></br>
-                                <select class="form-control" id="oblast" name="oblast">
-                                    <option value=""></option>
-                                    <?php $__currentLoopData = $oblasti; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $oblast): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <option value="<?php echo e($oblast->idoblasti); ?>"><?php echo e($oblast->nazov); ?></option>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="typvyzvy">Typ výzvy:</label></br>
-                                <select class="form-control" id="typvyzvy" name="typvyzvy">
-                                    <option value=""></option>
-                                    <?php $__currentLoopData = $typvyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $typ): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <option value="<?php echo e($typ->idtypvyzvy); ?>"><?php echo e($typ->typ); ?></option>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                </select>
-                            </div></br>
-                            <div>
-                                <input class="mainBtn" type="submit" name="submit" value="Pridať výzvu" id="submit">
-                            </div>
-                        </form>
-                    </div> <!-- /.widget-inner -->
-                </div> <!-- /.widget-main -->
-            </div> <!-- /.col-md-12 -->
-        </div> <!-- /.row -->
+        <div class="col-md-12">
+            <div class="comment-form">
+                <div class="widget-inner">
+                    <form action="<?php echo e(url('addvyzva')); ?>" method="post" enctype="multipart/form-data">
+                        <div>
+                            <label for="nazov">Názov výzvy:</label></br>
+                            <input type="text" id="nazov" name="nazov" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="popis">Krátky popis:</label>
+                            <textarea name="popis" id="popis" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <div>
+                            <label for="ostatneinfo">Deatily k výzve:</label>
+                            <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control"
+                                      required></textarea>
+                        </div>
+                        <div>
+                            <label for="dlzka">Dĺžka výzvy:</label></br>
+                            <input type="text" id="dlzka" name="dlzka" class="form-control" required>
+                            <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+                        </div>
+                        <div>
+                            <label for="platnedo">Platnosť výzvy do:</label></br>
+                            <input type="date" id="platnedo" name="platnedo" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="filename">Foto:</label></br>
+                            <input type="file" name="filename" id="filename" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="oblast">Oblasť:</label></br>
+                            <select class="form-control" id="oblast" name="oblast" required>
+                                <option value=""></option>
+                                <?php $__currentLoopData = $oblasti; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $oblast): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($oblast->idoblasti); ?>"><?php echo e($oblast->nazov); ?></option>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="typvyzvy">Typ výzvy:</label></br>
+                            <select class="form-control" id="typvyzvy" name="typvyzvy" required>
+                                <option value=""></option>
+                                <?php $__currentLoopData = $typvyzvy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $typ): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($typ->idtypvyzvy); ?>"><?php echo e($typ->typ); ?></option>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </select>
+                        </div>
+                        </br>
+                        <div>
+                            <label for="univerzity">Univerzity:</label></br>
+                            <select class="form-control" id="univerzity" name="univerzity[]" multiple required>
+                                <option value=""></option>
+                                <?php $__currentLoopData = $univerzity; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $uni): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($uni->iduniverzity); ?>"><?php echo e($uni->nazov); ?></option>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            </select>
+                        </div>
+                        </br>
+                        <div>
+                            <input class="mainBtn" type="submit" name="submit" value="Pridať výzvu" id="submit">
+                        </div>
+                    </form>
+                </div> <!-- /.widget-inner -->
+            </div> <!-- /.widget-main -->
+        </div> <!-- /.col-md-12 -->
     </div> <!-- /.row -->
 </div> <!-- /.container -->
 

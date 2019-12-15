@@ -63,7 +63,7 @@
                                 <div style=" height: 233px;max-height: 233px;"><img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
-                                    <h3 style="color: white; text-shadow: 2px 2px 3px black;">{{$vyzva->nazov}}</h3>
+                                    <h3 style="color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);">{{$vyzva->nazov}}</h3>
                                 </div>
                             </div>
                             <div class="overlay">
@@ -106,7 +106,7 @@
                                     <img src="{{$vyzva->foto}}" alt="{{$vyzva->nazov}}" style=" width: 100%; height: 100%;object-fit:cover;">
                                 </div>
                                 <div class="portfolio-infos">
-                                    <h3 style="color: white; text-shadow: 2px 2px 3px black;">{{$vyzva->nazov}}</h3>
+                                    <h3 style="color: white; display:inline; background-color: rgba(0, 0, 0, 0.7);">{{$vyzva->nazov}}</h3>
                                 </div>
                             </div>
                             <div class="overlay">

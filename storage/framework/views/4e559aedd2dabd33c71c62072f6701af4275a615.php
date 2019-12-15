@@ -32,7 +32,7 @@
                             <div class="blog-content">
                                 <h2>O univerzite</h2>
                                 <p><?php echo e($univerzita->detail); ?></p>
-                                <h3>Zmluva z univerzitou:</h3>
+                                <h3>Zmluva s univerzitou:</h3>
                                 <p>S touto univerzitou má naša univerzita zmluvu od roku <?php echo e($univerzita->zmluvaod); ?> do roku <?php echo e($univerzita->zmluvado); ?>.</p>
                                 <h3>Web stránka univerzity:</h3>
                                 <p><a href="<?php echo e($univerzita->web); ?>" target="_blank"><?php echo e($univerzita->web); ?></a></p>
@@ -43,18 +43,16 @@
             </div> <!-- /.col-md-8 -->
     </div> <!-- /.container -->
 
+<script src="js/min/plugins.min.js"></script>
+<script src="js/min/medigo-custom.min.js"></script>
 <script>
     $(document).ready(function () {
         $(".nav li").removeClass("active");
-        $('.vyzvy').addClass('active');
+        $('.info').addClass('active');
     });
 </script>
 
 <?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
-<!-- Scripts -->
-<script src="http://localhost/web_project/public/js/min/plugins.min.js"></script>
-<script src="http://localhost/web_project/public/js/min/medigo-custom.min.js"></script>
 
 </body>
 </html>

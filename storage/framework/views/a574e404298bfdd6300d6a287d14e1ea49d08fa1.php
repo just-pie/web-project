@@ -13,7 +13,11 @@
                     <span class="page-location">Home / Výzvy / Výzva </span>
                     <?php if(Auth::check()): ?>
                         <?php if(auth()->user()->isAdmin == 1 || auth()->user()->roly_idroly == 3): ?>
-                            <a class="mainBtn" href="<?php echo e(action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])); ?>" role="button" style="color: white">Upraviť výzvu</a>
+                            <a class="mainBtn" href="<?php echo e(action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])); ?>"
+                               role="button" style="color: white">Upraviť výzvu</a>
+                        <?php else: ?>
+                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button"
+                               style="color: white">Prihlásiť sa na výzvu</a>
                         <?php endif; ?>
                     <?php endif; ?>
                 </div> <!-- /.col-md-6 -->
@@ -22,63 +26,65 @@
     </div> <!-- /.parallax-overlay -->
 </div> <!-- /.pageTitle -->
 
-
-
-<?php if(count($vyzva->univerzity) < 2): ?>
-    <div class="container">
-        <div class="row">
-            <div class=" blog-posts">
-                    <div class="col-md-12">
-                        <div class="post-blog">
-                                <script>document.getElementById("blog").style.backgroundImage = "url('<?php echo e($vyzva->foto); ?>')";</script>
-                            <div class="blog-content">
-                                <h2>Ponuka</h2>
-                                <p><?php echo e($vyzva->popis); ?></p>
-                                <h2>Základné informácie</h2>
-                                <?php echo $vyzva->ostatneinfo; ?>
-
-                            </div> <!-- /.blog-content -->
-                        </div> <!-- /.post-blog -->
-                        <div>
+<div class="container">
+    <div class="row">
+            <div class="col-md-8 blog-posts">
+                <div class="col-md-12">
+                    <div class="post-blog">
+                        <script>document.getElementById("blog").style.backgroundImage = "url('<?php echo e($vyzva->foto); ?>')";</script>
+                        <div class="blog-content" align="justify">
+                            <h2>Ponuka</h2>
+                            <p><?php echo e($vyzva->popis); ?></p>
+                            <hr>
+                            <h2>Základné informácie</h2>
+                            <p><?php echo $vyzva->ostatneinfo; ?></p>
+                        </div> <!-- /.blog-content -->
+                    </div> <!-- /.post-blog -->
+                    <div>
+                        <?php if(count($vyzva->univerzity) < 2): ?>
                             <h2>Bližšie o univerzite:</h2>
+                            <li>
+                                <a href="<?php echo e(action("UniverzityController@showUniverzita", ['id' => $vyzva->univerzity->first()->iduniverzity])); ?>"><?php echo e($vyzva->univerzity->first()->nazov); ?></a>
+                            </li>
+                            <br>
+                        <?php else: ?>
+                            <h2>Zapojené univerzity do výzvy:</h2>
                             <?php $__currentLoopData = $vyzva->univerzity; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $univerzita): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li><a href="<?php echo e(action("UniverzityController@showUniverzita", ['id' => $univerzita->iduniverzity])); ?>"><?php echo e($univerzita->nazov); ?></a></li>
+                                <li>
+                                    <a href="<?php echo e(action("UniverzityController@showUniverzita", ['id' => $univerzita->iduniverzity])); ?>"><?php echo e($univerzita->nazov); ?></a>
+                                </li>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             <br>
-                        </div>
-                    </div> <!-- /.col-md-12 -->
+                        <?php endif; ?>
+                    </div>
+                </div> <!-- /.col-md-12 -->
             </div> <!-- /.col-md-8 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
-<?php else: ?>
-    <div class="container">
-        <div class="row">
-            <div class=" blog-posts">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="post-blog">
-                            <div class="blog-image">
-                                <img src="<?php echo e($vyzva->foto); ?>" alt="">
-                            </div> <!-- /.blog-image -->
-                            <div class="blog-content">
-                                <h2>Ponuka</h2>
-                                <p><?php echo e($vyzva->popis); ?></p>
-                                <h2>Základné informácie</h2>
-                                <p><?php echo e($vyzva->ostatneinfo); ?></p>
-                            </div> <!-- /.blog-content -->
-                        </div> <!-- /.post-blog -->
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h5 class="widget-title">Výzva končí za</h5>
+                        <div id="countdown" name="<?php echo e($vyzva->platnedo); ?>"></div>
+                        <br>
+                        <h5 class="widget-title">Správy účastníkov</h5>
                         <div>
-                            <h2>Zapojené univerzity:</h2>
-                            <?php $__currentLoopData = $vyzva->univerzity; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $univerzita): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li><a href="#"><?php echo e($univerzita->nazov); ?></a></li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($spravy->count() > 0): ?>
+                                <ul>
+                                    <?php $__currentLoopData = $spravy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sprava): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <li>
+                                            <a href="<?php echo e(action("SpravyController@showSprava", ['id' => $sprava->idspravy])); ?>"><?php echo e($sprava->datum); ?>
+
+                                                / <?php echo e($sprava->user->name); ?></a></li>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                </ul>
+                            <?php else: ?>
+                                Zatiaľ neboli pridané žiadne správy.
+                            <?php endif; ?>
                         </div>
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.col-md-8 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
-<?php endif; ?>
+                    </div> <!-- /.sidebar-widget -->
+                </div> <!-- /.sidebar -->
+            </div> <!-- /.col-md-4 -->
+    </div> <!-- /.row --></br>
+</div> <!-- /.container -->
 
 <?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
