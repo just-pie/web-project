@@ -4,7 +4,7 @@
 
 @include('includes.nav')
 
-<div class="first-widget parallax" id="blogId">
+<div class="first-widget parallax" id="po">
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
