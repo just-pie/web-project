@@ -43,6 +43,8 @@
             </div> <!-- /.col-md-8 -->
     </div> <!-- /.container -->
 
+<script src="js/min/plugins.min.js"></script>
+<script src="js/min/medigo-custom.min.js"></script>
 <script>
     $(document).ready(function () {
         $(".nav li").removeClass("active");
@@ -51,10 +53,6 @@
 </script>
 
 @include('includes.foot')
-
-<!-- Scripts -->
-<script src="http://localhost/web_project/public/js/min/plugins.min.js"></script>
-<script src="http://localhost/web_project/public/js/min/medigo-custom.min.js"></script>
 
 </body>
 </html>

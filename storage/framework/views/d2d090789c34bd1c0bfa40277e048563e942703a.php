@@ -85,8 +85,6 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div> <!-- /.portfolio-holder -->
 </div> <!-- /.row -->
-<?php echo e($univerzity->links()); ?>
-
 </div> <!-- /.container -->
 
 <?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

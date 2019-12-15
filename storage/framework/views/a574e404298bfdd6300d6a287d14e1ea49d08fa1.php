@@ -28,7 +28,6 @@
 
 <div class="container">
     <div class="row">
-        <div class="container">
             <div class="col-md-8 blog-posts">
                 <div class="col-md-12">
                     <div class="post-blog">
@@ -84,7 +83,6 @@
                     </div> <!-- /.sidebar-widget -->
                 </div> <!-- /.sidebar -->
             </div> <!-- /.col-md-4 -->
-        </div>
     </div> <!-- /.row --></br>
 </div> <!-- /.container -->
 

@@ -15,12 +15,11 @@
                     @if (Auth::check())
                         @if(auth()->user()->roly_idroly == 3)
                             <a class="mainBtn" href="{{ url('/addvyzva')}}" role="button" style="color: white">Pridať výzvu</a>
+                        @elseif(auth()->user()->isAdmin == 1)
+                            <a class="mainAdminBtn" href="{{ url('/admin')}}" role="button" style="color: white">Ísť do admin rozhrania</a>
                         @else
-                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button" style="color: white">Prihlásiť sa na výzvu</a>
+                            <a class="mainBtn" href="{{ url('/vyzvy')}}" role="button" style="color: white">Prihlásiť sa na výzvu</a>
                         @endif
-                            @if(auth()->user()->isAdmin == 1)
-                                <a class="mainAdminBtn" href="{{ url('/admin')}}" role="button" style="color: white">Ísť do admin rozhrania</a>
-                            @endif
                     @endif
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->

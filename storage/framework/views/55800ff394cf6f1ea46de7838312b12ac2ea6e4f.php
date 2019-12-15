@@ -15,12 +15,11 @@
                     <?php if(Auth::check()): ?>
                         <?php if(auth()->user()->roly_idroly == 3): ?>
                             <a class="mainBtn" href="<?php echo e(url('/addvyzva')); ?>" role="button" style="color: white">Pridať výzvu</a>
+                        <?php elseif(auth()->user()->isAdmin == 1): ?>
+                            <a class="mainAdminBtn" href="<?php echo e(url('/admin')); ?>" role="button" style="color: white">Ísť do admin rozhrania</a>
                         <?php else: ?>
-                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button" style="color: white">Prihlásiť sa na výzvu</a>
+                            <a class="mainBtn" href="<?php echo e(url('/vyzvy')); ?>" role="button" style="color: white">Prihlásiť sa na výzvu</a>
                         <?php endif; ?>
-                            <?php if(auth()->user()->isAdmin == 1): ?>
-                                <a class="mainAdminBtn" href="<?php echo e(url('/admin')); ?>" role="button" style="color: white">Ísť do admin rozhrania</a>
-                            <?php endif; ?>
                     <?php endif; ?>
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->

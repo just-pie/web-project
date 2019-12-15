@@ -27,16 +27,9 @@
             <ul>
                     <?php if(auth()->user()->isAdmin == 1): ?>
 
-                        <li><a href="<?php echo e(url('admin')); ?>">Admin</a></li>
+                        <li><a href="<?php echo e(url('admin')); ?>">Admin rozhranie</a></li>
 
-                    <?php elseif(auth()->user()->roly_idroly == 3): ?>
-                        <li>
-                            <a>Som teta zo študijného</a>
-                        </li>
                     <?php else: ?>
-                        <li>
-                            <a>Som študent</a>
-                        </li>
                         <li>
                             <a>Môj profil</a>
                         </li>

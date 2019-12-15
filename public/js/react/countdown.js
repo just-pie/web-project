@@ -25,40 +25,40 @@ function showRemaining() {
 
     switch (days) {
         case 1 :
-            document.getElementById(id).innerHTML = days + ' deň | ';
+            document.getElementById(id).innerHTML = days + ' deň, ';
             break;
         case 2:
         case 3:
         case 4:
-            document.getElementById(id).innerHTML = days + ' dni | ';
+            document.getElementById(id).innerHTML = days + ' dni, ';
             break;
-        default: document.getElementById(id).innerHTML = days + ' dní | ';
+        default: document.getElementById(id).innerHTML = days + ' dní, ';
             break;
     }
 
     switch (hours) {
         case 1 :
-            document.getElementById(id).innerHTML += hours + ' hodinu | ';
+            document.getElementById(id).innerHTML += hours + ' hodinu, ';
             break;
         case 2:
         case 3:
         case 4:
-            document.getElementById(id).innerHTML += hours + ' hodiny | ';
+            document.getElementById(id).innerHTML += hours + ' hodiny, ';
             break;
-        default: document.getElementById(id).innerHTML += hours + ' hodín | ';
+        default: document.getElementById(id).innerHTML += hours + ' hodín, ';
             break;
     }
 
     switch (minutes) {
         case 1 :
-            document.getElementById(id).innerHTML += minutes + ' minútu | ';
+            document.getElementById(id).innerHTML += minutes + ' minútu a ';
             break;
         case 2:
         case 3:
         case 4:
-            document.getElementById(id).innerHTML += minutes + ' minúty | ';
+            document.getElementById(id).innerHTML += minutes + ' minúty a ';
             break;
-        default: document.getElementById(id).innerHTML += minutes + ' minút | ';
+        default: document.getElementById(id).innerHTML += minutes + ' minút a ';
             break;
     }
 
