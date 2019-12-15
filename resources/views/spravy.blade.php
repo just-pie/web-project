@@ -18,7 +18,7 @@
                     @endguest
                     @if (Auth::check())
                         @if(auth()->user()->roly_idroly == 2)
-                            <a class="mainBtn" href="{{ url("/") }}" role="button"
+                            <a class="mainBtn" href="{{ url("/addsprava") }}" role="button"
                                style="color: white;">Pridať správu</a>
                         @endif
                     @endif
@@ -43,66 +43,12 @@
                                         / {{$sprava->user->name}} / {{$sprava->vyzvy->nazov}}</a></li>
                             @endforeach
                         </ul>
+                        </br>
                     </div>
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
 
-            <div class="row">
-                <div class="col-md-12">
-                    @if (Auth::check())
-                        @if(auth()->user()->roly_idroly == 2)
-                            <div class="comment-form">
-                                <h3>Odošlite svoju správu</h3>
-                                <div class="widget-inner">
-                                    <form action="{{url('spravy')}}" method="post" enctype="multipart/form-data">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="vyzva">Výzva:</label>
-                                                <select id="vyzva" name="vyzva" class="form-control" required>
-                                                    <option value=""></option>
-                                                    @foreach ($vyzvy as $vyzva)
-                                                        <option value="{{ $vyzva->idvyzvy }}">{{ $vyzva->nazov }}</option>
-                                                    @endforeach
-                                                </select>
-                                                </br>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="nadpis">Hlavička správy:</label></br>
-                                                <input type="text" id="nadpis" name="nadpis" size="78" required>
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p>
-                                                    <label for="sprava">Tvoja správa:</label>
-                                                    <textarea name="sprava" id="sprava" rows="5" required></textarea>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <input type="hidden" id="id" name="id" class="form-control"
-                                                   value="{{auth()->user()->getAuthIdentifier()}}">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <input class="mainBtn" type="submit" name="submit"
-                                                       value="Odoslať správu" id="submit">
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div> <!-- /.widget-inner -->
-                            </div> <!-- /.widget-main -->
-                        @endif
-                    @endif
-                </div> <!-- /.col-md-12 -->
-                <hr>
-            </div> <!-- /.row -->
-        </div> <!-- /.col-md-8 -->
+            </div> <!-- /.col-md-8 -->
         <div class="col-md-4">
             <div class="sidebar">
                 <div class="sidebar-widget">
