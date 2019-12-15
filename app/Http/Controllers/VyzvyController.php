@@ -6,9 +6,11 @@ use App\Models\Oblasti;
 use App\Models\Spravy;
 use App\Models\Typvyzvy;
 use App\Models\Univerzity;
+use App\Models\Univerzity_has_Vyzvy;
 use App\Models\Vyzvy;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use DB;
 
 class VyzvyController extends Controller
 {
@@ -39,7 +41,11 @@ class VyzvyController extends Controller
         $oblasti = Oblasti::orderBy('nazov', 'asc')->get();
         $typvyzvy = Typvyzvy::orderBy('typ', 'asc')->get();
         $univerzity = Univerzity::orderBy('nazov', 'asc')->get();
-        return view("editvyzva", ['vyzva' => $vyzva, 'oblasti' => $oblasti, 'typvyzvy' => $typvyzvy, 'univerzity' => $univerzity]);
+        $univerzity_has_vyzvy = DB::table('univerzity_has_vyzvy')
+            ->select('univerzity_iduniverzity')
+            ->where('vyzvy_idvyzvy', $id)
+            ->get();
+        return view("editvyzva", ['vyzva' => $vyzva, 'oblasti' => $oblasti, 'typvyzvy' => $typvyzvy, 'univerzity' => $univerzity, 'univerzity_has_vyzvy' => $univerzity_has_vyzvy]);
     }
 
     public function storeVyzva(Request $request){

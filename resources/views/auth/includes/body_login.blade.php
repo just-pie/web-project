@@ -44,8 +44,8 @@
                     </a>
                 </div>
                 <div class="text-center p-t-20">
-                    <a class="txt1" href="{{route('index')}}">
-                        Späť na hlavnú stránku.
+                    <a class="txt1" href="{{url()->previous()}}">
+                        Späť na predošlú stránku.
                     </a>
                 </div>
             </form>

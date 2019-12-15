@@ -1,7 +1,9 @@
 <?php echo $__env->make('includes.head', ['title' => 'Mobility UKF'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <body>
 <?php echo $__env->make('includes.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
+<?php if(Session::has('message')): ?>
+    <p class="alert <?php echo e(Session::get('alert-class', 'alert-info')); ?>"><?php echo e(Session::get('message')); ?></p>
+<?php endif; ?>
 <section id="homeIntro" class="parallax first-widget">
     <div class="parallax-overlay">
         <div class="container home-intro-content">

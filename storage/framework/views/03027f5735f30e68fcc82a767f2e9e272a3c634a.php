@@ -7,11 +7,15 @@
     <div class="parallax-overlay">
         <div class="container pageTitle">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-8 col-sm-8">
                     <h2 class="page-title">Správa k výzve: </br><?php echo e($sprava->vyzvy->nazov); ?></h2>
                 </div> <!-- /.col-md-6 -->
-                <div class="col-md-6 col-sm-6 text-right">
+                <div class="col-md-4 col-sm-4 text-right">
                     <span class="page-location">Domov / Účastnícke správy</span>
+                    <?php if(auth()->guard()->guest()): ?>
+                        <a class="mainBtn" href="<?php echo e(url("/login")); ?>" role="button"
+                           style="color: white;">Prihlásiť sa</a>
+                    <?php endif; ?>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
