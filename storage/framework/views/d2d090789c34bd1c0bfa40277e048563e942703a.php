@@ -62,7 +62,7 @@
                             <img src="<?php echo e($univerzita->foto); ?>" alt="<?php echo e($univerzita->nazov); ?>" style=" width: 100%; height: 100%;object-fit:cover;">
                         </div>
                         <div class="portfolio-infos">
-                            <h3 style="color: white; text-shadow: 2px 2px 3px black;"><?php echo e($univerzita->nazov); ?></h3>
+                            <h3 style="color: white; display:inline; background-color: rgba(0, 0, 0, 0.7);"><?php echo e($univerzita->nazov); ?></h3>
                         </div>
                     </div>
                     <div class="overlay">

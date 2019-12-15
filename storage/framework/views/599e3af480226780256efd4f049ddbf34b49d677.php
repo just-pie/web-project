@@ -27,16 +27,17 @@
                     <form action="<?php echo e(url('addvyzva')); ?>" method="post" enctype="multipart/form-data">
                         <div>
                             <label for="nazov">Názov výzvy:</label></br>
-                            <input type="text" id="nazov" name="nazov" class="form-control" required>
+                            <input type="text" id="nazov" name="nazov" class="form-control" required placeholder="Krátky a výstižný názov výzvy">
                         </div>
                         <div>
                             <label for="popis">Krátky popis:</label>
                             <textarea name="popis" id="popis" rows="5" class="form-control" required></textarea>
                         </div>
                         <div>
-                            <label for="ostatneinfo">Deatily k výzve:</label>
-                            <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control"
-                                      required></textarea>
+                            <div>
+                                <label for="ostatneinfo">Detaily k výzve:</label>
+                                <textarea name="ostatneinfo" id="ostatneinfo" rows="5" class="form-control" required></textarea>
+                            </div>
                         </div>
                         <div>
                             <label for="dlzka">Dĺžka výzvy:</label></br>
@@ -98,7 +99,9 @@
 </script>
 
 <?php echo $__env->make('includes.foot', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
+<script>
+    CKEDITOR.replace( 'ostatneinfo' );
+</script>
 <!-- Scripts -->
 <script src="js/min/plugins.min.js"></script>
 <script src="js/min/medigo-custom.min.js"></script>

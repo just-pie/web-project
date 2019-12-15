@@ -17,9 +17,14 @@
                                role="button" style="color: white">Upraviť výzvu</a>
                         @else
                             <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button"
-                               style="color: white">Prihlásiť sa na výzvu</a>
+                               style="color: white;">Prihlásiť sa na výzvu</a>
                         @endif
                     @endif
+                    @guest
+                        <a class="mainBtn" href="{{ url("/login") }}" disabled role="button"
+                           style="color: white; position: relative;
+  display: inline-block;"><span class="tooltiptext">Pre pokračovanie sa prihláste</span>Prihlásiť sa na výzvu</a>
+                    @endguest
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->

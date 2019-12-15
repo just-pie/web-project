@@ -108,16 +108,16 @@
 
                                         @if(auth()->user()->isAdmin == 1)
 
-                                            <li><a href="{{url('admin')}}">Admin</a></li>
+                                            <li><a href="{{url('admin')}}">Admin rozhranie</a></li>
 
                                         @elseif(auth()->user()->roly_idroly == 3)
                                             <li>
-                                                <a>Som teta zo študijného</a>
+                                                <a>Spravovanie výziev</a>
                                             </li>
-                                        @else
                                             <li>
-                                                <a>Som študent</a>
+                                                <a>Môj profil</a>
                                             </li>
+                                        @else {{--pre studenta--}}
                                             <li>
                                                 <a>Môj profil</a>
                                             </li>

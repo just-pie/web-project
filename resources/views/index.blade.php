@@ -1,7 +1,9 @@
 @include('includes.head', ['title' => 'Mobility UKF'])
 <body>
 @include('includes.nav')
-
+@if(Session::has('message'))
+    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+@endif
 <section id="homeIntro" class="parallax first-widget">
     <div class="parallax-overlay">
         <div class="container home-intro-content">
