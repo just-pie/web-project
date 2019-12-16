@@ -68,12 +68,7 @@
                         <span class="menu-text">Univerzity</span>
                     </a>
                 </li>
-                <li class="sidebar mess-icon">
-                    <a class="mess" href="<?php echo e(url('admin-messages')); ?>">
-                        <i class="fas fa-comment-alt"></i>
-                        <span class="menu-text">Správy študentov</span>
-                    </a>
-
+                
                 <li class="header-menu">
                     <span>Extra</span>
                 </li>

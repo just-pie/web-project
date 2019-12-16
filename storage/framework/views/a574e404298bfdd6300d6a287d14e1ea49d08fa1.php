@@ -16,12 +16,12 @@
                             <a class="mainBtn" href="<?php echo e(action("VyzvyController@editVyzva", ['id' => $vyzva->idvyzvy])); ?>"
                                role="button" style="color: white">Upraviť výzvu</a>
                         <?php else: ?>
-                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button"
-                               style="color: white;">Prihlásiť sa na výzvu</a>
+                            <a class="mainBtn" href="https://studyabroad.sk/" target="_blank" role="button" id="login_vyzva_button" style="color: white; visibility: hidden;">Prihlásiť sa na výzvu</a>
+
                         <?php endif; ?>
                     <?php endif; ?>
                     <?php if(auth()->guard()->guest()): ?>
-                        <a class="mainBtn" href="<?php echo e(url("/login")); ?>" disabled role="button"
+                        <a class="mainBtn" href="<?php echo e(url("/login")); ?>" id="login_vyzva_button" disabled role="button"
                            style="color: white; position: relative;
   display: inline-block;"><span class="tooltiptext">Pre pokračovanie sa prihláste</span>Prihlásiť sa na výzvu</a>
                     <?php endif; ?>

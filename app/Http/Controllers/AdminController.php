@@ -23,7 +23,7 @@ class AdminController extends Controller
     {
 
         $page_name = 'admin.admin_body.admin_dashboard';
-
+        
        // SELECT DISTINCT country_iso2, COUNT(id) pocet FROM `visitors` GROUP BY country_iso2 ORDER BY pocet DESC
         $navstevnici_v_krajinach = DB::table('visitors')
             ->select('country_iso2', DB::raw("COUNT(id) as pocet"))
@@ -106,21 +106,18 @@ class AdminController extends Controller
         $user = User::findOrFail($request->input('id'));
         $user->update($request->all());
 
-        /*$user = Pouzivatelia::where("idpouzivatelia", "=", $request->input('idpouzivatelia'))->first();
-        $user->update(['meno' => $request->input('meno'),
-            'priezvisko' => $request->input('priezvisko'),
+        $user = Pouzivatelia::where("id", "=", $request->input('id'))->first();
+        $user->update(['meno' => $request->input('name'),
             'email' => $request->input('email'),
-            'datum_narodenia' => $request->input('datum_narodenia'),
-            'roly_idroly' => $request->input('rola')]);*/
+            'birth_date' => $request->input('birth_date'),
+            'roly_idroly' => $request->input('rola')]);
 
         $msg = 'Dáta o používateľovi <em>'.$request->input('name').' '.$request->input('priezvisko').'</em> boli <strong>úspešne</strong> aktualizované!';
-        echo "som tu!";
         return back()->with('message', $msg);
     }
 
     public function deleteUser(Request $request){
         $user = User::findOrFail($request->input('id'));
-        $user->detach();
         $user->delete();
         $msg = 'Používateľ bol <strong>úspešne</strong> vymazaný z databázy!';
         return back()->with('message', $msg);
@@ -227,16 +224,17 @@ public function countAllUsers(){
         $vyzvy->dlzka = $request->input('dlzka');
         $vyzvy->pridane = date('Y-m-d');
         $vyzvy->platnedo = $request->input('platnedo');
-        $vyzvy->foto = $imageName;
+        $vyzvy->foto = "images/vyzvy/" . $imageName;
         $vyzvy->oblasti_idoblasti = $request->input('oblast');
         $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
         $vyzvy->save();
+
         $univerzity = $request->get('univerzity');;
         foreach ($univerzity as $item){
             $vyzvy->univerzity()->attach($item);
         }
 
-        return back();
+        return redirect()->back()->with('message','Nový riadok bol úspešne pridaný!');
     }
 
     public function logout(Request $request)

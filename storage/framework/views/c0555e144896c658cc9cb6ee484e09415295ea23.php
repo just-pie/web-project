@@ -13,7 +13,7 @@
                     <th scope="col">Zmluva od</th>
                     <th scope="col">Zmluva platná do</th>
                     <th scope="col">Mesto a Krajina</th>
-                    <th class="no-sort" scope="col">Akcia</th>
+                 
                 </tr>
                 </thead>
                 <tbody>
@@ -27,17 +27,7 @@
                         <td><?php echo e($univerzita->zmluvado); ?></td>
                         <td><?php echo e($univerzita->mesto); ?>, <?php echo e($univerzita->krajina); ?></td>
 
-                        <td>
-                            <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
-                                <div class="icon">
-                                    <a href=""><i class="fa fa-eye" style="color: green; " data-toggle="modal"
-                                                  data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href=""><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href=""><i class="fa fa-trash" style="color: red;"></i></a>
-                                </div>
-                                
-                            </div>
-                        </td>
+                        
                     </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tbody>

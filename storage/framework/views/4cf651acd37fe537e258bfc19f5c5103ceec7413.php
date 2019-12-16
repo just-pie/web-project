@@ -10,17 +10,16 @@
                         <li><a href="<?php echo e(url('/univerzity')); ?>">Univerzity</a></li>
                         <li><a href="<?php echo e(url('/kontakt')); ?>">Kontakt</a></li>
                         <p></p><br>
-                        <li><a href="https://www.ukf.sk"><img id="footer-logo" src="<?php echo e(\URL::asset('images/includes/ukf-logo.png')); ?>" style="display: inline-block;" width="42px"
+                        <li><a href="https://www.ukf.sk"target="_blank" ><img id="footer-logo" src="<?php echo e(\URL::asset('images/includes/ukf-logo.png')); ?>" style="display: inline-block;" width="42px"
                                                               height="42px" ></a></li>
-                        <li><a href="http://edu.ukf.sk/"><img id="footer-logo" src="<?php echo e(\URL::asset('images/includes/edu-logo.png')); ?>" style="display: inline-block;" width="37px"
+                        <li><a href="http://edu.ukf.sk/"target="_blank" ><img id="footer-logo" src="<?php echo e(\URL::asset('images/includes/edu-logo.png')); ?>" style="display: inline-block;" width="37px"
                                                               height="37px" ></a></li>
-                        <li><a href="https://ais2.ukf.sk/"><img id="footer-logo" src="<?php echo e(\URL::asset('images/includes/ais_logo.png')); ?>" style="display: inline-block;" width="40px"
+                        <li><a href="https://ais2.ukf.sk/"target="_blank" ><img id="footer-logo" src="<?php echo e(\URL::asset('images/includes/ais_logo.png')); ?>" style="display: inline-block;" width="40px"
                                                                 height="40px" ></a></li>
                         <p></p>
                         <li><a target="_blank" href="https://www.facebook.com/Medzin%C3%A1rodn%C3%A9-vz%C5%A5ahy-a-mobility-%C5%A1tudentov-UKF-111131456995587/" style="font-size: 32px;">
                                 <i class="fab fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/ukfvnitre/" style="font-size: 32px;">
-                                <i class="fab fa-instagram"></i> </a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/ukfvnitre/" style="font-size: 32px;"><i class="fab fa-instagram"></i></a></li>
                         
                     </ul> <!-- /.footer-menu -->
 

@@ -12,10 +12,6 @@
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-4 col-sm-4 text-right">
                     <span class="page-location">Domov / Účastnícke správy</span>
-                    @guest
-                        <a class="mainBtn" href="{{ url("/login") }}" role="button"
-                           style="color: white;">Prihlásiť sa</a>
-                    @endguest
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->

@@ -40,7 +40,7 @@
                         <p><strong>Krajina:</strong><br>{{$univerzita->krajiny->krajina}}</p>
                         <p><strong>Mesto:</strong><br>{{$univerzita->mesto}}</p>
                         <p><strong>Zmluva:</strong><br>Od roku {{$univerzita->zmluvaod}} do roku {{$univerzita->zmluvado}}</p>
-                        <p><strong>Web:</strong> <br> {{$univerzita->web}}</p>
+                        <p><strong>Web:</strong> <br> <a href="{{$univerzita->web}}" target="_blank">{{$univerzita->web}}</a></p>
                     </div> <!-- /.col-md-4 -->
                 </div> <!-- /.row -->
             </div> <!-- /.col-md-8 -->

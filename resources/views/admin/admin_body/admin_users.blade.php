@@ -56,10 +56,10 @@
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                             <div class="icon">
-                                <a href="" data-toggle="modal" data-target="#show" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;
+{{--                                <a href="" data-toggle="modal" data-target="#show" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fas fa-eye" style="color: green; " data-toggle="modal" data-target-id="1" data-target="#showUser"></i></a>&nbsp;&nbsp;&nbsp;--}}
                                 @if($user->isAdmin !== 1)
-                                    <a href="" data-toggle="modal" data-target="#editUser" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <a href="" data-toggle="modal" data-target="#delete" data-name="{{$user->name}}" data-id="{{$user->id}}"><i class="fa fa-trash" style="color: red;"></i></a>
+{{--                                    <a href="" data-toggle="modal" data-target="#editUser" data-myname="{{$user->name}}" data-myemail="{{$user->email}}" data-mybirth_day="{{$user->birth_date}}" data-myrola="{{$user->rola}}" data-mycreated_at="{{$user->created_at}}" data-myupdated_at="{{$user->updated_at}}"  data-myid="{{$user->id}}"><i class="fas fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;--}}
+                                    <a href="" data-toggle="modal" data-target="#delete" data-name="{{$user->name}}" data-id="{{$user->id}}"><i class="fas fa-trash" style="color: red;"></i></a>
                                 @endif
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Action group">
@@ -74,6 +74,9 @@
             @endforeach
             </tbody>
         </table>
+        <br>
+        <br>
+        <br>
     </div>
 
 @include('admin.crud_operations.show_user')
@@ -87,7 +90,7 @@
         var idpouzivatelia = button.data('myid');
         var name = button.data('myname');
         var email = button.data('myemail');
-        var birth_date = button.data('mybirth_date');
+        var birth_date = button.data('mybirth_day');
         var rola = button.data('myrola');
         var created_at = button.data('mycreated_at');
         var updated_at = button.data('myupdated_at');
@@ -109,13 +112,13 @@
         modal.find('.modal-body #updated_at').val(updated_at);
         modal.find('.modal-body #id').val(idpouzivatelia);
     });
-    $('#edit').on('show.bs.modal', function (event) {
+    $('#editUser').on('show.bs.modal', function (event) {
 
         var button = $(event.relatedTarget);
         var id = button.data('myid');
-        var name = button.data('mymeno');
+        var name = button.data('myname');
         var email = button.data('myemail');
-        var birth_day = button.data('mybirth_date');
+        var birth_day = button.data('mybirth_day');
         var rola = button.data('myrola');
         var created_at = button.data('mycreated_at');
         var updated_at = button.data('myupdated_at');
@@ -129,13 +132,13 @@
         else{
             rola = 0;
         }
-        modal.find('.modal-body #meno').val(name);
+        modal.find('.modal-body #name').val(name);
         modal.find('.modal-body #email').val(email);
         modal.find('.modal-body #birth_date').val(birth_day);
         modal.find('.modal-body #rola').val(rola);
         modal.find('.modal-body #created_at').val(created_at);
         modal.find('.modal-body #updated_at').val(updated_at);
-        modal.find('.modal-body #idpouzivatelia').val(id);
+        modal.find('.modal-body #id').val(id);
     });
     $('#delete').on('show.bs.modal', function (event) {
 

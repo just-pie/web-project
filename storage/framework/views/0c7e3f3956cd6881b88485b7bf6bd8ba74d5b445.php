@@ -10,16 +10,13 @@
             </div>
 
             <div class="modal-body">
-                <form method="post" action="<?php echo e(action('AdminController@deleteUser')); ?>">
+                <form method="post" action="<?php echo e(url('deleteUser')); ?>">
                     <br>
                     <?php echo e(csrf_field()); ?>
 
                     <input type="hidden" id="id" name="id">
                     <div class="container">
                         <p>Skutočne si prajete vymazať tohto používateľa z databázy?</p>
-                        <input type="hidden" id="user_name">
-                        <p><strong><script type="text/javascript">document.write(write_name());</script></strong></p>
-                        <br>
                         <p><em>Táto akcia je nevratná!</em></p>
                     </div>
                     <br>

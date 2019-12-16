@@ -61,7 +61,7 @@ class VyzvyController extends Controller
         $vyzvy->dlzka = $request->input('dlzka');
         $vyzvy->pridane = date('Y-m-d');
         $vyzvy->platnedo = $request->input('platnedo');
-        $vyzvy->foto = $imageName;
+        $vyzvy->foto = "images/vyzvy/" . $imageName;
         $vyzvy->oblasti_idoblasti = $request->input('oblast');
         $vyzvy->typvyzvy_idtypvyzvy = $request->input('typvyzvy');
         $vyzvy->save();

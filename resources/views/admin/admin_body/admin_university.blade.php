@@ -13,7 +13,7 @@
                     <th scope="col">Zmluva od</th>
                     <th scope="col">Zmluva platná do</th>
                     <th scope="col">Mesto a Krajina</th>
-                    <th class="no-sort" scope="col">Akcia</th>
+                 {{--   <th class="no-sort" scope="col">Akcia</th>--}}
                 </tr>
                 </thead>
                 <tbody>
@@ -27,7 +27,7 @@
                         <td>{{ $univerzita->zmluvado }}</td>
                         <td>{{ $univerzita->mesto }}, {{$univerzita->krajina}}</td>
 
-                        <td>
+                        {{--<td>
                             <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                                 <div class="icon">
                                     <a href=""><i class="fa fa-eye" style="color: green; " data-toggle="modal"
@@ -35,14 +35,14 @@
                                     <a href=""><i class="fa fa-edit" style="color: darkorange;"></i></a>&nbsp;&nbsp;&nbsp;
                                     <a href=""><i class="fa fa-trash" style="color: red;"></i></a>
                                 </div>
-                                {{--<div class="btn-group mr-2" role="group" aria-label="Action group">
+                                --}}{{--<div class="btn-group mr-2" role="group" aria-label="Action group">
                                         <a href="{{ action("UserController@edit_page", ['id' => $user->id]) }}"
                                            class="btn btn-outline-warning" role="button">Upraviť</a>
                                         <a href="{{ action("UserController@delete_page", ['id' => $user->id]) }}"
                                            class="btn btn-outline-danger" role="button">Vymazať</a>
-                                </div>--}}
+                                </div>--}}{{--
                             </div>
-                        </td>
+                        </td>--}}
                     </tr>
                 @endforeach
                 </tbody>

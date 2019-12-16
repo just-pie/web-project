@@ -15,7 +15,6 @@ function showRemaining() {
 
         clearInterval(timer);
         document.getElementById(id).innerHTML = '<strong>UKONČENÉ!</strong>';
-
         return;
     }
     var days = Math.floor(distance / _day);
@@ -74,6 +73,7 @@ function showRemaining() {
         default: document.getElementById(id).innerHTML += seconds + ' sekúnd.';
             break;
     }
+    document.getElementById("login_vyzva_button").style.visibility = "visible";
 }
 
 timer = setInterval(showRemaining, 1000);

@@ -77,6 +77,7 @@ Route::post('/spravy','SpravyController@storeSprava');
 Route::get('/addvyzva','VyzvyController@addVyzva');
 
 Route::post('/addvyzva','VyzvyController@storeVyzva');
+Route::post('/addvyzvaAdmin','AdminController@addVyzva');
 
 Route::get('/addsprava','SpravyController@addSprava');
 

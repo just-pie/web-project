@@ -47,18 +47,7 @@
                     },
                     @endforeach
                 ]
-            },
-            {
-                "name": "Slovensko",
-                "color": chart.colors.getIndex(3),
-                "data": [
-                    {
-                        "title": "Slovensko",
-                        "id": "SK",
-                        "color": chart.colors.getIndex(3)
-                    }
-                ]
-            },
+            }
         ];
 
 // This array will be populated with country IDs to exclude from the world series
@@ -90,7 +79,7 @@
             mapPolygonTemplate.fill = am4core.color(group.color); // modra
             mapPolygonTemplate.fillOpacity = 0.8;
             mapPolygonTemplate.nonScalingStroke = true;
-            mapPolygonTemplate.tooltipPosition = "fixed"
+            mapPolygonTemplate.tooltipPosition = "fixed";
 /*
             mapPolygonTemplate.events.on("over", function(event) {
                 series.mapPolygons.each(function(mapPolygon) {

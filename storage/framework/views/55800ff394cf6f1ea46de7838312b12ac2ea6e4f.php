@@ -35,7 +35,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="service-box-wrap">
                     <div class="service-icon-wrap">
-                        <i class="fa fa-globe fa-2x"></i>
+                        <i class="fas fa-globe fa-2x"></i>
                     </div> <!-- /.service-icon-wrap -->
                     <div class="service-cnt-wrap">
                         <h3 class="service-title">Erasmus+</h3>
@@ -47,7 +47,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="service-box-wrap">
                     <div class="service-icon-wrap">
-                        <i class="fa fa-forward fa-2x"></i>
+                        <i class="fas fa-forward fa-2x"></i>
                     </div> <!-- /.service-icon-wrap -->
                     <div class="service-cnt-wrap">
                         <h3 class="service-title">Nahrádza programy</h3>
@@ -59,7 +59,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="service-box-wrap">
                     <div class="service-icon-wrap">
-                        <i class="fa fa-file-o fa-2x"></i>
+                        <i class="far fa-file fa-2x"></i>
                     </div> <!-- /.service-icon-wrap -->
                     <div class="service-cnt-wrap">
                         <h3 class="service-title">Poskytuje granty</h3>
@@ -75,7 +75,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="service-box-wrap">
                     <div class="service-icon-wrap">
-                        <i class="fa fa-exchange fa-2x"></i>
+                        <i class="fas fa-exchange-alt fa-2x"></i>
                     </div> <!-- /.service-icon-wrap -->
                     <div class="service-cnt-wrap">
                         <h3 class="service-title">Dáva príležitosť</h3>
@@ -87,7 +87,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="service-box-wrap">
                     <div class="service-icon-wrap">
-                        <i class="fa fa-folder-open fa-2x"></i>
+                        <i class="fas fa-folder-open fa-2x"></i>
                     </div> <!-- /.service-icon-wrap -->
                     <div class="service-cnt-wrap">
                         <h3 class="service-title">Je otvorený</h3>
@@ -99,7 +99,7 @@
             <div class="col-md-4 col-sm-4">
                 <div class="service-box-wrap">
                     <div class="service-icon-wrap">
-                        <i class="fa fa-building-o fa-2x"></i>
+                        <i class="far fa-building fa-2x"></i>
                     </div> <!-- /.service-icon-wrap -->
                     <div class="service-cnt-wrap">
                         <h3 class="service-title">Akcie sú centralizované a decentralizované</h3>
@@ -127,7 +127,7 @@
             <div class="item">
                 <div class="thumb-post">
                     <div class="portfolio-infos">
-                        <h3 style="color: white; text-shadow: 2px 2px 1px #000000;"><?php echo e($vyzva->nazov); ?></h3>
+                        <h3 style="color: white;display:inline; background-color: rgba(0, 0, 0, 0.7);"><?php echo e($vyzva->nazov); ?></h3>
                     </div>
                     <div class="overlay">
                         <div class="overlay-inner">
@@ -142,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="<?php echo e(\URL::asset($vyzva->foto)); ?>" alt="<?php echo e($vyzva->univerzity->first()['nazov']); ?>" style="width: 100%; height: 233px;object-fit:cover; display: block; margin: auto;">
+                    <img src="<?php echo e(\URL::asset($vyzva->foto)); ?>" alt="<?php echo e($vyzva->univerzity->first()['nazov']); ?>" style="width: 100%; height: 233px;object-fit:cover; display: block; margin: auto; ">
                 </div>
             </div> <!-- /.item -->
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

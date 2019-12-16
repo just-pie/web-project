@@ -35,7 +35,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon3">Dátum narodenia: </span>
                         </div>
-                        <input type="date" name="birth_date" class="form-control" id="datum_narodenia"
+                        <input type="date" name="birth_date" class="form-control" id="birth_date"
                                min="1950-01-01"
                                required max="2019-12-31">
                     </div>

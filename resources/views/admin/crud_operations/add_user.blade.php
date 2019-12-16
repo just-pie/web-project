@@ -18,7 +18,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="">Meno a priezvisko</span>
                         </div>
-                        <input type="text" name="name" id="name" class="form-control" required>
+                        <input type="text" name="name" id="name" class="form-control" required autocomplete="off">
                     </div>
                     <br>
                     <div class="input-group mb-3">
@@ -26,7 +26,7 @@
                             <span class="input-group-text" id="basic-addon1">Email: </span>
                         </div>
                         <input type="email" class="form-control" aria-label="email"
-                               aria-describedby="basic-addon1" name="email" id="email" required>
+                               aria-describedby="basic-addon1" name="email" id="email" required autocomplete="off">
                     </div>
                     <br>
                     <div class="input-group mb-3">
@@ -34,7 +34,7 @@
                             <span class="input-group-text" id="basic-addon3">Dátum narodenia: </span>
                         </div>
                         <input type="date" name="datum_narodenia" class="form-control" id="datum_narodenia" min="1950-01-01"
-                               required max="2019-12-31">
+                               required max="2019-12-31" autocomplete="off">
                     </div>
                     <br>
                     <div class="input-group mb-3">
@@ -47,14 +47,7 @@
                             <option value="3">Modetátor</option>
                         </select>
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon3">Študijný program: </span>
-                        </div>
-                        <input type="date" name="study_program" placeholder="Vyplniť len pre študenta" class="form-control" id="study_program"
-                               min="1950-01-01"
-                               required max="2019-12-31">
-                    </div>
+
                     <br><hr><br>
                     <h4>Prihlasovacie údaje</h4>
                     <br>
@@ -63,7 +56,7 @@
                             <span class="input-group-text" id="basic-addon1">Heslo: </span>
                         </div>
                         <input type="password" class="form-control"
-                               aria-describedby="basic-addon1" name="heslo" id="heslo" required>
+                               aria-describedby="basic-addon1" name="heslo" id="heslo" required autocomplete="off">
                     </div>
                 </div><br>
                 <div class="modal-footer">

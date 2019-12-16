@@ -4,6 +4,15 @@
         <div class="col-md-12">
             <br>
             <h2>Tabuľka výziev</h2>
+            @if(session()->has('message'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {!! session()->get('message') !!}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <br>
+            @endif
             <table id="vyzvy" class="table table-striped">
                 <thead>
                 <tr>
@@ -12,7 +21,7 @@
                     <th scope="col">Názov</th>
                     <th scope="col">Výzva pridaná dňa</th>
                     <th scope="col">Platná do</th>
-                    <th class="no-sort" scope="col">Akcia</th>
+{{--                    <th class="no-sort" scope="col">Akcia</th>--}}
                 </tr>
                 </thead>
                 <tbody>
@@ -24,7 +33,7 @@
                         <td>{{ $vyzva->nazov }}</td>
                         <td>{{ $vyzva->pridane }}</td>
                         <td>{{ $vyzva->platnedo }}</td>
-                        <td>
+                        {{--<td>
                             <div class="btn-toolbar" role="toolbar" aria-label="Button action group">
                                 <div class="icon">
                                     <a href="" ><i class="fas fa-eye" style="color: green; "></i></a>
@@ -32,7 +41,7 @@
                                     <a href="" ><i class="fas fa-trash" style="color: red;"></i></a>
                                 </div>
                             </div>
-                        </td>
+                        </td>--}}
                     </tr>
                 @endforeach
                 </tbody>
@@ -50,7 +59,7 @@
                 <div class="widget-inner">
                     <br>
                     <h2>Pridanie novej výzvy</h2>
-                    <form action="{{url('addvyzva')}}" method="post" enctype="multipart/form-data">
+                    <form action="{{url('addvyzvaAdmin')}}" method="post" enctype="multipart/form-data">
                         <div>
                             <label for="nazov">Názov výzvy:</label></br>
                             <input type="text" id="nazov" name="nazov" class="form-control" placeholder="Názov výzvy"

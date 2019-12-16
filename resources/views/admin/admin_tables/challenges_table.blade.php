@@ -22,8 +22,8 @@
                 { "orderable": false },
                 null,
                 null,
-                { "orderable": false },
-                { "orderable": false }
+                { "orderable": false }/*,
+                { "orderable": false }*/
             ]
         });
     });
