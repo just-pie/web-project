@@ -16,10 +16,10 @@ class CreateUniverzityTable extends Migration
             $table->string('nazov', 45);
             $table->string('mesto', 45);
             $table->string('web', 100);
-            $table->year('zmluva-od');
-            $table->year('zmluva-do')->nullable($value = true);
+            $table->year('zmluvaod');
+            $table->year('zmluvado')->nullable($value = true);
             $table->text('detail');
-            $table->string('foto', 45);
+            $table->string('foto', 255);
             $table->integer('krajiny_idkrajiny')->unsigned();
             $table->foreign('krajiny_idkrajiny')->references('idkrajiny')->on('krajiny');
         });

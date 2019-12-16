@@ -21,6 +21,8 @@ class CreateKontaktyTable extends Migration
             $table->string('pozicia', 45);
             $table->string('fakulta', 45);
             $table->text('poznamka');
+            $table->string('web', 250);
+            $table->string('photo', 50);
         });
 
     }

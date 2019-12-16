@@ -17,6 +17,8 @@ class CreateKrajinyTable extends Migration
             $table->increments('idkrajiny');
             $table->string('krajina', 100);
             $table->string('kontinent', 100);
+            $table->string('iso2', 2);
+            $table->string('iso3', 3);
             $table->string('gps_cord_lat', 45);
             $table->string('gps_cord_long', 45);
         });
