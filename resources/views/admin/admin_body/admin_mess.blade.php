@@ -4,7 +4,7 @@
         <div class="col-md-12">
             <br>
             <h2>Správy účastníkov mobilít</h2>
-            <table id="vyzvy" class="table table-striped">
+            {{--<table id="spravy" class="table table-striped">
                 <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -133,7 +133,7 @@
             </div> <!-- /.widget-main -->
             <br>
             <br>
-            <br>
+            <br>--}}
         </div> <!-- /.col-md-12 -->
     </div> <!-- /.row -->
 </div> <!-- /.container -->
